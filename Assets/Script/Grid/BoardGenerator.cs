@@ -13,6 +13,12 @@ public class BoardGenerator : MonoBehaviour
     public RectTransform boardRect;
     public GameObject cellPrefab;
 
+    [Header("Predefined Cell Attributes")]
+    [Tooltip("Coordinates of cells that should be marked as blocked when the board is generated.")]
+    public System.Collections.Generic.List<Vector2Int> blockedCells = new System.Collections.Generic.List<Vector2Int>();
+    [Tooltip("Coordinates of cells that should be marked as destination when the board is generated.")]
+    public System.Collections.Generic.List<Vector2Int> destinationCells = new System.Collections.Generic.List<Vector2Int>();
+
     [Header("Spacing")]
     public Vector2 spacing = Vector2.zero;
 
@@ -88,6 +94,15 @@ public class BoardGenerator : MonoBehaviour
                     gc.column = c;
                     // default empty state
                     gc.ClearOccupancy();
+                    // apply blocked/destination attributes if configured on generator
+                    if (blockedCells != null && blockedCells.Contains(new Vector2Int(r, c)))
+                    {
+                        gc.SetOccupied(true); // block both player and NPC
+                    }
+                    if (destinationCells != null && destinationCells.Contains(new Vector2Int(r, c)))
+                    {
+                        gc.isDestination = true;
+                    }
                 }
             // Ensure the instantiated cell uses the correct RectTransform settings so
             // GridLayoutGroup sizing maps 1:1 to the prefab visuals.

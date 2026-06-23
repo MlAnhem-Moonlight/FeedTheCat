@@ -256,7 +256,7 @@ public class PlayerController : MonoBehaviour
 
         Debug.Log($"HandleCellClicked: clicked cell ({cell.row},{cell.column}) isEmpty={cell.isEmpty}");
 
-        if (IsAdjacent(cell.row, cell.column) && cell.isEmpty)
+        if (IsAdjacent(cell.row, cell.column) && cell.IsEmptyForPlayer())
         {
             MoveTo(cell.row, cell.column);
         }
@@ -277,7 +277,7 @@ public class PlayerController : MonoBehaviour
         if (target == null)
             return;
 
-        if (!target.isEmpty)
+        if (!target.IsEmptyForPlayer())
             return;
 
         if (current != null)
@@ -356,5 +356,12 @@ public class PlayerController : MonoBehaviour
             if (cell != null)
                 cell.onClick -= HandleCellClicked;
         }
+    }
+
+    // Public helper so LevelManager can place the player at runtime after level data is applied
+    public void PlacePlayerAt(int r, int c)
+    {
+        InitializeGrid();
+        PlaceAt(r, c);
     }
 }

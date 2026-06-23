@@ -59,14 +59,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.86242104, a: 0.6392157}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1077192063, guid: 040db023acfd577438b243a89f2c8505, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -90,10 +90,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GridCell
   row: 0
   column: 0
-  emptySprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  highlightSprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  emptySprite: {fileID: -1077192063, guid: 040db023acfd577438b243a89f2c8505, type: 3}
+  highlightSprite: {fileID: 792508812, guid: 040db023acfd577438b243a89f2c8505, type: 3}
   emptyColor: {r: 1, g: 1, b: 1, a: 1}
   occupiedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   highlightColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   isEmpty: 1
+  occupiedByPlayer: 0
+  occupiedByNPC: 0
+  isDestination: 0
+  destinationSprite: {fileID: 0}
+  destinationColor: {r: 1, g: 1, b: 1, a: 1}
   image: {fileID: 0}

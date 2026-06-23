@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class NPCMover : MonoBehaviour
 {
-    public enum NPCType { PatrolFixed, PatrolRandomSteps, RandomDirection }
+    public enum NPCType { PatrolFixed, PatrolRandomSteps, RandomDirection, Idle }
     public enum Direction { Up, Down, Left, Right }
 
     [Header("References")]
@@ -19,6 +19,8 @@ public class NPCMover : MonoBehaviour
     [Header("Behavior")]
     public NPCType type = NPCType.PatrolFixed;
     public Direction initialDirection = Direction.Right;
+    [Tooltip("Number of cells this NPC occupies along its facing direction (1 = single cell, 2 = spans two cells)")]
+    public int length = 1;
 
     // type 1
     public int fixedSteps = 3;
@@ -36,8 +38,9 @@ public class NPCMover : MonoBehaviour
     private Vector2Int dirVec;
     private int stepsRemaining = 0;
 
-    //private RectTransform entityContainer;
+    private RectTransform entityContainer;
     private RectTransform rectTransform;
+    private List<GridCell> occupiedCells = new List<GridCell>();
     [Header("Overrides")]
     [Tooltip("Optional: assign a shared container (e.g. PlayerContainer) so NPC aligns exactly with player. If empty the script will try to find or create one.")]
     public RectTransform overrideContainer;
@@ -57,6 +60,12 @@ public class NPCMover : MonoBehaviour
         PlayerController.OnPlayerStep -= OnPlayerMoved;
     }
 
+    private void OnDestroy()
+    {
+        // ensure we release occupancy if the NPC is destroyed at runtime
+        ClearOccupiedCells();
+    }
+
     private void Start()
     {
         if (boardGenerator == null)
@@ -69,7 +78,7 @@ public class NPCMover : MonoBehaviour
         ResetStepsForType();
 
         // place NPC at start
-        InitializeAndPlace();
+        StartCoroutine(InitializeAndPlace());
     }
 
     private void ResetStepsForType()
@@ -88,63 +97,157 @@ public class NPCMover : MonoBehaviour
         }
     }
 
-    private void InitializeAndPlace()
+    private System.Collections.IEnumerator InitializeAndPlace()
     {
         currentRow = Mathf.Clamp(startRow, 0, Math.Max(0, boardGenerator.rows - 1));
         currentColumn = Mathf.Clamp(startColumn, 0, Math.Max(0, boardGenerator.columns - 1));
-        // create entity container (sibling to boardRect) if needed
-        if (boardGenerator != null)
-        {
-            Transform parentForContainer = boardGenerator.boardRect != null ? boardGenerator.boardRect.parent : boardGenerator.transform;
-            var go = new GameObject("NPCContainer", typeof(RectTransform));
 
-            RectTransform goRt = go.GetComponent<RectTransform>();
-            // align with boardRect if available: copy anchors/pivot/size and positions so container sits exactly over the board
+        // Wait until the grid has been generated and layout has stabilized
+        int attempts = 0;
+        int maxAttempts = 120; // up to ~2 seconds at 60fps
+        int expectedChildren = Mathf.Max(0, boardGenerator != null ? boardGenerator.rows * boardGenerator.columns : 0);
+
+        while (boardGenerator == null || boardGenerator.grid == null || boardGenerator.grid.transform.childCount < expectedChildren)
+        {
+            attempts++;
+            if (attempts > maxAttempts)
+            {
+                Debug.LogWarning("NPCMover.InitializeAndPlace: timeout waiting for BoardGenerator/grid children");
+                break;
+            }
+            yield return null;
+        }
+
+        // Force several layout passes until child rect sizes are non-zero
+        RectTransform gridRect = null;
+        if (boardGenerator != null && boardGenerator.grid != null)
+            gridRect = boardGenerator.grid.GetComponent<RectTransform>();
+
+        bool ready = false;
+        attempts = 0;
+        while (!ready && attempts < maxAttempts)
+        {
+            attempts++;
+            if (gridRect != null)
+                LayoutRebuilder.ForceRebuildLayoutImmediate(gridRect);
+
+            // ensure every child has a valid rect size
+            ready = true;
+            for (int i = 0; i < expectedChildren; i++)
+            {
+                if (boardGenerator == null || boardGenerator.grid == null || i >= boardGenerator.grid.transform.childCount)
+                {
+                    ready = false;
+                    break;
+                }
+                var rt = boardGenerator.grid.transform.GetChild(i).GetComponent<RectTransform>();
+                if (rt == null || Mathf.Approximately(rt.rect.width, 0f) || Mathf.Approximately(rt.rect.height, 0f))
+                {
+                    ready = false;
+                    break;
+                }
+            }
+
+            if (!ready)
+                yield return new WaitForEndOfFrame();
+        }
+
+        if (!ready)
+            Debug.LogWarning("NPCMover.InitializeAndPlace: grid children sizes not stable after wait");
+
+        // try to find an existing shared container (prefer PlayerController's container).
+        // Wait a few frames for PlayerController to create it if needed.
+        entityContainer = null;
+        for (int wait = 0; wait < 10; wait++)
+        {
+            entityContainer = FindSharedEntityContainer();
+            if (entityContainer != null)
+                break;
+            yield return null;
+        }
+
+        if (entityContainer == null)
+        {
+            Transform parentForContainer = boardGenerator != null && boardGenerator.boardRect != null ? boardGenerator.boardRect.parent : (boardGenerator != null ? boardGenerator.transform : null);
+            var go = new GameObject("NPCContainer", typeof(RectTransform));
+            entityContainer = go.GetComponent<RectTransform>();
+            if (parentForContainer != null)
+                entityContainer.SetParent(parentForContainer, false);
+            else if (boardGenerator != null)
+                entityContainer.SetParent(boardGenerator.transform, false);
+
+            // align with boardRect if available: copy anchored/local position so container sits exactly over the board
             if (boardGenerator != null && boardGenerator.boardRect != null)
             {
                 var br = boardGenerator.boardRect;
-                goRt.anchorMin = br.anchorMin;
-                goRt.anchorMax = br.anchorMax;
-                goRt.pivot = br.pivot;
-                goRt.sizeDelta = br.sizeDelta;
-                goRt.localScale = Vector3.one;
-                // copy anchored/local positions & rotation to match board exactly
-                goRt.anchoredPosition = br.anchoredPosition;
-                goRt.localRotation = br.localRotation;
-                goRt.localPosition = br.localPosition;
+                entityContainer.anchorMin = br.anchorMin;
+                entityContainer.anchorMax = br.anchorMax;
+                entityContainer.pivot = br.pivot;
+                entityContainer.sizeDelta = br.sizeDelta;
+                entityContainer.localScale = Vector3.one;
+                // copy anchored/local positions to match board
+                entityContainer.anchoredPosition = br.anchoredPosition;
+                entityContainer.localRotation = br.localRotation;
+                entityContainer.localPosition = br.localPosition;
+                // place container above board in hierarchy so visuals render on top
+                entityContainer.SetAsLastSibling();
             }
-            else
-            {
-                // default stretch behavior if no board rect
-                goRt.anchorMin = Vector2.zero;
-                goRt.anchorMax = Vector2.one;
-                goRt.sizeDelta = Vector2.zero;
-                goRt.anchoredPosition = Vector2.zero;
-                goRt.pivot = new Vector2(0.5f, 0.5f);
-            }
-
-            //entityContainer = goRt;
-            //if (parentForContainer != null)
-            //    entityContainer.SetParent(parentForContainer, false);
-            //else
-            //    entityContainer.SetParent(boardGenerator.transform, false);
-
-            //// place container above board in hierarchy so visuals render on top
-            //entityContainer.SetAsLastSibling();
-            //entityContainer.localScale = Vector3.one;
         }
 
-        //// ensure initial occupancy
-        //var startCell = GetCell(currentRow, currentColumn);
-        //if (startCell != null)
-        //    startCell.SetOccupied(true);
+        // ensure initial occupancy (NPC) for length (may span multiple cells)
+        Debug.Log($"NPCMover.InitializeAndPlace: startCell lookup for ({currentRow},{currentColumn})");
+        SetOccupiedCellsForPosition(currentRow, currentColumn);
 
-        //// parent rectTransform under entityContainer for UI and position
-        //if (rectTransform != null && entityContainer != null)
-        //{
-        //    rectTransform.SetParent(entityContainer, false);
-        //    MoveToCellVisual(startCell);
-        //}
+        // allow inspector override container
+        if (overrideContainer != null)
+            entityContainer = overrideContainer;
+
+        // parent rectTransform under entityContainer for UI and position
+        if (rectTransform != null && entityContainer != null)
+        {
+            rectTransform.SetParent(entityContainer, false);
+            MoveToCellsVisual(occupiedCells);
+
+            // force layout and retry so placement is stable
+            if (gridRect != null)
+            {
+                LayoutRebuilder.ForceRebuildLayoutImmediate(gridRect);
+                yield return null;
+                MoveToCellsVisual(occupiedCells);
+            }
+        }
+
+        // ensure NPC doesn't block raycasts
+        var cg = GetComponent<CanvasGroup>();
+        if (cg == null) cg = gameObject.AddComponent<CanvasGroup>();
+        cg.blocksRaycasts = false;
+
+        yield break;
+    }
+
+    private RectTransform FindSharedEntityContainer()
+    {
+        // Prefer a PlayerContainer if present
+        var playerContainerGo = GameObject.Find("PlayerContainer");
+        if (playerContainerGo != null)
+            return playerContainerGo.GetComponent<RectTransform>();
+
+        // Fallback to existing NPCContainer
+        var npcContainerGo = GameObject.Find("NPCContainer");
+        if (npcContainerGo != null)
+            return npcContainerGo.GetComponent<RectTransform>();
+
+        // If PlayerController exposes a known object, try to inspect it
+        var pc = FindAnyObjectByType<PlayerController>();
+        if (pc != null && pc.playerObject != null)
+        {
+            // try parent container of player object
+            var rt = pc.playerObject.GetComponent<RectTransform>();
+            if (rt != null && rt.parent != null)
+                return rt.parent as RectTransform;
+        }
+
+        return null;
     }
 
     private void OnPlayerMoved()
@@ -165,6 +268,9 @@ public class NPCMover : MonoBehaviour
             case NPCType.RandomDirection:
                 RandomDirectionStep();
                 break;
+            case NPCType.Idle:
+                // do nothing
+                break;
         }
     }
 
@@ -181,8 +287,17 @@ public class NPCMover : MonoBehaviour
         int nextR = currentRow + dirVec.y;
         int nextC = currentColumn + dirVec.x;
 
+        // when length > 1, ensure the target span is walkable as a whole
         var nextCell = GetCell(nextR, nextC);
-        if (nextCell == null || !nextCell.isEmpty)
+        bool spanWalkable = true;
+        if (length > 1)
+        {
+            // check second cell in same direction
+            var second = GetCell(nextR + dirVec.y, nextC + dirVec.x);
+            if (second == null || !second.IsWalkableForNPC())
+                spanWalkable = false;
+        }
+        if (nextCell == null || !nextCell.IsWalkableForNPC() || !spanWalkable)
         {
             // hit wall or obstacle -> reverse direction and reset steps
             dirVec = -dirVec;
@@ -215,7 +330,14 @@ public class NPCMover : MonoBehaviour
         int nextR = currentRow + dirVec.y;
         int nextC = currentColumn + dirVec.x;
         var nextCell = GetCell(nextR, nextC);
-        if (nextCell == null || !nextCell.isEmpty)
+        bool spanWalkable = true;
+        if (length > 1)
+        {
+            var second = GetCell(nextR + dirVec.y, nextC + dirVec.x);
+            if (second == null || !second.IsWalkableForNPC())
+                spanWalkable = false;
+        }
+        if (nextCell == null || !nextCell.IsWalkableForNPC() || !spanWalkable)
         {
             // pick a different random direction next time
             dirVec = DirectionToVec((Direction)UnityEngine.Random.Range(0, 4));
@@ -229,31 +351,28 @@ public class NPCMover : MonoBehaviour
 
     private void MoveTo(int r, int c)
     {
-        var currentCell = GetCell(currentRow, currentColumn);
-        var target = GetCell(r, c);
-        if (target == null || !target.isEmpty)
+        // moving from current span to new span; clear old occupied cells then set new ones
+        ClearOccupiedCells();
+        bool success = SetOccupiedCellsForPosition(r, c);
+        if (!success)
+        {
+            // failed to occupy new span (blocked), do not update position
+            // restore previous occupancy to be safe
+            SetOccupiedCellsForPosition(currentRow, currentColumn);
             return;
+        }
 
-        if (currentCell != null)
-            currentCell.SetOccupiedByNPC(false);
-        target.SetOccupiedByNPC(true);
+        bool hitPlayer = occupiedCells.Exists(x => x != null && x.occupiedByPlayer);
 
         currentRow = r;
         currentColumn = c;
 
-        MoveToCellVisual(target);
-        // debug collision check with player RectTransform using CollisionDebug
-        var pc = FindAnyObjectByType<PlayerController>();
-        if (pc != null && pc.playerObject != null)
+        Debug.Log($"NPCMover.MoveTo: NPC moved to ({r},{c})");
+        MoveToCellsVisual(occupiedCells);
+
+        if (hitPlayer)
         {
-            var playerRt = pc.playerObject.GetComponent<RectTransform>();
-            if (playerRt != null && rectTransform != null)
-            {
-                if (CollisionDebug.RectsOverlap(rectTransform, playerRt))
-                {
-                    Debug.Log($"NPCMover: NPC at ({r},{c}) COLLIDES with player at ({pc.startRow},{pc.startColumn})");
-                }
-            }
+            Debug.Log("NPCMover: NPC entered player cell - PLAYER LOSE");
         }
     }
 
@@ -316,6 +435,96 @@ public class NPCMover : MonoBehaviour
         }
 
         return null;
+    }
+
+    // --- multi-cell occupancy helpers ---
+    private bool SetOccupiedCellsForPosition(int baseRow, int baseCol)
+    {
+        ClearOccupiedCells();
+        occupiedCells.Clear();
+
+        // gather cells along dirVec for length (length==1 uses only base cell)
+        Vector2Int forward = dirVec;
+        // if dirVec is zero (not set), default to Right to compute span
+        if (forward == Vector2Int.zero) forward = Vector2Int.right;
+
+        for (int i = 0; i < length; i++)
+        {
+            int r = baseRow + forward.y * i;
+            int c = baseCol + forward.x * i;
+            var cell = GetCell(r, c);
+            if (cell == null || !cell.IsWalkableForNPC())
+            {
+                // roll back
+                foreach (var oc in occupiedCells)
+                    if (oc != null) oc.SetOccupiedByNPC(false);
+                occupiedCells.Clear();
+                return false;
+            }
+            occupiedCells.Add(cell);
+            cell.SetOccupiedByNPC(true);
+        }
+
+        return true;
+    }
+
+    private void ClearOccupiedCells()
+    {
+        if (occupiedCells == null) return;
+        foreach (var c in occupiedCells)
+            if (c != null) c.SetOccupiedByNPC(false);
+        occupiedCells.Clear();
+    }
+
+    private void MoveToCellsVisual(List<GridCell> cells)
+    {
+        if (cells == null || cells.Count == 0) return;
+
+        // compute world bounds covering all cells
+        RectTransform boardRt = boardGenerator.boardRect;
+        if (boardRt == null) return;
+
+        Vector3 min = Vector3.one * float.MaxValue;
+        Vector3 max = Vector3.one * float.MinValue;
+        for (int i = 0; i < cells.Count; i++)
+        {
+            var rt = cells[i].GetComponent<RectTransform>();
+            if (rt == null) continue;
+            Vector3[] corners = new Vector3[4];
+            rt.GetWorldCorners(corners);
+            for (int j = 0; j < 4; j++)
+            {
+                min = Vector3.Min(min, corners[j]);
+                max = Vector3.Max(max, corners[j]);
+            }
+        }
+
+        // midpoint in world space
+        Vector3 worldCenter = (min + max) * 0.5f;
+
+        // convert to entityContainer local space (entityContainer should be parent)
+        if (entityContainer == null)
+            entityContainer = rectTransform.parent as RectTransform;
+        if (entityContainer == null)
+            entityContainer = FindSharedEntityContainer();
+        if (entityContainer == null) return;
+
+        Vector3 localCenter = entityContainer.InverseTransformPoint(worldCenter);
+
+        // set transform under entityContainer
+        rectTransform.SetParent(entityContainer, false);
+        rectTransform.anchorMin = new Vector2(0.5f, 0.5f);
+        rectTransform.anchorMax = new Vector2(0.5f, 0.5f);
+        rectTransform.pivot = new Vector2(0.5f, 0.5f);
+        rectTransform.localPosition = new Vector3(localCenter.x, localCenter.y, 0);
+
+        // compute desired size in world space then convert to local sizeDelta accounting for lossyScale
+        Vector3 worldSize = max - min;
+        Vector2 desiredSize = new Vector2(Mathf.Abs(worldSize.x), Mathf.Abs(worldSize.y));
+        Vector3 ls = entityContainer.lossyScale;
+        Vector2 sizeDelta = new Vector2(desiredSize.x / (Mathf.Approximately(ls.x, 0f) ? 1f : ls.x), desiredSize.y / (Mathf.Approximately(ls.y, 0f) ? 1f : ls.y));
+        rectTransform.sizeDelta = sizeDelta;
+        rectTransform.SetAsLastSibling();
     }
 
     private Vector2Int DirectionToVec(Direction d)
