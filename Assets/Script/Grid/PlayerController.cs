@@ -8,6 +8,7 @@ using System;
 public class PlayerController : MonoBehaviour
 {
     public static event Action OnPlayerStep;
+    private static PlayerController s_instance;
     public BoardGenerator boardGenerator;
     public GameObject playerObject; // UI object representing player
     [Tooltip("Optional container transform to host the player (must NOT be the GridLayoutGroup transform). If empty, one will be created as a sibling of the boardRect.")]
@@ -23,13 +24,27 @@ public class PlayerController : MonoBehaviour
 
     private int currentRow;
     private int currentColumn;
+    private bool hasPlaced = false;
+    private bool isInitialPlacement = false;  // Flag to track if this is the initial placement from InitializeAndPlace()
 
     private List<GridCell> highlighted = new List<GridCell>();
 
     private void Start()
     {
+        // Enforce a single PlayerController instance. If another exists, destroy this one to avoid duplicate placement logic.
+        if (s_instance != null && s_instance != this)
+        {
+            Debug.LogWarning($"PlayerController: another instance already exists ({s_instance.gameObject.name}). Destroying duplicate ({gameObject.name}).");
+            if (Application.isPlaying)
+                Destroy(this.gameObject);
+            else
+                DestroyImmediate(this.gameObject);
+            return;
+        }
+        s_instance = this;
         if (boardGenerator == null)
-            Debug.LogError("PlayerController needs a reference to BoardGenerator.");
+            //Debug.LogError("PlayerController needs a reference to BoardGenerator.");
+            boardGenerator = FindAnyObjectByType<BoardGenerator>();
 
         if (playerObject == null)
             Debug.LogError("Assign playerObject (UI) to PlayerController.");
@@ -159,16 +174,25 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // make sure playerContainer aligns with boardRect
+        // Ensure playerContainer is perfectly aligned with boardRect: same parent, position, size, and anchors.
+        // This guarantees InverseTransformPoint in MovePlayerObjectToTarget produces correct coordinates.
         if (playerContainer != null && boardGenerator != null && boardGenerator.boardRect != null)
         {
-            playerContainer.anchoredPosition = boardGenerator.boardRect.anchoredPosition;
-            playerContainer.sizeDelta = boardGenerator.boardRect.sizeDelta;
+            var br = boardGenerator.boardRect;
+            playerContainer.SetParent(br.parent, false);  // must be sibling of boardRect
+            playerContainer.anchorMin = br.anchorMin;
+            playerContainer.anchorMax = br.anchorMax;
+            playerContainer.pivot = br.pivot;
+            playerContainer.anchoredPosition = br.anchoredPosition;
+            playerContainer.sizeDelta = br.sizeDelta;
+            playerContainer.localRotation = br.localRotation;
             playerContainer.localScale = Vector3.one;
         }
 
-        InitializeGrid();
+        // Grid is already initialized above (line 78), no need to re-initialize
+        isInitialPlacement = true;  // Mark this as initial placement
         PlaceAt(r, c);
+        isInitialPlacement = false;
     }
 
     // Position player object without making it a child of the GridLayoutGroup.
@@ -181,31 +205,42 @@ public class PlayerController : MonoBehaviour
 
         RectTransform playerRt = playerObject.GetComponent<RectTransform>();
         RectTransform targetRt = target.GetComponent<RectTransform>();
-        // If player is UI and we have a playerContainer, position relative to that container using Canvas-aware conversion
+        RectTransform boardRt = boardGenerator != null ? boardGenerator.boardRect : null;
+
+        // If player is UI and we have a playerContainer, position relative to that container
         if (playerRt != null && playerContainer != null)
         {
-            // ensure player rect uses centered anchors so anchoredPosition maps to center
+            // Ensure player rect uses centered anchors so localPosition maps to center
             playerRt.anchorMin = new Vector2(0.5f, 0.5f);
             playerRt.anchorMax = new Vector2(0.5f, 0.5f);
             playerRt.pivot = new Vector2(0.5f, 0.5f);
 
-            // find canvas and camera
-            Canvas canvas = playerContainer.GetComponentInParent<Canvas>();
-            Camera cam = null;
-            if (canvas != null && canvas.renderMode != RenderMode.ScreenSpaceOverlay)
-                cam = canvas.worldCamera;
+            // Compute target world position
+            Vector3 worldCenter = (targetRt != null) ? targetRt.position : target.transform.position;
 
-            Vector2 screenPoint = RectTransformUtility.WorldToScreenPoint(cam, (targetRt != null) ? targetRt.position : target.transform.position);
-            Vector2 localPoint;
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(playerContainer, screenPoint, cam, out localPoint);
-            playerRt.anchoredPosition = localPoint;
-            Debug.Log($"MovePlayerObjectToTarget: target=({target.row},{target.column}) screenPoint={screenPoint} localPoint={localPoint} anchoredPos={playerRt.anchoredPosition}");
-            // ensure player is rendered above cells
+            // CRITICAL: Convert world position to playerContainer's local space
+            // PlayerContainer should be aligned with boardRect (same parent, position, size)
+            Vector3 localInContainer = playerContainer.InverseTransformPoint(worldCenter);
+
+            // Parent under container and set local position
+            playerRt.SetParent(playerContainer, false);
+            playerRt.localPosition = new Vector3(localInContainer.x, localInContainer.y, 0f);
+
+            Debug.Log($"MovePlayerObjectToTarget: cell=({target.row},{target.column}) world={worldCenter:F2} localInContainer={localInContainer:F2} playerRt.localPos={playerRt.localPosition:F2}");
+
+            // Also log boardRect and playerContainer alignment for debugging
+            if (boardRt != null)
+            {
+                Debug.Log($"  boardRect: pos={boardRt.anchoredPosition:F2} size={boardRt.sizeDelta:F2}");
+                Debug.Log($"  playerContainer: pos={playerContainer.anchoredPosition:F2} size={playerContainer.sizeDelta:F2}");
+            }
+
+            // Ensure player is rendered above cells
             playerRt.SetAsLastSibling();
             return;
         }
 
-        // Otherwise, place as a world object
+        // Otherwise, place as a world object (non-UI)
         playerObject.transform.position = target.transform.position;
     }
 
@@ -298,6 +333,25 @@ public class PlayerController : MonoBehaviour
 
     private void PlaceAt(int r, int c)
     {
+        // Ensure grid is initialized
+        InitializeGrid();
+
+        // Only clear other player occupancy if this is NOT the initial placement from InitializeAndPlace.
+        // During initial placement, we trust LevelManager's setup.
+        if (!isInitialPlacement && cells != null)
+        {
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    var cc = cells[i, j];
+                    if (cc == null) continue;
+                    if (i == r && j == c) continue;
+                    if (cc.occupiedByPlayer) cc.SetOccupiedByPlayer(false);
+                }
+            }
+        }
+
         currentRow = r;
         currentColumn = c;
 
@@ -309,6 +363,30 @@ public class PlayerController : MonoBehaviour
             MovePlayerObjectToTarget(target);
         }
 
+        hasPlaced = true;
+
+        UpdateHighlights();
+
+        // Sanity check: ensure only one cell is marked as occupiedByPlayer. If multiple, log diagnostic info.
+        if (cells != null && !isInitialPlacement)
+        {
+            int found = 0;
+            for (int i = 0; i < rows; i++)
+                for (int j = 0; j < columns; j++)
+                {
+                    var cc = cells[i, j];
+                    if (cc != null && cc.occupiedByPlayer) found++;
+                }
+            if (found > 1)
+            {
+                Debug.LogWarning($"PlayerController.PlaceAt: multiple cells ({found}) marked occupiedByPlayer after placing at ({r},{c}). This may indicate duplicate PlayerControllers or stale cell state.");
+            }
+        }
+    }
+
+    // Public helper to allow external callers (e.g. NPCMover) to request the player highlight refresh
+    public void RefreshHighlights()
+    {
         UpdateHighlights();
     }
 

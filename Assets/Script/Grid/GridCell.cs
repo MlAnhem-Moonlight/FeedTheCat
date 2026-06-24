@@ -194,4 +194,17 @@ public class GridCell : MonoBehaviour, IPointerClickHandler
         //    }
         //}
     }
+
+    // Public method to refresh cell occupancy status and visual.
+    // Called at the end of each turn to verify and update cell state.
+    public void RefreshOccupancy()
+    {
+        // Recalculate isEmpty based on current occupancy flags
+        isEmpty = !(occupiedByPlayer || occupiedByNPC);
+
+        // Refresh visual to match current state
+        ApplyStateVisual();
+
+        Debug.Log($"GridCell.RefreshOccupancy: cell({row},{column}) isEmpty={isEmpty} occupiedByPlayer={occupiedByPlayer} occupiedByNPC={occupiedByNPC}");
+    }
 }

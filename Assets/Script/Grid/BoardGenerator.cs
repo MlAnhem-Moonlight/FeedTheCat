@@ -204,4 +204,26 @@ public class BoardGenerator : MonoBehaviour
 
         return new Vector2(desiredSize.x / sx, desiredSize.y / sy);
     }
+
+    // Public helper to refresh all cells' occupancy state and visuals at the end of a turn.
+    // Called after player move + NPC moves to ensure all cell visuals are synced with their occupancy flags.
+    [ContextMenu("Refresh All Cells Occupancy")]
+    public void RefreshAllCells()
+    {
+        if (grid == null)
+            return;
+
+        int childCount = grid.transform.childCount;
+        Debug.Log($"BoardGenerator.RefreshAllCells: refreshing {childCount} cells");
+
+        for (int i = 0; i < childCount; i++)
+        {
+            var child = grid.transform.GetChild(i);
+            var cell = child.GetComponent<GridCell>();
+            if (cell != null)
+                cell.RefreshOccupancy();
+        }
+
+        Debug.Log("BoardGenerator.RefreshAllCells: complete");
+    }
 }

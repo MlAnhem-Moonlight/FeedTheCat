@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 public class LevelManager : MonoBehaviour
 {
     public BoardGenerator boardGenerator;
     public PlayerController playerController;
     public List<GameObject> npcPrefabs = new List<GameObject>();
+    [Tooltip("Player prefab to spawn when applying level (optional). If empty, playerController.playerObject will be used.)")]
+    public GameObject playerPrefab;
 
     [Tooltip("Level asset (ScriptableObject) to apply")]
     public LevelData level;
@@ -144,12 +149,42 @@ public class LevelManager : MonoBehaviour
                     var c = GetCell(d.x, d.y);
                     if (c != null)
                     {
-                        c.isDestination = true;
+                        c.SetDestination(true);
                     }
                     else
                         Debug.LogWarning($"LevelManager: destination cell out of bounds ({d.x},{d.y})");
                 }
             }
+            // ensure a single shared NPCContainer exists so NPCs don't each create their own
+            RectTransform sharedNpcContainer = null;
+            var foundNpc = GameObject.Find("NPCContainer");
+            if (foundNpc != null)
+                sharedNpcContainer = foundNpc.GetComponent<RectTransform>();
+            else
+            {
+                Transform parentForNpcContainer = boardGenerator != null && boardGenerator.boardRect != null ? boardGenerator.boardRect.parent : (boardGenerator != null ? boardGenerator.transform : null);
+                var npcGo = new GameObject("NPCContainer", typeof(RectTransform));
+                sharedNpcContainer = npcGo.GetComponent<RectTransform>();
+                if (parentForNpcContainer != null)
+                    sharedNpcContainer.SetParent(parentForNpcContainer, false);
+                else if (boardGenerator != null)
+                    sharedNpcContainer.SetParent(boardGenerator.transform, false);
+
+                if (boardGenerator != null && boardGenerator.boardRect != null)
+                {
+                    var br = boardGenerator.boardRect;
+                    sharedNpcContainer.anchorMin = br.anchorMin;
+                    sharedNpcContainer.anchorMax = br.anchorMax;
+                    sharedNpcContainer.pivot = br.pivot;
+                    sharedNpcContainer.sizeDelta = br.sizeDelta;
+                    sharedNpcContainer.localScale = Vector3.one;
+                    sharedNpcContainer.anchoredPosition = br.anchoredPosition;
+                    sharedNpcContainer.localRotation = br.localRotation;
+                    sharedNpcContainer.localPosition = br.localPosition;
+                    sharedNpcContainer.SetAsLastSibling();
+                }
+            }
+
             // spawn NPCs. Use prefabIndex when valid; otherwise fall back to npcPrefabs order.
             int spawnCounter = 0;
             if (level.npcs == null || level.npcs.Count == 0)
@@ -184,15 +219,11 @@ public class LevelManager : MonoBehaviour
                     mover.boardGenerator = boardGenerator;
                     mover.startRow = def.row;
                     mover.startColumn = def.column;
-                    //mover.length = Mathf.Max(1, def.length);
-                    //mover.type = def.type;
-                    //mover.initialDirection = def.initialDirection;
-                    //mover.fixedSteps = def.fixedSteps;
-                    //mover.minRandomSteps = def.minRandomSteps;
-                    //mover.maxRandomSteps = def.maxRandomSteps;
 
-                    // prefer using playerController's container so overlays match
-                    if (playerController != null)
+                    // give mover the shared NPC container so all NPCs use one parent
+                    if (sharedNpcContainer != null)
+                        mover.overrideContainer = sharedNpcContainer;
+                    else if (playerController != null)
                         mover.overrideContainer = playerController.playerContainer;
                 }
                 go.SetActive(true);
@@ -202,12 +233,238 @@ public class LevelManager : MonoBehaviour
             }
 
             // set player start and place
+            if (playerController == null)
+            {
+                // create a runtime PlayerController if none assigned so player can be spawned
+                Debug.LogWarning("LevelManager: playerController was null — creating runtime PlayerController.");
+                var pcGo = new GameObject("PlayerController_Runtime", typeof(PlayerController));
+                var pc = pcGo.GetComponent<PlayerController>();
+                pc.boardGenerator = boardGenerator;
+                playerController = pc;
+            }
+
             if (playerController != null)
             {
-                playerController.startRow = level.playerStart.x;
-                playerController.startColumn = level.playerStart.y;
-                playerController.PlacePlayerAt(level.playerStart.x, level.playerStart.y);
-            }
+                    Debug.Log($"LevelManager: preparing player spawn. playerPrefab={(playerPrefab!=null?playerPrefab.name:"<none>")}, existingPlayerObject={(playerController.playerObject!=null?playerController.playerObject.name:"<none>")}");
+                    // spawn or assign player prefab
+                    if (playerPrefab != null)
+                    {
+                        // destroy existing runtime playerObject if present
+                        if (playerController.playerObject != null)
+                        {
+                            Destroy(playerController.playerObject);
+                            playerController.playerObject = null;
+                        }
+
+                    bool prefabHasController = playerPrefab.GetComponent<PlayerController>() != null;
+                    if (prefabHasController && playerController != null)
+                    {
+                        Debug.Log("LevelManager: Prefab has PlayerController; destroying existing runtime PlayerController before instantiating prefab.");
+                        // When called from the editor (edit-time), prefer DestroyImmediate and clear selection
+                        if (!Application.isPlaying)
+                        {
+#if UNITY_EDITOR
+                            DestroyImmediate(playerController.gameObject);
+                            // Clear selection to avoid Editor Inspectors holding a reference to the destroyed object
+                            Selection.objects = new UnityEngine.Object[0];
+                            Selection.activeObject = null;
+#else
+                            DestroyImmediate(playerController.gameObject);
+#endif
+                        }
+                        else
+                        {
+                            Destroy(playerController.gameObject);
+                        }
+                        playerController = null;
+                    }
+
+                    var playerInstance = Instantiate(playerPrefab);
+                    playerInstance.SetActive(false);
+                    // if the prefab contains a PlayerController component on the instantiated object, use it
+                    var prefabPc = playerInstance.GetComponent<PlayerController>();
+                    if (prefabPc != null)
+                    {
+                        Debug.Log($"LevelManager: Player prefab contains PlayerController component ({playerInstance.name}). Using prefab controller.");
+                        playerController = prefabPc;
+                        if (playerController.boardGenerator == null)
+                            playerController.boardGenerator = boardGenerator;
+                        if (playerController.playerObject == null)
+                            playerController.playerObject = playerInstance;
+                        // don't perform manual parenting/size here; let the prefab controller handle initialization
+                    }
+                    else
+                    {
+                        // assign to existing controller as the visual object
+                        if (playerController == null)
+                        {
+                            // create runtime controller if missing
+                            var pcGo = new GameObject("PlayerController_Runtime", typeof(PlayerController));
+                            playerController = pcGo.GetComponent<PlayerController>();
+                            playerController.boardGenerator = boardGenerator;
+                        }
+                        playerController.playerObject = playerInstance;
+                        // parent and prepare will be handled below as before
+                    }
+                    Debug.Log($"LevelManager: Spawned player prefab instance {playerInstance.name}");
+
+                        // ensure a playerContainer exists and is properly aligned with boardRect
+                        if (playerController.playerContainer == null)
+                        {
+                            var br = boardGenerator != null ? boardGenerator.boardRect : null;
+                            Transform parentForContainer = br != null && br.parent != null ? br.parent : (boardGenerator != null ? boardGenerator.transform : null);
+
+                            var goCont = new GameObject("PlayerContainer", typeof(RectTransform));
+                            var rt = goCont.GetComponent<RectTransform>();
+                            if (parentForContainer != null)
+                                rt.SetParent(parentForContainer, false);
+                            else if (boardGenerator != null)
+                                rt.SetParent(boardGenerator.transform, false);
+
+                            // Perfectly align playerContainer with boardRect so InverseTransformPoint works correctly
+                            if (br != null)
+                            {
+                                rt.anchorMin = br.anchorMin;
+                                rt.anchorMax = br.anchorMax;
+                                rt.pivot = br.pivot;
+                                rt.anchoredPosition = br.anchoredPosition;
+                                rt.sizeDelta = br.sizeDelta;
+                                rt.localRotation = br.localRotation;
+                                rt.localScale = Vector3.one;
+                                rt.SetAsLastSibling();  // place above boardRect in hierarchy
+                            }
+
+                            playerController.playerContainer = rt;
+                        }
+
+                        // parent player under container and disable raycast blocking
+                        var prt = playerController.playerObject.GetComponent<RectTransform>();
+                        if (prt != null && playerController.playerContainer != null)
+                        {
+                            prt.SetParent(playerController.playerContainer, false);
+                            var cg = playerController.playerObject.GetComponent<CanvasGroup>();
+                            if (cg == null) cg = playerController.playerObject.AddComponent<CanvasGroup>();
+                            cg.blocksRaycasts = false;
+                        }
+
+                        playerController.playerObject.SetActive(true);
+                    }
+
+                    // ensure we have a player object to place
+                    if (playerController.playerObject == null)
+                    {
+                        Debug.LogWarning("LevelManager: no playerPrefab assigned and playerController.playerObject is null. Creating runtime placeholder player.");
+                        var placeholder = new GameObject("Player_Placeholder", typeof(RectTransform), typeof(CanvasRenderer), typeof(UnityEngine.UI.Image));
+                        var img = placeholder.GetComponent<UnityEngine.UI.Image>();
+                        img.color = Color.cyan;
+                        // parent under playerContainer
+                        if (playerController.playerContainer == null)
+                        {
+                            var br = boardGenerator != null ? boardGenerator.boardRect : null;
+                            Transform parentForContainer = br != null && br.parent != null ? br.parent : (boardGenerator != null ? boardGenerator.transform : null);
+
+                            var goCont = new GameObject("PlayerContainer", typeof(RectTransform));
+                            var rt = goCont.GetComponent<RectTransform>();
+                            if (parentForContainer != null)
+                                rt.SetParent(parentForContainer, false);
+                            else if (boardGenerator != null)
+                                rt.SetParent(boardGenerator.transform, false);
+
+                            // Perfectly align playerContainer with boardRect so InverseTransformPoint works correctly
+                            if (br != null)
+                            {
+                                rt.anchorMin = br.anchorMin;
+                                rt.anchorMax = br.anchorMax;
+                                rt.pivot = br.pivot;
+                                rt.anchoredPosition = br.anchoredPosition;
+                                rt.sizeDelta = br.sizeDelta;
+                                rt.localRotation = br.localRotation;
+                                rt.localScale = Vector3.one;
+                                rt.SetAsLastSibling();  // place above boardRect in hierarchy
+                            }
+
+                            playerController.playerContainer = rt;
+                        }
+
+                        var prt = placeholder.GetComponent<RectTransform>();
+                        if (prt != null && playerController.playerContainer != null)
+                        {
+                            prt.SetParent(playerController.playerContainer, false);
+                            var cg = placeholder.GetComponent<CanvasGroup>();
+                            if (cg == null) cg = placeholder.AddComponent<CanvasGroup>();
+                            cg.blocksRaycasts = false;
+                        }
+
+                        playerController.playerObject = placeholder;
+                        Debug.Log("LevelManager: Created Player_Placeholder at runtime");
+                    }
+
+                    // Interpret level.playerStart as (x=row, y=column). If the provided values are out of bounds
+                    // try swapping them (common UI confusion between X/Y and Row/Column).
+                    int desiredRow = level.playerStart.x;
+                    int desiredCol = level.playerStart.y;
+                    int maxRows = boardGenerator != null ? boardGenerator.rows : 0;
+                    int maxCols = boardGenerator != null ? boardGenerator.columns : 0;
+
+                    if ((desiredRow < 0 || desiredRow >= maxRows || desiredCol < 0 || desiredCol >= maxCols)
+                        && (level.playerStart.y >= 0 && level.playerStart.y < maxRows && level.playerStart.x >= 0 && level.playerStart.x < maxCols))
+                    {
+                        Debug.LogWarning($"LevelManager: playerStart appears swapped in LevelData. Swapping coordinates ({level.playerStart.x},{level.playerStart.y}) -> ({level.playerStart.y},{level.playerStart.x}).");
+                        // swap
+                        int tmp = desiredRow;
+                        desiredRow = desiredCol;
+                        desiredCol = tmp;
+                    }
+
+                    // clamp to valid ranges
+                    if (maxRows > 0) desiredRow = Mathf.Clamp(desiredRow, 0, Mathf.Max(0, maxRows - 1));
+                    if (maxCols > 0) desiredCol = Mathf.Clamp(desiredCol, 0, Mathf.Max(0, maxCols - 1));
+
+                    // Set player start position on PlayerController.
+                    // PlayerController.InitializeAndPlace() will use these values to place the player.
+                    // Do NOT call PlacePlayerAt() here to avoid duplicate placement!
+                    playerController.startRow = desiredRow;
+                    playerController.startColumn = desiredCol;
+                    Debug.Log($"LevelManager: Set player start to ({desiredRow},{desiredCol}). PlayerController.InitializeAndPlace() will place it.");
+
+                    // Verify placement will happen (log expected cell)
+                    var expectedCell = GetCell(desiredRow, desiredCol);
+                    if (expectedCell != null)
+                    {
+                        Debug.Log($"LevelManager: Expected player placement at ({desiredRow},{desiredCol}). Cell isEmpty={expectedCell.isEmpty}");
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"LevelManager: Expected player placement cell out of bounds ({desiredRow},{desiredCol})");
+                    }
+
+                    // scale player to match cell size if possible
+                    if (playerController.playerObject != null)
+                    {
+                        var targetCell = GetCell(desiredRow, desiredCol);
+                        if (targetCell != null)
+                        {
+                            var targetRt = targetCell.GetComponent<RectTransform>();
+                            var playerRt = playerController.playerObject.GetComponent<RectTransform>();
+                            var container = playerController.playerContainer;
+                            if (targetRt != null && playerRt != null && container != null)
+                            {
+                                // compute desired size from target cell rect (world size)
+                                Vector3[] corners = new Vector3[4];
+                                targetRt.GetWorldCorners(corners);
+                                Vector3 min = corners[0];
+                                Vector3 max = corners[2];
+                                Vector2 worldSize = new Vector2(Mathf.Abs(max.x - min.x), Mathf.Abs(max.y - min.y));
+                                Vector3 ls = container.lossyScale;
+                                Vector2 sizeDelta = new Vector2(worldSize.x / (Mathf.Approximately(ls.x, 0f) ? 1f : ls.x), worldSize.y / (Mathf.Approximately(ls.y, 0f) ? 1f : ls.y));
+                                playerRt.sizeDelta = sizeDelta;
+                            }
+                        }
+                    }
+
+                    // ensure playerController references the spawned object
+                    // (playerController.playerObject already set above)
+                }
         }
 
         yield break;
