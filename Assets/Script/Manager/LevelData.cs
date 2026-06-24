@@ -10,6 +10,15 @@ public class NPCDef
     [Tooltip("Index của prefab trong danh sách npcPrefabs")]
     public int prefabIndex = 0;
 
+
+    //public NPCMover.Direction direction;
+    public int seed;
+
+    public int fixedSteps = 3;
+
+    public int minRandomSteps = 1;
+    public int maxRandomSteps = 4;
+
     //public NPCMover.NPCType type = NPCMover.NPCType.PatrolFixed;
     //public NPCMover.Direction initialDirection = NPCMover.Direction.Right;
     //[Tooltip("How many cells the NPC occupies along its facing direction (1 = single, 2 = spans two cells)")]
@@ -28,4 +37,11 @@ public class LevelData : ScriptableObject
     public Vector2Int playerStart = new Vector2Int(0, 0);
     public List<Vector2Int> blockedCells = new List<Vector2Int>();
     public bool hasWon = false;
+}
+
+public enum LevelDifficulty
+{
+    Easy,
+    Medium,
+    Hard
 }
