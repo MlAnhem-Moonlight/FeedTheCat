@@ -81,6 +81,33 @@ public class NPCMover : MonoBehaviour
         StartCoroutine(InitializeAndPlace());
     }
 
+    // Editor helper: log the expected occupied cells for this NPC
+    [ContextMenu("Debug: Log Expected Occupied Cells")]
+    private void DebugLogExpectedCells()
+    {
+        if (boardGenerator == null)
+        {
+            Debug.LogError("NPCMover.DebugLogExpectedCells: boardGenerator is null");
+            return;
+        }
+
+        Vector2Int forward = DirectionToVec(initialDirection);
+        if (forward == Vector2Int.zero) forward = Vector2Int.right;
+
+        Debug.Log($"NPCMover.DebugLogExpectedCells: NPC '{gameObject.name}'");
+        Debug.Log($"  Start Position: ({startRow}, {startColumn})");
+        Debug.Log($"  Type: {type}, Direction: {initialDirection}, Length: {length}");
+        Debug.Log($"  Direction Vector: {forward}");
+        Debug.Log($"  Expected Occupied Cells:");
+
+        for (int i = 0; i < length; i++)
+        {
+            int r = startRow + forward.y * i;
+            int c = startColumn + forward.x * i;
+            Debug.Log($"    Cell #{i}: ({r}, {c})");
+        }
+    }
+
     private void ResetStepsForType()
     {
         switch (type)
@@ -196,7 +223,15 @@ public class NPCMover : MonoBehaviour
 
         // ensure initial occupancy (NPC) for length (may span multiple cells)
         Debug.Log($"NPCMover.InitializeAndPlace: startCell lookup for ({currentRow},{currentColumn})");
-        SetOccupiedCellsForPosition(currentRow, currentColumn);
+        bool occupancySuccess = SetOccupiedCellsForPosition(currentRow, currentColumn);
+
+        if (type == NPCType.Idle)
+        {
+            if (occupancySuccess)
+                Debug.Log($"NPCMover.InitializeAndPlace (Idle): IDLE NPC spawned and occupies {occupiedCells.Count} cell(s)");
+            else
+                Debug.LogWarning($"NPCMover.InitializeAndPlace (Idle): FAILED to set occupancy for IDLE NPC");
+        }
 
         // allow inspector override container
         if (overrideContainer != null)
@@ -446,25 +481,47 @@ public class NPCMover : MonoBehaviour
         // gather cells along dirVec for length (length==1 uses only base cell)
         Vector2Int forward = dirVec;
         // if dirVec is zero (not set), default to Right to compute span
-        if (forward == Vector2Int.zero) forward = Vector2Int.right;
+        if (forward == Vector2Int.zero) 
+        {
+            forward = Vector2Int.right;
+            Debug.LogWarning($"NPCMover.SetOccupiedCellsForPosition: dirVec was zero, defaulting to Right");
+        }
+
+        Debug.Log($"NPCMover.SetOccupiedCellsForPosition: base=({baseRow},{baseCol}) direction={forward} length={length}");
 
         for (int i = 0; i < length; i++)
         {
             int r = baseRow + forward.y * i;
             int c = baseCol + forward.x * i;
+            Debug.Log($"  Cell #{i}: target=({r},{c})");
+
             var cell = GetCell(r, c);
-            if (cell == null || !cell.IsWalkableForNPC())
+            if (cell == null)
             {
+                Debug.LogWarning($"  Cell #{i} at ({r},{c}) is NULL (out of bounds or not found). Rollback!");
                 // roll back
                 foreach (var oc in occupiedCells)
                     if (oc != null) oc.SetOccupiedByNPC(false);
                 occupiedCells.Clear();
                 return false;
             }
+
+            if (!cell.IsWalkableForNPC())
+            {
+                Debug.LogWarning($"  Cell #{i} at ({r},{c}) is NOT walkable (occupied or destination). Rollback!");
+                // roll back
+                foreach (var oc in occupiedCells)
+                    if (oc != null) oc.SetOccupiedByNPC(false);
+                occupiedCells.Clear();
+                return false;
+            }
+
             occupiedCells.Add(cell);
             cell.SetOccupiedByNPC(true);
+            Debug.Log($"  Cell #{i} at ({r},{c}) SET occupiedByNPC=true");
         }
 
+        Debug.Log($"NPCMover.SetOccupiedCellsForPosition: SUCCESS - occupied {occupiedCells.Count} cells");
         return true;
     }
 

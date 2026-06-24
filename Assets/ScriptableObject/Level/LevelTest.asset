@@ -13,16 +13,7 @@ MonoBehaviour:
   m_Name: LevelTest
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: LevelTest
-  npcs:
-  - row: 1
-    column: 4
-    prefabIndex: 1
-  - row: 3
-    column: 2
-    prefabIndex: 1
-  - row: 5
-    column: 1
-    prefabIndex: 2
+  npcs: []
   destinations:
   - {x: 4, y: 0}
   playerStart: {x: 0, y: 0}

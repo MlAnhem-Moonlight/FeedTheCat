@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7007917322356028303}
   - component: {fileID: 823102242256107543}
   m_Layer: 5
-  m_Name: Fat
+  m_Name: FatLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
   startRow: 0
   startColumn: 0
   type: 3
-  initialDirection: 3
+  initialDirection: 2
   length: 2
   fixedSteps: 3
   minRandomSteps: 1

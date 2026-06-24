@@ -228,6 +228,9 @@ MonoBehaviour:
   playerController: {fileID: 0}
   npcPrefabs:
   - {fileID: 1605239258762157744, guid: 2c6fa18fe12646e4bbd08773c9fe0b47, type: 3}
+  - {fileID: 1605239258762157744, guid: 32549ae4556010c40b646d9fed9653a0, type: 3}
+  - {fileID: 1605239258762157744, guid: d3ee6416b0ff6be48bf909e853c68d22, type: 3}
+  - {fileID: 1605239258762157744, guid: 5b89bf381a214b3478e415a6ec04f5b8, type: 3}
   - {fileID: 4909960320921039167, guid: f3807376463e28045a721f512cd7a1d6, type: 3}
   - {fileID: 4909960320921039167, guid: 0eb084f6c22662e438f9c58d6880e53e, type: 3}
   - {fileID: 4321091257587316166, guid: 11567cbb52e6eac43937b188dd66f85a, type: 3}
