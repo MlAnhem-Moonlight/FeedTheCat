@@ -17,6 +17,8 @@ public class MAPElitesGenerator
 
     public void Run(int iterations)
     {
+        int validLevels = 0;
+
         for (int i = 0; i < iterations; i++)
         {
             LevelData level =
@@ -26,12 +28,24 @@ public class MAPElitesGenerator
                 solver.Evaluate(level);
 
             if (!d.solvable)
+            {
+                Object.DestroyImmediate(level);
                 continue;
+            }
 
             archive.TryInsert(
                 level,
                 d);
+
+            validLevels++;
+
+            if (i % 100 == 0 && i > 0)
+            {
+                System.GC.Collect();
+            }
         }
+
+        Debug.Log($"Generated {validLevels} valid levels out of {iterations} iterations");
     }
 
     private LevelData CreateRandomLevel()

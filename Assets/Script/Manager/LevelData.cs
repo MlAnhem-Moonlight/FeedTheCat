@@ -37,6 +37,8 @@ public class LevelData : ScriptableObject
     public Vector2Int playerStart = new Vector2Int(0, 0);
     public List<Vector2Int> blockedCells = new List<Vector2Int>();
     public bool hasWon = false;
+    [Tooltip("If true, level is locked and cannot be played until unlocked")]
+    public bool isLocked = true;
 }
 
 public enum LevelDifficulty

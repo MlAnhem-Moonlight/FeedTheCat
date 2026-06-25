@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9fc8949a001d14b9f12011f2dccc05, type: 3}
+  m_Name: Level_5
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelName: Generated
+  npcs:
+  - row: 3
+    column: 1
+    prefabIndex: 8
+    seed: 1462766109
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 5
+    column: 2
+    prefabIndex: 7
+    seed: -346943833
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 1
+    column: 0
+    prefabIndex: 0
+    seed: 860180266
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 2
+    column: 5
+    prefabIndex: 8
+    seed: 1199997172
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 4
+    column: 3
+    prefabIndex: 0
+    seed: -379167255
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 1
+    column: 0
+    prefabIndex: 6
+    seed: -582057809
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 2
+    column: 0
+    prefabIndex: 8
+    seed: -267906166
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 0
+    column: 5
+    prefabIndex: 7
+    seed: 1437266453
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 5
+    column: 3
+    prefabIndex: 2
+    seed: 286139732
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  destinations:
+  - {x: 3, y: 0}
+  playerStart: {x: 3, y: 5}
+  blockedCells: []
+  hasWon: 0

@@ -8,11 +8,13 @@ public class EnemySimulator
     private const int COLS = 6;
 
     private readonly List<SimNPC> npcs;
+    private readonly List<SimNPC> workingState;
     private SimBoard board;
 
     public EnemySimulator(List<NPCDef> sourceNPCs)
     {
         npcs = new List<SimNPC>();
+        workingState = new List<SimNPC>();
         board = new SimBoard();
 
         foreach (var npc in sourceNPCs)
@@ -23,17 +25,32 @@ public class EnemySimulator
 
     public List<Vector2Int> GetOccupiedCells(int turn)
     {
-        List<SimNPC> state = SimulateUntil(turn);
+        ResetWorkingState();
+
+        for (int t = 0; t < turn; t++)
+        {
+            StepAll(workingState);
+        }
 
         List<Vector2Int> result =
             new List<Vector2Int>();
 
-        foreach (var npc in state)
+        foreach (var npc in workingState)
         {
             AddOccupiedCells(result, npc);
         }
 
         return result;
+    }
+
+    private void ResetWorkingState()
+    {
+        workingState.Clear();
+
+        foreach (var npc in npcs)
+        {
+            workingState.Add(new SimNPC(npc.source));
+        }
     }
 
     public bool[,] BuildDangerGrid(int turn)
@@ -51,32 +68,6 @@ public class EnemySimulator
         }
 
         return danger;
-    }
-
-    private List<SimNPC> SimulateUntil(int targetTurn)
-    {
-        List<SimNPC> state =
-            CloneInitialState();
-
-        for (int t = 0; t < targetTurn; t++)
-        {
-            StepAll(state);
-        }
-
-        return state;
-    }
-
-    private List<SimNPC> CloneInitialState()
-    {
-        List<SimNPC> clone =
-            new List<SimNPC>();
-
-        foreach (var npc in npcs)
-        {
-            clone.Add(new SimNPC(npc.source));
-        }
-
-        return clone;
     }
 
     private void StepAll(
@@ -319,9 +310,13 @@ public class EnemySimulator
         if (!npc.OccupiesTwoCells())
             return;
 
-        board.Occupy(
-            npc.row + npc.dirRow,
-            npc.col + npc.dirCol);
+        int r2 = npc.row + npc.dirRow;
+        int c2 = npc.col + npc.dirCol;
+
+        if (!Inside(r2, c2))
+            return;
+
+        board.Occupy(r2, c2);
     }
 
     private void UnmarkOccupied(
@@ -334,8 +329,12 @@ public class EnemySimulator
         if (!npc.OccupiesTwoCells())
             return;
 
-        board.Release(
-            npc.row + npc.dirRow,
-            npc.col + npc.dirCol);
+        int r2 = npc.row + npc.dirRow;
+        int c2 = npc.col + npc.dirCol;
+
+        if (!Inside(r2, c2))
+            return;
+
+        board.Release(r2, c2);
     }
 }

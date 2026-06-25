@@ -16,7 +16,7 @@ public class BFSSolver
 
     public DifficultyResultBFS Evaluate(
         LevelData level,
-        int maxTurns = 100)
+        int maxTurns = 50)
     {
         DifficultyResultBFS result =
             new DifficultyResultBFS();
@@ -26,23 +26,19 @@ public class BFSSolver
                 level.npcs,
                 maxTurns);
 
-        Queue<BFSState> queue =
-            new Queue<BFSState>();
+        Queue<Vector2Int> queue =
+            new Queue<Vector2Int>();
 
-        HashSet<BFSState> visited =
-            new HashSet<BFSState>();
+        HashSet<Vector2Int>[] visited =
+            new HashSet<Vector2Int>[maxTurns + 1];
 
-        Dictionary<int, int> depthCount =
-            new Dictionary<int, int>();
+        for (int t = 0; t <= maxTurns; t++)
+        {
+            visited[t] = new HashSet<Vector2Int>();
+        }
 
-        BFSState start =
-            new BFSState(
-                level.playerStart.x,
-                level.playerStart.y,
-                0);
-
-        queue.Enqueue(start);
-        visited.Add(start);
+        queue.Enqueue(level.playerStart);
+        visited[0].Add(level.playerStart);
 
         int shortestPath = -1;
         int shortestPathCount = 0;
@@ -52,134 +48,108 @@ public class BFSSolver
         int deadEnds = 0;
         int branchingSum = 0;
 
-        while (queue.Count > 0)
+        for (int turn = 0; turn <= maxTurns; turn++)
         {
-            BFSState current =
-                queue.Dequeue();
+            int queueCountThisTurn = queue.Count;
+            int statesThisTurn = 0;
 
-            reachableStates++;
-
-            bool reachedGoal =
-                IsGoal(
-                    current.row,
-                    current.col,
-                    level);
-
-            if (reachedGoal)
+            for (int i = 0; i < queueCountThisTurn; i++)
             {
-                if (shortestPath < 0)
-                {
-                    shortestPath =
-                        current.turn;
+                Vector2Int current =
+                    queue.Dequeue();
 
-                    shortestPathCount = 1;
-                }
-                else if (
-                    current.turn ==
-                    shortestPath)
-                {
-                    shortestPathCount++;
-                }
+                reachableStates++;
+                statesThisTurn++;
 
-                continue;
-            }
-
-            int validMoves = 0;
-
-            foreach (var move in Moves)
-            {
-                int nr =
-                    current.row +
-                    move.x;
-
-                int nc =
-                    current.col +
-                    move.y;
-
-                int nextTurn =
-                    current.turn + 1;
-
-                if (
-                    nr < 0 ||
-                    nr >= Rows ||
-                    nc < 0 ||
-                    nc >= Cols)
-                {
-                    continue;
-                }
-
-                bool isGoal =
+                bool reachedGoal =
                     IsGoal(
-                        nr,
-                        nc,
+                        current.x,
+                        current.y,
                         level);
 
-                /*
-                 * Goal thắng ngay.
-                 * Không cần check NPC.
-                 */
-                if (isGoal)
+                if (reachedGoal)
                 {
-                    BFSState goalState =
-                        new BFSState(
-                            nr,
-                            nc,
-                            nextTurn);
-
-                    if (
-                        !visited.Contains(
-                            goalState))
+                    if (shortestPath < 0)
                     {
-                        visited.Add(
-                            goalState);
-
-                        queue.Enqueue(
-                            goalState);
-
-                        validMoves++;
+                        shortestPath = turn;
+                        shortestPathCount = 1;
+                    }
+                    else if (turn == shortestPath)
+                    {
+                        shortestPathCount++;
                     }
 
                     continue;
                 }
 
-                /*
-                 * NPC đã di chuyển xong
-                 * ở nextTurn
-                 */
-                if (
-                    danger.IsDanger(
-                        nextTurn,
+                int validMoves = 0;
+
+                foreach (var move in Moves)
+                {
+                    int nr = current.x + move.x;
+                    int nc = current.y + move.y;
+
+                    if (
+                        nr < 0 ||
+                        nr >= Rows ||
+                        nc < 0 ||
+                        nc >= Cols)
+                    {
+                        continue;
+                    }
+
+                    bool isGoal =
+                        IsGoal(nr, nc, level);
+
+                    if (isGoal)
+                    {
+                        if (turn + 1 <= maxTurns)
+                        {
+                            Vector2Int goalPos =
+                                new Vector2Int(nr, nc);
+
+                            if (!visited[turn + 1].Contains(goalPos))
+                            {
+                                visited[turn + 1].Add(goalPos);
+                                queue.Enqueue(goalPos);
+                                validMoves++;
+                            }
+                        }
+
+                        continue;
+                    }
+
+                    if (
+                        danger.IsDanger(
+                        turn + 1,
                         nr,
                         nc))
-                {
-                    continue;
+                    {
+                        continue;
+                    }
+
+                    if (turn + 1 > maxTurns)
+                    {
+                        continue;
+                    }
+
+                    Vector2Int nextPos =
+                        new Vector2Int(nr, nc);
+
+                    if (!visited[turn + 1].Contains(nextPos))
+                    {
+                        visited[turn + 1].Add(nextPos);
+                        queue.Enqueue(nextPos);
+                        validMoves++;
+                    }
                 }
 
-                BFSState next =
-                    new BFSState(
-                        nr,
-                        nc,
-                        nextTurn);
+                branchingSum += validMoves;
 
-                if (
-                    visited.Contains(
-                        next))
+                if (validMoves == 0)
                 {
-                    continue;
+                    deadEnds++;
                 }
-
-                visited.Add(next);
-
-                queue.Enqueue(next);
-
-                validMoves++;
-            }
-
-            branchingSum += validMoves;
-
-            if (validMoves == 0)
-            {
-                deadEnds++;
             }
         }
 

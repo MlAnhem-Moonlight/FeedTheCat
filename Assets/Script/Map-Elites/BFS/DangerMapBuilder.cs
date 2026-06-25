@@ -6,12 +6,14 @@ public class DangerMapBuilder
     public readonly int maxTurns;
 
     private bool[,,] danger;
+    private EnemySimulator simulator;
 
     public DangerMapBuilder(
         List<NPCDef> npcs,
         int maxTurns)
     {
         this.maxTurns = maxTurns;
+        this.simulator = new EnemySimulator(npcs);
 
         danger =
             new bool[
@@ -20,15 +22,11 @@ public class DangerMapBuilder
                 6
             ];
 
-        Build(npcs);
+        Build();
     }
 
-    private void Build(
-        List<NPCDef> npcs)
+    private void Build()
     {
-        EnemySimulator simulator =
-            new EnemySimulator(npcs);
-
         for (int turn = 0;
              turn <= maxTurns;
              turn++)
@@ -106,8 +104,9 @@ public class DangerMapBuilder
 
         return grid;
     }
+
     public int CountDangerCells(
-    int turn)
+        int turn)
     {
         turn =
             Mathf.Clamp(
