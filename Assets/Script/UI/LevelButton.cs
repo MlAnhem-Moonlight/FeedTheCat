@@ -19,10 +19,11 @@ public class LevelButton : MonoBehaviour
     [SerializeField] private Sprite lockedSprite;
 
     [Header("Loading")]
+    // Default scene name should match the Gameplay scene in the project.
     [SerializeField] private string gameplaySceneName = "Gameplay";
     [SerializeField] private CanvasGroup loadingScreenCanvasGroup;
-
-    private LevelData levelData;
+    [Header("Curent level")]
+    [SerializeField] private LevelData levelData;
     private Button button;
 
     private void Start()
@@ -40,6 +41,7 @@ public class LevelButton : MonoBehaviour
     public void SetLevelData(LevelData level)
     {
         levelData = level;
+        LogFilter.LogLevelTransfer($"LevelButton.SetLevelData: assigned level '{level?.levelName}' (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(level)}) to button '{gameObject.name}'");
         UpdateButtonVisuals();
     }
 
@@ -109,18 +111,22 @@ public class LevelButton : MonoBehaviour
         // Show loading screen
         ShowLoadingScreen(true);
 
-        // Find and configure LevelManager
-        LevelManager levelManager = FindAnyObjectByType<LevelManager>();
-        if (levelManager != null)
+        // Prefer to set the requested level via GameManager (centralized intermediary)
+        if (GameManager.Instance != null)
         {
-            levelManager.level = levelData;
+            var canonical = GameManager.Instance.GetCanonicalLevel(levelData);
+            GameManager.Instance.SetCurrentLevelByReference(canonical, true);
+            LogFilter.LogLevelTransfer($"LevelButton -> GameManager queued level '{(canonical!=null?canonical.levelName:"<null>")}' (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(canonical)})");
         }
         else
         {
-            Debug.LogWarning("LevelButton: LevelManager not found in scene!");
+            // Fallback: queue via SceneTransitionManager if GameManager isn't present
+            var toQueue = levelData;
+            SceneTransitionManager.GoToGameplay(toQueue, true);
+            Debug.Log($"LevelButton: GameManager missing, queued level '{toQueue.levelName}' via SceneTransitionManager.");
         }
 
-        // Load gameplay scene
+        // Load gameplay scene (GameManager.OnSceneLoaded will start the level after scene load)
         SceneManager.LoadScene(gameplaySceneName);
     }
 

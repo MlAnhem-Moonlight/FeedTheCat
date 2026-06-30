@@ -50,7 +50,7 @@ public class LevelButtonManager : MonoBehaviour
             SpawnButton(levelsToDisplay[i], i);
         }
 
-        Debug.Log($"LevelButtonManager: Spawned {levelsToDisplay.Count} buttons on this page");
+        // suppressed debug message by global log filter
 
         // Force layout update
         if (pageRect != null)

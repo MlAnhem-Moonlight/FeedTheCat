@@ -9,6 +9,7 @@ using Object = UnityEngine.Object;
 public static class SceneTransitionManager
 {
     private static LevelData nextLevelToLoad;
+    // Default loading scene name should match the actual gameplay scene name used elsewhere
     private static string loadingSceneName = "GamePlay";
 
     /// <summary>
@@ -87,6 +88,14 @@ public static class SceneTransitionManager
     public static LevelData GetNextLevelToLoad()
     {
         return nextLevelToLoad;
+    }
+
+    /// <summary>
+    /// Clear any queued next level. Call this after consuming nextLevelToLoad to avoid stale state.
+    /// </summary>
+    public static void ClearNextLevelToLoad()
+    {
+        nextLevelToLoad = null;
     }
 
     /// <summary>

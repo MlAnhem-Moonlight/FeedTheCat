@@ -124,7 +124,7 @@ public class PageManager : MonoBehaviour
         // Avoid rebuilding if we already built for the same level count
         if (pagesBuilt && allLevels != null && allLevels.Count == lastBuiltLevelCount)
         {
-            Debug.Log("Pages already built for current level set, skipping BuildPages.");
+            // suppressed debug message by global log filter
             return;
         }
 

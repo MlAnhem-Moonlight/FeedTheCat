@@ -29,21 +29,30 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
-        if (applyOnStart && Application.isPlaying)
-        {
-            ApplyLevel();
-            return;
-        }
+        //if (applyOnStart && Application.isPlaying)
+        //{
+        //    ApplyLevel();
+        //    return;
+        //}
 
-        // If we arrived here via SceneTransitionManager.GoToGameplay (using a loading scene)
-        // the next level to load may be stored in the SceneTransitionManager. Ensure the
-        // LevelManager picks it up when the Gameplay scene starts.
-        var next = SceneTransitionManager.GetNextLevelToLoad();
-        if (next != null)
-        {
-            level = next;
-            ApplyLevel();
-        }
+        //// If we arrived here via SceneTransitionManager.GoToGameplay (using a loading scene)
+        //// the next level to load may be stored in the SceneTransitionManager. Ensure the
+        //// LevelManager picks it up when the Gameplay scene starts.
+        //var next = SceneTransitionManager.GetNextLevelToLoad();
+        //if (next != null)
+        //{
+        //    // If a level was queued by SceneTransitionManager, adopt that instance (clear after use)
+        //    level = next;
+        //    SceneTransitionManager.ClearNextLevelToLoad();
+        //    ApplyLevel();
+        //}
+        //else if (GameManager.Instance != null && GameManager.Instance.currentLevel != null)
+        //{
+        //    // If GameManager has a runtime currentLevel (selected from another scene), use it and clear the reference.
+        //    level = GameManager.Instance.currentLevel;
+        //    GameManager.Instance.currentLevel = null;
+        //    ApplyLevel();
+        //}
     }
 
     [ContextMenu("Validate Level Config")]

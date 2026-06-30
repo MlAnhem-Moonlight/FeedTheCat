@@ -139,5 +139,5 @@ MonoBehaviour:
   canvasGroup: {fileID: 0}
   availableSprite: {fileID: 0}
   lockedSprite: {fileID: 0}
-  gameplaySceneName: Gameplay
+  gameplaySceneName: GamePlay
   loadingScreenCanvasGroup: {fileID: -5746377308244270484, guid: c9c142acdddcce2478ec8538dcd3103e, type: 3}
