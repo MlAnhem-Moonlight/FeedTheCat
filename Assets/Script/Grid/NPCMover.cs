@@ -407,6 +407,8 @@ public class NPCMover : MonoBehaviour
 
         if (hitPlayer)
         {
+            GameManager gameManager = FindAnyObjectByType<GameManager>();
+            gameManager?.LoseLevel();
             Debug.Log("NPCMover: NPC entered player cell - PLAYER LOSE");
         }
     }

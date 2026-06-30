@@ -750,94 +750,6 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1 &1059539917
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1059539919}
-  - component: {fileID: 1059539918}
-  - component: {fileID: 1059539920}
-  m_Layer: 0
-  m_Name: System
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1059539918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059539917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 343f59cd8940e2240b5732864b2db64d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SaveManager
---- !u!4 &1059539919
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059539917}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 327.25647, y: 678.8289, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1059539920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1059539917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2dcdf4b8a19fc4cb232182c58dd4eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  allLevels:
-  - {fileID: 11400000, guid: f1801edf805d9bc4a9a4b71d882197be, type: 2}
-  - {fileID: 11400000, guid: 8e6dfd304cecd3641b2eb3cc4781da64, type: 2}
-  - {fileID: 11400000, guid: f499f6d3f7e985f41a34124a90c3ba47, type: 2}
-  - {fileID: 11400000, guid: 09375334413293740a9e01fc108517bc, type: 2}
-  - {fileID: 11400000, guid: a9cb1723927e9e34d9dda361ae24ec05, type: 2}
-  - {fileID: 11400000, guid: 0570d8f7016590140be2246976029384, type: 2}
-  - {fileID: 11400000, guid: 970b732858815df4f9beaac6ca6dbe94, type: 2}
-  - {fileID: 11400000, guid: c841f7f4f952a8f4dbacc9a6dc739d07, type: 2}
-  - {fileID: 11400000, guid: cf5d6d4869609d54d94adad87e24da96, type: 2}
-  - {fileID: 11400000, guid: f2cbed2511dfe024da87ea9c0d16c2ef, type: 2}
-  - {fileID: 11400000, guid: 57b8b616c5fb6744abac6cbe99f59e98, type: 2}
-  - {fileID: 11400000, guid: b5479eb5035319743b3cbdbb5dea2c27, type: 2}
-  - {fileID: 11400000, guid: 9b4b796b17e0a4145b6307c14d149f5c, type: 2}
-  - {fileID: 11400000, guid: 5789fa7fe063113488419fa5cc4390b5, type: 2}
-  - {fileID: 11400000, guid: b9e5abe3ce7d38843acaafa94066883d, type: 2}
-  - {fileID: 11400000, guid: 8dc81a6229d5a294d817673bc35674de, type: 2}
-  - {fileID: 11400000, guid: 51f7cf3e9e7021b41b8c9b09ba19e85e, type: 2}
-  - {fileID: 11400000, guid: 014f929107d4cfa48a02a4bab25db23c, type: 2}
-  - {fileID: 11400000, guid: be313cd779adbe9448aa15f3d71e08c3, type: 2}
-  - {fileID: 11400000, guid: f694c7df6315a61468fd55caf0f8b856, type: 2}
-  - {fileID: 11400000, guid: fc1d5ecbb0552b14dbed3d3fe0501e55, type: 2}
-  - {fileID: 11400000, guid: 39646de7ddccfeb4db805f48d2718eff, type: 2}
-  - {fileID: 11400000, guid: e9775f1553f89a9458b3f7874c96009a, type: 2}
-  - {fileID: 11400000, guid: 55f9fe6f37f4f934e9a80b6c763b8911, type: 2}
-  - {fileID: 11400000, guid: b5b50f4b9a932c442a968fd1ea928ea9, type: 2}
-  - {fileID: 11400000, guid: c2345a88a441f7b4bb8c42a830b1b97e, type: 2}
-  - {fileID: 11400000, guid: f45dda716900312488bd04952e840760, type: 2}
-  - {fileID: 11400000, guid: ed14e0da0f59fb5498cdae3c2a0f5037, type: 2}
-  - {fileID: 11400000, guid: 8c071285be96e1f469f3935884f45f3f, type: 2}
-  - {fileID: 11400000, guid: 9c4d8d03422e6fd48a6070407c316175, type: 2}
 --- !u!1 &1216289309
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216289310}
+  - component: {fileID: 1216289311}
   - component: {fileID: 1216289312}
   m_Layer: 5
   m_Name: Pagination
@@ -874,6 +787,20 @@ RectTransform:
   m_AnchoredPosition: {x: -5.500519, y: 0.25793457}
   m_SizeDelta: {x: -157, y: -0.47998047}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1216289311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216289309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cff19ba98ef11d4ebf2e8cbeb6a4342, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityUIExtensions::UnityEngine.UI.Extensions.PaginationManager
+  m_AllowSwitchOff: 1
+  scrollSnap: {fileID: 1757183845}
 --- !u!114 &1216289312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,7 +1123,6 @@ MonoBehaviour:
   StartingScreen: 0
   PageStep: 1
   Pagination: {fileID: 1216289309}
-  PaginationTogglePrefab: {fileID: 1006960167602316041, guid: 56bcb2f7084ab484c89b3d3e7caf4b54, type: 3}
   PrevButton: {fileID: 1597495065}
   NextButton: {fileID: 1476375036}
   transitionSpeed: 7.5
@@ -1302,10 +1228,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb986557653af294ca74f16f2af40636, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PageManager
-  scrollSnap: {fileID: 1757183845}
+  horizontalScrollSnap: {fileID: 1757183845}
   pagePrefab: {fileID: 8147329865706907466, guid: 6871e6eaa7e76184185c2ab5bcf0eb00, type: 3}
-  allLevels: []
-  levelsPerPage: 20
+  paginationContainer: {fileID: 1216289310}
+  paginationDotPrefab: {fileID: 4685132160598029026, guid: 56bcb2f7084ab484c89b3d3e7caf4b54, type: 3}
+  allLevels:
+  - {fileID: 11400000, guid: f1801edf805d9bc4a9a4b71d882197be, type: 2}
+  - {fileID: 11400000, guid: 8e6dfd304cecd3641b2eb3cc4781da64, type: 2}
+  - {fileID: 11400000, guid: f499f6d3f7e985f41a34124a90c3ba47, type: 2}
+  - {fileID: 11400000, guid: 09375334413293740a9e01fc108517bc, type: 2}
+  - {fileID: 11400000, guid: a9cb1723927e9e34d9dda361ae24ec05, type: 2}
+  - {fileID: 11400000, guid: 0570d8f7016590140be2246976029384, type: 2}
+  - {fileID: 11400000, guid: 970b732858815df4f9beaac6ca6dbe94, type: 2}
+  - {fileID: 11400000, guid: c841f7f4f952a8f4dbacc9a6dc739d07, type: 2}
+  - {fileID: 11400000, guid: cf5d6d4869609d54d94adad87e24da96, type: 2}
+  - {fileID: 11400000, guid: f2cbed2511dfe024da87ea9c0d16c2ef, type: 2}
+  - {fileID: 11400000, guid: 57b8b616c5fb6744abac6cbe99f59e98, type: 2}
+  - {fileID: 11400000, guid: b5479eb5035319743b3cbdbb5dea2c27, type: 2}
+  - {fileID: 11400000, guid: 9b4b796b17e0a4145b6307c14d149f5c, type: 2}
+  - {fileID: 11400000, guid: 5789fa7fe063113488419fa5cc4390b5, type: 2}
+  - {fileID: 11400000, guid: b9e5abe3ce7d38843acaafa94066883d, type: 2}
+  - {fileID: 11400000, guid: 8dc81a6229d5a294d817673bc35674de, type: 2}
+  - {fileID: 11400000, guid: 51f7cf3e9e7021b41b8c9b09ba19e85e, type: 2}
+  - {fileID: 11400000, guid: 014f929107d4cfa48a02a4bab25db23c, type: 2}
+  - {fileID: 11400000, guid: be313cd779adbe9448aa15f3d71e08c3, type: 2}
+  - {fileID: 11400000, guid: f694c7df6315a61468fd55caf0f8b856, type: 2}
+  - {fileID: 11400000, guid: fc1d5ecbb0552b14dbed3d3fe0501e55, type: 2}
+  - {fileID: 11400000, guid: 39646de7ddccfeb4db805f48d2718eff, type: 2}
+  - {fileID: 11400000, guid: e9775f1553f89a9458b3f7874c96009a, type: 2}
+  - {fileID: 11400000, guid: 55f9fe6f37f4f934e9a80b6c763b8911, type: 2}
+  - {fileID: 11400000, guid: b5b50f4b9a932c442a968fd1ea928ea9, type: 2}
+  - {fileID: 11400000, guid: c2345a88a441f7b4bb8c42a830b1b97e, type: 2}
+  - {fileID: 11400000, guid: f45dda716900312488bd04952e840760, type: 2}
+  - {fileID: 11400000, guid: ed14e0da0f59fb5498cdae3c2a0f5037, type: 2}
+  - {fileID: 11400000, guid: 8c071285be96e1f469f3935884f45f3f, type: 2}
+  - {fileID: 11400000, guid: 9c4d8d03422e6fd48a6070407c316175, type: 2}
+  maxLevelsPerPage: 20
+  maxPages: 4
+  levelButtonManagerPrefab: {fileID: 7927353400357459372, guid: 6871e6eaa7e76184185c2ab5bcf0eb00, type: 3}
 --- !u!1 &1757451187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,4 +1713,3 @@ SceneRoots:
   - {fileID: 1050141474}
   - {fileID: 2011935002}
   - {fileID: 202112573}
-  - {fileID: 1059539919}

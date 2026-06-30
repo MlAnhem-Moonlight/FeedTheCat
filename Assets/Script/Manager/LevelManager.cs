@@ -30,7 +30,20 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         if (applyOnStart && Application.isPlaying)
+        {
             ApplyLevel();
+            return;
+        }
+
+        // If we arrived here via SceneTransitionManager.GoToGameplay (using a loading scene)
+        // the next level to load may be stored in the SceneTransitionManager. Ensure the
+        // LevelManager picks it up when the Gameplay scene starts.
+        var next = SceneTransitionManager.GetNextLevelToLoad();
+        if (next != null)
+        {
+            level = next;
+            ApplyLevel();
+        }
     }
 
     [ContextMenu("Validate Level Config")]

@@ -9,7 +9,7 @@ using Object = UnityEngine.Object;
 public static class SceneTransitionManager
 {
     private static LevelData nextLevelToLoad;
-    private static string loadingSceneName = "Loading";
+    private static string loadingSceneName = "GamePlay";
 
     /// <summary>
     /// Transition to level selection scene

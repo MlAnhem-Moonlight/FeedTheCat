@@ -1,245 +1,231 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UI.Extensions;
-using System.Collections.Generic;
 
-/// <summary>
-/// Manages level pages and pagination.
-/// Attach this to the HorizontalScrollSnap container.
-/// Handles creating pages, distributing levels, and managing pagination dots.
-/// </summary>
 public class PageManager : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private HorizontalScrollSnap horizontalScrollSnap;
+    [SerializeField] private HorizontalScrollSnap scrollSnap;
     [SerializeField] private GameObject pagePrefab;
-    [SerializeField] private Transform paginationContainer;
-    [SerializeField] private Toggle paginationDotPrefab;
 
-    [Header("Level Data")]
-    [SerializeField] private List<LevelData> allLevels = new List<LevelData>();
-    [SerializeField] private int maxLevelsPerPage = 6;
-    [SerializeField] private int maxPages = 4;
+    [Header("Level")]
+    [SerializeField] private List<LevelData> allLevels;
+    [SerializeField] private int levelsPerPage = 6;
 
-    [Header("Configuration")]
-    [SerializeField] private LevelButtonManager levelButtonManagerPrefab;
+    private readonly List<GameObject> pages = new();
+    private bool pagesBuilt = false; // guard to prevent duplicate builds
+    private int lastBuiltLevelCount = -1; // remember how many levels were used for the last build
 
-    private List<GameObject> pages = new List<GameObject>();
-    private List<Toggle> paginationDots = new List<Toggle>();
-    private int currentPageIndex = 0;
-
-    private void Start()
+    private void Awake()
     {
-        if (horizontalScrollSnap == null)
-            horizontalScrollSnap = GetComponent<HorizontalScrollSnap>();
-
-        if (horizontalScrollSnap == null)
-        {
-            Debug.LogError("PageManager: HorizontalScrollSnap component not found!");
-            return;
-        }
-
-        InitializePages();
+        if (scrollSnap == null)
+            scrollSnap = GetComponent<HorizontalScrollSnap>();
     }
 
-    /// <summary>
-    /// Initialize pages with level data
-    /// </summary>
-    public void InitializePages()
+    private IEnumerator Start()
     {
-        if (allLevels == null || allLevels.Count == 0)
+        yield return null;
+
+        // Only build pages at Start if level data is already assigned.
+        // When GameManager sets levels on scene load it will call SetLevels and build pages,
+        // so avoid rebuilding here which causes duplicate initialization.
+        if (allLevels != null && allLevels.Count > 0)
         {
-            Debug.LogWarning("PageManager: No level data provided!");
-            return;
-        }
-
-        Debug.Log($"PageManager: Initializing with {allLevels.Count} levels, {maxLevelsPerPage} per page");
-
-        ClearPages();
-
-        int totalPages = Mathf.CeilToInt((float)allLevels.Count / maxLevelsPerPage);
-        totalPages = Mathf.Min(totalPages, maxPages);
-
-        Debug.Log($"PageManager: Calculated {totalPages} pages (limited by maxPages={maxPages})");
-
-        for (int pageIndex = 0; pageIndex < totalPages; pageIndex++)
-        {
-            CreatePage(pageIndex);
-        }
-
-        CreatePaginationDots(totalPages);
-        Debug.Log($"PageManager: Created {totalPages} pagination dots");
-
-        horizontalScrollSnap.UpdateLayout(true);
-    }
-
-    private void CreatePage(int pageIndex)
-    {
-        if (pagePrefab == null)
-        {
-            Debug.LogError("PageManager: pagePrefab is not assigned!");
-            return;
-        }
-
-        GameObject pageGo = Instantiate(pagePrefab, horizontalScrollSnap.transform, false);
-        pageGo.name = $"Page_{pageIndex}";
-
-        LevelButtonManager buttonManager = pageGo.GetComponent<LevelButtonManager>();
-        if (buttonManager == null)
-        {
-            // Try to find it in children
-            buttonManager = pageGo.GetComponentInChildren<LevelButtonManager>();
-        }
-
-        if (buttonManager == null)
-        {
-            // Create one if it doesn't exist
-            buttonManager = pageGo.AddComponent<LevelButtonManager>();
-        }
-
-        // Calculate which levels go on this page
-        int startIndex = pageIndex * maxLevelsPerPage;
-        int endIndex = Mathf.Min(startIndex + maxLevelsPerPage, allLevels.Count);
-
-        List<LevelData> pageLevels = new List<LevelData>();
-        for (int i = startIndex; i < endIndex; i++)
-        {
-            pageLevels.Add(allLevels[i]);
-        }
-
-        buttonManager.SpawnLevelButtons(pageLevels);
-        pages.Add(pageGo);
-
-        Debug.Log($"PageManager: Created page {pageIndex} with {pageLevels.Count} levels");
-    }
-
-    private void CreatePaginationDots(int pageCount)
-    {
-        if (paginationContainer == null)
-        {
-            Debug.LogWarning("PageManager: paginationContainer is not assigned. Skipping pagination dots.");
-            return;
-        }
-
-        if (paginationDotPrefab == null)
-        {
-            Debug.LogWarning("PageManager: paginationDotPrefab is not assigned. Skipping pagination dots.");
-            return;
-        }
-
-        // Clear existing dots
-        foreach (Transform child in paginationContainer)
-        {
-            Destroy(child.gameObject);
-        }
-        paginationDots.Clear();
-
-        // Create new dots
-        for (int i = 0; i < pageCount; i++)
-        {
-            Toggle dotGo = Instantiate(paginationDotPrefab, paginationContainer, false);
-            dotGo.name = $"Dot_{i}";
-
-            int pageIndex = i; // Capture for closure
-            dotGo.onValueChanged.AddListener((isOn) =>
-            {
-                if (isOn)
-                {
-                    horizontalScrollSnap.GoToScreen(pageIndex);
-                }
-            });
-
-            paginationDots.Add(dotGo);
-        }
-
-        // Set first dot as active
-        if (paginationDots.Count > 0)
-        {
-            paginationDots[0].isOn = true;
-        }
-
-        Debug.Log($"PageManager: Created {pageCount} pagination dots");
-    }
-
-    /// <summary>
-    /// Update pagination when page changes (call from HorizontalScrollSnap if needed)
-    /// </summary>
-    public void OnPageChanged(int newPageIndex)
-    {
-        currentPageIndex = newPageIndex;
-
-        // Update dot visibility
-        for (int i = 0; i < paginationDots.Count; i++)
-        {
-            paginationDots[i].isOn = (i == newPageIndex);
-        }
-
-        Debug.Log($"PageManager: Switched to page {newPageIndex}");
-    }
-
-    /// <summary>
-    /// Add a new level to the manager and create pages if needed
-    /// </summary>
-    public void AddLevel(LevelData levelData)
-    {
-        if (levelData == null) return;
-
-        allLevels.Add(levelData);
-
-        // Rebuild pages if necessary
-        int neededPages = Mathf.CeilToInt((float)allLevels.Count / maxLevelsPerPage);
-        if (neededPages > pages.Count)
-        {
-            CreatePage(pages.Count);
-            CreatePaginationDots(neededPages);
-            horizontalScrollSnap.UpdateLayout();
+            BuildPages();
         }
     }
-
-    /// <summary>
-    /// Set all levels at once
-    /// </summary>
     public void SetLevels(List<LevelData> levels)
     {
-        if (levels == null) return;
         allLevels = new List<LevelData>(levels);
-        InitializePages();
+        BuildPages();
     }
 
-    /// <summary>
-    /// Refresh all buttons (useful after unlocking levels)
-    /// </summary>
-    public void RefreshAllPages()
+    public void Refresh()
     {
-        foreach (var page in pages)
-        {
-            LevelButtonManager manager = page.GetComponent<LevelButtonManager>();
-            if (manager != null)
-            {
-                manager.RefreshButtons();
-            }
-        }
+        BuildPages();
     }
 
-    private void ClearPages()
+    //private void BuildPages()
+    //{
+    //    if (scrollSnap == null)
+    //    {
+    //        Debug.LogError("HorizontalScrollSnap missing.");
+    //        return;
+    //    }
+
+    //    //---------------------------------
+    //    // Remove old pages
+    //    //---------------------------------
+
+    //    scrollSnap.RemoveAllChildren(out GameObject[] removed);
+
+    //    foreach (GameObject go in removed)
+    //    {
+    //        Destroy(go);
+    //    }
+
+    //    pages.Clear();
+
+    //    //---------------------------------
+    //    // Create pages
+    //    //---------------------------------
+
+    //    int totalPages =
+    //        Mathf.CeilToInt((float)allLevels.Count / levelsPerPage);
+
+    //    for (int page = 0; page < totalPages; page++)
+    //    {
+    //        GameObject pageObj = Instantiate(pagePrefab);
+
+    //        pageObj.name = $"Page {page + 1}";
+
+    //        LevelButtonManager manager =
+    //            pageObj.GetComponent<LevelButtonManager>();
+
+    //        if (manager == null)
+    //            manager = pageObj.GetComponentInChildren<LevelButtonManager>();
+
+    //        List<LevelData> pageLevels = new();
+
+    //        int start = page * levelsPerPage;
+    //        int end = Mathf.Min(start + levelsPerPage, allLevels.Count);
+
+    //        for (int i = start; i < end; i++)
+    //            pageLevels.Add(allLevels[i]);
+
+    //        manager.SpawnLevelButtons(pageLevels);
+
+    //        scrollSnap.AddChild(pageObj);
+
+    //        pages.Add(pageObj);
+    //    }
+
+    //    //---------------------------------
+    //    // Refresh layout
+    //    //---------------------------------
+
+    //    Canvas.ForceUpdateCanvases();
+
+    //    scrollSnap.UpdateLayout(true);
+
+    //    scrollSnap.GoToScreen(0);
+    //}
+
+    private void BuildPages()
     {
-        foreach (var page in pages)
+        if (scrollSnap == null)
         {
-            if (page != null)
-                Destroy(page);
+            Debug.LogError("HorizontalScrollSnap is null!");
+            return;
         }
+
+        // Avoid rebuilding if we already built for the same level count
+        if (pagesBuilt && allLevels != null && allLevels.Count == lastBuiltLevelCount)
+        {
+            Debug.Log("Pages already built for current level set, skipping BuildPages.");
+            return;
+        }
+
+        ScrollRect scrollRect = scrollSnap.GetComponent<ScrollRect>();
+
+        if (scrollRect == null)
+        {
+            Debug.LogError("ScrollRect not found!");
+            return;
+        }
+
+        Transform content = scrollRect.content;
+
+        // Clear existing pages in content
+        for (int i = content.childCount - 1; i >= 0; i--)
+        {
+            Destroy(content.GetChild(i).gameObject);
+        }
+
         pages.Clear();
 
-        foreach (var dot in paginationDots)
+        // Also clear pagination toggles (if the scroll snap has a pagination container)
+        ScrollSnapBase ssBase = scrollSnap as ScrollSnapBase;
+        if (ssBase != null && ssBase.Pagination != null)
         {
-            if (dot != null)
-                Destroy(dot.gameObject);
+            for (int i = ssBase.Pagination.transform.childCount - 1; i >= 0; i--)
+            {
+                Destroy(ssBase.Pagination.transform.GetChild(i).gameObject);
+            }
         }
-        paginationDots.Clear();
+
+        Canvas.ForceUpdateCanvases();
+
+        if (allLevels == null || allLevels.Count == 0)
+        {
+            // Still call Rebuild so the scroll snap updates its state, but remember we built 0 levels
+            lastBuiltLevelCount = allLevels == null ? 0 : allLevels.Count;
+            pagesBuilt = true;
+            scrollSnap.Rebuild();
+            return;
+        }
+
+        int totalPages = Mathf.CeilToInt((float)allLevels.Count / levelsPerPage);
+
+        for (int page = 0; page < totalPages; page++)
+        {
+            GameObject pageObj = Instantiate(pagePrefab, content, false);
+            pageObj.name = $"Page_{page + 1}";
+
+            LevelButtonManager manager = pageObj.GetComponent<LevelButtonManager>();
+
+            if (manager == null)
+                manager = pageObj.GetComponentInChildren<LevelButtonManager>();
+
+            if (manager == null)
+            {
+                Debug.LogError($"Page {page + 1} doesn't contain LevelButtonManager.");
+                continue;
+            }
+
+            List<LevelData> pageLevels = new();
+
+            int start = page * levelsPerPage;
+            int end = Mathf.Min(start + levelsPerPage, allLevels.Count);
+
+            for (int i = start; i < end; i++)
+            {
+                pageLevels.Add(allLevels[i]);
+            }
+
+            manager.SpawnLevelButtons(pageLevels);
+
+            pages.Add(pageObj);
+        }
+
+        Canvas.ForceUpdateCanvases();
+
+        // mark build info before triggering UI callbacks to avoid re-entrancy issues
+        lastBuiltLevelCount = allLevels.Count;
+        pagesBuilt = true;
+
+        scrollSnap.Rebuild();
+
+        scrollSnap.GoToScreen(0);
     }
 
-    private void OnDestroy()
+    public void RefreshButtons()
     {
-        ClearPages();
+        foreach (GameObject page in pages)
+        {
+            LevelButtonManager manager =
+                page.GetComponent<LevelButtonManager>();
+
+            if (manager != null)
+                manager.RefreshButtons();
+        }
+    }
+
+    public void AddLevel(LevelData level)
+    {
+        allLevels.Add(level);
+        BuildPages();
     }
 }

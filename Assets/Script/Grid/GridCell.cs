@@ -81,6 +81,9 @@ public class GridCell : MonoBehaviour, IPointerClickHandler
         // win check: player entered destination
         if (occupiedByPlayer && isDestination)
         {
+            GameManager gameManager = FindAnyObjectByType<GameManager>();
+            Debug.Log("win" + gameManager.name);
+            gameManager.WinLevel();
             Debug.Log("Player reached destination - WIN");
         }
     }
