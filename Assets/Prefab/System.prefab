@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2154438414587882468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7109883506109456608}
+  - component: {fileID: 2704868126316390436}
+  - component: {fileID: 6936873869208355279}
+  m_Layer: 0
+  m_Name: System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7109883506109456608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2154438414587882468}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 327.25647, y: 678.8289, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2704868126316390436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2154438414587882468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 343f59cd8940e2240b5732864b2db64d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SaveManager
+--- !u!114 &6936873869208355279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2154438414587882468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2dcdf4b8a19fc4cb232182c58dd4eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  allLevels:
+  - {fileID: 11400000, guid: 3d18254beece4d24baacf97e382f7074, type: 2}
+  - {fileID: 11400000, guid: 3de7070f34d761a48bc64018bfcc0dca, type: 2}
+  - {fileID: 11400000, guid: d78487412d8e4624cbe39285c8248255, type: 2}
+  - {fileID: 11400000, guid: 74b5500ca3115134fb3e46d3c0ef88c1, type: 2}
+  - {fileID: 11400000, guid: 962b08d6e2210f9478b9f4d9fc1e8134, type: 2}
+  - {fileID: 11400000, guid: a960c86f699ea9c4c952a99277b21f21, type: 2}
+  - {fileID: 11400000, guid: fe0cf273c18780a4598e1beabe38cb3f, type: 2}
+  - {fileID: 11400000, guid: 02676f9fd3e55444e9a6b51a96761422, type: 2}
+  - {fileID: 11400000, guid: 710b87c827c14d141a2fd0ca058c876f, type: 2}
+  - {fileID: 11400000, guid: 1b863585b5910a04d847c7dab954afd9, type: 2}
+  - {fileID: 11400000, guid: 5fd533af59be41c4c9162b1b1c1a459e, type: 2}
+  - {fileID: 11400000, guid: 2394bab29e5e12c409e2ed4ce56cb35b, type: 2}
+  - {fileID: 11400000, guid: 4b9216238ac7fa34fadfec09f10fea47, type: 2}
+  - {fileID: 11400000, guid: 405ee49f57f207e41a6f44da9d85d036, type: 2}
+  - {fileID: 11400000, guid: 99392882f7641294fb48ed583388ae89, type: 2}
+  - {fileID: 11400000, guid: ebbb11ded21e5534caa0b9c1cf79f6a8, type: 2}
+  - {fileID: 11400000, guid: 1e1bb92d00ee604418a62ecd9407c86d, type: 2}
+  - {fileID: 11400000, guid: 0065c32f4df953643a8ed1c9a9e72b57, type: 2}
+  - {fileID: 11400000, guid: 3bfa478ac2700d64798724f75420a702, type: 2}
+  - {fileID: 11400000, guid: 0d430083700e07c4889a0cefd3910587, type: 2}
+  - {fileID: 11400000, guid: 98db49729c8edb84393c00208de8f624, type: 2}
+  - {fileID: 11400000, guid: 64e0c0aebce18bf4dbda2a5532609cbe, type: 2}
+  - {fileID: 11400000, guid: 484637d8351723c4ebaa298cffdccd60, type: 2}
+  - {fileID: 11400000, guid: 881dc5bdded8db74ba0f3acd63ca629f, type: 2}
+  - {fileID: 11400000, guid: fc136e39d498f744d8e9d9bcbdadf68c, type: 2}
+  - {fileID: 11400000, guid: ecff3563fbfa4a7439eb99166ec5eb7d, type: 2}
+  - {fileID: 11400000, guid: 9a0b23635774d0844a4bc76803df8559, type: 2}
+  - {fileID: 11400000, guid: 4beedd0087cdfc34bbade5896ea0c094, type: 2}
+  - {fileID: 11400000, guid: 6b87756cbca066b43aa318e397ef18a1, type: 2}
+  - {fileID: 11400000, guid: e346e45128aeb1c4dbf6f703b1f2fc7d, type: 2}
+  currentLevel: {fileID: 0}

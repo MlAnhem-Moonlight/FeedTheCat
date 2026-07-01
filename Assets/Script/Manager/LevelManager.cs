@@ -18,12 +18,24 @@ public class LevelManager : MonoBehaviour
     public LevelData level;
 
     private List<GameObject> spawnedNPCs = new List<GameObject>();
+
+    // Guard flag to prevent ApplyLevelCoroutine from running concurrently
+    private bool isApplyingLevel = false;
+
     [Header("Debug")]
     [Tooltip("Automatically call ApplyLevel on Start (playmode) for testing)")]
     public bool applyOnStart = false;
 
     public void ApplyLevel()
     {
+        // Prevent concurrent execution of ApplyLevelCoroutine
+        if (isApplyingLevel)
+        {
+            Debug.LogWarning("LevelManager.ApplyLevel: Already applying a level, ignoring duplicate call");
+            return;
+        }
+
+        isApplyingLevel = true;
         StartCoroutine(ApplyLevelCoroutine());
     }
 
@@ -489,6 +501,10 @@ public class LevelManager : MonoBehaviour
                 }
         }
 
+        // Reset guard flag to allow future ApplyLevel calls
+        isApplyingLevel = false;
+
+        Debug.Log("LevelManager: ApplyLevelCoroutine completed successfully");
         yield break;
     }
 

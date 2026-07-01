@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public PageManager pageManager;
 
     [Header("Levels")]
     public List<LevelData> allLevels = new();
@@ -65,11 +66,11 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void TurnOnLevelChoice()
     {
         levelManager = FindAnyObjectByType<LevelManager>();
 
-        PageManager page = FindAnyObjectByType<PageManager>();
+        PageManager page = pageManager == null ? FindAnyObjectByType<PageManager>() : pageManager;
 
         if (page != null)
         {
@@ -85,6 +86,40 @@ public class GameManager : MonoBehaviour
                 levelManager.level = currentLevel;
                 LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied runtime currentLevel '{currentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(currentLevel)})");
                 levelManager.ApplyLevel();
+                // Clear currentLevel after applying to prevent duplicate application if OnSceneLoaded is called again
+                currentLevel = null;
+            }
+            else if (CurrentLevel != null)
+            {
+                levelManager.level = CurrentLevel;
+                LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied indexed CurrentLevel '{CurrentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(CurrentLevel)})");
+                levelManager.ApplyLevel();
+            }
+        }
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        levelManager = FindAnyObjectByType<LevelManager>();
+
+        PageManager page = pageManager == null ? FindAnyObjectByType<PageManager>() : pageManager;
+
+        if (page != null)
+        {
+            page.SetLevels(allLevels);
+        }
+
+        // If a level was selected from another scene, ensure LevelManager receives it and ApplyLevel is called.
+        if (levelManager != null)
+        {
+            // Prefer explicit runtime selection (currentLevel) if present, otherwise use index-based CurrentLevel
+            if (currentLevel != null)
+            {
+                levelManager.level = currentLevel;
+                LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied runtime currentLevel '{currentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(currentLevel)})");
+                levelManager.ApplyLevel();
+                // Clear currentLevel after applying to prevent duplicate application if OnSceneLoaded is called again
+                currentLevel = null;
             }
             else if (CurrentLevel != null)
             {
@@ -188,7 +223,7 @@ public class GameManager : MonoBehaviour
             SaveManager.SaveLevelState(next, allLevels[next].hasWon, allLevels[next].isLocked);
 
         FindAnyObjectByType<PageManager>()?.RefreshButtons();
-        SceneManager.LoadScene("TestChoiceLevel");
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void LoseLevel()

@@ -41,6 +41,10 @@ public class NPCMover : MonoBehaviour
     private RectTransform entityContainer;
     private RectTransform rectTransform;
     private List<GridCell> occupiedCells = new List<GridCell>();
+
+    // Guard flag to prevent InitializeAndPlace from being called multiple times
+    private bool isInitializing = false;
+
     [Header("Overrides")]
     [Tooltip("Optional: assign a shared container (e.g. PlayerContainer) so NPC aligns exactly with player. If empty the script will try to find or create one.")]
     public RectTransform overrideContainer;
@@ -77,8 +81,16 @@ public class NPCMover : MonoBehaviour
         // initial steps
         ResetStepsForType();
 
-        // place NPC at start
-        StartCoroutine(InitializeAndPlace());
+        // place NPC at start (with guard flag to prevent duplicate initialization)
+        if (!isInitializing)
+        {
+            isInitializing = true;
+            StartCoroutine(InitializeAndPlace());
+        }
+        else
+        {
+            Debug.LogWarning($"NPCMover.Start: '{gameObject.name}' is already initializing, skipping duplicate InitializeAndPlace call");
+        }
     }
 
     // Editor helper: log the expected occupied cells for this NPC
