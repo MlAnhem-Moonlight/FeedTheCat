@@ -12,29 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9fc8949a001d14b9f12011f2dccc05, type: 3}
   m_Name: Medium_009
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelName: Medium
+  levelName: Medium8
   npcs:
   - row: 4
     column: 3
     prefabIndex: 2
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 2
     column: 2
     prefabIndex: 3
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 4
     column: 0
     prefabIndex: 1
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 3
     column: 0
     prefabIndex: 5
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
@@ -43,3 +47,4 @@ MonoBehaviour:
   playerStart: {x: 6, y: 2}
   blockedCells: []
   hasWon: 0
+  isLocked: 1

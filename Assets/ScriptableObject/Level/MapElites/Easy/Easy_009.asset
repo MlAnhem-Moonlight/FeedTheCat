@@ -12,17 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9fc8949a001d14b9f12011f2dccc05, type: 3}
   m_Name: Easy_009
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelName: Easy
+  levelName: Easy8
   npcs:
   - row: 5
     column: 3
     prefabIndex: 4
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 0
     column: 0
     prefabIndex: 2
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
@@ -31,3 +33,4 @@ MonoBehaviour:
   playerStart: {x: 0, y: 5}
   blockedCells: []
   hasWon: 0
+  isLocked: 1

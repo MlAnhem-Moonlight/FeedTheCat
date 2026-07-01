@@ -1,0 +1,260 @@
+fileFormatVersion: 2
+guid: 13b7b9982e11cdc4d80a57310c2cb4c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4826749026009544772
+    second: PageButtonWOL_0
+  - first:
+      213: 2596986589946781266
+    second: PageButtonWOL_1
+  - first:
+      213: 8480497292541821303
+    second: PageButtonWOL_2
+  - first:
+      213: 4219199456543197267
+    second: PageButtonWOL_3
+  - first:
+      213: -5118130263196044470
+    second: PageButtonWOL_4
+  - first:
+      213: 7143998144079158219
+    second: PageButtonWOL_5
+  - first:
+      213: 5451900832364754524
+    second: PageButtonWOL_6
+  - first:
+      213: 3469663371788291073
+    second: PageButtonWOL_7
+  - first:
+      213: -7085394981896139167
+    second: PageButtonWOL_8
+  - first:
+      213: 3520346852756554165
+    second: PageButtonWOL_9
+  - first:
+      213: -9066680751532201313
+    second: PageButtonWOL_10
+  - first:
+      213: -7093280791597497264
+    second: PageButtonWOL_11
+  - first:
+      213: -4685564819526776614
+    second: PageButtonWOL_12
+  - first:
+      213: 732009751182796846
+    second: PageButtonWOL_13
+  - first:
+      213: -7517902262759341259
+    second: PageButtonWOL_14
+  - first:
+      213: 1934908344736535256
+    second: PageButtonWOL_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 160
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PageButtonWOL_0
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 141
+        width: 166
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448f24b7aae0cf240800000000000000
+      internalID: 4826749026009544772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PageButtonWOL_1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 140
+        width: 160
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25e1b3c4b895a0420800000000000000
+      internalID: 2596986589946781266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PageButtonWOL_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 141
+        width: 170
+        height: 183
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7710e902b57c0b570800000000000000
+      internalID: 8480497292541821303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7bf3ebc24c24b9c499d8bac076e0dc8a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PageButtonWOL_0: 4826749026009544772
+      PageButtonWOL_1: 2596986589946781266
+      PageButtonWOL_10: -9066680751532201313
+      PageButtonWOL_11: -7093280791597497264
+      PageButtonWOL_12: -4685564819526776614
+      PageButtonWOL_13: 732009751182796846
+      PageButtonWOL_14: -7517902262759341259
+      PageButtonWOL_15: 1934908344736535256
+      PageButtonWOL_2: 8480497292541821303
+      PageButtonWOL_3: 4219199456543197267
+      PageButtonWOL_4: -5118130263196044470
+      PageButtonWOL_5: 7143998144079158219
+      PageButtonWOL_6: 5451900832364754524
+      PageButtonWOL_7: 3469663371788291073
+      PageButtonWOL_8: -7085394981896139167
+      PageButtonWOL_9: 3520346852756554165
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

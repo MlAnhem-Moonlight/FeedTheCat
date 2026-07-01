@@ -61,7 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.9430566, a: 1}
+  m_Color: {r: 1, g: 0.92941177, b: 0.7764706, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -133,8 +133,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelButtonManager
   levelButtonPrefab: {fileID: 4869230192081032047, guid: f91b01c28973f3b459cb4199fc0b23a8, type: 3}
-  levelDataList: []
-  maxLevelsPerPage: 6
   availableButtonSprite: {fileID: 0}
   lockedButtonSprite: {fileID: 0}
   loadingScreenCanvasGroup: {fileID: 0}

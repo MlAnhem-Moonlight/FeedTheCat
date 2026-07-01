@@ -4,25 +4,29 @@ using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Script for individual level buttons in the level selection menu.
-/// Handles locked/unlocked visual states and level loading.
+/// Handles three level states (locked, available, completed) and level loading.
 /// </summary>
 public class LevelButton : MonoBehaviour
 {
+    public enum LevelState { Locked, Available, Completed }
+
     [Header("References")]
-    [SerializeField] private Image buttonImage;
-    [SerializeField] private Image lockIcon;
+    [SerializeField] private Image lvImg;  // Level image (swaps sprite based on state)
+    [SerializeField] private Image lockIcon;  // Shows only when state is Locked
     [SerializeField] private Text levelNameText;
     [SerializeField] private CanvasGroup canvasGroup;
 
-    [Header("Sprites")]
-    [SerializeField] private Sprite availableSprite;
+    [Header("Sprites (for lvImg)")]
     [SerializeField] private Sprite lockedSprite;
+    [SerializeField] private Sprite availableSprite;
+    [SerializeField] private Sprite completedSprite;
 
     [Header("Loading")]
     // Default scene name should match the Gameplay scene in the project.
     [SerializeField] private string gameplaySceneName = "Gameplay";
     [SerializeField] private CanvasGroup loadingScreenCanvasGroup;
-    [Header("Curent level")]
+
+    [Header("Current level")]
     [SerializeField] private LevelData levelData;
     private Button button;
 
@@ -33,6 +37,61 @@ public class LevelButton : MonoBehaviour
         {
             button.onClick.AddListener(OnLevelButtonClicked);
         }
+
+        // Ensure lvImg is enabled (sometimes it's disabled in hierarchy)
+        if (lvImg != null && !lvImg.isActiveAndEnabled)
+        {
+            lvImg.enabled = true;
+            if (lvImg.gameObject != null)
+            {
+                lvImg.gameObject.SetActive(true);
+            }
+        }
+
+        // Ensure lockIcon is enabled (will be controlled by visuals)
+        if (lockIcon != null)
+        {
+            lockIcon.gameObject.SetActive(true);
+
+            // Set lockIcon size to 1/9 of button size
+            ResizeLockIcon();
+        }
+    }
+
+    /// <summary>
+    /// Resize lockIcon to 1/9 of button size
+    /// </summary>
+    private void ResizeLockIcon()
+    {
+        if (lockIcon == null)
+            return;
+
+        RectTransform buttonRect = GetComponent<RectTransform>();
+        RectTransform lockRect = lockIcon.GetComponent<RectTransform>();
+
+        if (buttonRect == null || lockRect == null)
+            return;
+
+        // Button size
+        Vector2 buttonSize = buttonRect.rect.size;
+
+        // Lock icon size = 1/9 of button size (1/3 width and 1/3 height)
+        Vector2 lockSize = buttonSize / 2f;
+
+        lockRect.sizeDelta = lockSize;
+
+        // Position lock icon at bottom right
+        // Anchor at bottom right
+        lockRect.anchorMin = new Vector2(1f, 0f);  // Bottom right corner
+        lockRect.anchorMax = new Vector2(1f, 0f);  // Bottom right corner
+
+        // Pivot at bottom right so icon aligns to corner
+        lockRect.pivot = new Vector2(1f, 0f);
+
+        // Offset from corner (small margin)
+        lockRect.anchoredPosition = new Vector2(-5f, 5f);  // 5px padding from edges
+
+        Debug.Log($"LevelButton.ResizeLockIcon: Button size={buttonSize}, Lock icon size={lockSize}, Position=BottomRight");
     }
 
     /// <summary>
@@ -53,45 +112,98 @@ public class LevelButton : MonoBehaviour
         return levelData;
     }
 
+    /// <summary>
+    /// Refresh visuals when level state changes (e.g., after winning a level)
+    /// </summary>
+    public void RefreshVisuals()
+    {
+        UpdateButtonVisuals();
+    }
+
     private void UpdateButtonVisuals()
     {
         if (levelData == null) return;
 
-        bool isLocked = LevelLockManager.IsLocked(levelData);
+        // Determine level state
+        LevelState state = GetLevelState();
 
-        if (buttonImage != null)
+        // Update lvImg sprite based on state and ensure it's enabled
+        if (lvImg != null)
         {
-            if (isLocked)
+            // Ensure lvImg GameObject and Image component are enabled
+            if (!lvImg.gameObject.activeSelf)
             {
-                buttonImage.sprite = lockedSprite;
-                buttonImage.color = new Color(0.5f, 0.5f, 0.5f, 1f); // Darken locked button
+                lvImg.gameObject.SetActive(true);
             }
-            else
+            if (!lvImg.enabled)
             {
-                buttonImage.sprite = availableSprite;
-                buttonImage.color = Color.white;
+                lvImg.enabled = true;
+            }
+
+            switch (state)
+            {
+                case LevelState.Locked:
+                    lvImg.sprite = lockedSprite;
+                    lvImg.color = new Color(0.5f, 0.5f, 0.5f, 1f);  // Darken locked
+                    break;
+
+                case LevelState.Available:
+                    lvImg.sprite = availableSprite;
+                    lvImg.color = Color.white;
+                    break;
+
+                case LevelState.Completed:
+                    lvImg.sprite = completedSprite;
+                    lvImg.color = Color.white;
+                    break;
             }
         }
 
+        // lockIcon shows only when state is Locked
         if (lockIcon != null)
         {
-            lockIcon.enabled = isLocked;
+            lockIcon.enabled = (state == LevelState.Locked);
         }
 
+        // Update level name text
         if (levelNameText != null)
         {
             levelNameText.text = levelData.levelName;
         }
 
+        // Button interactable only if Available or Completed
         if (button != null)
         {
-            button.interactable = !isLocked;
+            button.interactable = (state != LevelState.Locked);
         }
 
+        // Adjust canvas group alpha based on state
         if (canvasGroup != null)
         {
-            canvasGroup.alpha = isLocked ? 0.6f : 1f;
+            canvasGroup.alpha = (state == LevelState.Locked) ? 0.6f : 1f;
         }
+
+        Debug.Log($"LevelButton.UpdateButtonVisuals: '{levelData.levelName}' state={state}");
+    }
+
+    /// <summary>
+    /// Determine the current state of the level based on LevelData flags
+    /// </summary>
+    private LevelState GetLevelState()
+    {
+        if (levelData == null)
+            return LevelState.Locked;
+
+        // If locked, state is Locked
+        if (levelData.isLocked)
+            return LevelState.Locked;
+
+        // If not locked and hasWon, state is Completed
+        if (levelData.hasWon)
+            return LevelState.Completed;
+
+        // If not locked and not won, state is Available
+        return LevelState.Available;
     }
 
     private void OnLevelButtonClicked()
@@ -102,7 +214,8 @@ public class LevelButton : MonoBehaviour
             return;
         }
 
-        if (LevelLockManager.IsLocked(levelData))
+        // Check if level is locked
+        if (levelData.isLocked)
         {
             Debug.LogWarning($"LevelButton: Level '{levelData.levelName}' is locked!");
             return;

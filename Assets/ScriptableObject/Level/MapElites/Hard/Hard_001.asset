@@ -12,53 +12,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff9fc8949a001d14b9f12011f2dccc05, type: 3}
   m_Name: Hard_001
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
-  levelName: Hard
+  levelName: Hard0
   npcs:
   - row: 0
     column: 3
     prefabIndex: 0
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 7
     column: 0
     prefabIndex: 3
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 4
     column: 0
     prefabIndex: 7
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 7
     column: 4
     prefabIndex: 5
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 6
     column: 3
     prefabIndex: 5
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 1
     column: 2
     prefabIndex: 5
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 6
     column: 4
     prefabIndex: 0
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 3
     column: 3
     prefabIndex: 6
+    seed: 0
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
@@ -67,3 +75,4 @@ MonoBehaviour:
   playerStart: {x: 2, y: 3}
   blockedCells: []
   hasWon: 0
+  isLocked: 1

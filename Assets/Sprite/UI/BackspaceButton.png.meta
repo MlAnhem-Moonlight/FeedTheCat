@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: 3eb772d6a645aa2429d6ac4caf7ff70a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9082167312826492801
+    second: BackspaceButton_0
+  - first:
+      213: 1265739771254096861
+    second: BackspaceButton_1
+  - first:
+      213: -5059671680480906199
+    second: BackspaceButton_2
+  - first:
+      213: 1674107723276298659
+    second: BackspaceButton_3
+  - first:
+      213: -7049019727176906144
+    second: BackspaceButton_4
+  - first:
+      213: 904532881541253503
+    second: BackspaceButton_5
+  - first:
+      213: 3394721998416788397
+    second: BackspaceButton_6
+  - first:
+      213: -2996875410028649784
+    second: BackspaceButton_7
+  - first:
+      213: -2747461233501345313
+    second: BackspaceButton_8
+  - first:
+      213: -7765600600111349922
+    second: BackspaceButton_9
+  - first:
+      213: -4473030010968469772
+    second: BackspaceButton_10
+  - first:
+      213: -7718089489200335549
+    second: BackspaceButton_11
+  - first:
+      213: 8770699500437213154
+    second: BackspaceButton_12
+  - first:
+      213: -497186847366465735
+    second: BackspaceButton_13
+  - first:
+      213: 3160839086063471700
+    second: BackspaceButton_14
+  - first:
+      213: -4268684018887618012
+    second: BackspaceButton_15
+  - first:
+      213: 330141679277299584
+    second: BackspaceButton_16
+  - first:
+      213: 8439920304553777967
+    second: BackspaceButton_17
+  - first:
+      213: -6981140998598206403
+    second: BackspaceButton_18
+  - first:
+      213: 8607690338633434784
+    second: BackspaceButton_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BackspaceButton_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 91
+        width: 202
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f781058c2f8a5f180800000000000000
+      internalID: -9082167312826492801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackspaceButton_1
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 91
+        width: 201
+        height: 217
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd34fa3ad9fc09110800000000000000
+      internalID: 1265739771254096861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BackspaceButton_2
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 91
+        width: 202
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924f4d4f96f68c9b0800000000000000
+      internalID: -5059671680480906199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 24a0afff3200ca5449d4531256a9cc24
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BackspaceButton_0: -9082167312826492801
+      BackspaceButton_1: 1265739771254096861
+      BackspaceButton_10: -4473030010968469772
+      BackspaceButton_11: -7718089489200335549
+      BackspaceButton_12: 8770699500437213154
+      BackspaceButton_13: -497186847366465735
+      BackspaceButton_14: 3160839086063471700
+      BackspaceButton_15: -4268684018887618012
+      BackspaceButton_16: 330141679277299584
+      BackspaceButton_17: 8439920304553777967
+      BackspaceButton_18: -6981140998598206403
+      BackspaceButton_19: 8607690338633434784
+      BackspaceButton_2: -5059671680480906199
+      BackspaceButton_20: 1242301218
+      BackspaceButton_3: 1674107723276298659
+      BackspaceButton_4: -7049019727176906144
+      BackspaceButton_5: 904532881541253503
+      BackspaceButton_6: 3394721998416788397
+      BackspaceButton_7: -2996875410028649784
+      BackspaceButton_8: -2747461233501345313
+      BackspaceButton_9: -7765600600111349922
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
