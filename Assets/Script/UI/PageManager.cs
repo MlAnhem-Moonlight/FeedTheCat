@@ -14,14 +14,21 @@ public class PageManager : MonoBehaviour
     [SerializeField] private List<LevelData> allLevels;
     [SerializeField] private int levelsPerPage = 6;
 
+    [Header("Pagination")]
+    [SerializeField] private int maxTogglesBeforeScroll = 15;  // If pagination has more toggles, add scroll
+
     private readonly List<GameObject> pages = new();
     private bool pagesBuilt = false; // guard to prevent duplicate builds
     private int lastBuiltLevelCount = -1; // remember how many levels were used for the last build
+    private PaginationScrollHelper paginationHelper;
 
     private void Awake()
     {
         if (scrollSnap == null)
             scrollSnap = GetComponent<HorizontalScrollSnap>();
+
+        // Initialize pagination helper
+        paginationHelper = gameObject.AddComponent<PaginationScrollHelper>();
     }
 
     private IEnumerator Start()
@@ -207,6 +214,17 @@ public class PageManager : MonoBehaviour
         pagesBuilt = true;
 
         scrollSnap.Rebuild();
+
+        // Setup pagination scroll if needed (when toggle count > maxTogglesBeforeScroll)
+        ScrollSnapBase ssBase2 = scrollSnap as ScrollSnapBase;
+        if (ssBase2 != null && ssBase2.Pagination != null)
+        {
+            int toggleCount = ssBase2.Pagination.transform.childCount;
+            if (paginationHelper != null)
+            {
+                paginationHelper.SetupPaginationScroll(ssBase2.Pagination.transform, toggleCount);
+            }
+        }
 
         scrollSnap.GoToScreen(0);
     }

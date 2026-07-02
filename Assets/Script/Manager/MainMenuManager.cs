@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     public Button play;
+    public GameObject levelChoice;
     public Button archive;
     public Button quit;
 
@@ -14,7 +15,16 @@ public class MainMenuManager : MonoBehaviour
 
         if (gameManager != null)
         {
-            LogFilter.LogLevelTransfer($"MainMenuManager: Found GameManager '{gameManager.name}'");
+            LogFilter.LogLevelTransfer($"MainMenuManager: Found GameManager '{gameManager.name}' and WinGame : {gameManager.winGame}");
+            
+            // Check if player just won a level and return from GamePlay
+            if (gameManager.winGame)
+            {
+                
+                levelChoice.SetActive(true);
+                gameManager.TurnOnLevelChoice();
+                gameManager.winGame = false;
+            }
 
             // Add TurnOnLevelChoice to play button
             if (play != null)

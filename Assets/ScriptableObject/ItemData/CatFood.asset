@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1e4a9743bbb1c4e80ad5f7e235ebc0, type: 3}
+  m_Name: CatFood
+  m_EditorClassIdentifier: Assembly-CSharp::FeedTheCat.Items.ItemData
+  itemID: charm_spell_2
+  itemName: Cat Food
+  description: 'Charm a nearby Cats to move toward target. 2-turn duration.
+
+'
+  icon: {fileID: 4241727045068834795, guid: 492ea52b3b2259949a57f813936e03e7, type: 3}
+  itemType: 0
+  effectRadius: 2
+  targetType: 0
+  statusEffect: 1
+  effectDuration: 2
+  rarity: 1
+  cooldown: 0

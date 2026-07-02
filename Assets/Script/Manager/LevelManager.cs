@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     public BoardGenerator boardGenerator;
     public PlayerController playerController;
     public List<GameObject> npcPrefabs = new List<GameObject>();
+    public List<GameObject> itemPrefabs = new List<GameObject>();
     [Tooltip("Player prefab to spawn when applying level (optional). If empty, playerController.playerObject will be used.)")]
     public GameObject playerPrefab;
 
@@ -18,6 +19,7 @@ public class LevelManager : MonoBehaviour
     public LevelData level;
 
     private List<GameObject> spawnedNPCs = new List<GameObject>();
+    private List<GameObject> spawnedItems = new List<GameObject>();
 
     // Guard flag to prevent ApplyLevelCoroutine from running concurrently
     private bool isApplyingLevel = false;
@@ -98,6 +100,11 @@ public class LevelManager : MonoBehaviour
         foreach (var go in spawnedNPCs)
             if (go != null) Destroy(go);
         spawnedNPCs.Clear();
+
+        // destroy spawned items
+        foreach (var go in spawnedItems)
+            if (go != null) Destroy(go);
+        spawnedItems.Clear();
     }
 
     private IEnumerator ApplyLevelCoroutine()
@@ -264,6 +271,78 @@ public class LevelManager : MonoBehaviour
                 Debug.Log($"LevelManager: Activated NPC instance {go.name}");
                 spawnedNPCs.Add(go);
                 spawnCounter++;
+            }
+
+            // spawn items from level data
+            if (level.items != null && level.items.Count > 0 && level.hasWon == false)
+            {
+                int itemCounter = 0;
+                foreach (var itemDef in level.items)
+                {
+                    if (itemPrefabs == null || itemPrefabs.Count == 0)
+                    {
+                        Debug.LogWarning("LevelManager: no item prefabs assigned in LevelManager.itemPrefabs");
+                        break;
+                    }
+
+                    GameObject itemPrefabToSpawn = null;
+                    if (itemDef != null && itemDef.prefabIndex >= 0 && itemDef.prefabIndex < itemPrefabs.Count)
+                    {
+                        itemPrefabToSpawn = itemPrefabs[itemDef.prefabIndex];
+                    }
+                    else
+                    {
+                        // fallback: pick prefab by spawn order
+                        itemPrefabToSpawn = itemPrefabs[itemCounter % itemPrefabs.Count];
+                    }
+
+                    var itemGo = Instantiate(itemPrefabToSpawn);
+                    Debug.Log($"LevelManager: Instantiated item prefab {itemPrefabToSpawn.name} at row={itemDef.row} col={itemDef.column}");
+                    itemGo.SetActive(false);
+
+                    var itemCollector = itemGo.GetComponent<ItemCollector>();
+                    if (itemCollector != null)
+                    {
+                        itemCollector.boardGenerator = boardGenerator;
+                        itemCollector.row = itemDef.row;
+                        itemCollector.column = itemDef.column;
+                    }
+
+                    // position and scale item to match grid cell
+                    var targetCell = GetCell(itemDef.row, itemDef.column);
+                    if (targetCell != null)
+                    {
+                        var itemRt = itemGo.GetComponent<RectTransform>();
+                        var targetRt = targetCell.GetComponent<RectTransform>();
+
+                        if (itemRt != null && targetRt != null)
+                        {
+                            // parent item under grid cell
+                            itemRt.SetParent(targetCell.transform, false);
+
+                            // position item at cell center (0, 0)
+                            itemRt.anchoredPosition = Vector2.zero;
+
+                            // scale item to match cell size
+                            itemRt.sizeDelta = targetRt.sizeDelta;
+
+                            Debug.Log($"LevelManager: Positioned and scaled item at ({itemDef.row},{itemDef.column}). Cell size={targetRt.sizeDelta}");
+                        }
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"LevelManager: Target cell not found for item at ({itemDef.row},{itemDef.column})");
+                    }
+
+                    itemGo.SetActive(true);
+                    Debug.Log($"LevelManager: Activated item instance {itemGo.name}");
+                    spawnedItems.Add(itemGo);
+                    itemCounter++;
+                }
+            }
+            else
+            {
+                Debug.Log("LevelManager: LevelData.items is empty — no items to spawn");
             }
 
             // set player start and place

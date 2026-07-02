@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     // can assign the intended LevelData when LevelManager lives in a different scene.
     public LevelData currentLevel;
 
+    public bool winGame = false;
+
     public int CurrentLevelIndex { get; private set; } = -1;
 
     public LevelData CurrentLevel =>
@@ -221,9 +223,57 @@ public class GameManager : MonoBehaviour
         SaveManager.SaveLevelState(CurrentLevelIndex, CurrentLevel.hasWon, CurrentLevel.isLocked);
         if (next < allLevels.Count)
             SaveManager.SaveLevelState(next, allLevels[next].hasWon, allLevels[next].isLocked);
-
+        winGame = true;
         FindAnyObjectByType<PageManager>()?.RefreshButtons();
         SceneManager.LoadScene("MainMenu");
+    }
+
+    /// <summary>
+    /// Load the next level in the level list using SceneTransitionManager for proper scene reload.
+    /// Marks current level as won, unlocks next level, and reloads the scene with the next level.
+    /// </summary>
+    public void NextLevel()
+    {
+        int currentIndex = CurrentLevelIndex;
+        int nextIndex = CurrentLevelIndex + 1;
+
+        // Check if there is a next level
+        if (nextIndex >= allLevels.Count)
+        {
+            Debug.LogWarning("GameManager.NextLevel: No more levels available");
+            return;
+        }
+
+        // Mark current level as won and save state
+        if (CurrentLevel != null)
+        {
+            CurrentLevel.hasWon = true;
+            SaveManager.SaveLevelState(currentIndex, CurrentLevel.hasWon, CurrentLevel.isLocked);
+            Debug.Log($"GameManager.NextLevel: Marked level '{CurrentLevel.levelName}' as won");
+        }
+
+        // Unlock next level and save state
+        if (allLevels[nextIndex] != null)
+        {
+            allLevels[nextIndex].isLocked = false;
+            SaveManager.SaveLevelState(nextIndex, allLevels[nextIndex].hasWon, allLevels[nextIndex].isLocked);
+            Debug.Log($"GameManager.NextLevel: Unlocked level '{allLevels[nextIndex].levelName}'");
+        }
+
+        // Update current level index and reference
+        CurrentLevelIndex = nextIndex;
+        currentLevel = allLevels[nextIndex];
+
+        // Reload scene with next level (same method as LoseLevel)
+        if (CurrentLevel != null)
+        {
+            Debug.Log($"GameManager.NextLevel: Loading next level '{CurrentLevel.levelName}'");
+            SceneTransitionManager.RestartLevel(CurrentLevel, true);
+        }
+        else
+        {
+            Debug.LogWarning("GameManager.NextLevel: CurrentLevel is null after updating index");
+        }
     }
 
     public void LoseLevel()
@@ -236,7 +286,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("LoseLevel called but CurrentLevel is null");
             return;
         }
-
+        winGame = false;
         // Reload the gameplay flow for the current level to ensure proper initialization (spawns, containers, etc.)
         // This uses the SceneTransitionManager which will queue the level and load the loading scene if configured.
         SceneTransitionManager.RestartLevel(CurrentLevel, true);

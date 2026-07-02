@@ -28,11 +28,22 @@ public class NPCDef
     //public int maxRandomSteps = 3;
 }
 
+[System.Serializable]
+public class ItemDef
+{
+    public int row;
+    public int column;
+
+    [Tooltip("Index của prefab trong danh sách itemPrefabs")]
+    public int prefabIndex = 0;
+}
+
 [CreateAssetMenu(fileName = "LevelData", menuName = "FeedTheCat/LevelData", order = 0)]
 public class LevelData : ScriptableObject
 {
     public string levelName;
     public List<NPCDef> npcs = new List<NPCDef>();
+    public List<ItemDef> items = new List<ItemDef>();
     public List<Vector2Int> destinations = new List<Vector2Int>();
     public Vector2Int playerStart = new Vector2Int(0, 0);
     public List<Vector2Int> blockedCells = new List<Vector2Int>();

@@ -21,9 +21,10 @@ public class GridCell : MonoBehaviour, IPointerClickHandler
 
     public bool isEmpty = true;
 
-    // occupancy flags (separate for player and NPC)
+    // occupancy flags (separate for player, NPC, and item)
     public bool occupiedByPlayer = false;
     public bool occupiedByNPC = false;
+    public bool occupiedByItem = false;
     [Header("Destination")]
     [Tooltip("Mark this cell as the destination (player can enter, NPCs cannot)")]
     public bool isDestination = false;
@@ -78,13 +79,21 @@ public class GridCell : MonoBehaviour, IPointerClickHandler
         isEmpty = !(occupiedByPlayer || occupiedByNPC);
         ApplyStateVisual();
 
+        // item collection: if player enters a cell with an item, collect it
+        if (occupiedByPlayer && occupiedByItem)
+        {
+            var itemCollector = GetComponentInChildren<ItemCollector>();
+            if (itemCollector != null)
+            {
+                itemCollector.OnPlayerEnter();
+            }
+        }
+
         // win check: player entered destination
         if (occupiedByPlayer && isDestination)
         {
-            GameManager gameManager = FindAnyObjectByType<GameManager>();
-            Debug.Log("win" + gameManager.name);
-            gameManager.WinLevel();
-            Debug.Log("Player reached destination - WIN");
+            InGameMainMenu inGameMenu = FindAnyObjectByType<InGameMainMenu>();
+            inGameMenu?.winPanel.SetActive(true);
         }
     }
 
@@ -100,6 +109,7 @@ public class GridCell : MonoBehaviour, IPointerClickHandler
     {
         occupiedByPlayer = false;
         occupiedByNPC = false;
+        occupiedByItem = false;
         ApplyStateVisual();
     }
 
