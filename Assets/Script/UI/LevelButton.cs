@@ -100,7 +100,7 @@ public class LevelButton : MonoBehaviour
     public void SetLevelData(LevelData level)
     {
         levelData = level;
-        LogFilter.LogLevelTransfer($"LevelButton.SetLevelData: assigned level '{level?.levelName}' (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(level)}) to button '{gameObject.name}'");
+        //LogFilter.LogLevelTransfer($"LevelButton.SetLevelData: assigned level '{level?.levelName}' (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(level)}) to button '{gameObject.name}'");
         UpdateButtonVisuals();
     }
 
@@ -229,7 +229,7 @@ public class LevelButton : MonoBehaviour
         {
             var canonical = GameManager.Instance.GetCanonicalLevel(levelData);
             GameManager.Instance.SetCurrentLevelByReference(canonical, true);
-            LogFilter.LogLevelTransfer($"LevelButton -> GameManager queued level '{(canonical!=null?canonical.levelName:"<null>")}' (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(canonical)})");
+            //LogFilter.LogLevelTransfer($"LevelButton -> GameManager queued level '{(canonical!=null?canonical.levelName:"<null>")}' (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(canonical)})");
         }
         else
         {

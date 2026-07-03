@@ -26,9 +26,11 @@ namespace FeedTheCat.Rewards
         [Tooltip("Reference to RewardGenerator for generating rewards.")]
         private RewardGenerator rewardGenerator;
 
-        [SerializeField]
-        [Tooltip("Reference to SceneTransitionManager or game flow manager.")]
-        private MonoBehaviour gameFlowManager;
+        //[SerializeField]
+        //[Tooltip("Reference to SceneTransitionManager or game flow manager.")]
+        //private MonoBehaviour gameFlowManager;
+        [Header("Reward BackGround")]
+        public GameObject rewardBg;
 
         #endregion
 
@@ -56,11 +58,11 @@ namespace FeedTheCat.Rewards
         private void Start()
         {
             InitializeReferences();
-            SetupRewardScreen();
+            //SetupRewardScreen();
         }
 
         /// <summary>
-        /// Initialize cached references.
+        /// Initialize cached references lazily.
         /// </summary>
         private void InitializeReferences()
         {
@@ -68,7 +70,7 @@ namespace FeedTheCat.Rewards
                 rewardGenerator = FindAnyObjectByType<RewardGenerator>();
 
             if (rewardGenerator == null)
-                Debug.LogError("RewardScreenManager: RewardGenerator not found in scene");
+                Debug.LogWarning("RewardScreenManager: RewardGenerator not found in scene. Will attempt lazy-load on SetupRewardScreen.");
 
             if (rewardCardsContainer == null)
                 rewardCardsContainer = transform;
@@ -83,9 +85,15 @@ namespace FeedTheCat.Rewards
         /// </summary>
         public void SetupRewardScreen()
         {
+            // Lazy-load RewardGenerator if not found yet
             if (rewardGenerator == null)
             {
-                Debug.LogError("RewardScreenManager.SetupRewardScreen: RewardGenerator not initialized");
+                rewardGenerator = FindAnyObjectByType<RewardGenerator>();
+            }
+
+            if (rewardGenerator == null)
+            {
+                Debug.LogError("RewardScreenManager.SetupRewardScreen: RewardGenerator not found in scene");
                 return;
             }
 
@@ -241,7 +249,7 @@ namespace FeedTheCat.Rewards
             // SceneManager.LoadScene("Gameplay");
             // or
             // gameFlowManager.ContinueGame();
-
+            rewardBg.SetActive(false);
             Debug.Log("RewardScreenManager.OnRewardScreenComplete: Reward screen complete. Implement game flow continuation.");
 
             // Fade out and transition

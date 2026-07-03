@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using FeedTheCat;
@@ -44,22 +44,11 @@ namespace FeedTheCat.Rewards
 
         #region Rarity Colors
 
-        [Header("Rarity Colors")]
-        [SerializeField]
-        [Tooltip("Color for Common rarity items.")]
-        private Color commonColor = Color.gray;
-
-        [SerializeField]
-        [Tooltip("Color for Rare rarity items.")]
-        private Color rareColor = Color.cyan;
-
-        [SerializeField]
-        [Tooltip("Color for Epic rarity items.")]
-        private Color epicColor = new Color(0.6f, 0.2f, 1f); // Purple
-
-        [SerializeField]
-        [Tooltip("Color for Legendary rarity items.")]
-        private Color legendaryColor = Color.yellow;
+        [Header("Rarity Assets")]
+        [SerializeField] private Sprite commonFrame;
+        [SerializeField] private Sprite rareFrame;
+        [SerializeField] private Sprite epicFrame;
+        [SerializeField] private Sprite legendaryFrame;
 
         #endregion
 
@@ -146,22 +135,22 @@ namespace FeedTheCat.Rewards
             Debug.Log($"RewardCard.PopulateCard: Populated card with {item.ItemName} (Qty: {quantity})");
         }
 
+
         /// <summary>
-        /// Get the rarity color based on item rarity.
+        /// Gets the frame sprite corresponding to the item's rarity.
         /// </summary>
-        /// <returns>The Color corresponding to the item's rarity.</returns>
-        public Color GetRarityColor()
+        private Sprite GetRaritySprite()
         {
             if (itemData == null)
-                return Color.white;
+                return null;
 
             return itemData.Rarity switch
             {
-                ItemRarity.Common => commonColor,
-                ItemRarity.Rare => rareColor,
-                ItemRarity.Epic => epicColor,
-                ItemRarity.Legendary => legendaryColor,
-                _ => Color.white
+                ItemRarity.Common => commonFrame,
+                ItemRarity.Rare => rareFrame,
+                ItemRarity.Epic => epicFrame,
+                ItemRarity.Legendary => legendaryFrame,
+                _ => commonFrame
             };
         }
 
@@ -214,11 +203,11 @@ namespace FeedTheCat.Rewards
                 quantityText.text = $"+{rewardQuantity}";
             }
 
-            // Update rarity color
-            Color rarityColor = GetRarityColor();
+            // Update rarity frame
             if (rarityBackground != null)
             {
-                rarityBackground.color = rarityColor;
+                rarityBackground.sprite = GetRaritySprite();
+                rarityBackground.SetNativeSize(); // chỉ dùng nếu muốn kích thước theo sprite
             }
 
             // Update button interactability (optional)

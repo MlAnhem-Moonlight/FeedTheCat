@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using FeedTheCat;
+using FeedTheCat.Rewards;
 
 /// <summary>
 /// ItemCollector handles item behavior on the map.
@@ -83,6 +84,10 @@ public class ItemCollector : MonoBehaviour
         {
             cell.occupiedByItem = true;
         }
+        RewardGenerator rewardGenerator = FindAnyObjectByType<RewardGenerator>();
+        rewardGenerator.itemCollector = this;
+        RewardScreenManager rewardScreenManager = FindAnyObjectByType<RewardScreenManager>();
+        rewardScreenManager.SetupRewardScreen();
     }
 
     private void OnDestroy()
@@ -168,7 +173,8 @@ public class ItemCollector : MonoBehaviour
 
         // Log reward with rarity
         Debug.Log($"nhận quà + {rarity}");
-
+        RewardScreenManager rewardScreenManager = FindAnyObjectByType<RewardScreenManager>();
+        rewardScreenManager?.rewardBg.SetActive(true);
         // Destroy the item
         Destroy(gameObject);
     }

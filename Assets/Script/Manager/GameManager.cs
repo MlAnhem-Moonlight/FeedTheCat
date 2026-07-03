@@ -86,7 +86,7 @@ public class GameManager : MonoBehaviour
             if (currentLevel != null)
             {
                 levelManager.level = currentLevel;
-                LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied runtime currentLevel '{currentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(currentLevel)})");
+                //LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied runtime currentLevel '{currentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(currentLevel)})");
                 levelManager.ApplyLevel();
                 // Clear currentLevel after applying to prevent duplicate application if OnSceneLoaded is called again
                 currentLevel = null;
@@ -94,7 +94,7 @@ public class GameManager : MonoBehaviour
             else if (CurrentLevel != null)
             {
                 levelManager.level = CurrentLevel;
-                LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied indexed CurrentLevel '{CurrentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(CurrentLevel)})");
+                //LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied indexed CurrentLevel '{CurrentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(CurrentLevel)})");
                 levelManager.ApplyLevel();
             }
         }
@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
             if (currentLevel != null)
             {
                 levelManager.level = currentLevel;
-                LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied runtime currentLevel '{currentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(currentLevel)})");
+                //LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied runtime currentLevel '{currentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(currentLevel)})");
                 levelManager.ApplyLevel();
                 // Clear currentLevel after applying to prevent duplicate application if OnSceneLoaded is called again
                 currentLevel = null;
@@ -126,7 +126,7 @@ public class GameManager : MonoBehaviour
             else if (CurrentLevel != null)
             {
                 levelManager.level = CurrentLevel;
-                LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied indexed CurrentLevel '{CurrentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(CurrentLevel)})");
+                //LogFilter.LogLevelTransfer($"GameManager.OnSceneLoaded: Applied indexed CurrentLevel '{CurrentLevel.levelName}' to LevelManager. (hash={System.Runtime.CompilerServices.RuntimeHelpers.GetHashCode(CurrentLevel)})");
                 levelManager.ApplyLevel();
             }
         }
@@ -168,7 +168,7 @@ public class GameManager : MonoBehaviour
         if (idx >= 0) return allLevels[idx];
         // not found: append and return appended instance (best-effort fallback)
         allLevels.Add(level);
-        LogFilter.LogLevelTransfer($"GameManager.GetCanonicalLevel: Appended external LevelData '{level.levelName}' to allLevels at index {allLevels.Count - 1}.");
+        //LogFilter.LogLevelTransfer($"GameManager.GetCanonicalLevel: Appended external LevelData '{level.levelName}' to allLevels at index {allLevels.Count - 1}.");
         return level;
     }
 

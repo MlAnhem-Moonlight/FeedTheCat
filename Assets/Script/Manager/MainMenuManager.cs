@@ -15,7 +15,7 @@ public class MainMenuManager : MonoBehaviour
 
         if (gameManager != null)
         {
-            LogFilter.LogLevelTransfer($"MainMenuManager: Found GameManager '{gameManager.name}' and WinGame : {gameManager.winGame}");
+            //LogFilter.LogLevelTransfer($"MainMenuManager: Found GameManager '{gameManager.name}' and WinGame : {gameManager.winGame}");
             
             // Check if player just won a level and return from GamePlay
             if (gameManager.winGame)
@@ -34,7 +34,7 @@ public class MainMenuManager : MonoBehaviour
         }
         else
         {
-            LogFilter.LogLevelTransfer("MainMenuManager: GameManager not found in scene");
+            //LogFilter.LogLevelTransfer("MainMenuManager: GameManager not found in scene");
         }
     }
 
@@ -43,7 +43,7 @@ public class MainMenuManager : MonoBehaviour
     /// </summary>
     private void OnPlayClicked(GameManager gameManager)
     {
-        LogFilter.LogLevelTransfer("MainMenuManager: Play button clicked");
+        //LogFilter.LogLevelTransfer("MainMenuManager: Play button clicked");
 
         // Turn on level choice event subscription in GameManager
         gameManager.TurnOnLevelChoice();
@@ -55,7 +55,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void QuitGame()
     {
-        LogFilter.LogLevelTransfer("MainMenuManager: Quit button clicked");
+        //LogFilter.LogLevelTransfer("MainMenuManager: Quit button clicked");
         Application.Quit();
     }
 

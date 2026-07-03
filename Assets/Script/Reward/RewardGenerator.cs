@@ -7,8 +7,11 @@ namespace FeedTheCat.Rewards
 {
     /// <summary>
     /// RewardGenerator generates random reward cards based on difficulty level.
-    /// Selects 3 unique items from a pool of 5 possible rewards.
-    /// Difficulty affects drop rates and quantities.
+    /// Rolls 3 reward cards. For each card, a rarity is rolled using the
+    /// difficulty's drop-rate table, then an item matching that rarity is
+    /// picked from the reward pool. The same item may appear more than once
+    /// across the 3 cards, but if it does, it is guaranteed (best-effort)
+    /// to have a different rolled quantity each time.
     /// </summary>
     public class RewardGenerator : MonoBehaviour
     {
@@ -22,7 +25,16 @@ namespace FeedTheCat.Rewards
         [Header("Difficulty Source")]
         [SerializeField]
         [Tooltip("Reference to ItemCollector for difficulty level.")]
-        private ItemCollector itemCollector;
+        public ItemCollector itemCollector;
+
+        [Header("Generation Settings")]
+        [SerializeField]
+        [Tooltip("Number of reward cards to generate per call.")]
+        private int rewardCardCount = 3;
+
+        [SerializeField]
+        [Tooltip("Max attempts to re-roll quantity so a repeated item doesn't get the same quantity twice.")]
+        private int maxQuantityRerollAttempts = 50;
 
         #endregion
 
@@ -30,6 +42,7 @@ namespace FeedTheCat.Rewards
 
         /// <summary>
         /// Rarity drop rates for Easy difficulty.
+        /// Common: 60%, Rare: 35%, Epic: 5%
         /// </summary>
         private readonly RewardTable easyTable = new RewardTable
         {
@@ -45,6 +58,7 @@ namespace FeedTheCat.Rewards
 
         /// <summary>
         /// Rarity drop rates for Medium difficulty.
+        /// Common: 35%, Rare: 45%, Epic: 20%
         /// </summary>
         private readonly RewardTable mediumTable = new RewardTable
         {
@@ -60,6 +74,7 @@ namespace FeedTheCat.Rewards
 
         /// <summary>
         /// Rarity drop rates for Hard difficulty.
+        /// Common: 25%, Rare: 40%, Epic: 25%, Legendary: 5%
         /// </summary>
         private readonly RewardTable hardTable = new RewardTable
         {
@@ -111,20 +126,6 @@ namespace FeedTheCat.Rewards
 
         private void Start()
         {
-            InitializeReferences();
-        }
-
-        /// <summary>
-        /// Initialize references to required managers.
-        /// </summary>
-        private void InitializeReferences()
-        {
-            if (itemCollector == null)
-                itemCollector = FindAnyObjectByType<ItemCollector>();
-
-            if (itemCollector == null)
-                Debug.LogError("RewardGenerator: ItemCollector not found in scene");
-
             ValidateRewardPool();
         }
 
@@ -150,30 +151,44 @@ namespace FeedTheCat.Rewards
         #region Public API
 
         /// <summary>
-        /// Generate 3 unique random reward cards based on current difficulty.
+        /// Generate reward cards (default 3) based on current difficulty.
+        /// Each card rolls a rarity from the difficulty's drop table, then
+        /// picks a matching item from the reward pool. Items can repeat,
+        /// but repeated items are re-rolled to try to get a different quantity.
         /// </summary>
-        /// <returns>List of 3 GeneratedReward objects.</returns>
+        /// <returns>List of GeneratedReward objects.</returns>
         public List<GeneratedReward> GenerateRewardCards()
         {
             List<GeneratedReward> rewards = new List<GeneratedReward>();
 
-            // Get difficulty from ItemCollector
-            Difficulty difficulty = GetCurrentDifficulty();
-
-            // Select 3 unique items from reward pool
-            List<ItemData> selectedItems = SelectUniqueItems(3);
-
-            if (selectedItems.Count != 3)
+            if (rewardPool == null || rewardPool.Length == 0)
             {
-                Debug.LogError("RewardGenerator: Failed to select 3 unique items");
+                Debug.LogError("RewardGenerator.GenerateRewardCards: Reward pool is empty");
                 return rewards;
             }
 
-            // Generate reward data for each selected item
-            foreach (ItemData item in selectedItems)
+            Difficulty difficulty = GetCurrentDifficulty();
+            RewardTable table = GetTableForDifficulty(difficulty);
+
+            Debug.Log($"RewardGenerator.GenerateRewardCards: Generating {rewardCardCount} rewards for {difficulty} difficulty");
+
+            // Tracks quantities already rolled per item, so repeats get a different quantity
+            Dictionary<ItemData, HashSet<int>> usedQuantitiesPerItem = new Dictionary<ItemData, HashSet<int>>();
+
+            for (int i = 0; i < rewardCardCount; i++)
             {
-                GeneratedReward reward = GenerateRewardForItem(item, difficulty);
+                GeneratedReward reward = GenerateSingleReward(table, usedQuantitiesPerItem);
+                if (reward == null)
+                    continue;
+
                 rewards.Add(reward);
+
+                if (!usedQuantitiesPerItem.TryGetValue(reward.itemData, out HashSet<int> quantities))
+                {
+                    quantities = new HashSet<int>();
+                    usedQuantitiesPerItem[reward.itemData] = quantities;
+                }
+                quantities.Add(reward.quantity);
             }
 
             Debug.Log($"RewardGenerator.GenerateRewardCards: Generated {rewards.Count} rewards for {difficulty} difficulty");
@@ -216,81 +231,141 @@ namespace FeedTheCat.Rewards
 
         /// <summary>
         /// Get current difficulty from ItemCollector.
+        /// Lazy-loads ItemCollector on first call to ensure it's initialized.
+        /// (Assumes ItemCollector.CurrentDifficulty is derived from the
+        /// "{difficulty}_{levelName}" scene/level naming convention.)
         /// </summary>
         private Difficulty GetCurrentDifficulty()
         {
             if (itemCollector == null)
-                return Difficulty.Medium; // Default fallback
+            {
+                itemCollector = FindAnyObjectByType<ItemCollector>();
+                if (itemCollector == null)
+                {
+                    Debug.LogWarning("RewardGenerator.GetCurrentDifficulty: ItemCollector not found in scene. Using Medium difficulty as fallback.");
+                    return Difficulty.Medium;
+                }
+            }
 
             return itemCollector.CurrentDifficulty;
         }
 
         /// <summary>
-        /// Select 3 unique items from the reward pool.
+        /// Resolve the RewardTable for a given difficulty.
         /// </summary>
-        private List<ItemData> SelectUniqueItems(int count)
+        private RewardTable GetTableForDifficulty(Difficulty difficulty)
         {
-            List<ItemData> selected = new List<ItemData>();
-
-            if (rewardPool == null || rewardPool.Length < count)
-            {
-                Debug.LogWarning($"RewardGenerator.SelectUniqueItems: Reward pool has fewer than {count} items");
-                return selected;
-            }
-
-            // Create a copy of the pool to shuffle
-            List<ItemData> availableItems = new List<ItemData>(rewardPool);
-
-            // Fisher-Yates shuffle and pick first 'count' items
-            for (int i = 0; i < count; i++)
-            {
-                int randomIndex = Random.Range(i, availableItems.Count);
-
-                // Swap
-                (availableItems[i], availableItems[randomIndex]) = (availableItems[randomIndex], availableItems[i]);
-
-                selected.Add(availableItems[i]);
-            }
-
-            return selected;
-        }
-
-        /// <summary>
-        /// Generate a single reward for an item based on difficulty.
-        /// </summary>
-        private GeneratedReward GenerateRewardForItem(ItemData item, Difficulty difficulty)
-        {
-            RewardTable table = difficulty switch
+            return difficulty switch
             {
                 Difficulty.Easy => easyTable,
                 Difficulty.Medium => mediumTable,
                 Difficulty.Hard => hardTable,
                 _ => mediumTable
             };
+        }
 
-            // Roll for rarity
+        /// <summary>
+        /// Generate one reward card: roll a rarity by drop rate, pick a matching
+        /// item from the pool, roll a quantity, and (best-effort) avoid repeating
+        /// the exact same quantity if this item was already rolled this batch.
+        /// </summary>
+        private GeneratedReward GenerateSingleReward(RewardTable table, Dictionary<ItemData, HashSet<int>> usedQuantitiesPerItem)
+        {
             ItemRarity rarity = RollRarity(table);
+            List<ItemData> matchingItems = GetItemsByRarity(rarity);
 
-            // Get quantity range for this rarity
-            int quantityMin = 1, quantityMax = 1;
+            // Fallback: if no pool item has the rolled rarity, try the other
+            // rarities supported by this difficulty table before giving up.
+            if (matchingItems.Count == 0)
+            {
+                Debug.LogWarning($"RewardGenerator.GenerateSingleReward: No items in pool with rarity {rarity}. Trying fallback rarities.");
+
+                foreach (ItemRarity fallbackRarity in table.rarities)
+                {
+                    matchingItems = GetItemsByRarity(fallbackRarity);
+                    if (matchingItems.Count > 0)
+                    {
+                        rarity = fallbackRarity;
+                        break;
+                    }
+                }
+            }
+
+            if (matchingItems.Count == 0)
+            {
+                Debug.LogError("RewardGenerator.GenerateSingleReward: No valid items found in reward pool for any rarity in this difficulty table");
+                return null;
+            }
+
+            ItemData selectedItem = matchingItems[Random.Range(0, matchingItems.Count)];
+
+            GetQuantityRange(table, rarity, out int quantityMin, out int quantityMax);
+            int quantity = Random.Range(quantityMin, quantityMax + 1);
+
+            // If this item was already picked earlier in this batch, try to
+            // roll a different quantity so the two cards aren't identical.
+            if (usedQuantitiesPerItem.TryGetValue(selectedItem, out HashSet<int> existingQuantities))
+            {
+                int attempts = 0;
+                while (existingQuantities.Contains(quantity) && attempts < maxQuantityRerollAttempts)
+                {
+                    quantity = Random.Range(quantityMin, quantityMax + 1);
+                    attempts++;
+                }
+
+                if (existingQuantities.Contains(quantity))
+                {
+                    Debug.LogWarning($"RewardGenerator.GenerateSingleReward: Could not find a unique quantity for repeated item " +
+                        $"'{selectedItem.ItemName}' within range [{quantityMin}-{quantityMax}] after {maxQuantityRerollAttempts} attempts. " +
+                        $"Using duplicate quantity {quantity}.");
+                }
+            }
+
+            Debug.Log($"RewardGenerator.GenerateSingleReward: Rolled {rarity} -> {selectedItem.ItemName} x{quantity}");
+
+            return new GeneratedReward(selectedItem, quantity, rarity);
+        }
+
+        /// <summary>
+        /// Get all reward-pool items whose ItemData.Rarity matches the given rarity.
+        /// </summary>
+        private List<ItemData> GetItemsByRarity(ItemRarity rarity)
+        {
+            List<ItemData> result = new List<ItemData>();
+
+            if (rewardPool == null)
+                return result;
+
+            foreach (ItemData item in rewardPool)
+            {
+                if (item != null && item.Rarity == rarity)
+                    result.Add(item);
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Look up the quantity range configured for a rarity in a table.
+        /// </summary>
+        private void GetQuantityRange(RewardTable table, ItemRarity rarity, out int min, out int max)
+        {
+            min = 1;
+            max = 1;
+
             for (int i = 0; i < table.rarities.Length; i++)
             {
                 if (table.rarities[i] == rarity)
                 {
-                    quantityMin = table.quantityRanges[i].x;
-                    quantityMax = table.quantityRanges[i].y;
-                    break;
+                    min = table.quantityRanges[i].x;
+                    max = table.quantityRanges[i].y;
+                    return;
                 }
             }
-
-            // Roll quantity within range
-            int quantity = Random.Range(quantityMin, quantityMax + 1);
-
-            return new GeneratedReward(item, quantity, rarity);
         }
 
         /// <summary>
-        /// Roll a rarity based on probability table.
+        /// Roll a rarity based on the difficulty table's cumulative probability.
         /// </summary>
         private ItemRarity RollRarity(RewardTable table)
         {
@@ -306,7 +381,7 @@ namespace FeedTheCat.Rewards
                 }
             }
 
-            // Fallback (should not reach here)
+            // Fallback (floating point rounding edge case)
             return table.rarities[table.rarities.Length - 1];
         }
 
