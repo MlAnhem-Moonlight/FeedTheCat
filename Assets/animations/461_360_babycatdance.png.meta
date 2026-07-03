@@ -1,0 +1,2860 @@
+fileFormatVersion: 2
+guid: 546a3f7d04255e34eb19d482e32624a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3694284788755677129
+    second: 461_360_babycatdance_0
+  - first:
+      213: 7118597734546324520
+    second: 461_360_babycatdance_1
+  - first:
+      213: 1730937593865666801
+    second: 461_360_babycatdance_2
+  - first:
+      213: 8067618193521762174
+    second: 461_360_babycatdance_3
+  - first:
+      213: 2988143896006404005
+    second: 461_360_babycatdance_4
+  - first:
+      213: -7954097698929896503
+    second: 461_360_babycatdance_5
+  - first:
+      213: 2126454323639655068
+    second: 461_360_babycatdance_6
+  - first:
+      213: -2470967695943630976
+    second: 461_360_babycatdance_7
+  - first:
+      213: 4926799801768541674
+    second: 461_360_babycatdance_8
+  - first:
+      213: -2852957168807631175
+    second: 461_360_babycatdance_9
+  - first:
+      213: -3891379314941234859
+    second: 461_360_babycatdance_10
+  - first:
+      213: 3560736215960633158
+    second: 461_360_babycatdance_11
+  - first:
+      213: 103753622118804969
+    second: 461_360_babycatdance_12
+  - first:
+      213: 998527711189368893
+    second: 461_360_babycatdance_13
+  - first:
+      213: 378462434300085242
+    second: 461_360_babycatdance_14
+  - first:
+      213: -916912808796826802
+    second: 461_360_babycatdance_15
+  - first:
+      213: 6744804407426124586
+    second: 461_360_babycatdance_16
+  - first:
+      213: 4886143849898654710
+    second: 461_360_babycatdance_17
+  - first:
+      213: -7100387676353246589
+    second: 461_360_babycatdance_18
+  - first:
+      213: -2095853907352908535
+    second: 461_360_babycatdance_19
+  - first:
+      213: -2725938654556784795
+    second: 461_360_babycatdance_20
+  - first:
+      213: -5684046195617240329
+    second: 461_360_babycatdance_21
+  - first:
+      213: -2200864404502508465
+    second: 461_360_babycatdance_22
+  - first:
+      213: 7303182372227462978
+    second: 461_360_babycatdance_23
+  - first:
+      213: 6819165084120031647
+    second: 461_360_babycatdance_24
+  - first:
+      213: 1218231661367140185
+    second: 461_360_babycatdance_25
+  - first:
+      213: 4724626655422824728
+    second: 461_360_babycatdance_26
+  - first:
+      213: 869345127683337015
+    second: 461_360_babycatdance_27
+  - first:
+      213: -8236235052646412783
+    second: 461_360_babycatdance_28
+  - first:
+      213: -9050981497250210132
+    second: 461_360_babycatdance_29
+  - first:
+      213: 7085533862538373993
+    second: 461_360_babycatdance_30
+  - first:
+      213: -1039522399308977796
+    second: 461_360_babycatdance_31
+  - first:
+      213: 931834985277598984
+    second: 461_360_babycatdance_32
+  - first:
+      213: -5285475595152649265
+    second: 461_360_babycatdance_33
+  - first:
+      213: -8559599042234425303
+    second: 461_360_babycatdance_34
+  - first:
+      213: 8943559772334307985
+    second: 461_360_babycatdance_35
+  - first:
+      213: -9188731309018324570
+    second: 461_360_babycatdance_36
+  - first:
+      213: 8253686208224138430
+    second: 461_360_babycatdance_37
+  - first:
+      213: 5285127389341335676
+    second: 461_360_babycatdance_38
+  - first:
+      213: -5779321935184741654
+    second: 461_360_babycatdance_39
+  - first:
+      213: 6921434216589919754
+    second: 461_360_babycatdance_40
+  - first:
+      213: -3877034165901035632
+    second: 461_360_babycatdance_41
+  - first:
+      213: -1661794727310407591
+    second: 461_360_babycatdance_42
+  - first:
+      213: -2586600260636548663
+    second: 461_360_babycatdance_43
+  - first:
+      213: 3166526129020670761
+    second: 461_360_babycatdance_44
+  - first:
+      213: -1023023183934731015
+    second: 461_360_babycatdance_45
+  - first:
+      213: -4176491747448201960
+    second: 461_360_babycatdance_46
+  - first:
+      213: -1078171581518952898
+    second: 461_360_babycatdance_47
+  - first:
+      213: -8062828001768821952
+    second: 461_360_babycatdance_48
+  - first:
+      213: 2120502554801418741
+    second: 461_360_babycatdance_49
+  - first:
+      213: 720122910663722668
+    second: 461_360_babycatdance_50
+  - first:
+      213: -8967418337635857716
+    second: 461_360_babycatdance_51
+  - first:
+      213: -192530014376785379
+    second: 461_360_babycatdance_52
+  - first:
+      213: 4933218529261166265
+    second: 461_360_babycatdance_53
+  - first:
+      213: 333964376955122822
+    second: 461_360_babycatdance_54
+  - first:
+      213: -2670377255287765135
+    second: 461_360_babycatdance_55
+  - first:
+      213: -5080013428088311451
+    second: 461_360_babycatdance_56
+  - first:
+      213: 3032910948594791345
+    second: 461_360_babycatdance_57
+  - first:
+      213: 8832340512630231791
+    second: 461_360_babycatdance_58
+  - first:
+      213: 506016205595778041
+    second: 461_360_babycatdance_59
+  - first:
+      213: -3178051298259482308
+    second: 461_360_babycatdance_60
+  - first:
+      213: -8866666243561956190
+    second: 461_360_babycatdance_61
+  - first:
+      213: 1966546708630457321
+    second: 461_360_babycatdance_62
+  - first:
+      213: 5955500048967848744
+    second: 461_360_babycatdance_63
+  - first:
+      213: -1050986755794057549
+    second: 461_360_babycatdance_64
+  - first:
+      213: 6923883827559173871
+    second: 461_360_babycatdance_65
+  - first:
+      213: 2111538796673571690
+    second: 461_360_babycatdance_66
+  - first:
+      213: -1481608341701486560
+    second: 461_360_babycatdance_67
+  - first:
+      213: -507457285906189689
+    second: 461_360_babycatdance_68
+  - first:
+      213: -1497709366987010398
+    second: 461_360_babycatdance_69
+  - first:
+      213: 5590650680209564861
+    second: 461_360_babycatdance_70
+  - first:
+      213: 7172854396315144442
+    second: 461_360_babycatdance_71
+  - first:
+      213: -5003184727478184214
+    second: 461_360_babycatdance_72
+  - first:
+      213: -8502088408659237355
+    second: 461_360_babycatdance_73
+  - first:
+      213: 3302016747101690891
+    second: 461_360_babycatdance_74
+  - first:
+      213: 2988874280504896571
+    second: 461_360_babycatdance_75
+  - first:
+      213: 3227973023574068486
+    second: 461_360_babycatdance_76
+  - first:
+      213: -5688112630374313670
+    second: 461_360_babycatdance_77
+  - first:
+      213: 1125309539151689360
+    second: 461_360_babycatdance_78
+  - first:
+      213: -6206493164944601413
+    second: 461_360_babycatdance_79
+  - first:
+      213: -7403488474054396911
+    second: 461_360_babycatdance_80
+  - first:
+      213: 4334424296684133906
+    second: 461_360_babycatdance_81
+  - first:
+      213: 6126481428776418782
+    second: 461_360_babycatdance_82
+  - first:
+      213: 1369233302811210383
+    second: 461_360_babycatdance_83
+  - first:
+      213: 2437263584225513294
+    second: 461_360_babycatdance_84
+  - first:
+      213: 815765835543579943
+    second: 461_360_babycatdance_85
+  - first:
+      213: -1096253202215300720
+    second: 461_360_babycatdance_86
+  - first:
+      213: -4290587292854043194
+    second: 461_360_babycatdance_87
+  - first:
+      213: 2679250478037202886
+    second: 461_360_babycatdance_88
+  - first:
+      213: -4678441740093056367
+    second: 461_360_babycatdance_89
+  - first:
+      213: -7112642265487954690
+    second: 461_360_babycatdance_90
+  - first:
+      213: -8970287872160388714
+    second: 461_360_babycatdance_91
+  - first:
+      213: -496579657346088511
+    second: 461_360_babycatdance_92
+  - first:
+      213: -6249686507070678264
+    second: 461_360_babycatdance_93
+  - first:
+      213: 2367778406113459462
+    second: 461_360_babycatdance_94
+  - first:
+      213: -5572195345764165576
+    second: 461_360_babycatdance_95
+  - first:
+      213: -1262959920362838452
+    second: 461_360_babycatdance_96
+  - first:
+      213: 2611596223359523710
+    second: 461_360_babycatdance_97
+  - first:
+      213: 6653443654041986345
+    second: 461_360_babycatdance_98
+  - first:
+      213: -2114581190932233861
+    second: 461_360_babycatdance_99
+  - first:
+      213: 6724039010152804235
+    second: 461_360_babycatdance_100
+  - first:
+      213: -3013643368018542967
+    second: 461_360_babycatdance_101
+  - first:
+      213: 1638315412689944826
+    second: 461_360_babycatdance_102
+  - first:
+      213: 6797752708217769042
+    second: 461_360_babycatdance_103
+  - first:
+      213: -6323440830350830850
+    second: 461_360_babycatdance_104
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 461_360_babycatdance_0
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 7199
+        width: 85
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf39e4317cb44330800000000000000
+      internalID: 3694284788755677129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_1
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 7199
+        width: 101
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82cb8827ce65ac260800000000000000
+      internalID: 7118597734546324520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_2
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 7201
+        width: 102
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f08bba1296850810800000000000000
+      internalID: 1730937593865666801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_3
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 7206
+        width: 130
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7fd750c000f5ff60800000000000000
+      internalID: 8067618193521762174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_4
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 7222
+        width: 160
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7a633aa05087920800000000000000
+      internalID: 2988143896006404005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_5
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 6868
+        width: 87
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c31882194e5d9190800000000000000
+      internalID: -7954097698929896503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_6
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 6853
+        width: 127
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a92afd0fea28d10800000000000000
+      internalID: 2126454323639655068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_7
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 6851
+        width: 99
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08f70d7e8fb55bdd0800000000000000
+      internalID: -2470967695943630976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_8
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 6851
+        width: 83
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedf0eff0528f5440800000000000000
+      internalID: 4926799801768541674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_9
+      rect:
+        serializedVersion: 2
+        x: 1995
+        y: 6853
+        width: 162
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b621d112924868d0800000000000000
+      internalID: -2852957168807631175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_10
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 6517
+        width: 108
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 551ff96612b0ff9c0800000000000000
+      internalID: -3891379314941234859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_11
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 6525
+        width: 105
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fb33b09b64a6130800000000000000
+      internalID: 3560736215960633158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_12
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 6529
+        width: 133
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed2d8e9e5b907100800000000000000
+      internalID: 103753622118804969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_13
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 6538
+        width: 94
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3083d3b9ab7bdd00800000000000000
+      internalID: 998527711189368893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_14
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 6545
+        width: 115
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3494d2491904500800000000000000
+      internalID: 378462434300085242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_15
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 6193
+        width: 143
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43d8ad88a87643f0800000000000000
+      internalID: -916912808796826802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_16
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 6206
+        width: 124
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b8f108fdb5a9d50800000000000000
+      internalID: 6744804407426124586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_17
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 6201
+        width: 126
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb3bae81f11fc340800000000000000
+      internalID: 4886143849898654710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_18
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 6201
+        width: 68
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a476f170b567d90800000000000000
+      internalID: -7100387676353246589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_19
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 6204
+        width: 92
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d8d1fb9f70ae2e0800000000000000
+      internalID: -2095853907352908535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 5844
+        width: 164
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 567f2af7c358b2ad0800000000000000
+      internalID: -2725938654556784795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_21
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 5852
+        width: 110
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fae257b9163e11b0800000000000000
+      internalID: -5684046195617240329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_22
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 5853
+        width: 142
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c83da1c75f471e0800000000000000
+      internalID: -2200864404502508465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_23
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 5848
+        width: 99
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24733827cad1a5560800000000000000
+      internalID: 7303182372227462978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_24
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 5850
+        width: 76
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91a8b7b38a82ae50800000000000000
+      internalID: 6819165084120031647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_25
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 5490
+        width: 169
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f1ce5dd3708e010800000000000000
+      internalID: 1218231661367140185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_26
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 5503
+        width: 137
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811c1d439ee319140800000000000000
+      internalID: 4724626655422824728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_27
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 5517
+        width: 166
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b28c2a9c8801c00800000000000000
+      internalID: 869345127683337015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_28
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 5504
+        width: 146
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ec3686bd303bd80800000000000000
+      internalID: -8236235052646412783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_29
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 5504
+        width: 77
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae94cb4844746280800000000000000
+      internalID: -9050981497250210132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_30
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 5146
+        width: 157
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96be998d18fd45260800000000000000
+      internalID: 7085533862538373993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_31
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 5148
+        width: 162
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79602da2efd291f0800000000000000
+      internalID: -1039522399308977796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_32
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 5155
+        width: 112
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80da0c66bfa8eec00800000000000000
+      internalID: 931834985277598984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_33
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 5151
+        width: 173
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc31ee923f736a6b0800000000000000
+      internalID: -5285475595152649265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_34
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 5149
+        width: 75
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920e7d39502363980800000000000000
+      internalID: -8559599042234425303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_35
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 4790
+        width: 112
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ab5795a38ed1c70800000000000000
+      internalID: 8943559772334307985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_36
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 4787
+        width: 176
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1e375fe811b7080800000000000000
+      internalID: -9188731309018324570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_37
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 4798
+        width: 91
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb49db060ebfa8270800000000000000
+      internalID: 8253686208224138430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_38
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 4798
+        width: 127
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70c06adb5b885940800000000000000
+      internalID: 5285127389341335676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_39
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 4799
+        width: 101
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeab0b2f159bbcfa0800000000000000
+      internalID: -5779321935184741654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_40
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 4440
+        width: 82
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a068318afbfdd0060800000000000000
+      internalID: 6921434216589919754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_41
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 4438
+        width: 165
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0977a6fa7f1023ac0800000000000000
+      internalID: -3877034165901035632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_42
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 4440
+        width: 137
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 958cb05008e10f8e0800000000000000
+      internalID: -1661794727310407591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_43
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 4431
+        width: 105
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c163d074cc8a1cd0800000000000000
+      internalID: -2586600260636548663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_44
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 4420
+        width: 151
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9231544ccb2c1fb20800000000000000
+      internalID: 3166526129020670761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_45
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4058
+        width: 75
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcc49c95dd7dc1f0800000000000000
+      internalID: -1023023183934731015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_46
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 4057
+        width: 88
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ddff932ee1a06c0800000000000000
+      internalID: -4176491747448201960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_47
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 4057
+        width: 141
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3644a4b8a09901f0800000000000000
+      internalID: -1078171581518952898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_48
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 4061
+        width: 107
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b2f7da6a41b1090800000000000000
+      internalID: -8062828001768821952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_49
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 4059
+        width: 125
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f13f34b6d98d6d10800000000000000
+      internalID: 2120502554801418741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_50
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 3703
+        width: 162
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca64bbcc8f36ef900800000000000000
+      internalID: 720122910663722668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_51
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 3708
+        width: 152
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cca04e888845d8380800000000000000
+      internalID: -8967418337635857716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_52
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 3703
+        width: 154
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a8874d8fef35df0800000000000000
+      internalID: -192530014376785379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_53
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 3695
+        width: 100
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9be9cf37d10567440800000000000000
+      internalID: 4933218529261166265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_54
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 3697
+        width: 114
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6847b08d4da72a400800000000000000
+      internalID: 333964376955122822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_55
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 3338
+        width: 162
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1774a4ad80ae0fad0800000000000000
+      internalID: -2670377255287765135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_56
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3339
+        width: 129
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 561f494c3ba2089b0800000000000000
+      internalID: -5080013428088311451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_57
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 3357
+        width: 149
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3b26e4070171a20800000000000000
+      internalID: 3032910948594791345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_58
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 3350
+        width: 98
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2dd9686e6c29a70800000000000000
+      internalID: 8832340512630231791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_59
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 3347
+        width: 82
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb9029de0bb50700800000000000000
+      internalID: 506016205595778041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_60
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2988
+        width: 123
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c394649ae2b45e3d0800000000000000
+      internalID: -3178051298259482308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_61
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 2988
+        width: 149
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2acda82770643f480800000000000000
+      internalID: -8866666243561956190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_62
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 2987
+        width: 161
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ebc122ffc39a4b10800000000000000
+      internalID: 1966546708630457321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_63
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 2988
+        width: 132
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823dc8eadbf26a250800000000000000
+      internalID: 5955500048967848744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_64
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2977
+        width: 124
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6414d2d152a61f0800000000000000
+      internalID: -1050986755794057549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_65
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 2614
+        width: 83
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee8cb728a3961060800000000000000
+      internalID: 6923883827559173871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_66
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 2614
+        width: 77
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b1f212951bd4d10800000000000000
+      internalID: 2111538796673571690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_67
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 2614
+        width: 156
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02890a82015407be0800000000000000
+      internalID: -1481608341701486560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_68
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 2624
+        width: 95
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 782b0ee794625f8f0800000000000000
+      internalID: -507457285906189689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_69
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 2622
+        width: 134
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aec6f31441173be0800000000000000
+      internalID: -1497709366987010398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_70
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 2257
+        width: 109
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4ef215c2bf59d40800000000000000
+      internalID: 5590650680209564861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_71
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 2253
+        width: 77
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af096fde1191b8360800000000000000
+      internalID: 7172854396315144442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_72
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 2252
+        width: 167
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6d0059ffd119ab0800000000000000
+      internalID: -5003184727478184214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_73
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 2257
+        width: 149
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51666e863a3820a80800000000000000
+      internalID: -8502088408659237355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_74
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 2277
+        width: 93
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c13659cbe13dd20800000000000000
+      internalID: 3302016747101690891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1908
+        width: 145
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3cabc7825d9a7920800000000000000
+      internalID: 2988874280504896571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_76
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1898
+        width: 98
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d0da6cc501ccc20800000000000000
+      internalID: 3227973023574068486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_77
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1898
+        width: 83
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31502813b3cf01b0800000000000000
+      internalID: -5688112630374313670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_78
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 1896
+        width: 153
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096be7f4017ed9f00800000000000000
+      internalID: 1125309539151689360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_79
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 1889
+        width: 168
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe4692995b1ed9a0800000000000000
+      internalID: -6206493164944601413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_80
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 1538
+        width: 91
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114f94d4576814990800000000000000
+      internalID: -7403488474054396911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_81
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1526
+        width: 109
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e1eaddee7f62c30800000000000000
+      internalID: 4334424296684133906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_82
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 1524
+        width: 97
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eddfe356662a50550800000000000000
+      internalID: 6126481428776418782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_83
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 1522
+        width: 79
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8272b43f6e700310800000000000000
+      internalID: 1369233302811210383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_84
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 1518
+        width: 167
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fc1c11156e2d120800000000000000
+      internalID: 2437263584225513294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_85
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1168
+        width: 109
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72d897f84be225b00800000000000000
+      internalID: 815765835543579943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_86
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1175
+        width: 88
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0919212558359c0f0800000000000000
+      internalID: -1096253202215300720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_87
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 1167
+        width: 137
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd31a3f695c474c0800000000000000
+      internalID: -4290587292854043194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_88
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 1165
+        width: 72
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7f3bf4d1c9e2520800000000000000
+      internalID: 2679250478037202886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_89
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 1166
+        width: 102
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a946b5606d21fb0800000000000000
+      internalID: -4678441740093056367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_90
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 802
+        width: 163
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc292f3b81da4d90800000000000000
+      internalID: -7112642265487954690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_91
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 807
+        width: 88
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699a2e6f4b2238380800000000000000
+      internalID: -8970287872160388714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_92
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 800
+        width: 126
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c18331ce6bcb19f0800000000000000
+      internalID: -496579657346088511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_93
+      rect:
+        serializedVersion: 2
+        x: 1566
+        y: 797
+        width: 119
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b108ceb37a449a0800000000000000
+      internalID: -6249686507070678264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_94
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 798
+        width: 73
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60dbb335ae90cd020800000000000000
+      internalID: 2367778406113459462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_95
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 438
+        width: 123
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83854a41bd59ba2b0800000000000000
+      internalID: -5572195345764165576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_96
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 438
+        width: 140
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46a735d4a0197ee0800000000000000
+      internalID: -1262959920362838452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_97
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 447
+        width: 80
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7b9816ade04e3420800000000000000
+      internalID: 2611596223359523710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_98
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 443
+        width: 95
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 925ef3c70c7c55c50800000000000000
+      internalID: 6653443654041986345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_99
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 443
+        width: 95
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7103c14c9f77a2e0800000000000000
+      internalID: -2114581190932233861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_100
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 82
+        width: 80
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fe600bad5905d50800000000000000
+      internalID: 6724039010152804235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_101
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 82
+        width: 150
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98efa81e2536d26d0800000000000000
+      internalID: -3013643368018542967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_102
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 83
+        width: 114
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af08e6b00377cb610800000000000000
+      internalID: 1638315412689944826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_103
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 86
+        width: 79
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c05447218765e50800000000000000
+      internalID: 6797752708217769042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 461_360_babycatdance_104
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 80
+        width: 111
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2dcbc5110ae38a0800000000000000
+      internalID: -6323440830350830850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      461_360_babycatdance_0: 3694284788755677129
+      461_360_babycatdance_1: 7118597734546324520
+      461_360_babycatdance_10: -3891379314941234859
+      461_360_babycatdance_100: 6724039010152804235
+      461_360_babycatdance_101: -3013643368018542967
+      461_360_babycatdance_102: 1638315412689944826
+      461_360_babycatdance_103: 6797752708217769042
+      461_360_babycatdance_104: -6323440830350830850
+      461_360_babycatdance_11: 3560736215960633158
+      461_360_babycatdance_12: 103753622118804969
+      461_360_babycatdance_13: 998527711189368893
+      461_360_babycatdance_14: 378462434300085242
+      461_360_babycatdance_15: -916912808796826802
+      461_360_babycatdance_16: 6744804407426124586
+      461_360_babycatdance_17: 4886143849898654710
+      461_360_babycatdance_18: -7100387676353246589
+      461_360_babycatdance_19: -2095853907352908535
+      461_360_babycatdance_2: 1730937593865666801
+      461_360_babycatdance_20: -2725938654556784795
+      461_360_babycatdance_21: -5684046195617240329
+      461_360_babycatdance_22: -2200864404502508465
+      461_360_babycatdance_23: 7303182372227462978
+      461_360_babycatdance_24: 6819165084120031647
+      461_360_babycatdance_25: 1218231661367140185
+      461_360_babycatdance_26: 4724626655422824728
+      461_360_babycatdance_27: 869345127683337015
+      461_360_babycatdance_28: -8236235052646412783
+      461_360_babycatdance_29: -9050981497250210132
+      461_360_babycatdance_3: 8067618193521762174
+      461_360_babycatdance_30: 7085533862538373993
+      461_360_babycatdance_31: -1039522399308977796
+      461_360_babycatdance_32: 931834985277598984
+      461_360_babycatdance_33: -5285475595152649265
+      461_360_babycatdance_34: -8559599042234425303
+      461_360_babycatdance_35: 8943559772334307985
+      461_360_babycatdance_36: -9188731309018324570
+      461_360_babycatdance_37: 8253686208224138430
+      461_360_babycatdance_38: 5285127389341335676
+      461_360_babycatdance_39: -5779321935184741654
+      461_360_babycatdance_4: 2988143896006404005
+      461_360_babycatdance_40: 6921434216589919754
+      461_360_babycatdance_41: -3877034165901035632
+      461_360_babycatdance_42: -1661794727310407591
+      461_360_babycatdance_43: -2586600260636548663
+      461_360_babycatdance_44: 3166526129020670761
+      461_360_babycatdance_45: -1023023183934731015
+      461_360_babycatdance_46: -4176491747448201960
+      461_360_babycatdance_47: -1078171581518952898
+      461_360_babycatdance_48: -8062828001768821952
+      461_360_babycatdance_49: 2120502554801418741
+      461_360_babycatdance_5: -7954097698929896503
+      461_360_babycatdance_50: 720122910663722668
+      461_360_babycatdance_51: -8967418337635857716
+      461_360_babycatdance_52: -192530014376785379
+      461_360_babycatdance_53: 4933218529261166265
+      461_360_babycatdance_54: 333964376955122822
+      461_360_babycatdance_55: -2670377255287765135
+      461_360_babycatdance_56: -5080013428088311451
+      461_360_babycatdance_57: 3032910948594791345
+      461_360_babycatdance_58: 8832340512630231791
+      461_360_babycatdance_59: 506016205595778041
+      461_360_babycatdance_6: 2126454323639655068
+      461_360_babycatdance_60: -3178051298259482308
+      461_360_babycatdance_61: -8866666243561956190
+      461_360_babycatdance_62: 1966546708630457321
+      461_360_babycatdance_63: 5955500048967848744
+      461_360_babycatdance_64: -1050986755794057549
+      461_360_babycatdance_65: 6923883827559173871
+      461_360_babycatdance_66: 2111538796673571690
+      461_360_babycatdance_67: -1481608341701486560
+      461_360_babycatdance_68: -507457285906189689
+      461_360_babycatdance_69: -1497709366987010398
+      461_360_babycatdance_7: -2470967695943630976
+      461_360_babycatdance_70: 5590650680209564861
+      461_360_babycatdance_71: 7172854396315144442
+      461_360_babycatdance_72: -5003184727478184214
+      461_360_babycatdance_73: -8502088408659237355
+      461_360_babycatdance_74: 3302016747101690891
+      461_360_babycatdance_75: 2988874280504896571
+      461_360_babycatdance_76: 3227973023574068486
+      461_360_babycatdance_77: -5688112630374313670
+      461_360_babycatdance_78: 1125309539151689360
+      461_360_babycatdance_79: -6206493164944601413
+      461_360_babycatdance_8: 4926799801768541674
+      461_360_babycatdance_80: -7403488474054396911
+      461_360_babycatdance_81: 4334424296684133906
+      461_360_babycatdance_82: 6126481428776418782
+      461_360_babycatdance_83: 1369233302811210383
+      461_360_babycatdance_84: 2437263584225513294
+      461_360_babycatdance_85: 815765835543579943
+      461_360_babycatdance_86: -1096253202215300720
+      461_360_babycatdance_87: -4290587292854043194
+      461_360_babycatdance_88: 2679250478037202886
+      461_360_babycatdance_89: -4678441740093056367
+      461_360_babycatdance_9: -2852957168807631175
+      461_360_babycatdance_90: -7112642265487954690
+      461_360_babycatdance_91: -8970287872160388714
+      461_360_babycatdance_92: -496579657346088511
+      461_360_babycatdance_93: -6249686507070678264
+      461_360_babycatdance_94: 2367778406113459462
+      461_360_babycatdance_95: -5572195345764165576
+      461_360_babycatdance_96: -1262959920362838452
+      461_360_babycatdance_97: 2611596223359523710
+      461_360_babycatdance_98: 6653443654041986345
+      461_360_babycatdance_99: -2114581190932233861
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

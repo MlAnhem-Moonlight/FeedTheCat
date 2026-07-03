@@ -1,0 +1,1508 @@
+fileFormatVersion: 2
+guid: 0e17bf36f36f1224c8f00183bf243da1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8390867799116505059
+    second: 200_200_chemieng_0
+  - first:
+      213: 5824021704794593562
+    second: 200_200_chemieng_1
+  - first:
+      213: -6919248993297971761
+    second: 200_200_chemieng_2
+  - first:
+      213: -7555825008385313802
+    second: 200_200_chemieng_3
+  - first:
+      213: -4762273250668533015
+    second: 200_200_chemieng_4
+  - first:
+      213: 1878359644452276304
+    second: 200_200_chemieng_5
+  - first:
+      213: -6893536758275659949
+    second: 200_200_chemieng_6
+  - first:
+      213: -7074061197435893707
+    second: 200_200_chemieng_7
+  - first:
+      213: -6254613234022971634
+    second: 200_200_chemieng_8
+  - first:
+      213: 7352834207443113932
+    second: 200_200_chemieng_9
+  - first:
+      213: -8806097002200204975
+    second: 200_200_chemieng_10
+  - first:
+      213: -7766992584027082630
+    second: 200_200_chemieng_11
+  - first:
+      213: -5035614085855809594
+    second: 200_200_chemieng_12
+  - first:
+      213: -3881340364967939357
+    second: 200_200_chemieng_13
+  - first:
+      213: 5632382251203485890
+    second: 200_200_chemieng_14
+  - first:
+      213: -2362844887104465911
+    second: 200_200_chemieng_15
+  - first:
+      213: -6207880275510008473
+    second: 200_200_chemieng_16
+  - first:
+      213: 7631784735883915677
+    second: 200_200_chemieng_17
+  - first:
+      213: -1523520209461466944
+    second: 200_200_chemieng_18
+  - first:
+      213: 1186246637375545343
+    second: 200_200_chemieng_19
+  - first:
+      213: 8490370682092211075
+    second: 200_200_chemieng_20
+  - first:
+      213: 4155482708523114132
+    second: 200_200_chemieng_21
+  - first:
+      213: -2542957408278832060
+    second: 200_200_chemieng_22
+  - first:
+      213: 1711213427786043650
+    second: 200_200_chemieng_23
+  - first:
+      213: -6033243007325196769
+    second: 200_200_chemieng_24
+  - first:
+      213: -3411633744523077504
+    second: 200_200_chemieng_25
+  - first:
+      213: -2748497856632042818
+    second: 200_200_chemieng_26
+  - first:
+      213: -404830675275525832
+    second: 200_200_chemieng_27
+  - first:
+      213: 3687423950314103040
+    second: 200_200_chemieng_28
+  - first:
+      213: 6901835019546714833
+    second: 200_200_chemieng_29
+  - first:
+      213: -7056750530850304116
+    second: 200_200_chemieng_30
+  - first:
+      213: -5585983351515463090
+    second: 200_200_chemieng_31
+  - first:
+      213: -2934710961457558088
+    second: 200_200_chemieng_32
+  - first:
+      213: -3190477076920748871
+    second: 200_200_chemieng_33
+  - first:
+      213: 2070156031471014626
+    second: 200_200_chemieng_34
+  - first:
+      213: -1423005737431805647
+    second: 200_200_chemieng_35
+  - first:
+      213: 3658545802133326763
+    second: 200_200_chemieng_36
+  - first:
+      213: 6947766988833714820
+    second: 200_200_chemieng_37
+  - first:
+      213: -5704308081528850055
+    second: 200_200_chemieng_38
+  - first:
+      213: -477842129601586207
+    second: 200_200_chemieng_39
+  - first:
+      213: 2688920349058982490
+    second: 200_200_chemieng_40
+  - first:
+      213: -3785724337143230574
+    second: 200_200_chemieng_41
+  - first:
+      213: 6818986283974344493
+    second: 200_200_chemieng_42
+  - first:
+      213: 1779052135037255570
+    second: 200_200_chemieng_43
+  - first:
+      213: 1565919623299642505
+    second: 200_200_chemieng_44
+  - first:
+      213: 3239440881977348048
+    second: 200_200_chemieng_45
+  - first:
+      213: -7540390019313859519
+    second: 200_200_chemieng_46
+  - first:
+      213: -4661902297363785568
+    second: 200_200_chemieng_47
+  - first:
+      213: -3446874718278830823
+    second: 200_200_chemieng_48
+  - first:
+      213: 6709019731547087864
+    second: 200_200_chemieng_49
+  - first:
+      213: 3317358011254557231
+    second: 200_200_chemieng_50
+  - first:
+      213: -1925296495601065618
+    second: 200_200_chemieng_51
+  - first:
+      213: -7326262926765689334
+    second: 200_200_chemieng_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 200_200_chemieng_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2010
+        width: 125
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef5a9b7ec9527470800000000000000
+      internalID: 8390867799116505059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_1
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 2010
+        width: 121
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19527e22e413d050800000000000000
+      internalID: 5824021704794593562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_2
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 2013
+        width: 123
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5cef943b3e9ff90800000000000000
+      internalID: -6919248993297971761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 2015
+        width: 129
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f33e26ff21542790800000000000000
+      internalID: -7555825008385313802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_4
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 2011
+        width: 136
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eaae8ac5b109edb0800000000000000
+      internalID: -4762273250668533015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1804
+        width: 135
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058c1080526411a10800000000000000
+      internalID: 1878359644452276304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_6
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1801
+        width: 135
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 357a1e487dc3550a0800000000000000
+      internalID: -6893536758275659949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_7
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1803
+        width: 137
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 538857722d2e3dd90800000000000000
+      internalID: -7074061197435893707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_8
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1804
+        width: 139
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e078a9ae6662339a0800000000000000
+      internalID: -6254613234022971634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_9
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1806
+        width: 139
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7dcf231c38a0660800000000000000
+      internalID: 7352834207443113932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_10
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1604
+        width: 138
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1597936ee657ac580800000000000000
+      internalID: -8806097002200204975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_11
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 1599
+        width: 138
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70f8f76569163490800000000000000
+      internalID: -7766992584027082630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_12
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1599
+        width: 138
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf6c923ba7ed1ab0800000000000000
+      internalID: -5035614085855809594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_13
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1602
+        width: 138
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e273b59085b22ac0800000000000000
+      internalID: -3881340364967939357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_14
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1603
+        width: 132
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0e23ad0dd3a2e40800000000000000
+      internalID: 5632382251203485890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1399
+        width: 126
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9045ac4181d753fd0800000000000000
+      internalID: -2362844887104465911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_16
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1399
+        width: 137
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765621ab7cd29d9a0800000000000000
+      internalID: -6207880275510008473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1399
+        width: 137
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91fb9848cb89e960800000000000000
+      internalID: 7631784735883915677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_18
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 1404
+        width: 131
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8abe2017e5bdae0800000000000000
+      internalID: -1523520209461466944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_19
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1407
+        width: 131
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff55cc1805667010800000000000000
+      internalID: 1186246637375545343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_20
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1201
+        width: 128
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b4f75c62bd3d570800000000000000
+      internalID: 8490370682092211075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_21
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1200
+        width: 130
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e5cc7b18d3ba930800000000000000
+      internalID: 4155482708523114132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_22
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1200
+        width: 124
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c9798d5b995bcd0800000000000000
+      internalID: -2542957408278832060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_23
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 1207
+        width: 129
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201d012db837fb710800000000000000
+      internalID: 1711213427786043650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_24
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1207
+        width: 129
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ea5c8437d954ca0800000000000000
+      internalID: -6033243007325196769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_25
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1010
+        width: 141
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08857f95f2177a0d0800000000000000
+      internalID: -3411633744523077504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_26
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1008
+        width: 144
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba4685f2cf5bd9d0800000000000000
+      internalID: -2748497856632042818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_27
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1005
+        width: 143
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831550e45a0c16af0800000000000000
+      internalID: -404830675275525832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_28
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1010
+        width: 147
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0016db6cb8c5c2330800000000000000
+      internalID: 3687423950314103040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_29
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1013
+        width: 149
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2ee6ef16e38cf50800000000000000
+      internalID: 6901835019546714833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_30
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 811
+        width: 146
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f4e1cc7c2611e90800000000000000
+      internalID: -7056750530850304116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_31
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 810
+        width: 144
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42cca3dcb99a72b0800000000000000
+      internalID: -5585983351515463090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_32
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 805
+        width: 143
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd80e7edefc547d0800000000000000
+      internalID: -2934710961457558088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 805
+        width: 143
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4bc1e900629b3d0800000000000000
+      internalID: -3190477076920748871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_34
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 805
+        width: 142
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2567541fbaabc10800000000000000
+      internalID: 2070156031471014626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_35
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 611
+        width: 140
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131d80b32d7704ce0800000000000000
+      internalID: -1423005737431805647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_36
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 610
+        width: 138
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab47a2f504c5c230800000000000000
+      internalID: 3658545802133326763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_37
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 605
+        width: 132
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4827e97f34d6b6060800000000000000
+      internalID: 6947766988833714820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_38
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 602
+        width: 129
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9793517c50a36d0b0800000000000000
+      internalID: -5704308081528850055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_39
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 601
+        width: 130
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb91666d1d5e59f0800000000000000
+      internalID: -477842129601586207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_40
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 410
+        width: 131
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a52eafa9fc6f05520800000000000000
+      internalID: 2688920349058982490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_41
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 401
+        width: 131
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fc603e5c7667bc0800000000000000
+      internalID: -3785724337143230574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_42
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 400
+        width: 130
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f3d8095e7e1ae50800000000000000
+      internalID: 6818986283974344493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_43
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 400
+        width: 131
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29fbbc1bd7670b810800000000000000
+      internalID: 1779052135037255570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_44
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 413
+        width: 127
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 984b69dc9934bb510800000000000000
+      internalID: 1565919623299642505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_45
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 213
+        width: 129
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0df4321a15ec4fc20800000000000000
+      internalID: 3239440881977348048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_46
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 205
+        width: 135
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14485e66a372b5790800000000000000
+      internalID: -7540390019313859519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_47
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 204
+        width: 137
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8dd047f889d4fb0800000000000000
+      internalID: -4661902297363785568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_48
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 203
+        width: 138
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91537bfb4bd3a20d0800000000000000
+      internalID: -3446874718278830823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_49
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 213
+        width: 116
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f363f166e93b1d50800000000000000
+      internalID: 6709019731547087864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 6
+        width: 118
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2acf9df88f990e20800000000000000
+      internalID: 3317358011254557231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_51
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 4
+        width: 117
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61e464b909f745e0800000000000000
+      internalID: -1925296495601065618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 200_200_chemieng_52
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 9
+        width: 118
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06740f2fa2e35a90800000000000000
+      internalID: -7326262926765689334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      200_200_chemieng_0: 8390867799116505059
+      200_200_chemieng_1: 5824021704794593562
+      200_200_chemieng_10: -8806097002200204975
+      200_200_chemieng_11: -7766992584027082630
+      200_200_chemieng_12: -5035614085855809594
+      200_200_chemieng_13: -3881340364967939357
+      200_200_chemieng_14: 5632382251203485890
+      200_200_chemieng_15: -2362844887104465911
+      200_200_chemieng_16: -6207880275510008473
+      200_200_chemieng_17: 7631784735883915677
+      200_200_chemieng_18: -1523520209461466944
+      200_200_chemieng_19: 1186246637375545343
+      200_200_chemieng_2: -6919248993297971761
+      200_200_chemieng_20: 8490370682092211075
+      200_200_chemieng_21: 4155482708523114132
+      200_200_chemieng_22: -2542957408278832060
+      200_200_chemieng_23: 1711213427786043650
+      200_200_chemieng_24: -6033243007325196769
+      200_200_chemieng_25: -3411633744523077504
+      200_200_chemieng_26: -2748497856632042818
+      200_200_chemieng_27: -404830675275525832
+      200_200_chemieng_28: 3687423950314103040
+      200_200_chemieng_29: 6901835019546714833
+      200_200_chemieng_3: -7555825008385313802
+      200_200_chemieng_30: -7056750530850304116
+      200_200_chemieng_31: -5585983351515463090
+      200_200_chemieng_32: -2934710961457558088
+      200_200_chemieng_33: -3190477076920748871
+      200_200_chemieng_34: 2070156031471014626
+      200_200_chemieng_35: -1423005737431805647
+      200_200_chemieng_36: 3658545802133326763
+      200_200_chemieng_37: 6947766988833714820
+      200_200_chemieng_38: -5704308081528850055
+      200_200_chemieng_39: -477842129601586207
+      200_200_chemieng_4: -4762273250668533015
+      200_200_chemieng_40: 2688920349058982490
+      200_200_chemieng_41: -3785724337143230574
+      200_200_chemieng_42: 6818986283974344493
+      200_200_chemieng_43: 1779052135037255570
+      200_200_chemieng_44: 1565919623299642505
+      200_200_chemieng_45: 3239440881977348048
+      200_200_chemieng_46: -7540390019313859519
+      200_200_chemieng_47: -4661902297363785568
+      200_200_chemieng_48: -3446874718278830823
+      200_200_chemieng_49: 6709019731547087864
+      200_200_chemieng_5: 1878359644452276304
+      200_200_chemieng_50: 3317358011254557231
+      200_200_chemieng_51: -1925296495601065618
+      200_200_chemieng_52: -7326262926765689334
+      200_200_chemieng_6: -6893536758275659949
+      200_200_chemieng_7: -7074061197435893707
+      200_200_chemieng_8: -6254613234022971634
+      200_200_chemieng_9: 7352834207443113932
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,5252 @@
+fileFormatVersion: 2
+guid: f0129cae311500941ae2ae2359f33016
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1189039410797476981
+    second: 480_301_hurrycat_0
+  - first:
+      213: -5207307712297344009
+    second: 480_301_hurrycat_1
+  - first:
+      213: -2007536836347382791
+    second: 480_301_hurrycat_2
+  - first:
+      213: 1357424313847465726
+    second: 480_301_hurrycat_3
+  - first:
+      213: -326023978755357799
+    second: 480_301_hurrycat_4
+  - first:
+      213: -8071315098460032872
+    second: 480_301_hurrycat_5
+  - first:
+      213: 1124477130902478421
+    second: 480_301_hurrycat_6
+  - first:
+      213: -754336583690008609
+    second: 480_301_hurrycat_7
+  - first:
+      213: -3694955551822256829
+    second: 480_301_hurrycat_8
+  - first:
+      213: -6754244048220031568
+    second: 480_301_hurrycat_9
+  - first:
+      213: 1451202010280648950
+    second: 480_301_hurrycat_10
+  - first:
+      213: -768108143159601698
+    second: 480_301_hurrycat_11
+  - first:
+      213: -4320045029212246379
+    second: 480_301_hurrycat_12
+  - first:
+      213: -3650197004826563611
+    second: 480_301_hurrycat_13
+  - first:
+      213: 5981382329623635220
+    second: 480_301_hurrycat_14
+  - first:
+      213: 1492882112277011046
+    second: 480_301_hurrycat_15
+  - first:
+      213: 6278044937348116816
+    second: 480_301_hurrycat_16
+  - first:
+      213: 9161041435070177597
+    second: 480_301_hurrycat_17
+  - first:
+      213: 5742187879823359040
+    second: 480_301_hurrycat_18
+  - first:
+      213: -3912754012753768693
+    second: 480_301_hurrycat_19
+  - first:
+      213: 1179972327066849541
+    second: 480_301_hurrycat_20
+  - first:
+      213: 1350822513228535791
+    second: 480_301_hurrycat_21
+  - first:
+      213: -3065154307566736159
+    second: 480_301_hurrycat_22
+  - first:
+      213: -1940424909522625701
+    second: 480_301_hurrycat_23
+  - first:
+      213: -7551177904207991984
+    second: 480_301_hurrycat_24
+  - first:
+      213: 2234322166168144275
+    second: 480_301_hurrycat_25
+  - first:
+      213: 60135207987328752
+    second: 480_301_hurrycat_26
+  - first:
+      213: 1659042620208623566
+    second: 480_301_hurrycat_27
+  - first:
+      213: 501359749686033865
+    second: 480_301_hurrycat_28
+  - first:
+      213: 7616812131836555735
+    second: 480_301_hurrycat_29
+  - first:
+      213: -3531180342172101914
+    second: 480_301_hurrycat_30
+  - first:
+      213: 633035078856322743
+    second: 480_301_hurrycat_31
+  - first:
+      213: -2629279041544031108
+    second: 480_301_hurrycat_32
+  - first:
+      213: 4259647711595981072
+    second: 480_301_hurrycat_33
+  - first:
+      213: -4361229701244716247
+    second: 480_301_hurrycat_34
+  - first:
+      213: -1848985169682697160
+    second: 480_301_hurrycat_35
+  - first:
+      213: 9206869706594751925
+    second: 480_301_hurrycat_36
+  - first:
+      213: -6451973094900547854
+    second: 480_301_hurrycat_37
+  - first:
+      213: -6419280525051368262
+    second: 480_301_hurrycat_38
+  - first:
+      213: -619097637738744293
+    second: 480_301_hurrycat_39
+  - first:
+      213: 3524570012820601593
+    second: 480_301_hurrycat_40
+  - first:
+      213: -5607815282291316294
+    second: 480_301_hurrycat_41
+  - first:
+      213: -8087031215114111779
+    second: 480_301_hurrycat_42
+  - first:
+      213: 8679838614417387928
+    second: 480_301_hurrycat_43
+  - first:
+      213: 5330371613621653187
+    second: 480_301_hurrycat_44
+  - first:
+      213: 350292612607451891
+    second: 480_301_hurrycat_45
+  - first:
+      213: -3630620430273753775
+    second: 480_301_hurrycat_46
+  - first:
+      213: 1771546333256460542
+    second: 480_301_hurrycat_47
+  - first:
+      213: 2249151147287234521
+    second: 480_301_hurrycat_48
+  - first:
+      213: 2818561225528047153
+    second: 480_301_hurrycat_49
+  - first:
+      213: -7144720354180186616
+    second: 480_301_hurrycat_50
+  - first:
+      213: 5412483720742320599
+    second: 480_301_hurrycat_51
+  - first:
+      213: 8574608055263609431
+    second: 480_301_hurrycat_52
+  - first:
+      213: 6631961572230840849
+    second: 480_301_hurrycat_53
+  - first:
+      213: -3118524718849351641
+    second: 480_301_hurrycat_54
+  - first:
+      213: 6213402969065540370
+    second: 480_301_hurrycat_55
+  - first:
+      213: -6793030159064110693
+    second: 480_301_hurrycat_56
+  - first:
+      213: 7897237420691652697
+    second: 480_301_hurrycat_57
+  - first:
+      213: 4039636612130492115
+    second: 480_301_hurrycat_58
+  - first:
+      213: 4834340460681624472
+    second: 480_301_hurrycat_59
+  - first:
+      213: -1237783999967522170
+    second: 480_301_hurrycat_60
+  - first:
+      213: 3453425793914093112
+    second: 480_301_hurrycat_61
+  - first:
+      213: 3633997351247039565
+    second: 480_301_hurrycat_62
+  - first:
+      213: 3376096336883374618
+    second: 480_301_hurrycat_63
+  - first:
+      213: 4177550910039325472
+    second: 480_301_hurrycat_64
+  - first:
+      213: 6185837170665174483
+    second: 480_301_hurrycat_65
+  - first:
+      213: 7926089499565216660
+    second: 480_301_hurrycat_66
+  - first:
+      213: 5790400984260267909
+    second: 480_301_hurrycat_67
+  - first:
+      213: 4299480909535319784
+    second: 480_301_hurrycat_68
+  - first:
+      213: 1797957105114818867
+    second: 480_301_hurrycat_69
+  - first:
+      213: -1539454649171498900
+    second: 480_301_hurrycat_70
+  - first:
+      213: 7095160562988586054
+    second: 480_301_hurrycat_71
+  - first:
+      213: -6420265081792490209
+    second: 480_301_hurrycat_72
+  - first:
+      213: -8918056872316998998
+    second: 480_301_hurrycat_73
+  - first:
+      213: -5554085802292146616
+    second: 480_301_hurrycat_74
+  - first:
+      213: 7496657661985612631
+    second: 480_301_hurrycat_75
+  - first:
+      213: -3120595990464765142
+    second: 480_301_hurrycat_76
+  - first:
+      213: -5348490845560485768
+    second: 480_301_hurrycat_77
+  - first:
+      213: 2308576478232011315
+    second: 480_301_hurrycat_78
+  - first:
+      213: 7487233916607547415
+    second: 480_301_hurrycat_79
+  - first:
+      213: 4743918183641471019
+    second: 480_301_hurrycat_80
+  - first:
+      213: -1421863422588835006
+    second: 480_301_hurrycat_81
+  - first:
+      213: 4036236585761910918
+    second: 480_301_hurrycat_82
+  - first:
+      213: -7827945075473217788
+    second: 480_301_hurrycat_83
+  - first:
+      213: 6769872359715494710
+    second: 480_301_hurrycat_84
+  - first:
+      213: 926679489017696083
+    second: 480_301_hurrycat_85
+  - first:
+      213: -4148408529684797220
+    second: 480_301_hurrycat_86
+  - first:
+      213: -1344345045476903934
+    second: 480_301_hurrycat_87
+  - first:
+      213: 2855852729610948933
+    second: 480_301_hurrycat_88
+  - first:
+      213: -7741119897671036539
+    second: 480_301_hurrycat_89
+  - first:
+      213: 5084600772115790507
+    second: 480_301_hurrycat_90
+  - first:
+      213: -1959299101186971052
+    second: 480_301_hurrycat_91
+  - first:
+      213: 4176481678659953305
+    second: 480_301_hurrycat_92
+  - first:
+      213: 3166684101367739253
+    second: 480_301_hurrycat_93
+  - first:
+      213: 4428133136623256560
+    second: 480_301_hurrycat_94
+  - first:
+      213: -1532044768693170105
+    second: 480_301_hurrycat_95
+  - first:
+      213: 5430075038380982434
+    second: 480_301_hurrycat_96
+  - first:
+      213: 2578225314931013588
+    second: 480_301_hurrycat_97
+  - first:
+      213: -6648909368509593522
+    second: 480_301_hurrycat_98
+  - first:
+      213: -4409259906820738438
+    second: 480_301_hurrycat_99
+  - first:
+      213: -8829279243146443899
+    second: 480_301_hurrycat_100
+  - first:
+      213: -7879134196059740095
+    second: 480_301_hurrycat_101
+  - first:
+      213: 7869374531154197206
+    second: 480_301_hurrycat_102
+  - first:
+      213: -9137625505800004844
+    second: 480_301_hurrycat_103
+  - first:
+      213: -7962550999724977135
+    second: 480_301_hurrycat_104
+  - first:
+      213: 7276911331674244982
+    second: 480_301_hurrycat_105
+  - first:
+      213: 1016955224518819465
+    second: 480_301_hurrycat_106
+  - first:
+      213: -7154593608517290656
+    second: 480_301_hurrycat_107
+  - first:
+      213: -3649536428570270646
+    second: 480_301_hurrycat_108
+  - first:
+      213: 1386042882035720169
+    second: 480_301_hurrycat_109
+  - first:
+      213: -7133923163939025571
+    second: 480_301_hurrycat_110
+  - first:
+      213: 7542503859857315994
+    second: 480_301_hurrycat_111
+  - first:
+      213: 8363178834453591641
+    second: 480_301_hurrycat_112
+  - first:
+      213: -2984799232498729530
+    second: 480_301_hurrycat_113
+  - first:
+      213: 5408937359051048646
+    second: 480_301_hurrycat_114
+  - first:
+      213: -3357406494286634435
+    second: 480_301_hurrycat_115
+  - first:
+      213: 5322465700431241078
+    second: 480_301_hurrycat_116
+  - first:
+      213: 1795513999867375590
+    second: 480_301_hurrycat_117
+  - first:
+      213: -3938406541376099894
+    second: 480_301_hurrycat_118
+  - first:
+      213: 6498635760928911992
+    second: 480_301_hurrycat_119
+  - first:
+      213: -2218531294221981355
+    second: 480_301_hurrycat_120
+  - first:
+      213: -1182998982386223641
+    second: 480_301_hurrycat_121
+  - first:
+      213: 6825887521608187901
+    second: 480_301_hurrycat_122
+  - first:
+      213: -5208970070643771563
+    second: 480_301_hurrycat_123
+  - first:
+      213: -348129430473184119
+    second: 480_301_hurrycat_124
+  - first:
+      213: -5914779797942982177
+    second: 480_301_hurrycat_125
+  - first:
+      213: -6816001280257465643
+    second: 480_301_hurrycat_126
+  - first:
+      213: -6111516738882103153
+    second: 480_301_hurrycat_127
+  - first:
+      213: -885845723952060606
+    second: 480_301_hurrycat_128
+  - first:
+      213: 5563187190671710163
+    second: 480_301_hurrycat_129
+  - first:
+      213: 6412457116967075367
+    second: 480_301_hurrycat_130
+  - first:
+      213: -5512313691483107650
+    second: 480_301_hurrycat_131
+  - first:
+      213: 4889722460531064181
+    second: 480_301_hurrycat_132
+  - first:
+      213: -6943087067681996648
+    second: 480_301_hurrycat_133
+  - first:
+      213: 1641389623588295797
+    second: 480_301_hurrycat_134
+  - first:
+      213: 1571236089986827914
+    second: 480_301_hurrycat_135
+  - first:
+      213: -2967110580596659267
+    second: 480_301_hurrycat_136
+  - first:
+      213: -9049511330242302360
+    second: 480_301_hurrycat_137
+  - first:
+      213: 1009276685494310930
+    second: 480_301_hurrycat_138
+  - first:
+      213: 6319177509453060727
+    second: 480_301_hurrycat_139
+  - first:
+      213: 8552790461458386149
+    second: 480_301_hurrycat_140
+  - first:
+      213: -6041174982986663023
+    second: 480_301_hurrycat_141
+  - first:
+      213: -880320025722680067
+    second: 480_301_hurrycat_142
+  - first:
+      213: 319065609540105659
+    second: 480_301_hurrycat_143
+  - first:
+      213: 1842491271661897472
+    second: 480_301_hurrycat_144
+  - first:
+      213: 8076740803525894944
+    second: 480_301_hurrycat_145
+  - first:
+      213: 5255523172955789494
+    second: 480_301_hurrycat_146
+  - first:
+      213: -2737972066469342918
+    second: 480_301_hurrycat_147
+  - first:
+      213: 4344569446722112794
+    second: 480_301_hurrycat_148
+  - first:
+      213: -7736948581923412063
+    second: 480_301_hurrycat_149
+  - first:
+      213: -4064301337710294922
+    second: 480_301_hurrycat_150
+  - first:
+      213: 8592607614368214809
+    second: 480_301_hurrycat_151
+  - first:
+      213: -6022586553626849706
+    second: 480_301_hurrycat_152
+  - first:
+      213: -1059525210070154577
+    second: 480_301_hurrycat_153
+  - first:
+      213: -7987125197985890296
+    second: 480_301_hurrycat_154
+  - first:
+      213: -5301752797387363942
+    second: 480_301_hurrycat_155
+  - first:
+      213: -8797186129039578021
+    second: 480_301_hurrycat_156
+  - first:
+      213: -2322514752983372340
+    second: 480_301_hurrycat_157
+  - first:
+      213: -7060273731448094292
+    second: 480_301_hurrycat_158
+  - first:
+      213: 3222963563848146152
+    second: 480_301_hurrycat_159
+  - first:
+      213: 3850826638259782027
+    second: 480_301_hurrycat_160
+  - first:
+      213: -8884314623318542124
+    second: 480_301_hurrycat_161
+  - first:
+      213: 5267188317669474528
+    second: 480_301_hurrycat_162
+  - first:
+      213: -3873657433648884625
+    second: 480_301_hurrycat_163
+  - first:
+      213: 5281625306577061763
+    second: 480_301_hurrycat_164
+  - first:
+      213: 8726977686380359555
+    second: 480_301_hurrycat_165
+  - first:
+      213: -4591160663107259040
+    second: 480_301_hurrycat_166
+  - first:
+      213: -3712419880075138473
+    second: 480_301_hurrycat_167
+  - first:
+      213: -768614595375661471
+    second: 480_301_hurrycat_168
+  - first:
+      213: -1724272055188386943
+    second: 480_301_hurrycat_169
+  - first:
+      213: -2075608102134797568
+    second: 480_301_hurrycat_170
+  - first:
+      213: 5873970037229705067
+    second: 480_301_hurrycat_171
+  - first:
+      213: 8444756738463913885
+    second: 480_301_hurrycat_172
+  - first:
+      213: 1878093698928631415
+    second: 480_301_hurrycat_173
+  - first:
+      213: 378739230112879048
+    second: 480_301_hurrycat_174
+  - first:
+      213: -3137876141496064262
+    second: 480_301_hurrycat_175
+  - first:
+      213: -2042846412713159391
+    second: 480_301_hurrycat_176
+  - first:
+      213: 4414367631424205720
+    second: 480_301_hurrycat_177
+  - first:
+      213: 2086409312763978563
+    second: 480_301_hurrycat_178
+  - first:
+      213: 7057168867136998684
+    second: 480_301_hurrycat_179
+  - first:
+      213: 1901445127286306243
+    second: 480_301_hurrycat_180
+  - first:
+      213: -1347234589086508050
+    second: 480_301_hurrycat_181
+  - first:
+      213: 1636070984801153147
+    second: 480_301_hurrycat_182
+  - first:
+      213: 7520282892618203872
+    second: 480_301_hurrycat_183
+  - first:
+      213: -4192389162152603387
+    second: 480_301_hurrycat_184
+  - first:
+      213: -360683017532721416
+    second: 480_301_hurrycat_185
+  - first:
+      213: 3322352074339124525
+    second: 480_301_hurrycat_186
+  - first:
+      213: 8739197065602698080
+    second: 480_301_hurrycat_187
+  - first:
+      213: 2781414781594665864
+    second: 480_301_hurrycat_188
+  - first:
+      213: -5204993830773429460
+    second: 480_301_hurrycat_189
+  - first:
+      213: 3473968408731838288
+    second: 480_301_hurrycat_190
+  - first:
+      213: -5972398552300241356
+    second: 480_301_hurrycat_191
+  - first:
+      213: -1389003346952288482
+    second: 480_301_hurrycat_192
+  - first:
+      213: 2215129940101867525
+    second: 480_301_hurrycat_193
+  - first:
+      213: 2705850270184407099
+    second: 480_301_hurrycat_194
+  - first:
+      213: -1123948033730991421
+    second: 480_301_hurrycat_195
+  - first:
+      213: -8896448091368623805
+    second: 480_301_hurrycat_196
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 480_301_hurrycat_0
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 8479
+        width: 180
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b830a77a4feaf7fe0800000000000000
+      internalID: -1189039410797476981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 8481
+        width: 61
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f36d54a93debb7b0800000000000000
+      internalID: -5207307712297344009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_2
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 8481
+        width: 146
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3b00c32ebc324e0800000000000000
+      internalID: -2007536836347382791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_3
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 8475
+        width: 52
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef64b54b83a86d210800000000000000
+      internalID: 1357424313847465726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_4
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 8481
+        width: 146
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993070e2beab97bf0800000000000000
+      internalID: -326023978755357799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_5
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 8472
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890fa0e7eadecff80800000000000000
+      internalID: -8071315098460032872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_6
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 8481
+        width: 146
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e1e792ef1fa9f00800000000000000
+      internalID: 1124477130902478421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_7
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 8472
+        width: 60
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd74310bfde0885f0800000000000000
+      internalID: -754336583690008609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_8
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 8481
+        width: 146
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345e6c89081e8bcc0800000000000000
+      internalID: -3694955551822256829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_9
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 8170
+        width: 58
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b57c8bd2da1442a0800000000000000
+      internalID: -6754244048220031568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_10
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 8180
+        width: 146
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f06c102a84b32410800000000000000
+      internalID: 1451202010280648950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_11
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 8172
+        width: 53
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed513e1a6b12755f0800000000000000
+      internalID: -768108143159601698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_12
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 8180
+        width: 146
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59eac1c3fed1c04c0800000000000000
+      internalID: -4320045029212246379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_13
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 8171
+        width: 53
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb2e17e925e75dc0800000000000000
+      internalID: -3650197004826563611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_14
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 8180
+        width: 146
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415e30fb983220350800000000000000
+      internalID: 5981382329623635220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_15
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 8171
+        width: 182
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66a5ec91f58c7b410800000000000000
+      internalID: 1492882112277011046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_16
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 8170
+        width: 182
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051f296ab98102750800000000000000
+      internalID: 6278044937348116816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_17
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 7869
+        width: 182
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d312efdd5ae822f70800000000000000
+      internalID: 9161041435070177597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_18
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 7869
+        width: 182
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04cbc6a047950bf40800000000000000
+      internalID: 5742187879823359040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_19
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 7869
+        width: 182
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0fc350c4fa13b9c0800000000000000
+      internalID: -3912754012753768693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_20
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 7869
+        width: 182
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5015c97649a106010800000000000000
+      internalID: 1179972327066849541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_21
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 7870
+        width: 181
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe756973be51fb210800000000000000
+      internalID: 1350822513228535791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_22
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 7570
+        width: 178
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ece9bba5626675d0800000000000000
+      internalID: -3065154307566736159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_23
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 7572
+        width: 176
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b959a53d93215e0800000000000000
+      internalID: -1940424909522625701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_24
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 7572
+        width: 171
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b67e734b3d43790800000000000000
+      internalID: -7551177904207991984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_25
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 7572
+        width: 165
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 399cb341c28e10f10800000000000000
+      internalID: 2234322166168144275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_26
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 7573
+        width: 159
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6349e27a4a5d000800000000000000
+      internalID: 60135207987328752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_27
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 7271
+        width: 156
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecfa4cc197a160710800000000000000
+      internalID: 1659042620208623566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_28
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 7271
+        width: 154
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdf6b8390035f600800000000000000
+      internalID: 501359749686033865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_29
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 7271
+        width: 152
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1f00f374a54b960800000000000000
+      internalID: 7616812131836555735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_30
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 7272
+        width: 151
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e25df2103abefec0800000000000000
+      internalID: -3531180342172101914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_31
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 7272
+        width: 151
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bea79ddc0ef8c800800000000000000
+      internalID: 633035078856322743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_32
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 6972
+        width: 151
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74736964ace28bd0800000000000000
+      internalID: -2629279041544031108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_33
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 6972
+        width: 151
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019ebfd660f4d1b30800000000000000
+      internalID: 4259647711595981072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_34
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 6972
+        width: 151
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92bfc6981bcc973c0800000000000000
+      internalID: -4361229701244716247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_35
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 6973
+        width: 151
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834f816d8c51756e0800000000000000
+      internalID: -1848985169682697160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_36
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 6973
+        width: 151
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b592e2d73f55cf70800000000000000
+      internalID: 9206869706594751925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_37
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 6672
+        width: 154
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe331a77acf576a0800000000000000
+      internalID: -6451973094900547854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_38
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 6672
+        width: 157
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abceabe8f522ae6a0800000000000000
+      internalID: -6419280525051368262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_39
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 6673
+        width: 162
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b167c458af58867f0800000000000000
+      internalID: -619097637738744293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_40
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 6674
+        width: 167
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa7a20b0c9c9e030800000000000000
+      internalID: 3524570012820601593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_41
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 6671
+        width: 172
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9e40556b90d22b0800000000000000
+      internalID: -5607815282291316294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_42
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 6364
+        width: 183
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4b0afe4f715cf80800000000000000
+      internalID: -8087031215114111779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_43
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 6363
+        width: 186
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89131186b3bf47870800000000000000
+      internalID: 8679838614417387928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_44
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 6363
+        width: 187
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce8eb6bdb849f940800000000000000
+      internalID: 5330371613621653187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_45
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 6363
+        width: 187
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f229e5764d7cd400800000000000000
+      internalID: 350292612607451891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_46
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 6363
+        width: 187
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15dc14b54f17d9dc0800000000000000
+      internalID: -3630620430273753775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_47
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 6061
+        width: 55
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8a5e8010cc59810800000000000000
+      internalID: 1771546333256460542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_48
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 6073
+        width: 151
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7c73c4d07963f10800000000000000
+      internalID: 2249151147287234521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_49
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 6061
+        width: 192
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136f941508a8d1720800000000000000
+      internalID: 2818561225528047153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_50
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 6061
+        width: 197
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e369531bad8dc90800000000000000
+      internalID: -7144720354180186616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_51
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 6061
+        width: 63
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d93e6774410d1b40800000000000000
+      internalID: 5412483720742320599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_52
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 6073
+        width: 151
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752c03698902ff670800000000000000
+      internalID: 8574608055263609431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_53
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 6063
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1124cdc89e5790c50800000000000000
+      internalID: 6631961572230840849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_54
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 6073
+        width: 151
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720a5b57a46c8b4d0800000000000000
+      internalID: -3118524718849351641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_55
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 5764
+        width: 53
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21b428194117a3650800000000000000
+      internalID: 6213402969065540370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_56
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 5772
+        width: 151
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99e774bf0f4ab1a0800000000000000
+      internalID: -6793030159064110693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_57
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 5763
+        width: 53
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9508f3fb79f989d60800000000000000
+      internalID: 7897237420691652697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_58
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 5772
+        width: 152
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de43b7881caf0830800000000000000
+      internalID: 4039636612130492115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_59
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 5761
+        width: 192
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89bf93a1907071340800000000000000
+      internalID: 4834340460681624472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_60
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 5764
+        width: 190
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6821645920282dee0800000000000000
+      internalID: -1237783999967522170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_61
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 5762
+        width: 190
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83ebb6866780def20800000000000000
+      internalID: 3453425793914093112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_62
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 5460
+        width: 191
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c4ac3565d8e6230800000000000000
+      internalID: 3633997351247039565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_63
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 5461
+        width: 187
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a5e672bbd4ade20800000000000000
+      internalID: 3376096336883374618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_64
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 5463
+        width: 184
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02bf0084b64a9f930800000000000000
+      internalID: 4177550910039325472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_65
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 5465
+        width: 180
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5b7ebf12288d550800000000000000
+      internalID: 6185837170665174483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_66
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 5466
+        width: 173
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493d987d7602ffd60800000000000000
+      internalID: 7926089499565216660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_67
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 5164
+        width: 165
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58fc7ed2403ab5050800000000000000
+      internalID: 5790400984260267909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_68
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 5166
+        width: 158
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e61d6b8b13daab30800000000000000
+      internalID: 4299480909535319784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_69
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 5166
+        width: 154
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33922cb0670a3f810800000000000000
+      internalID: 1797957105114818867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_70
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 5165
+        width: 153
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c682f482722c2aae0800000000000000
+      internalID: -1539454649171498900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_71
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 5166
+        width: 154
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6449b45b0f2177260800000000000000
+      internalID: 7095160562988586054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_72
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 4865
+        width: 154
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f151ae39ce2a6e6a0800000000000000
+      internalID: -6420265081792490209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_73
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 4865
+        width: 154
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aaa60d64682bc3480800000000000000
+      internalID: -8918056872316998998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_74
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 4865
+        width: 154
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e065eb36cebe2b0800000000000000
+      internalID: -5554085802292146616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_75
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 4866
+        width: 154
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753ec51bc6a790860800000000000000
+      internalID: 7496657661985612631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_76
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 4866
+        width: 153
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23e6d4fa7a61b4d0800000000000000
+      internalID: -3120595990464765142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_77
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 4565
+        width: 153
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87840f9d9e756c5b0800000000000000
+      internalID: -5348490845560485768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_78
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 4565
+        width: 154
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33267d95316b90020800000000000000
+      internalID: 2308576478232011315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_79
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 4565
+        width: 159
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71846adf39ff7e760800000000000000
+      internalID: 7487233916607547415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_80
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 4564
+        width: 164
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2857732478c5d140800000000000000
+      internalID: 4743918183641471019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_81
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 4562
+        width: 173
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ba87120c6844ce0800000000000000
+      internalID: -1421863422588835006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_82
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 4264
+        width: 180
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68036c33ac7930830800000000000000
+      internalID: 4036236585761910918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_83
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 4261
+        width: 61
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40786279d6d8d5390800000000000000
+      internalID: -7827945075473217788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_84
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 4267
+        width: 154
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63bd397fa0b63fd50800000000000000
+      internalID: 6769872359715494710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_85
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 4260
+        width: 57
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f4a83e51a3cdc00800000000000000
+      internalID: 926679489017696083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_86
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 4267
+        width: 154
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8efe4eb64ed66c0800000000000000
+      internalID: -4148408529684797220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_87
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 4262
+        width: 51
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204fac4cd4de75de0800000000000000
+      internalID: -1344345045476903934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_88
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 4267
+        width: 154
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5415a473de602a720800000000000000
+      internalID: 2855852729610948933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_89
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 4261
+        width: 52
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5811c9f9774029490800000000000000
+      internalID: -7741119897671036539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_90
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 4267
+        width: 155
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa73ae7671209640800000000000000
+      internalID: 5084600772115790507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_91
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 3960
+        width: 55
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a220929db2fc4e0800000000000000
+      internalID: -1959299101186971052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_92
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3966
+        width: 155
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 992247375f7d5f930800000000000000
+      internalID: 4176481678659953305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_93
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 3960
+        width: 53
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573b6e1996252fb20800000000000000
+      internalID: 3166684101367739253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_94
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3966
+        width: 155
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3c09260a3e37d30800000000000000
+      internalID: 4428133136623256560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_95
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 3960
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7405c0666651dbae0800000000000000
+      internalID: -1532044768693170105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_96
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 3966
+        width: 155
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a00a664a708b5b40800000000000000
+      internalID: 5430075038380982434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_97
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 3959
+        width: 57
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7f16f8342b7c320800000000000000
+      internalID: 2578225314931013588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_98
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 3966
+        width: 155
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48083228245ab3a0800000000000000
+      internalID: -6648909368509593522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_99
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 3960
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72f39bd9792fc2c0800000000000000
+      internalID: -4409259906820738438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_100
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 3966
+        width: 156
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583c681de49187580800000000000000
+      internalID: -8829279243146443899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_101
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 3658
+        width: 57
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148e932b131b7a290800000000000000
+      internalID: -7879134196059740095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_102
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 3665
+        width: 156
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dab3fd3172a53d60800000000000000
+      internalID: 7869374531154197206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_103
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 3659
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41bdd340402a03180800000000000000
+      internalID: -9137625505800004844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_104
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 3665
+        width: 156
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114167b9d065f7190800000000000000
+      internalID: -7962550999724977135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_105
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 3659
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 677457a2d48ccf460800000000000000
+      internalID: 7276911331674244982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_106
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 3665
+        width: 156
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98efbed7363fc1e00800000000000000
+      internalID: 1016955224518819465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_107
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 3659
+        width: 56
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065fb0c0507c5bc90800000000000000
+      internalID: -7154593608517290656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_108
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 3665
+        width: 157
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44a83c44fd3a5dc0800000000000000
+      internalID: -3649536428570270646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_109
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 3659
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef923b58a63c3310800000000000000
+      internalID: 1386042882035720169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_110
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 3665
+        width: 157
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5dcb76fda63ffc90800000000000000
+      internalID: -7133923163939025571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_111
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 3357
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98dec37c4b5ca860800000000000000
+      internalID: 7542503859857315994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_112
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 3364
+        width: 159
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956fba407daff0470800000000000000
+      internalID: 8363178834453591641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_113
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 3357
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cdfd0589ecd396d0800000000000000
+      internalID: -2984799232498729530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_114
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 3364
+        width: 160
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6c39aced7601b40800000000000000
+      internalID: 5408937359051048646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_115
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 3357
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32a47de4981861d0800000000000000
+      internalID: -3357406494286634435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_116
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 3364
+        width: 161
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f976bda523dd940800000000000000
+      internalID: 5322465700431241078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_117
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 3357
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6efe5574872fae810800000000000000
+      internalID: 1795513999867375590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_118
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 3364
+        width: 162
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9e3300e18f759c0800000000000000
+      internalID: -3938406541376099894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_119
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 3357
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87271d61bcacf2a50800000000000000
+      internalID: 6498635760928911992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_120
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 3364
+        width: 164
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559afccca813631e0800000000000000
+      internalID: -2218531294221981355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_121
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 3056
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5783d71b4259fe0800000000000000
+      internalID: -1182998982386223641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_122
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3063
+        width: 165
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff3a3a298c6abe50800000000000000
+      internalID: 6825887521608187901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_123
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 3056
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557f2ada15506b7b0800000000000000
+      internalID: -5208970070643771563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_124
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 3063
+        width: 166
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c69c0a0223b2bf0800000000000000
+      internalID: -348129430473184119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_125
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 3056
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9a3f29c1b7aeda0800000000000000
+      internalID: -5914779797942982177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_126
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 3063
+        width: 167
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d265a5c2f2b861a0800000000000000
+      internalID: -6816001280257465643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_127
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 3056
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88141cf7e78f2ba0800000000000000
+      internalID: -6111516738882103153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_128
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 3063
+        width: 168
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247e90ae108d4b3f0800000000000000
+      internalID: -885845723952060606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_129
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 3056
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d79dfe5649643d40800000000000000
+      internalID: 5563187190671710163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_130
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 3063
+        width: 168
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e7f32f5cf9df850800000000000000
+      internalID: 6412457116967075367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_131
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2755
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe80a037e35083b0800000000000000
+      internalID: -5512313691483107650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_132
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 2762
+        width: 169
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57df336cba8cbd340800000000000000
+      internalID: 4889722460531064181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_133
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2755
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890c436191335af90800000000000000
+      internalID: -6943087067681996648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_134
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 2762
+        width: 168
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5741efb8a2367c610800000000000000
+      internalID: 1641389623588295797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_135
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 2755
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8640f926e62ec510800000000000000
+      internalID: 1571236089986827914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_136
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 2762
+        width: 168
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbab3ab5a4b2d6d0800000000000000
+      internalID: -2967110580596659267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_137
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 2755
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ee80a346da96280800000000000000
+      internalID: -9049511330242302360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_138
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 2762
+        width: 167
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218d8fe4ccba10e00800000000000000
+      internalID: 1009276685494310930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_139
+      rect:
+        serializedVersion: 2
+        x: 2034
+        y: 2755
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a5693e67a32b750800000000000000
+      internalID: 6319177509453060727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_140
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 2762
+        width: 165
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ec839d2c9d91b670800000000000000
+      internalID: 8552790461458386149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_141
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2454
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b7a194c5f692ca0800000000000000
+      internalID: -6041174982986663023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_142
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 2461
+        width: 164
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfc032ac99978c3f0800000000000000
+      internalID: -880320025722680067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_143
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2454
+        width: 185
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb57eac3b7c8d6400800000000000000
+      internalID: 319065609540105659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_144
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 2454
+        width: 185
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0074a25bc08d19910800000000000000
+      internalID: 1842491271661897472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_145
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 2454
+        width: 184
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0236019e7f8561070800000000000000
+      internalID: 8076740803525894944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_146
+      rect:
+        serializedVersion: 2
+        x: 2035
+        y: 2454
+        width: 185
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b81dd81b7e5fe840800000000000000
+      internalID: 5255523172955789494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_147
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2153
+        width: 186
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31172579e4c00ad0800000000000000
+      internalID: -2737972066469342918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_148
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 2153
+        width: 187
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d03eda4e20b4c30800000000000000
+      internalID: 4344569446722112794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_149
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 2153
+        width: 187
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a72ef0c146d0a490800000000000000
+      internalID: -7736948581923412063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_150
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 2153
+        width: 187
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67802a98773b897c0800000000000000
+      internalID: -4064301337710294922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_151
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 2153
+        width: 187
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91febb489131f3770800000000000000
+      internalID: 8592607614368214809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_152
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1852
+        width: 186
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e070240797b6ca0800000000000000
+      internalID: -6022586553626849706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_153
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1853
+        width: 186
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2823f5f6fcb41f0800000000000000
+      internalID: -1059525210070154577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_154
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 1853
+        width: 185
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800ca7533f7082190800000000000000
+      internalID: -7987125197985890296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_155
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1853
+        width: 180
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99eac0bbe36c66b0800000000000000
+      internalID: -5301752797387363942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_156
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1854
+        width: 172
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c2a9b33dd1ae580800000000000000
+      internalID: -8797186129039578021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_157
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1553
+        width: 164
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd62da2325c4cfd0800000000000000
+      internalID: -2322514752983372340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_158
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 1554
+        width: 156
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca1c30cb27ed40e90800000000000000
+      internalID: -7060273731448094292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_159
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 1554
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec123b09444abc20800000000000000
+      internalID: 3222963563848146152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_160
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1552
+        width: 152
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b810619cc62e07530800000000000000
+      internalID: 3850826638259782027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_161
+      rect:
+        serializedVersion: 2
+        x: 2068
+        y: 1552
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d83a44dbe294b480800000000000000
+      internalID: -8884314623318542124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_162
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1251
+        width: 152
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0c6cf3edfc81940800000000000000
+      internalID: 5267188317669474528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_163
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1251
+        width: 152
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f649ecd66110e3ac0800000000000000
+      internalID: -3873657433648884625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_164
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 1251
+        width: 153
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3874d3bab3a1c4940800000000000000
+      internalID: 5281625306577061763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_165
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 1251
+        width: 153
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f267fd7f37c1970800000000000000
+      internalID: 8726977686380359555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_166
+      rect:
+        serializedVersion: 2
+        x: 2067
+        y: 1251
+        width: 153
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065beb0b3bbe840c0800000000000000
+      internalID: -4591160663107259040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_167
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 949
+        width: 153
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ae50fc9c5da7cc0800000000000000
+      internalID: -3712419880075138473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_168
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 949
+        width: 158
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ef37909155555f0800000000000000
+      internalID: -768614595375661471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_169
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 947
+        width: 164
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b0d5e83b72218e0800000000000000
+      internalID: -1724272055188386943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_170
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 943
+        width: 56
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b255b9d65f133e0800000000000000
+      internalID: -2075608102134797568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_171
+      rect:
+        serializedVersion: 2
+        x: 1587
+        y: 956
+        width: 153
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b675d5290a8848150800000000000000
+      internalID: 5873970037229705067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_172
+      rect:
+        serializedVersion: 2
+        x: 2041
+        y: 948
+        width: 54
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d975abae28dc13570800000000000000
+      internalID: 8444756738463913885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_173
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 956
+        width: 154
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e5a83c444501a10800000000000000
+      internalID: 1878093698928631415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_174
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 649
+        width: 186
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c11269b25d814500800000000000000
+      internalID: 378739230112879048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_175
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 649
+        width: 61
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af624f446460474d0800000000000000
+      internalID: -3137876141496064262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_176
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 655
+        width: 154
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1251d87d20a56a3e0800000000000000
+      internalID: -2042846412713159391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_177
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 650
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893b503f8fbf24d30800000000000000
+      internalID: 4414367631424205720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_178
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 655
+        width: 155
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3432d57373a64fc10800000000000000
+      internalID: 2086409312763978563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_179
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 643
+        width: 56
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1d85a5b1b910f160800000000000000
+      internalID: 7057168867136998684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_180
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 655
+        width: 155
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c53ccbd44a436a10800000000000000
+      internalID: 1901445127286306243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_181
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 643
+        width: 61
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb11687749ad4de0800000000000000
+      internalID: -1347234589086508050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_182
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 655
+        width: 155
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70756474ed74b610800000000000000
+      internalID: 1636070984801153147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_183
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 341
+        width: 63
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e284f852796d5860800000000000000
+      internalID: 7520282892618203872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_184
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 354
+        width: 155
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50152bde444a1d5c0800000000000000
+      internalID: -4192389162152603387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_185
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 340
+        width: 59
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6327fd4b89efaf0800000000000000
+      internalID: -360683017532721416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_186
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 354
+        width: 156
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2504c9eb9d5b1e20800000000000000
+      internalID: 3322352074339124525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_187
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 340
+        width: 57
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b826dcd6dd74970800000000000000
+      internalID: 8739197065602698080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_188
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 354
+        width: 156
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88388fdd102999620800000000000000
+      internalID: 2781414781594665864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_189
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 341
+        width: 61
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b66aa20b524c7b0800000000000000
+      internalID: -5204993830773429460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_190
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 354
+        width: 156
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057e363acd3063030800000000000000
+      internalID: 3473968408731838288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_191
+      rect:
+        serializedVersion: 2
+        x: 2032
+        y: 340
+        width: 59
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e3619e827cd1da0800000000000000
+      internalID: -5972398552300241356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_192
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 354
+        width: 156
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e178411b0d449bce0800000000000000
+      internalID: -1389003346952288482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_193
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 40
+        width: 59
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508aa1bb1f8bdbe10800000000000000
+      internalID: 2215129940101867525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_194
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 53
+        width: 156
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b308cb90c7c1d8520800000000000000
+      internalID: 2705850270184407099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_195
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 39
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca277fd73fe660f0800000000000000
+      internalID: -1123948033730991421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_301_hurrycat_196
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 53
+        width: 156
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3417547a897798480800000000000000
+      internalID: -8896448091368623805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      480_301_hurrycat_0: -1189039410797476981
+      480_301_hurrycat_1: -5207307712297344009
+      480_301_hurrycat_10: 1451202010280648950
+      480_301_hurrycat_100: -8829279243146443899
+      480_301_hurrycat_101: -7879134196059740095
+      480_301_hurrycat_102: 7869374531154197206
+      480_301_hurrycat_103: -9137625505800004844
+      480_301_hurrycat_104: -7962550999724977135
+      480_301_hurrycat_105: 7276911331674244982
+      480_301_hurrycat_106: 1016955224518819465
+      480_301_hurrycat_107: -7154593608517290656
+      480_301_hurrycat_108: -3649536428570270646
+      480_301_hurrycat_109: 1386042882035720169
+      480_301_hurrycat_11: -768108143159601698
+      480_301_hurrycat_110: -7133923163939025571
+      480_301_hurrycat_111: 7542503859857315994
+      480_301_hurrycat_112: 8363178834453591641
+      480_301_hurrycat_113: -2984799232498729530
+      480_301_hurrycat_114: 5408937359051048646
+      480_301_hurrycat_115: -3357406494286634435
+      480_301_hurrycat_116: 5322465700431241078
+      480_301_hurrycat_117: 1795513999867375590
+      480_301_hurrycat_118: -3938406541376099894
+      480_301_hurrycat_119: 6498635760928911992
+      480_301_hurrycat_12: -4320045029212246379
+      480_301_hurrycat_120: -2218531294221981355
+      480_301_hurrycat_121: -1182998982386223641
+      480_301_hurrycat_122: 6825887521608187901
+      480_301_hurrycat_123: -5208970070643771563
+      480_301_hurrycat_124: -348129430473184119
+      480_301_hurrycat_125: -5914779797942982177
+      480_301_hurrycat_126: -6816001280257465643
+      480_301_hurrycat_127: -6111516738882103153
+      480_301_hurrycat_128: -885845723952060606
+      480_301_hurrycat_129: 5563187190671710163
+      480_301_hurrycat_13: -3650197004826563611
+      480_301_hurrycat_130: 6412457116967075367
+      480_301_hurrycat_131: -5512313691483107650
+      480_301_hurrycat_132: 4889722460531064181
+      480_301_hurrycat_133: -6943087067681996648
+      480_301_hurrycat_134: 1641389623588295797
+      480_301_hurrycat_135: 1571236089986827914
+      480_301_hurrycat_136: -2967110580596659267
+      480_301_hurrycat_137: -9049511330242302360
+      480_301_hurrycat_138: 1009276685494310930
+      480_301_hurrycat_139: 6319177509453060727
+      480_301_hurrycat_14: 5981382329623635220
+      480_301_hurrycat_140: 8552790461458386149
+      480_301_hurrycat_141: -6041174982986663023
+      480_301_hurrycat_142: -880320025722680067
+      480_301_hurrycat_143: 319065609540105659
+      480_301_hurrycat_144: 1842491271661897472
+      480_301_hurrycat_145: 8076740803525894944
+      480_301_hurrycat_146: 5255523172955789494
+      480_301_hurrycat_147: -2737972066469342918
+      480_301_hurrycat_148: 4344569446722112794
+      480_301_hurrycat_149: -7736948581923412063
+      480_301_hurrycat_15: 1492882112277011046
+      480_301_hurrycat_150: -4064301337710294922
+      480_301_hurrycat_151: 8592607614368214809
+      480_301_hurrycat_152: -6022586553626849706
+      480_301_hurrycat_153: -1059525210070154577
+      480_301_hurrycat_154: -7987125197985890296
+      480_301_hurrycat_155: -5301752797387363942
+      480_301_hurrycat_156: -8797186129039578021
+      480_301_hurrycat_157: -2322514752983372340
+      480_301_hurrycat_158: -7060273731448094292
+      480_301_hurrycat_159: 3222963563848146152
+      480_301_hurrycat_16: 6278044937348116816
+      480_301_hurrycat_160: 3850826638259782027
+      480_301_hurrycat_161: -8884314623318542124
+      480_301_hurrycat_162: 5267188317669474528
+      480_301_hurrycat_163: -3873657433648884625
+      480_301_hurrycat_164: 5281625306577061763
+      480_301_hurrycat_165: 8726977686380359555
+      480_301_hurrycat_166: -4591160663107259040
+      480_301_hurrycat_167: -3712419880075138473
+      480_301_hurrycat_168: -768614595375661471
+      480_301_hurrycat_169: -1724272055188386943
+      480_301_hurrycat_17: 9161041435070177597
+      480_301_hurrycat_170: -2075608102134797568
+      480_301_hurrycat_171: 5873970037229705067
+      480_301_hurrycat_172: 8444756738463913885
+      480_301_hurrycat_173: 1878093698928631415
+      480_301_hurrycat_174: 378739230112879048
+      480_301_hurrycat_175: -3137876141496064262
+      480_301_hurrycat_176: -2042846412713159391
+      480_301_hurrycat_177: 4414367631424205720
+      480_301_hurrycat_178: 2086409312763978563
+      480_301_hurrycat_179: 7057168867136998684
+      480_301_hurrycat_18: 5742187879823359040
+      480_301_hurrycat_180: 1901445127286306243
+      480_301_hurrycat_181: -1347234589086508050
+      480_301_hurrycat_182: 1636070984801153147
+      480_301_hurrycat_183: 7520282892618203872
+      480_301_hurrycat_184: -4192389162152603387
+      480_301_hurrycat_185: -360683017532721416
+      480_301_hurrycat_186: 3322352074339124525
+      480_301_hurrycat_187: 8739197065602698080
+      480_301_hurrycat_188: 2781414781594665864
+      480_301_hurrycat_189: -5204993830773429460
+      480_301_hurrycat_19: -3912754012753768693
+      480_301_hurrycat_190: 3473968408731838288
+      480_301_hurrycat_191: -5972398552300241356
+      480_301_hurrycat_192: -1389003346952288482
+      480_301_hurrycat_193: 2215129940101867525
+      480_301_hurrycat_194: 2705850270184407099
+      480_301_hurrycat_195: -1123948033730991421
+      480_301_hurrycat_196: -8896448091368623805
+      480_301_hurrycat_2: -2007536836347382791
+      480_301_hurrycat_20: 1179972327066849541
+      480_301_hurrycat_21: 1350822513228535791
+      480_301_hurrycat_22: -3065154307566736159
+      480_301_hurrycat_23: -1940424909522625701
+      480_301_hurrycat_24: -7551177904207991984
+      480_301_hurrycat_25: 2234322166168144275
+      480_301_hurrycat_26: 60135207987328752
+      480_301_hurrycat_27: 1659042620208623566
+      480_301_hurrycat_28: 501359749686033865
+      480_301_hurrycat_29: 7616812131836555735
+      480_301_hurrycat_3: 1357424313847465726
+      480_301_hurrycat_30: -3531180342172101914
+      480_301_hurrycat_31: 633035078856322743
+      480_301_hurrycat_32: -2629279041544031108
+      480_301_hurrycat_33: 4259647711595981072
+      480_301_hurrycat_34: -4361229701244716247
+      480_301_hurrycat_35: -1848985169682697160
+      480_301_hurrycat_36: 9206869706594751925
+      480_301_hurrycat_37: -6451973094900547854
+      480_301_hurrycat_38: -6419280525051368262
+      480_301_hurrycat_39: -619097637738744293
+      480_301_hurrycat_4: -326023978755357799
+      480_301_hurrycat_40: 3524570012820601593
+      480_301_hurrycat_41: -5607815282291316294
+      480_301_hurrycat_42: -8087031215114111779
+      480_301_hurrycat_43: 8679838614417387928
+      480_301_hurrycat_44: 5330371613621653187
+      480_301_hurrycat_45: 350292612607451891
+      480_301_hurrycat_46: -3630620430273753775
+      480_301_hurrycat_47: 1771546333256460542
+      480_301_hurrycat_48: 2249151147287234521
+      480_301_hurrycat_49: 2818561225528047153
+      480_301_hurrycat_5: -8071315098460032872
+      480_301_hurrycat_50: -7144720354180186616
+      480_301_hurrycat_51: 5412483720742320599
+      480_301_hurrycat_52: 8574608055263609431
+      480_301_hurrycat_53: 6631961572230840849
+      480_301_hurrycat_54: -3118524718849351641
+      480_301_hurrycat_55: 6213402969065540370
+      480_301_hurrycat_56: -6793030159064110693
+      480_301_hurrycat_57: 7897237420691652697
+      480_301_hurrycat_58: 4039636612130492115
+      480_301_hurrycat_59: 4834340460681624472
+      480_301_hurrycat_6: 1124477130902478421
+      480_301_hurrycat_60: -1237783999967522170
+      480_301_hurrycat_61: 3453425793914093112
+      480_301_hurrycat_62: 3633997351247039565
+      480_301_hurrycat_63: 3376096336883374618
+      480_301_hurrycat_64: 4177550910039325472
+      480_301_hurrycat_65: 6185837170665174483
+      480_301_hurrycat_66: 7926089499565216660
+      480_301_hurrycat_67: 5790400984260267909
+      480_301_hurrycat_68: 4299480909535319784
+      480_301_hurrycat_69: 1797957105114818867
+      480_301_hurrycat_7: -754336583690008609
+      480_301_hurrycat_70: -1539454649171498900
+      480_301_hurrycat_71: 7095160562988586054
+      480_301_hurrycat_72: -6420265081792490209
+      480_301_hurrycat_73: -8918056872316998998
+      480_301_hurrycat_74: -5554085802292146616
+      480_301_hurrycat_75: 7496657661985612631
+      480_301_hurrycat_76: -3120595990464765142
+      480_301_hurrycat_77: -5348490845560485768
+      480_301_hurrycat_78: 2308576478232011315
+      480_301_hurrycat_79: 7487233916607547415
+      480_301_hurrycat_8: -3694955551822256829
+      480_301_hurrycat_80: 4743918183641471019
+      480_301_hurrycat_81: -1421863422588835006
+      480_301_hurrycat_82: 4036236585761910918
+      480_301_hurrycat_83: -7827945075473217788
+      480_301_hurrycat_84: 6769872359715494710
+      480_301_hurrycat_85: 926679489017696083
+      480_301_hurrycat_86: -4148408529684797220
+      480_301_hurrycat_87: -1344345045476903934
+      480_301_hurrycat_88: 2855852729610948933
+      480_301_hurrycat_89: -7741119897671036539
+      480_301_hurrycat_9: -6754244048220031568
+      480_301_hurrycat_90: 5084600772115790507
+      480_301_hurrycat_91: -1959299101186971052
+      480_301_hurrycat_92: 4176481678659953305
+      480_301_hurrycat_93: 3166684101367739253
+      480_301_hurrycat_94: 4428133136623256560
+      480_301_hurrycat_95: -1532044768693170105
+      480_301_hurrycat_96: 5430075038380982434
+      480_301_hurrycat_97: 2578225314931013588
+      480_301_hurrycat_98: -6648909368509593522
+      480_301_hurrycat_99: -4409259906820738438
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

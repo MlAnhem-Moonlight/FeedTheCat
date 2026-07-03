@@ -1,0 +1,2392 @@
+fileFormatVersion: 2
+guid: 3c77bff19d7b9a54cb94a4608f2f22ac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2640700140360263406
+    second: 480_356_lachong_0
+  - first:
+      213: -2724539155733803182
+    second: 480_356_lachong_1
+  - first:
+      213: 2966652637035162854
+    second: 480_356_lachong_2
+  - first:
+      213: 8443816751970396894
+    second: 480_356_lachong_3
+  - first:
+      213: -1519656023685793346
+    second: 480_356_lachong_4
+  - first:
+      213: 6285466086425741824
+    second: 480_356_lachong_5
+  - first:
+      213: 2134377338121672722
+    second: 480_356_lachong_6
+  - first:
+      213: 7262343734130140874
+    second: 480_356_lachong_7
+  - first:
+      213: -2800890479014384638
+    second: 480_356_lachong_8
+  - first:
+      213: -299456769692678895
+    second: 480_356_lachong_9
+  - first:
+      213: -4299245929232990117
+    second: 480_356_lachong_10
+  - first:
+      213: 6830205706334708096
+    second: 480_356_lachong_11
+  - first:
+      213: 2567386997673680503
+    second: 480_356_lachong_12
+  - first:
+      213: -2096647358600270089
+    second: 480_356_lachong_13
+  - first:
+      213: -5603237950707458668
+    second: 480_356_lachong_14
+  - first:
+      213: -5324625276446314364
+    second: 480_356_lachong_15
+  - first:
+      213: -4520078856489112173
+    second: 480_356_lachong_16
+  - first:
+      213: 4849888837629138652
+    second: 480_356_lachong_17
+  - first:
+      213: 2917174119685171791
+    second: 480_356_lachong_18
+  - first:
+      213: 582068500550866684
+    second: 480_356_lachong_19
+  - first:
+      213: 1188769919030012825
+    second: 480_356_lachong_20
+  - first:
+      213: -3949593708158674435
+    second: 480_356_lachong_21
+  - first:
+      213: 7995168759338832333
+    second: 480_356_lachong_22
+  - first:
+      213: -4361469682662500298
+    second: 480_356_lachong_23
+  - first:
+      213: 1544189753019868373
+    second: 480_356_lachong_24
+  - first:
+      213: -4709677406141179526
+    second: 480_356_lachong_25
+  - first:
+      213: 778503652481115728
+    second: 480_356_lachong_26
+  - first:
+      213: -8763711702778346381
+    second: 480_356_lachong_27
+  - first:
+      213: 2813269508741687130
+    second: 480_356_lachong_28
+  - first:
+      213: 5152050769248905188
+    second: 480_356_lachong_29
+  - first:
+      213: 3064260607470178794
+    second: 480_356_lachong_30
+  - first:
+      213: -706943631590204236
+    second: 480_356_lachong_31
+  - first:
+      213: 7156545346239975350
+    second: 480_356_lachong_32
+  - first:
+      213: -1586738253517191548
+    second: 480_356_lachong_33
+  - first:
+      213: -9065139543153989921
+    second: 480_356_lachong_34
+  - first:
+      213: 1631524884424152490
+    second: 480_356_lachong_35
+  - first:
+      213: 856492182446241760
+    second: 480_356_lachong_36
+  - first:
+      213: 4497101627912216559
+    second: 480_356_lachong_37
+  - first:
+      213: -4571348548922562571
+    second: 480_356_lachong_38
+  - first:
+      213: 4083295967213300053
+    second: 480_356_lachong_39
+  - first:
+      213: 682535290449867426
+    second: 480_356_lachong_40
+  - first:
+      213: 5352679718084914954
+    second: 480_356_lachong_41
+  - first:
+      213: -5941737967637184516
+    second: 480_356_lachong_42
+  - first:
+      213: -102881060336719527
+    second: 480_356_lachong_43
+  - first:
+      213: 8292937780611136649
+    second: 480_356_lachong_44
+  - first:
+      213: 6062456897646164990
+    second: 480_356_lachong_45
+  - first:
+      213: -8243783089445925969
+    second: 480_356_lachong_46
+  - first:
+      213: 1906927626213281856
+    second: 480_356_lachong_47
+  - first:
+      213: 3667568915001207417
+    second: 480_356_lachong_48
+  - first:
+      213: -4026796327883944222
+    second: 480_356_lachong_49
+  - first:
+      213: 8080580910305438868
+    second: 480_356_lachong_50
+  - first:
+      213: -8905933919295629094
+    second: 480_356_lachong_51
+  - first:
+      213: 3862813934966208233
+    second: 480_356_lachong_52
+  - first:
+      213: 5326175013082325368
+    second: 480_356_lachong_53
+  - first:
+      213: 1524897365700942404
+    second: 480_356_lachong_54
+  - first:
+      213: -3924786162608293522
+    second: 480_356_lachong_55
+  - first:
+      213: 2731196223721081193
+    second: 480_356_lachong_56
+  - first:
+      213: 199604612632304584
+    second: 480_356_lachong_57
+  - first:
+      213: -6207247584990884000
+    second: 480_356_lachong_58
+  - first:
+      213: -7860429353704340803
+    second: 480_356_lachong_59
+  - first:
+      213: -2691091801672342032
+    second: 480_356_lachong_60
+  - first:
+      213: -271373361443478169
+    second: 480_356_lachong_61
+  - first:
+      213: 6840394828276922818
+    second: 480_356_lachong_62
+  - first:
+      213: -8364140832277616711
+    second: 480_356_lachong_63
+  - first:
+      213: -3483013705814488641
+    second: 480_356_lachong_64
+  - first:
+      213: 130274742140909176
+    second: 480_356_lachong_65
+  - first:
+      213: -471313718837764458
+    second: 480_356_lachong_66
+  - first:
+      213: 7670252570206955725
+    second: 480_356_lachong_67
+  - first:
+      213: -2221354774717674890
+    second: 480_356_lachong_68
+  - first:
+      213: -2642097287457884703
+    second: 480_356_lachong_69
+  - first:
+      213: -2129058770799082661
+    second: 480_356_lachong_70
+  - first:
+      213: -664292905593917116
+    second: 480_356_lachong_71
+  - first:
+      213: 7187395888941244847
+    second: 480_356_lachong_72
+  - first:
+      213: 10918380197482203
+    second: 480_356_lachong_73
+  - first:
+      213: 3390803381053321963
+    second: 480_356_lachong_74
+  - first:
+      213: 8008093835204332469
+    second: 480_356_lachong_75
+  - first:
+      213: -4991657105574924775
+    second: 480_356_lachong_76
+  - first:
+      213: 3931663737711643883
+    second: 480_356_lachong_77
+  - first:
+      213: 3669494014631282138
+    second: 480_356_lachong_78
+  - first:
+      213: -9222219610923525303
+    second: 480_356_lachong_79
+  - first:
+      213: 7853422440723107652
+    second: 480_356_lachong_80
+  - first:
+      213: 1500635072050154923
+    second: 480_356_lachong_81
+  - first:
+      213: 7328546381464032917
+    second: 480_356_lachong_82
+  - first:
+      213: 7639039822194019018
+    second: 480_356_lachong_83
+  - first:
+      213: -1012154413018474930
+    second: 480_356_lachong_84
+  - first:
+      213: 8156867182316534061
+    second: 480_356_lachong_85
+  - first:
+      213: 5699179390000550318
+    second: 480_356_lachong_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 480_356_lachong_0
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 6077
+        width: 136
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee66f7069c6a5a420800000000000000
+      internalID: 2640700140360263406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_1
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 6077
+        width: 138
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25f08d5b21e703ad0800000000000000
+      internalID: -2724539155733803182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_2
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 6077
+        width: 144
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ece47afadaab2920800000000000000
+      internalID: 2966652637035162854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_3
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 6077
+        width: 147
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda20b149967e2570800000000000000
+      internalID: 8443816751970396894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_4
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 6077
+        width: 141
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9fc6fd5e819eae0800000000000000
+      internalID: -1519656023685793346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 5721
+        width: 138
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00acb219a167a3750800000000000000
+      internalID: 6285466086425741824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_6
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 5721
+        width: 135
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218d26f61e4de9d10800000000000000
+      internalID: 2134377338121672722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_7
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 5722
+        width: 137
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac66c9d062709c460800000000000000
+      internalID: 7262343734130140874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_8
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 5721
+        width: 146
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ce297f2fc3129d0800000000000000
+      internalID: -2800890479014384638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_9
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 5721
+        width: 148
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 115c1e097ad18dbf0800000000000000
+      internalID: -299456769692678895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_10
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 5366
+        width: 141
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5006021b920654c0800000000000000
+      internalID: -4299245929232990117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_11
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 5365
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0812de4e6e3c9ce50800000000000000
+      internalID: 6830205706334708096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_12
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 5365
+        width: 139
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77edb4d2fd031a320800000000000000
+      internalID: 2567386997673680503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_13
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 5366
+        width: 140
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7feae5bf55637e2e0800000000000000
+      internalID: -2096647358600270089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_14
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 5366
+        width: 147
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d181465cc4d32b0800000000000000
+      internalID: -5603237950707458668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_15
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 5009
+        width: 147
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 480f95ba5812b16b0800000000000000
+      internalID: -5324625276446314364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_16
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 5009
+        width: 144
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d663a7a347541c0800000000000000
+      internalID: -4520078856489112173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_17
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 5009
+        width: 140
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd65407b3344e4340800000000000000
+      internalID: 4849888837629138652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_18
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 5009
+        width: 143
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a2ccfe762eb7820800000000000000
+      internalID: 2917174119685171791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_19
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 5009
+        width: 147
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf65742a73ce31800800000000000000
+      internalID: 582068500550866684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_20
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 4653
+        width: 148
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b247761fb5f7010800000000000000
+      internalID: 1188769919030012825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_21
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 4652
+        width: 149
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df99512c2793039c0800000000000000
+      internalID: -3949593708158674435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_22
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 4653
+        width: 148
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc111bb50ab84fe60800000000000000
+      internalID: 7995168759338832333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_23
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 4652
+        width: 144
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63814428e62f873c0800000000000000
+      internalID: -4361469682662500298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_24
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 4652
+        width: 142
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d42c8e16601e6510800000000000000
+      internalID: 1544189753019868373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_25
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 4296
+        width: 142
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7995402a5dd3aeb0800000000000000
+      internalID: -4709677406141179526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_26
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 4296
+        width: 144
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0562b7e72fccdca00800000000000000
+      internalID: 778503652481115728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_27
+      rect:
+        serializedVersion: 2
+        x: 1126
+        y: 4295
+        width: 149
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37486f173aa016680800000000000000
+      internalID: -8763711702778346381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_28
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 4295
+        width: 150
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a576cfd76bdba0720800000000000000
+      internalID: 2813269508741687130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_29
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 4295
+        width: 148
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7ebddb0e2cf7740800000000000000
+      internalID: 5152050769248905188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_30
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 3939
+        width: 143
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae19b7f89c0768a20800000000000000
+      internalID: 3064260607470178794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_31
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 3939
+        width: 141
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc57da338e6036f0800000000000000
+      internalID: -706943631590204236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_32
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 3938
+        width: 141
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfcb9d4318215360800000000000000
+      internalID: 7156545346239975350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_33
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 3938
+        width: 144
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486859f17f5caf9e0800000000000000
+      internalID: -1586738253517191548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_34
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 3938
+        width: 148
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6a5fa5d97223280800000000000000
+      internalID: -9065139543153989921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_35
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 3582
+        width: 145
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5df4afc3754a610800000000000000
+      internalID: 1631524884424152490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_36
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 3582
+        width: 143
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e77b9f1a1fd2eb00800000000000000
+      internalID: 856492182446241760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_37
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 3581
+        width: 143
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fefd98a9a1ae86e30800000000000000
+      internalID: 4497101627912216559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_38
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 3581
+        width: 144
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f729fcf6be4f80c0800000000000000
+      internalID: -4571348548922562571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_39
+      rect:
+        serializedVersion: 2
+        x: 2086
+        y: 3581
+        width: 146
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 559a8864c08caa830800000000000000
+      internalID: 4083295967213300053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_40
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 3225
+        width: 149
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a2beedfa3ad87900800000000000000
+      internalID: 682535290449867426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_41
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 3225
+        width: 151
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0fa3e808d9884a40800000000000000
+      internalID: 5352679718084914954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_42
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 3225
+        width: 150
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cffb8829cc4ba8da0800000000000000
+      internalID: -5941737967637184516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_43
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 3225
+        width: 148
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959a380883e729ef0800000000000000
+      internalID: -102881060336719527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_44
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 3225
+        width: 141
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c3ebd39fe661370800000000000000
+      internalID: 8292937780611136649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_45
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2869
+        width: 139
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbf05a9d6c222450800000000000000
+      internalID: 6062456897646164990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_46
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 2869
+        width: 140
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab043425f2389d80800000000000000
+      internalID: -8243783089445925969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_47
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 2869
+        width: 144
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04052dc9294c67a10800000000000000
+      internalID: 1906927626213281856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_48
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 2869
+        width: 147
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a69ef1f72d5e230800000000000000
+      internalID: 3667568915001207417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_49
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2869
+        width: 142
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee41ad1312fd18c0800000000000000
+      internalID: -4026796327883944222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_50
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2512
+        width: 138
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49cee81768df32070800000000000000
+      internalID: 8080580910305438868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_51
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 2512
+        width: 136
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8184b3944c76480800000000000000
+      internalID: -8905933919295629094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_52
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 2512
+        width: 137
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6f61bcec87b9530800000000000000
+      internalID: 3862813934966208233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_53
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 2512
+        width: 144
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871655284ff5ae940800000000000000
+      internalID: 5326175013082325368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_54
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2512
+        width: 146
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a98892316892510800000000000000
+      internalID: 1524897365700942404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_55
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 2157
+        width: 143
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e693d5e87cb5889c0800000000000000
+      internalID: -3924786162608293522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_56
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 2156
+        width: 139
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96988c6be7827e520800000000000000
+      internalID: 2731196223721081193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_57
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 2156
+        width: 137
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb5a7f665325c200800000000000000
+      internalID: 199604612632304584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_58
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 2156
+        width: 135
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f87b7753d6bd9a0800000000000000
+      internalID: -6207247584990884000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_59
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 2156
+        width: 140
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2466e26252ae290800000000000000
+      internalID: -7860429353704340803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_60
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1800
+        width: 145
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5aa5fa34257aad0800000000000000
+      internalID: -2691091801672342032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_61
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1800
+        width: 148
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76568a59d53eb3cf0800000000000000
+      internalID: -271373361443478169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_62
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1800
+        width: 143
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c97dd6bad6fdee50800000000000000
+      internalID: 6840394828276922818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_63
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1800
+        width: 138
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7a0c86a3a9ceb80800000000000000
+      internalID: -8364140832277616711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_64
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1800
+        width: 136
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb94c150d79d9afc0800000000000000
+      internalID: -3483013705814488641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_65
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1444
+        width: 140
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876b3801034dec100800000000000000
+      internalID: 130274742140909176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_66
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1444
+        width: 147
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69e18ea7bae8579f0800000000000000
+      internalID: -471313718837764458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_67
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1444
+        width: 149
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc866b8e216327a60800000000000000
+      internalID: 7670252570206955725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_68
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1444
+        width: 144
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67ac5d40a992c21e0800000000000000
+      internalID: -2221354774717674890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_69
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1444
+        width: 141
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5bc07f382655bd0800000000000000
+      internalID: -2642097287457884703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_70
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1088
+        width: 136
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53479404501472e0800000000000000
+      internalID: -2129058770799082661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_71
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1088
+        width: 137
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44133473f15f7c6f0800000000000000
+      internalID: -664292905593917116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_72
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1088
+        width: 147
+        height: 307
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa122740b72ceb360800000000000000
+      internalID: 7187395888941244847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_73
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1087
+        width: 155
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde813d753ac62000800000000000000
+      internalID: 10918380197482203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_74
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 1087
+        width: 149
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be270e6b5bd8e0f20800000000000000
+      internalID: 3390803381053321963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_75
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 732
+        width: 145
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb89571ae6722f60800000000000000
+      internalID: 8008093835204332469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_76
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 732
+        width: 143
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ee6a53f421abab0800000000000000
+      internalID: -4991657105574924775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_77
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 731
+        width: 143
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec469ea653109630800000000000000
+      internalID: 3931663737711643883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_78
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 731
+        width: 142
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5058f4d59ace230800000000000000
+      internalID: 3669494014631282138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_79
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 731
+        width: 145
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b13421028140080800000000000000
+      internalID: -9222219610923525303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_80
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 375
+        width: 147
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fc162c916fcfc60800000000000000
+      internalID: 7853422440723107652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_81
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 375
+        width: 149
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: badca07b5a353d410800000000000000
+      internalID: 1500635072050154923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_82
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 375
+        width: 148
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596532b0b1a34b560800000000000000
+      internalID: 7328546381464032917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_83
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 375
+        width: 147
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca00f2be32530a60800000000000000
+      internalID: 7639039822194019018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_84
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 375
+        width: 147
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46903a8cea14f1f0800000000000000
+      internalID: -1012154413018474930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_85
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 19
+        width: 147
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29b4024c73033170800000000000000
+      internalID: 8156867182316534061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 480_356_lachong_86
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 19
+        width: 149
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea1d53ca57d871f40800000000000000
+      internalID: 5699179390000550318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      480_356_lachong_0: 2640700140360263406
+      480_356_lachong_1: -2724539155733803182
+      480_356_lachong_10: -4299245929232990117
+      480_356_lachong_11: 6830205706334708096
+      480_356_lachong_12: 2567386997673680503
+      480_356_lachong_13: -2096647358600270089
+      480_356_lachong_14: -5603237950707458668
+      480_356_lachong_15: -5324625276446314364
+      480_356_lachong_16: -4520078856489112173
+      480_356_lachong_17: 4849888837629138652
+      480_356_lachong_18: 2917174119685171791
+      480_356_lachong_19: 582068500550866684
+      480_356_lachong_2: 2966652637035162854
+      480_356_lachong_20: 1188769919030012825
+      480_356_lachong_21: -3949593708158674435
+      480_356_lachong_22: 7995168759338832333
+      480_356_lachong_23: -4361469682662500298
+      480_356_lachong_24: 1544189753019868373
+      480_356_lachong_25: -4709677406141179526
+      480_356_lachong_26: 778503652481115728
+      480_356_lachong_27: -8763711702778346381
+      480_356_lachong_28: 2813269508741687130
+      480_356_lachong_29: 5152050769248905188
+      480_356_lachong_3: 8443816751970396894
+      480_356_lachong_30: 3064260607470178794
+      480_356_lachong_31: -706943631590204236
+      480_356_lachong_32: 7156545346239975350
+      480_356_lachong_33: -1586738253517191548
+      480_356_lachong_34: -9065139543153989921
+      480_356_lachong_35: 1631524884424152490
+      480_356_lachong_36: 856492182446241760
+      480_356_lachong_37: 4497101627912216559
+      480_356_lachong_38: -4571348548922562571
+      480_356_lachong_39: 4083295967213300053
+      480_356_lachong_4: -1519656023685793346
+      480_356_lachong_40: 682535290449867426
+      480_356_lachong_41: 5352679718084914954
+      480_356_lachong_42: -5941737967637184516
+      480_356_lachong_43: -102881060336719527
+      480_356_lachong_44: 8292937780611136649
+      480_356_lachong_45: 6062456897646164990
+      480_356_lachong_46: -8243783089445925969
+      480_356_lachong_47: 1906927626213281856
+      480_356_lachong_48: 3667568915001207417
+      480_356_lachong_49: -4026796327883944222
+      480_356_lachong_5: 6285466086425741824
+      480_356_lachong_50: 8080580910305438868
+      480_356_lachong_51: -8905933919295629094
+      480_356_lachong_52: 3862813934966208233
+      480_356_lachong_53: 5326175013082325368
+      480_356_lachong_54: 1524897365700942404
+      480_356_lachong_55: -3924786162608293522
+      480_356_lachong_56: 2731196223721081193
+      480_356_lachong_57: 199604612632304584
+      480_356_lachong_58: -6207247584990884000
+      480_356_lachong_59: -7860429353704340803
+      480_356_lachong_6: 2134377338121672722
+      480_356_lachong_60: -2691091801672342032
+      480_356_lachong_61: -271373361443478169
+      480_356_lachong_62: 6840394828276922818
+      480_356_lachong_63: -8364140832277616711
+      480_356_lachong_64: -3483013705814488641
+      480_356_lachong_65: 130274742140909176
+      480_356_lachong_66: -471313718837764458
+      480_356_lachong_67: 7670252570206955725
+      480_356_lachong_68: -2221354774717674890
+      480_356_lachong_69: -2642097287457884703
+      480_356_lachong_7: 7262343734130140874
+      480_356_lachong_70: -2129058770799082661
+      480_356_lachong_71: -664292905593917116
+      480_356_lachong_72: 7187395888941244847
+      480_356_lachong_73: 10918380197482203
+      480_356_lachong_74: 3390803381053321963
+      480_356_lachong_75: 8008093835204332469
+      480_356_lachong_76: -4991657105574924775
+      480_356_lachong_77: 3931663737711643883
+      480_356_lachong_78: 3669494014631282138
+      480_356_lachong_79: -9222219610923525303
+      480_356_lachong_8: -2800890479014384638
+      480_356_lachong_80: 7853422440723107652
+      480_356_lachong_81: 1500635072050154923
+      480_356_lachong_82: 7328546381464032917
+      480_356_lachong_83: 7639039822194019018
+      480_356_lachong_84: -1012154413018474930
+      480_356_lachong_85: 8156867182316534061
+      480_356_lachong_86: 5699179390000550318
+      480_356_lachong_9: -299456769692678895
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
