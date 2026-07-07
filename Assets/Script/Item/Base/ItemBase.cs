@@ -42,7 +42,19 @@ namespace FeedTheCat.Items
         protected GridCell targetCell;
         protected Vector3 originalPosition;
         protected Transform originalParent;
-        protected GraphicRaycaster graphicRaycaster;
+        protected int originalSiblingIndex;
+
+        /// <summary>
+        /// The topmost Canvas in this item's hierarchy. Used to reparent the
+        /// item while dragging so parent Layout Groups / masks don't fight
+        /// the manual position updates, and so the item renders above everything.
+        /// </summary>
+        protected Canvas rootCanvas;
+
+        /// <summary>
+        /// GridCell currently highlighted because the pointer is hovering it while dragging.
+        /// </summary>
+        protected GridCell hoveredCell;
 
         #endregion
 
@@ -134,10 +146,16 @@ namespace FeedTheCat.Items
             if (itemInventory == null)
                 Debug.LogError("ItemBase: ItemInventory.Instance not found in scene");
 
-            // Cache the GraphicRaycaster
-            Canvas canvas = rectTransform?.GetComponentInParent<Canvas>();
-            if (canvas != null)
-                graphicRaycaster = canvas.GetComponent<GraphicRaycaster>();
+            // Cache the ROOT canvas (not just the nearest one). We reparent the
+            // item to this during drag so it renders above every other UI
+            // (including the board's GridCells, which may live under a
+            // different sub-canvas) and so parent Layout Groups don't reset
+            // its position while dragging.
+            Canvas nearestCanvas = rectTransform?.GetComponentInParent<Canvas>();
+            rootCanvas = nearestCanvas != null ? nearestCanvas.rootCanvas : null;
+
+            if (rootCanvas == null)
+                Debug.LogError($"ItemBase: Could not find a root Canvas for {gameObject.name}");
         }
 
         /// <summary>
@@ -200,7 +218,9 @@ namespace FeedTheCat.Items
         #region Drag-Drop Implementation
 
         /// <summary>
-        /// Called when drag begins. Store original position and disable raycast blocking.
+        /// Called when drag begins. Store original position/parent/sibling index,
+        /// disable raycast blocking on self, and reparent to the root Canvas so
+        /// the drag isn't fought by parent Layout Groups and renders on top.
         /// </summary>
         public void OnBeginDrag(PointerEventData eventData)
         {
@@ -215,6 +235,7 @@ namespace FeedTheCat.Items
 
             originalPosition = rectTransform.position;
             originalParent = rectTransform.parent;
+            originalSiblingIndex = rectTransform.GetSiblingIndex();
 
             // Fade out during drag
             canvasGroup.alpha = 0.7f;
@@ -222,13 +243,22 @@ namespace FeedTheCat.Items
             // Disable raycasts on this item to allow raycast through to GridCell
             canvasGroup.blocksRaycasts = false;
 
+            // Reparent to the root canvas so we render above everything (including
+            // the board) and so any Layout Group on the original parent (e.g. the
+            // item toolbar) stops repositioning us every layout pass while dragging.
+            if (rootCanvas != null)
+            {
+                rectTransform.SetParent(rootCanvas.transform, true);
+            }
+
             rectTransform.SetAsLastSibling();
 
             Debug.Log($"ItemBase.OnBeginDrag: Started dragging {ItemData.ItemName}");
         }
 
         /// <summary>
-        /// Called while dragging. Update item position to follow cursor.
+        /// Called while dragging. Update item position to follow cursor and
+        /// highlight whichever GridCell is currently under the pointer.
         /// </summary>
         public void OnDrag(PointerEventData eventData)
         {
@@ -236,6 +266,8 @@ namespace FeedTheCat.Items
                 return;
 
             rectTransform.position += (Vector3)eventData.delta;
+
+            UpdateHoverHighlight(eventData);
         }
 
         /// <summary>
@@ -250,31 +282,10 @@ namespace FeedTheCat.Items
             canvasGroup.blocksRaycasts = true;
             canvasGroup.alpha = 1f;
 
-            if (graphicRaycaster == null)
-            {
-                RevertPosition();
-                return;
-            }
+            // Clear any leftover hover highlight now that the drag is finishing
+            ClearHoverHighlight();
 
-            PointerEventData pointerData = new PointerEventData(EventSystem.current)
-            {
-                position = Input.mousePosition
-            };
-
-            List<RaycastResult> results = new List<RaycastResult>();
-            graphicRaycaster.Raycast(pointerData, results);
-
-            GridCell targetGridCell = null;
-
-            foreach (RaycastResult result in results)
-            {
-                if (result.gameObject == gameObject)
-                    continue;
-
-                targetGridCell = result.gameObject.GetComponent<GridCell>();
-                if (targetGridCell != null)
-                    break;
-            }
+            GridCell targetGridCell = GetGridCellUnderPointer(eventData);
 
             if (targetGridCell == null)
             {
@@ -298,20 +309,89 @@ namespace FeedTheCat.Items
             if (itemInventory != null)
                 itemInventory.Save();
 
+            // This is a consumable stack icon living in the toolbar, not something
+            // placed permanently on the board - snap it back to its slot after use.
+            RevertPosition();
+
             Debug.Log($"ItemBase.OnEndDrag: Item effect executed on {targetCell.gameObject.name}. New quantity: {CurrentQuantity}");
         }
 
         /// <summary>
-        /// Revert item to original position after failed drag.
+        /// Revert item to its original parent, sibling order, and position.
         /// </summary>
         private void RevertPosition()
         {
-            if (rectTransform == null)
+            if (rectTransform == null || originalParent == null)
                 return;
 
+            // Reparent back preserving current world position first (no visual jump),
+            // then restore sibling order (important if originalParent has a Layout Group)
+            // and finally force the position back to where it started.
+            rectTransform.SetParent(originalParent, true);
+            rectTransform.SetSiblingIndex(originalSiblingIndex);
             rectTransform.position = originalPosition;
-            if (originalParent != null)
-                rectTransform.SetParent(originalParent);
+        }
+
+        /// <summary>
+        /// Raycast under the pointer across ALL active raycasters/canvases (not just
+        /// the item's own canvas) and return the first GridCell hit, if any.
+        /// Using EventSystem.RaycastAll makes this robust even if the item toolbar
+        /// and the game board live under different Canvas objects.
+        /// </summary>
+        private GridCell GetGridCellUnderPointer(PointerEventData eventData)
+        {
+            if (EventSystem.current == null)
+                return null;
+
+            PointerEventData pointerData = new PointerEventData(EventSystem.current)
+            {
+                position = eventData.position
+            };
+
+            List<RaycastResult> results = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(pointerData, results);
+
+            foreach (RaycastResult result in results)
+            {
+                if (result.gameObject == gameObject)
+                    continue;
+
+                GridCell cell = result.gameObject.GetComponent<GridCell>();
+                if (cell != null)
+                    return cell;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Update which GridCell (if any) is highlighted based on the current pointer position.
+        /// </summary>
+        private void UpdateHoverHighlight(PointerEventData eventData)
+        {
+            GridCell cellUnderPointer = GetGridCellUnderPointer(eventData);
+
+            if (cellUnderPointer == hoveredCell)
+                return;
+
+            if (hoveredCell != null)
+                hoveredCell.SetHighlight(false);
+
+            if (cellUnderPointer != null && ValidateTarget(cellUnderPointer))
+                cellUnderPointer.SetHighlight(true);
+
+            hoveredCell = cellUnderPointer;
+        }
+
+        /// <summary>
+        /// Turn off highlight on whichever cell is currently hovered, if any.
+        /// </summary>
+        private void ClearHoverHighlight()
+        {
+            if (hoveredCell != null)
+                hoveredCell.SetHighlight(false);
+
+            hoveredCell = null;
         }
 
         #endregion
