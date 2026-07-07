@@ -145,9 +145,9 @@ TextureImporter:
       name: image 33_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 174
-        width: 196
+        x: 81
+        y: 176
+        width: 219
         height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -167,10 +167,10 @@ TextureImporter:
       name: image 33_1
       rect:
         serializedVersion: 2
-        x: 308
-        y: 174
-        width: 212
-        height: 73
+        x: 304
+        y: 175
+        width: 219
+        height: 74
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
