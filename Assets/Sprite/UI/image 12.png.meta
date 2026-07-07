@@ -159,6 +159,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -166,13 +179,13 @@ TextureImporter:
       name: image 12_0
       rect:
         serializedVersion: 2
-        x: 176
-        y: 548
-        width: 404
-        height: 120
+        x: 178
+        y: 549
+        width: 400
+        height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 7, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -188,13 +201,13 @@ TextureImporter:
       name: image 12_1
       rect:
         serializedVersion: 2
-        x: 636
-        y: 549
-        width: 405
-        height: 123
-      alignment: 9
-      pivot: {x: 1.1115557, y: 0.62621534}
-      border: {x: 0, y: 9, z: 0, w: 1}
+        x: 637
+        y: 550
+        width: 403
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -211,12 +224,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 177
-        y: 423
-        width: 403
-        height: 110
+        y: 419
+        width: 401
+        height: 113
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 6, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -232,10 +245,10 @@ TextureImporter:
       name: image 12_3
       rect:
         serializedVersion: 2
-        x: 637
-        y: 430
-        width: 403
-        height: 103
+        x: 638
+        y: 421
+        width: 401
+        height: 111
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,13 +267,13 @@ TextureImporter:
       name: image 12_4
       rect:
         serializedVersion: 2
-        x: 176
-        y: 303
-        width: 403
-        height: 104
+        x: 177
+        y: 304
+        width: 401
+        height: 102
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 4, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -273,38 +286,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 12_5
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 377
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 302871f82265fa030800000000000000
-      internalID: 3508117341174465027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: image 12_6
       rect:
         serializedVersion: 2
-        x: 636
-        y: 303
-        width: 405
-        height: 106
-      alignment: 9
-      pivot: {x: 0.45733342, y: -0.23099232}
-      border: {x: 0, y: 2, z: 0, w: 0}
+        x: 637
+        y: 309
+        width: 403
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -317,13 +308,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 12_7
+      name: image 12_8
       rect:
         serializedVersion: 2
-        x: 176
-        y: 347
-        width: 6
-        height: 19
+        x: 175
+        y: 172
+        width: 403
+        height: 115
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,30 +323,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c1850d42e66f0c890800000000000000
-      internalID: -7439675631491590116
+      spriteID: 3d25eb70bb3fb8fd0800000000000000
+      internalID: -2338507596874493229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: image 12_8
+      name: image 12_5
       rect:
         serializedVersion: 2
-        x: 178
-        y: 181
-        width: 402
-        height: 107
+        x: 177
+        y: 378
+        width: 4
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 107, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3d25eb70bb3fb8fd0800000000000000
-      internalID: -2338507596874493229
+      spriteID: 3b4abd19d38629741aa3409ad814f167
+      internalID: 3508117341174465027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: image 12_7
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 348
+        width: 4
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160d9a06a73fc244a83b760400729800
+      internalID: -7439675631491590116
       vertices: []
       indices: 
       edges: []
@@ -372,7 +385,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       image 12_0: 7195422141301447057
       image 12_1: 1741998105179687307
