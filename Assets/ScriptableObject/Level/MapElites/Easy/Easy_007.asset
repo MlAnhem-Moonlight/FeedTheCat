@@ -35,9 +35,13 @@ MonoBehaviour:
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
+  items:
+  - row: 0
+    column: 0
+    prefabIndex: 0
   destinations:
   - {x: 6, y: 3}
   playerStart: {x: 2, y: 0}
   blockedCells: []
-  hasWon: 0
+  hasWon: 1
   isLocked: 0

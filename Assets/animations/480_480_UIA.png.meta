@@ -343,7 +343,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 2
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -357,7 +357,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 480
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -422,12 +422,12 @@ TextureImporter:
       name: 480_480_UIA_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 9640
-        width: 283
-        height: 369
+        x: 0
+        y: 9600
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -444,12 +444,12 @@ TextureImporter:
       name: 480_480_UIA_1
       rect:
         serializedVersion: 2
-        x: 580
-        y: 9640
-        width: 283
-        height: 369
+        x: 480
+        y: 9600
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -466,12 +466,12 @@ TextureImporter:
       name: 480_480_UIA_2
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 9640
-        width: 283
-        height: 369
+        x: 960
+        y: 9600
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -488,12 +488,12 @@ TextureImporter:
       name: 480_480_UIA_3
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 9640
-        width: 283
-        height: 369
+        x: 1440
+        y: 9600
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -510,12 +510,12 @@ TextureImporter:
       name: 480_480_UIA_4
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 9640
-        width: 283
-        height: 369
+        x: 1920
+        y: 9600
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -532,12 +532,12 @@ TextureImporter:
       name: 480_480_UIA_5
       rect:
         serializedVersion: 2
-        x: 100
-        y: 9160
-        width: 283
-        height: 369
+        x: 0
+        y: 9120
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -554,12 +554,12 @@ TextureImporter:
       name: 480_480_UIA_6
       rect:
         serializedVersion: 2
-        x: 580
-        y: 9160
-        width: 283
-        height: 369
+        x: 480
+        y: 9120
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -576,12 +576,12 @@ TextureImporter:
       name: 480_480_UIA_7
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 9160
-        width: 283
-        height: 369
+        x: 960
+        y: 9120
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -598,12 +598,12 @@ TextureImporter:
       name: 480_480_UIA_8
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 9160
-        width: 283
-        height: 369
+        x: 1440
+        y: 9120
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -620,12 +620,12 @@ TextureImporter:
       name: 480_480_UIA_9
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 9160
-        width: 283
-        height: 369
+        x: 1920
+        y: 9120
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -642,12 +642,12 @@ TextureImporter:
       name: 480_480_UIA_10
       rect:
         serializedVersion: 2
-        x: 100
-        y: 8680
-        width: 283
-        height: 369
+        x: 0
+        y: 8640
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -664,12 +664,12 @@ TextureImporter:
       name: 480_480_UIA_11
       rect:
         serializedVersion: 2
-        x: 580
-        y: 8680
-        width: 283
-        height: 369
+        x: 480
+        y: 8640
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -686,12 +686,12 @@ TextureImporter:
       name: 480_480_UIA_12
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 8680
-        width: 283
-        height: 369
+        x: 960
+        y: 8640
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -708,12 +708,12 @@ TextureImporter:
       name: 480_480_UIA_13
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 8680
-        width: 283
-        height: 369
+        x: 1440
+        y: 8640
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -730,12 +730,12 @@ TextureImporter:
       name: 480_480_UIA_14
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 8680
-        width: 283
-        height: 369
+        x: 1920
+        y: 8640
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -752,12 +752,12 @@ TextureImporter:
       name: 480_480_UIA_15
       rect:
         serializedVersion: 2
-        x: 100
-        y: 8200
-        width: 283
-        height: 369
+        x: 0
+        y: 8160
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -774,12 +774,12 @@ TextureImporter:
       name: 480_480_UIA_16
       rect:
         serializedVersion: 2
-        x: 580
-        y: 8200
-        width: 283
-        height: 369
+        x: 480
+        y: 8160
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -796,12 +796,12 @@ TextureImporter:
       name: 480_480_UIA_17
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 8200
-        width: 283
-        height: 369
+        x: 960
+        y: 8160
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -818,12 +818,12 @@ TextureImporter:
       name: 480_480_UIA_18
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 8200
-        width: 283
-        height: 369
+        x: 1440
+        y: 8160
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -840,12 +840,12 @@ TextureImporter:
       name: 480_480_UIA_19
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 8200
-        width: 283
-        height: 369
+        x: 1920
+        y: 8160
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -862,12 +862,12 @@ TextureImporter:
       name: 480_480_UIA_20
       rect:
         serializedVersion: 2
-        x: 100
-        y: 7720
-        width: 283
-        height: 369
+        x: 0
+        y: 7680
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -884,12 +884,12 @@ TextureImporter:
       name: 480_480_UIA_21
       rect:
         serializedVersion: 2
-        x: 580
-        y: 7720
-        width: 283
-        height: 369
+        x: 480
+        y: 7680
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -906,12 +906,12 @@ TextureImporter:
       name: 480_480_UIA_22
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 7720
-        width: 283
-        height: 369
+        x: 960
+        y: 7680
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -928,12 +928,12 @@ TextureImporter:
       name: 480_480_UIA_23
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 7720
-        width: 283
-        height: 369
+        x: 1440
+        y: 7680
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -950,12 +950,12 @@ TextureImporter:
       name: 480_480_UIA_24
       rect:
         serializedVersion: 2
-        x: 1993
-        y: 7844
-        width: 299
-        height: 199
+        x: 1920
+        y: 7680
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -972,12 +972,12 @@ TextureImporter:
       name: 480_480_UIA_25
       rect:
         serializedVersion: 2
-        x: 73
-        y: 7364
-        width: 299
-        height: 199
+        x: 0
+        y: 7200
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -994,12 +994,12 @@ TextureImporter:
       name: 480_480_UIA_26
       rect:
         serializedVersion: 2
-        x: 628
-        y: 7384
-        width: 219
-        height: 200
+        x: 480
+        y: 7200
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1016,12 +1016,12 @@ TextureImporter:
       name: 480_480_UIA_27
       rect:
         serializedVersion: 2
-        x: 1038
-        y: 7400
-        width: 330
-        height: 194
+        x: 960
+        y: 7200
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1038,12 +1038,12 @@ TextureImporter:
       name: 480_480_UIA_28
       rect:
         serializedVersion: 2
-        x: 1544
-        y: 7386
-        width: 227
-        height: 213
+        x: 1440
+        y: 7200
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1060,12 +1060,12 @@ TextureImporter:
       name: 480_480_UIA_29
       rect:
         serializedVersion: 2
-        x: 2041
-        y: 7370
-        width: 266
-        height: 207
+        x: 1920
+        y: 7200
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1082,12 +1082,12 @@ TextureImporter:
       name: 480_480_UIA_30
       rect:
         serializedVersion: 2
-        x: 70
-        y: 6887
-        width: 332
-        height: 188
+        x: 0
+        y: 6720
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1104,12 +1104,12 @@ TextureImporter:
       name: 480_480_UIA_31
       rect:
         serializedVersion: 2
-        x: 624
-        y: 6852
-        width: 176
-        height: 208
+        x: 480
+        y: 6720
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1126,12 +1126,12 @@ TextureImporter:
       name: 480_480_UIA_32
       rect:
         serializedVersion: 2
-        x: 1064
-        y: 6879
-        width: 301
-        height: 174
+        x: 960
+        y: 6720
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1148,12 +1148,12 @@ TextureImporter:
       name: 480_480_UIA_33
       rect:
         serializedVersion: 2
-        x: 1516
-        y: 6866
-        width: 300
-        height: 181
+        x: 1440
+        y: 6720
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1170,12 +1170,12 @@ TextureImporter:
       name: 480_480_UIA_34
       rect:
         serializedVersion: 2
-        x: 2083
-        y: 6864
-        width: 178
-        height: 213
+        x: 1920
+        y: 6720
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1192,12 +1192,12 @@ TextureImporter:
       name: 480_480_UIA_35
       rect:
         serializedVersion: 2
-        x: 81
-        y: 6426
-        width: 330
-        height: 192
+        x: 0
+        y: 6240
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1214,12 +1214,12 @@ TextureImporter:
       name: 480_480_UIA_36
       rect:
         serializedVersion: 2
-        x: 590
-        y: 6426
-        width: 217
-        height: 201
+        x: 480
+        y: 6240
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1236,12 +1236,12 @@ TextureImporter:
       name: 480_480_UIA_37
       rect:
         serializedVersion: 2
-        x: 1101
-        y: 6437
-        width: 234
-        height: 196
+        x: 960
+        y: 6240
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1258,12 +1258,12 @@ TextureImporter:
       name: 480_480_UIA_38
       rect:
         serializedVersion: 2
-        x: 1507
-        y: 6426
-        width: 335
-        height: 199
+        x: 1440
+        y: 6240
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1280,12 +1280,12 @@ TextureImporter:
       name: 480_480_UIA_39
       rect:
         serializedVersion: 2
-        x: 2067
-        y: 6392
-        width: 166
-        height: 211
+        x: 1920
+        y: 6240
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1302,12 +1302,12 @@ TextureImporter:
       name: 480_480_UIA_40
       rect:
         serializedVersion: 2
-        x: 118
-        y: 5914
-        width: 277
-        height: 186
+        x: 0
+        y: 5760
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1324,12 +1324,12 @@ TextureImporter:
       name: 480_480_UIA_41
       rect:
         serializedVersion: 2
-        x: 561
-        y: 5907
-        width: 294
-        height: 192
+        x: 480
+        y: 5760
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1346,12 +1346,12 @@ TextureImporter:
       name: 480_480_UIA_42
       rect:
         serializedVersion: 2
-        x: 1130
-        y: 5892
-        width: 172
-        height: 207
+        x: 960
+        y: 5760
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1368,12 +1368,12 @@ TextureImporter:
       name: 480_480_UIA_43
       rect:
         serializedVersion: 2
-        x: 1542
-        y: 5926
-        width: 307
-        height: 183
+        x: 1440
+        y: 5760
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1390,12 +1390,12 @@ TextureImporter:
       name: 480_480_UIA_44
       rect:
         serializedVersion: 2
-        x: 2003
-        y: 5922
-        width: 266
-        height: 205
+        x: 1920
+        y: 5760
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1412,12 +1412,12 @@ TextureImporter:
       name: 480_480_UIA_45
       rect:
         serializedVersion: 2
-        x: 135
-        y: 5458
-        width: 238
-        height: 213
+        x: 0
+        y: 5280
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1434,12 +1434,12 @@ TextureImporter:
       name: 480_480_UIA_46
       rect:
         serializedVersion: 2
-        x: 547
-        y: 5480
-        width: 338
-        height: 193
+        x: 480
+        y: 5280
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1456,12 +1456,12 @@ TextureImporter:
       name: 480_480_UIA_47
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 5458
-        width: 194
-        height: 204
+        x: 960
+        y: 5280
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1478,12 +1478,12 @@ TextureImporter:
       name: 480_480_UIA_48
       rect:
         serializedVersion: 2
-        x: 1556
-        y: 5459
-        width: 280
-        height: 192
+        x: 1440
+        y: 5280
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1500,12 +1500,12 @@ TextureImporter:
       name: 480_480_UIA_49
       rect:
         serializedVersion: 2
-        x: 1992
-        y: 5430
-        width: 301
-        height: 190
+        x: 1920
+        y: 5280
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1522,12 +1522,12 @@ TextureImporter:
       name: 480_480_UIA_50
       rect:
         serializedVersion: 2
-        x: 166
-        y: 4944
-        width: 163
-        height: 185
+        x: 0
+        y: 4800
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1544,12 +1544,12 @@ TextureImporter:
       name: 480_480_UIA_51
       rect:
         serializedVersion: 2
-        x: 573
-        y: 4969
-        width: 313
-        height: 164
+        x: 480
+        y: 4800
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1566,12 +1566,12 @@ TextureImporter:
       name: 480_480_UIA_52
       rect:
         serializedVersion: 2
-        x: 1051
-        y: 4939
-        width: 252
-        height: 210
+        x: 960
+        y: 4800
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1588,12 +1588,12 @@ TextureImporter:
       name: 480_480_UIA_53
       rect:
         serializedVersion: 2
-        x: 1582
-        y: 4961
-        width: 230
-        height: 202
+        x: 1440
+        y: 4800
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1610,12 +1610,12 @@ TextureImporter:
       name: 480_480_UIA_54
       rect:
         serializedVersion: 2
-        x: 1994
-        y: 4985
-        width: 335
-        height: 194
+        x: 1920
+        y: 4800
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1632,12 +1632,12 @@ TextureImporter:
       name: 480_480_UIA_55
       rect:
         serializedVersion: 2
-        x: 123
-        y: 4505
-        width: 201
-        height: 214
+        x: 0
+        y: 4320
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1654,12 +1654,12 @@ TextureImporter:
       name: 480_480_UIA_56
       rect:
         serializedVersion: 2
-        x: 591
-        y: 4511
-        width: 286
-        height: 205
+        x: 480
+        y: 4320
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1676,12 +1676,12 @@ TextureImporter:
       name: 480_480_UIA_57
       rect:
         serializedVersion: 2
-        x: 1026
-        y: 4505
-        width: 333
-        height: 192
+        x: 960
+        y: 4320
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1698,12 +1698,12 @@ TextureImporter:
       name: 480_480_UIA_58
       rect:
         serializedVersion: 2
-        x: 1602
-        y: 4468
-        width: 174
-        height: 212
+        x: 1440
+        y: 4320
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1720,12 +1720,12 @@ TextureImporter:
       name: 480_480_UIA_59
       rect:
         serializedVersion: 2
-        x: 2019
-        y: 4482
-        width: 310
-        height: 180
+        x: 1920
+        y: 4320
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1742,12 +1742,12 @@ TextureImporter:
       name: 480_480_UIA_60
       rect:
         serializedVersion: 2
-        x: 76
-        y: 3986
-        width: 286
-        height: 178
+        x: 0
+        y: 3840
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1764,12 +1764,12 @@ TextureImporter:
       name: 480_480_UIA_61
       rect:
         serializedVersion: 2
-        x: 627
-        y: 3980
-        width: 221
-        height: 191
+        x: 480
+        y: 3840
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1786,12 +1786,12 @@ TextureImporter:
       name: 480_480_UIA_62
       rect:
         serializedVersion: 2
-        x: 1037
-        y: 4009
-        width: 330
-        height: 185
+        x: 960
+        y: 3840
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1808,12 +1808,12 @@ TextureImporter:
       name: 480_480_UIA_63
       rect:
         serializedVersion: 2
-        x: 1565
-        y: 4007
-        width: 188
-        height: 205
+        x: 1440
+        y: 3840
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1830,12 +1830,12 @@ TextureImporter:
       name: 480_480_UIA_64
       rect:
         serializedVersion: 2
-        x: 2039
-        y: 4034
-        width: 271
-        height: 194
+        x: 1920
+        y: 3840
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1852,12 +1852,12 @@ TextureImporter:
       name: 480_480_UIA_65
       rect:
         serializedVersion: 2
-        x: 67
-        y: 3555
-        width: 321
-        height: 203
+        x: 0
+        y: 3360
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1874,12 +1874,12 @@ TextureImporter:
       name: 480_480_UIA_66
       rect:
         serializedVersion: 2
-        x: 643
-        y: 3532
-        width: 168
-        height: 218
+        x: 480
+        y: 3360
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1896,12 +1896,12 @@ TextureImporter:
       name: 480_480_UIA_67
       rect:
         serializedVersion: 2
-        x: 1058
-        y: 3530
-        width: 311
-        height: 193
+        x: 960
+        y: 3360
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1918,12 +1918,12 @@ TextureImporter:
       name: 480_480_UIA_68
       rect:
         serializedVersion: 2
-        x: 1513
-        y: 3507
-        width: 300
-        height: 203
+        x: 1440
+        y: 3360
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1940,12 +1940,12 @@ TextureImporter:
       name: 480_480_UIA_69
       rect:
         serializedVersion: 2
-        x: 2070
-        y: 3496
-        width: 214
-        height: 204
+        x: 1920
+        y: 3360
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1962,12 +1962,12 @@ TextureImporter:
       name: 480_480_UIA_70
       rect:
         serializedVersion: 2
-        x: 100
-        y: 2920
-        width: 283
-        height: 369
+        x: 0
+        y: 2880
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1984,12 +1984,12 @@ TextureImporter:
       name: 480_480_UIA_71
       rect:
         serializedVersion: 2
-        x: 580
-        y: 2920
-        width: 283
-        height: 369
+        x: 480
+        y: 2880
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2006,12 +2006,12 @@ TextureImporter:
       name: 480_480_UIA_72
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 2920
-        width: 283
-        height: 369
+        x: 960
+        y: 2880
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2028,12 +2028,12 @@ TextureImporter:
       name: 480_480_UIA_73
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 2920
-        width: 283
-        height: 369
+        x: 1440
+        y: 2880
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2050,12 +2050,12 @@ TextureImporter:
       name: 480_480_UIA_74
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 2920
-        width: 283
-        height: 369
+        x: 1920
+        y: 2880
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2072,12 +2072,12 @@ TextureImporter:
       name: 480_480_UIA_75
       rect:
         serializedVersion: 2
-        x: 100
-        y: 2440
-        width: 283
-        height: 369
+        x: 0
+        y: 2400
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2094,12 +2094,12 @@ TextureImporter:
       name: 480_480_UIA_76
       rect:
         serializedVersion: 2
-        x: 580
-        y: 2440
-        width: 283
-        height: 369
+        x: 480
+        y: 2400
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2116,12 +2116,12 @@ TextureImporter:
       name: 480_480_UIA_77
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 2440
-        width: 283
-        height: 369
+        x: 960
+        y: 2400
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2138,12 +2138,12 @@ TextureImporter:
       name: 480_480_UIA_78
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 2440
-        width: 283
-        height: 369
+        x: 1440
+        y: 2400
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2160,12 +2160,12 @@ TextureImporter:
       name: 480_480_UIA_79
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 2440
-        width: 283
-        height: 369
+        x: 1920
+        y: 2400
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2182,12 +2182,12 @@ TextureImporter:
       name: 480_480_UIA_80
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1960
-        width: 283
-        height: 369
+        x: 0
+        y: 1920
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2204,12 +2204,12 @@ TextureImporter:
       name: 480_480_UIA_81
       rect:
         serializedVersion: 2
-        x: 580
-        y: 1960
-        width: 283
-        height: 369
+        x: 480
+        y: 1920
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2226,12 +2226,12 @@ TextureImporter:
       name: 480_480_UIA_82
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 1960
-        width: 283
-        height: 369
+        x: 960
+        y: 1920
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2248,12 +2248,12 @@ TextureImporter:
       name: 480_480_UIA_83
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 1960
-        width: 283
-        height: 369
+        x: 1440
+        y: 1920
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2270,12 +2270,12 @@ TextureImporter:
       name: 480_480_UIA_84
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 1960
-        width: 283
-        height: 369
+        x: 1920
+        y: 1920
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2292,12 +2292,12 @@ TextureImporter:
       name: 480_480_UIA_85
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1480
-        width: 283
-        height: 369
+        x: 0
+        y: 1440
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2314,12 +2314,12 @@ TextureImporter:
       name: 480_480_UIA_86
       rect:
         serializedVersion: 2
-        x: 580
-        y: 1480
-        width: 283
-        height: 369
+        x: 480
+        y: 1440
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2336,12 +2336,12 @@ TextureImporter:
       name: 480_480_UIA_87
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 1480
-        width: 283
-        height: 369
+        x: 960
+        y: 1440
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2358,12 +2358,12 @@ TextureImporter:
       name: 480_480_UIA_88
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 1480
-        width: 283
-        height: 369
+        x: 1440
+        y: 1440
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2380,12 +2380,12 @@ TextureImporter:
       name: 480_480_UIA_89
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 1480
-        width: 283
-        height: 369
+        x: 1920
+        y: 1440
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2402,12 +2402,12 @@ TextureImporter:
       name: 480_480_UIA_90
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1000
-        width: 283
-        height: 369
+        x: 0
+        y: 960
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2424,12 +2424,12 @@ TextureImporter:
       name: 480_480_UIA_91
       rect:
         serializedVersion: 2
-        x: 580
-        y: 1000
-        width: 283
-        height: 369
+        x: 480
+        y: 960
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2446,12 +2446,12 @@ TextureImporter:
       name: 480_480_UIA_92
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 1000
-        width: 283
-        height: 369
+        x: 960
+        y: 960
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2468,12 +2468,12 @@ TextureImporter:
       name: 480_480_UIA_93
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 1000
-        width: 283
-        height: 369
+        x: 1440
+        y: 960
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2490,12 +2490,12 @@ TextureImporter:
       name: 480_480_UIA_94
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 1000
-        width: 283
-        height: 369
+        x: 1920
+        y: 960
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2512,12 +2512,12 @@ TextureImporter:
       name: 480_480_UIA_95
       rect:
         serializedVersion: 2
-        x: 100
-        y: 520
-        width: 283
-        height: 369
+        x: 0
+        y: 480
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2534,12 +2534,12 @@ TextureImporter:
       name: 480_480_UIA_96
       rect:
         serializedVersion: 2
-        x: 580
-        y: 520
-        width: 283
-        height: 369
+        x: 480
+        y: 480
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2556,12 +2556,12 @@ TextureImporter:
       name: 480_480_UIA_97
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 520
-        width: 283
-        height: 369
+        x: 960
+        y: 480
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2578,12 +2578,12 @@ TextureImporter:
       name: 480_480_UIA_98
       rect:
         serializedVersion: 2
-        x: 1540
-        y: 520
-        width: 283
-        height: 369
+        x: 1440
+        y: 480
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2600,12 +2600,12 @@ TextureImporter:
       name: 480_480_UIA_99
       rect:
         serializedVersion: 2
-        x: 2020
-        y: 520
-        width: 283
-        height: 369
+        x: 1920
+        y: 480
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2622,12 +2622,12 @@ TextureImporter:
       name: 480_480_UIA_100
       rect:
         serializedVersion: 2
-        x: 100
-        y: 40
-        width: 283
-        height: 369
+        x: 0
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2644,12 +2644,12 @@ TextureImporter:
       name: 480_480_UIA_101
       rect:
         serializedVersion: 2
-        x: 580
-        y: 40
-        width: 283
-        height: 369
+        x: 480
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2666,12 +2666,12 @@ TextureImporter:
       name: 480_480_UIA_102
       rect:
         serializedVersion: 2
-        x: 1060
-        y: 40
-        width: 283
-        height: 369
+        x: 960
+        y: 0
+        width: 480
+        height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2688,7 +2688,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3a8b25634765a574b9da13538aff5b82
     internalID: 0
     vertices: []
     indices: 
@@ -2696,7 +2696,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":480.0,"y":480.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       480_480_UIA_0: 3958707629159022431
       480_480_UIA_1: -2126804573619739207

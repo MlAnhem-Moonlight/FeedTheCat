@@ -40,9 +40,13 @@ namespace FeedTheCat.Items
         protected RectTransform rectTransform;
         protected ItemInventory itemInventory;
         protected GridCell targetCell;
-        protected Vector3 originalPosition;
-        protected Transform originalParent;
-        protected int originalSiblingIndex;
+
+        // The toolbar icon (this.rectTransform) NEVER moves or gets reparented anymore.
+        // Instead, a lightweight visual-only "ghost" is spawned on the root canvas and
+        // is the thing that actually follows the pointer while dragging. This guarantees
+        // the item bar slot is never emptied/removed - only the ghost clone is discarded
+        // (destroyed) once the drag ends, whether the drop succeeded or not.
+        private RectTransform dragGhost;
 
         /// <summary>
         /// The topmost Canvas in this item's hierarchy. Used to reparent the
@@ -233,39 +237,44 @@ namespace FeedTheCat.Items
             if (rectTransform == null || canvasGroup == null)
                 return;
 
-            originalPosition = rectTransform.position;
-            originalParent = rectTransform.parent;
-            originalSiblingIndex = rectTransform.GetSiblingIndex();
-
-            // Fade out during drag
-            canvasGroup.alpha = 0.7f;
-
-            // Disable raycasts on this item to allow raycast through to GridCell
-            canvasGroup.blocksRaycasts = false;
-
-            // Reparent to the root canvas so we render above everything (including
-            // the board) and so any Layout Group on the original parent (e.g. the
-            // item toolbar) stops repositioning us every layout pass while dragging.
-            if (rootCanvas != null)
+            // IMPORTANT: the toolbar icon itself (this GameObject) is left completely
+            // untouched - it is not reparented, moved, hidden, or destroyed. We only
+            // spawn a separate, visual-only "ghost" clone that follows the pointer.
+            if (rootCanvas != null && iconImage != null)
             {
-                rectTransform.SetParent(rootCanvas.transform, true);
+                var ghostGo = new GameObject($"DragGhost_{ItemID}", typeof(RectTransform), typeof(CanvasGroup), typeof(UnityEngine.UI.Image));
+
+                var ghostImage = ghostGo.GetComponent<UnityEngine.UI.Image>();
+                ghostImage.sprite = iconImage.sprite;
+                ghostImage.raycastTarget = false; // never blocks raycasts to GridCells beneath it
+
+                var ghostCanvasGroup = ghostGo.GetComponent<CanvasGroup>();
+                ghostCanvasGroup.alpha = 0.85f;
+                ghostCanvasGroup.blocksRaycasts = false;
+                ghostCanvasGroup.interactable = false;
+
+                var ghostRect = ghostGo.GetComponent<RectTransform>();
+                ghostRect.SetParent(rootCanvas.transform, false);
+                ghostRect.sizeDelta = rectTransform.sizeDelta;
+                ghostRect.position = rectTransform.position;
+                ghostRect.SetAsLastSibling();
+
+                dragGhost = ghostRect;
             }
 
-            rectTransform.SetAsLastSibling();
-
-            Debug.Log($"ItemBase.OnBeginDrag: Started dragging {ItemData.ItemName}");
+            LogFilter.LogItem($"ItemBase.OnBeginDrag: Started dragging {ItemData.ItemName} (id={ItemID})");
         }
 
         /// <summary>
-        /// Called while dragging. Update item position to follow cursor and
-        /// highlight whichever GridCell is currently under the pointer.
+        /// Called while dragging. Moves the drag ghost (not the toolbar icon) to follow
+        /// the cursor and highlights whichever GridCell is currently under the pointer.
         /// </summary>
         public void OnDrag(PointerEventData eventData)
         {
-            if (rectTransform == null)
+            if (dragGhost == null)
                 return;
 
-            rectTransform.position += (Vector3)eventData.delta;
+            dragGhost.position += (Vector3)eventData.delta;
 
             UpdateHoverHighlight(eventData);
         }
@@ -278,19 +287,17 @@ namespace FeedTheCat.Items
             if (rectTransform == null || canvasGroup == null)
                 return;
 
-            // Re-enable raycasts
-            canvasGroup.blocksRaycasts = true;
-            canvasGroup.alpha = 1f;
-
             // Clear any leftover hover highlight now that the drag is finishing
             ClearHoverHighlight();
 
+            // The toolbar icon never moved, so there is nothing to "revert" - we only
+            // ever need to get rid of the ghost clone that followed the pointer.
             GridCell targetGridCell = GetGridCellUnderPointer(eventData);
 
             if (targetGridCell == null)
             {
-                RevertPosition();
-                Debug.Log($"ItemBase.OnEndDrag: No valid GridCell target found. Reverting position.");
+                DestroyDragGhost();
+                LogFilter.LogItemWarning($"ItemBase.OnEndDrag: No valid GridCell target found. (ItemID={ItemID})");
                 return;
             }
 
@@ -298,8 +305,8 @@ namespace FeedTheCat.Items
 
             if (!ValidateTarget(targetCell))
             {
-                RevertPosition();
-                Debug.Log($"ItemBase.OnEndDrag: Target validation failed for {targetCell.gameObject.name}");
+                DestroyDragGhost();
+                LogFilter.LogItemWarning($"ItemBase.OnEndDrag: Target validation failed for {targetCell.gameObject.name} (ItemID={ItemID})");
                 return;
             }
 
@@ -309,27 +316,24 @@ namespace FeedTheCat.Items
             if (itemInventory != null)
                 itemInventory.Save();
 
-            // This is a consumable stack icon living in the toolbar, not something
-            // placed permanently on the board - snap it back to its slot after use.
-            RevertPosition();
+            // The toolbar slot/icon was never removed or moved, so nothing needs to be
+            // "put back" - just clean up the ghost that was following the pointer.
+            DestroyDragGhost();
 
-            Debug.Log($"ItemBase.OnEndDrag: Item effect executed on {targetCell.gameObject.name}. New quantity: {CurrentQuantity}");
+            LogFilter.LogItem($"ItemBase.OnEndDrag: Item effect executed on {targetCell.gameObject.name}. New quantity: {CurrentQuantity} (ItemID={ItemID})");
         }
 
         /// <summary>
-        /// Revert item to its original parent, sibling order, and position.
+        /// Destroy the drag ghost created in OnBeginDrag, if any. Called whether the
+        /// drop succeeded or was cancelled - the toolbar icon itself is never affected.
         /// </summary>
-        private void RevertPosition()
+        private void DestroyDragGhost()
         {
-            if (rectTransform == null || originalParent == null)
-                return;
-
-            // Reparent back preserving current world position first (no visual jump),
-            // then restore sibling order (important if originalParent has a Layout Group)
-            // and finally force the position back to where it started.
-            rectTransform.SetParent(originalParent, true);
-            rectTransform.SetSiblingIndex(originalSiblingIndex);
-            rectTransform.position = originalPosition;
+            if (dragGhost != null)
+            {
+                Object.Destroy(dragGhost.gameObject);
+                dragGhost = null;
+            }
         }
 
         /// <summary>
@@ -461,7 +465,30 @@ namespace FeedTheCat.Items
         /// </summary>
         protected virtual void SpawnPreview(GridCell targetCell)
         {
-            Debug.Log($"ItemBase.SpawnPreview: Spawning preview for {ItemData.ItemName} at {targetCell.gameObject.name}");
+            // Spawn a visual preview of the item on the board (do not remove toolbar icon)
+            LogFilter.LogItem($"ItemBase.SpawnPreview: Spawning preview for {ItemData.ItemName} at {targetCell.gameObject.name}");
+
+            // Default behavior: instantiate a lightweight preview under the grid so players see placement
+            if (ItemData?.Icon == null) return;
+
+            var previewGo = new GameObject($"ItemPreview_{ItemID}", typeof(RectTransform), typeof(UnityEngine.UI.Image));
+            var img = previewGo.GetComponent<UnityEngine.UI.Image>();
+            img.sprite = ItemData.Icon;
+            img.raycastTarget = false;
+
+            // Parent under the target cell so it visually sits on that cell
+            var rt = previewGo.GetComponent<RectTransform>();
+            rt.SetParent(targetCell.transform, false);
+            rt.anchorMin = new Vector2(0.5f, 0.5f);
+            rt.anchorMax = new Vector2(0.5f, 0.5f);
+            rt.sizeDelta = new Vector2(64, 64);
+            rt.anchoredPosition = Vector2.zero;
+
+            // Also request GridCell to set its item highlight so preview is integrated with cell visuals
+            targetCell.SetItemHighlight(ItemData.Icon, Color.white);
+
+            // Destroy preview after a short duration (or let caller manage)
+            Object.Destroy(previewGo, 1.5f);
         }
 
         #endregion

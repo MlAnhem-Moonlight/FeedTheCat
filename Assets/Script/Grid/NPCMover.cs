@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using FeedTheCat.Items;
 
 public class NPCMover : MonoBehaviour
 {
@@ -35,6 +36,23 @@ public class NPCMover : MonoBehaviour
     // shared
     private int currentRow;
     private int currentColumn;
+
+    // Expose current grid coordinates for other systems (radius checks, debugging)
+    public int CurrentRow => currentRow;
+    public int CurrentColumn => currentColumn;
+
+    /// <summary>
+    /// Whether this NPC is capable of moving at all. Idle NPCs never move under
+    /// any circumstance - not even when targeted by a movement-inducing status
+    /// effect like Charm. They can still receive status effects and show the
+    /// corresponding visual indicator, but no code path should ever call MoveTo()
+    /// on an Idle NPC. Item scripts (e.g. Charm items) should check this before
+    /// picking which NPC gets told to walk toward a target.
+    /// </summary>
+    public bool CanMove()
+    {
+        return type != NPCType.Idle;
+    }
     private Vector2Int dirVec;
     private int stepsRemaining = 0;
 
@@ -304,6 +322,40 @@ public class NPCMover : MonoBehaviour
 
     private void TryStepWhenPlayerMoves()
     {
+        StatusEffectSystem statusSystem = StatusEffectSystem.Instance;
+
+        // Stunned NPCs cannot move at all this turn - skip normal AI entirely.
+        if (statusSystem != null && statusSystem.HasStatusEffect(this, StatusEffectType.Stun))
+        {
+            Debug.Log($"NPCMover.TryStepWhenPlayerMoves: '{gameObject.name}' is Stunned, skipping movement");
+            return;
+        }
+
+        // Charmed NPCs override their normal AI:
+        // - the ONE chosen NPC (has a stored move target) walks toward the clicked cell
+        // - every OTHER NPC that got the Charm status but has no target stays frozen
+        if (statusSystem != null && statusSystem.HasStatusEffect(this, StatusEffectType.Charm))
+        {
+            GridCell moveTarget = statusSystem.GetEffectMoveTarget(this, StatusEffectType.Charm);
+
+            if (moveTarget != null && CanMove())
+            {
+                CharmStep(moveTarget);
+            }
+            else if (moveTarget != null && !CanMove())
+            {
+                // Safety net: an Idle NPC should never actually walk, even if it
+                // was (incorrectly) picked as the "chosen" charmed NPC. It still
+                // shows the Charm visual (handled by StatusEffectSystem) but stays put.
+                Debug.Log($"NPCMover.TryStepWhenPlayerMoves: '{gameObject.name}' is Idle - showing Charm visual only, not moving");
+            }
+            else
+            {
+                Debug.Log($"NPCMover.TryStepWhenPlayerMoves: '{gameObject.name}' is Charmed (not chosen), staying frozen");
+            }
+            return;
+        }
+
         switch (type)
         {
             case NPCType.PatrolFixed:
@@ -319,6 +371,65 @@ public class NPCMover : MonoBehaviour
                 // do nothing
                 break;
         }
+    }
+
+    /// <summary>
+    /// Called each player turn while this NPC is the "chosen" charmed NPC.
+    /// Greedily steps one tile closer to moveTarget (row first, then column,
+    /// falling back to the other axis if the preferred direction is blocked).
+    /// Does nothing once the NPC has already reached the target cell.
+    /// </summary>
+    private void CharmStep(GridCell moveTarget)
+    {
+        int targetR = moveTarget.row;
+        int targetC = moveTarget.column;
+
+        if (currentRow == targetR && currentColumn == targetC)
+        {
+            Debug.Log($"NPCMover.CharmStep: '{gameObject.name}' already at charm target ({targetR},{targetC})");
+            return;
+        }
+
+        int dr = targetR - currentRow;
+        int dc = targetC - currentColumn;
+
+        int nextR = currentRow;
+        int nextC = currentColumn;
+
+        bool triedRowFirst = Mathf.Abs(dr) >= Mathf.Abs(dc);
+
+        if (triedRowFirst && dr != 0)
+            nextR = currentRow + (dr > 0 ? 1 : -1);
+        else if (dc != 0)
+            nextC = currentColumn + (dc > 0 ? 1 : -1);
+
+        var nextCell = GetCell(nextR, nextC);
+
+        // Preferred axis blocked (or no movement chosen) - try the other axis instead.
+        if (nextCell == null || !nextCell.IsWalkableForNPC())
+        {
+            nextR = currentRow;
+            nextC = currentColumn;
+
+            if (triedRowFirst && dc != 0)
+                nextC = currentColumn + (dc > 0 ? 1 : -1);
+            else if (!triedRowFirst && dr != 0)
+                nextR = currentRow + (dr > 0 ? 1 : -1);
+
+            nextCell = GetCell(nextR, nextC);
+        }
+
+        if (nextCell == null || !nextCell.IsWalkableForNPC())
+        {
+            Debug.Log($"NPCMover.CharmStep: '{gameObject.name}' blocked on both axes this turn, staying put");
+            return;
+        }
+
+        // Keep the facing direction in sync so multi-cell (length > 1) NPCs occupy
+        // the correct span while being led toward the charm target.
+        dirVec = new Vector2Int(nextC - currentColumn, nextR - currentRow);
+
+        MoveTo(nextR, nextC);
     }
 
     private void PatrolStep(bool randomizeCountWhenReset)
@@ -494,7 +605,7 @@ public class NPCMover : MonoBehaviour
         // gather cells along dirVec for length (length==1 uses only base cell)
         Vector2Int forward = dirVec;
         // if dirVec is zero (not set), default to Right to compute span
-        if (forward == Vector2Int.zero) 
+        if (forward == Vector2Int.zero)
         {
             forward = Vector2Int.right;
             Debug.LogWarning($"NPCMover.SetOccupiedCellsForPosition: dirVec was zero, defaulting to Right");

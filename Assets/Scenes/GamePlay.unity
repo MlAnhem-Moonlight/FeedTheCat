@@ -622,7 +622,7 @@ MonoBehaviour:
   m_ChildAlignment: 0
   m_StartCorner: 0
   m_StartAxis: 0
-  m_CellSize: {x: 125, y: 123.28109}
+  m_CellSize: {x: 125.00001, y: 123.28109}
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 1
   m_ConstraintCount: 6
@@ -1130,6 +1130,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c59f75a7df2f0e746904aa256430b69a, type: 2}
   - {fileID: 11400000, guid: 570fec8c1edf371459e932542d948e31, type: 2}
   itemCollector: {fileID: 0}
+  rewardCardCount: 3
+  maxQuantityRerollAttempts: 50
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2785,10 +2787,10 @@ RectTransform:
   - {fileID: 1767281543}
   m_Father: {fileID: 25190523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300.36, y: 0}
-  m_SizeDelta: {x: 149.27, y: 149.27}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -74.640015, y: -75}
+  m_SizeDelta: {x: 149.27002, y: 149.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1812815953
 GameObject:
@@ -2858,8 +2860,8 @@ Canvas:
   m_GameObject: {fileID: 1812815953}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

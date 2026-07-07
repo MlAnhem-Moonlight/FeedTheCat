@@ -309,7 +309,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 356
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -374,12 +374,12 @@ TextureImporter:
       name: 480_356_lachong_0
       rect:
         serializedVersion: 2
-        x: 167
-        y: 6077
-        width: 136
-        height: 303
+        x: 0
+        y: 6052
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -396,12 +396,12 @@ TextureImporter:
       name: 480_356_lachong_1
       rect:
         serializedVersion: 2
-        x: 647
-        y: 6077
-        width: 138
-        height: 303
+        x: 480
+        y: 6052
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -418,12 +418,12 @@ TextureImporter:
       name: 480_356_lachong_2
       rect:
         serializedVersion: 2
-        x: 1127
-        y: 6077
-        width: 144
-        height: 303
+        x: 960
+        y: 6052
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -440,12 +440,12 @@ TextureImporter:
       name: 480_356_lachong_3
       rect:
         serializedVersion: 2
-        x: 1607
-        y: 6077
-        width: 147
-        height: 302
+        x: 1440
+        y: 6052
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -462,12 +462,12 @@ TextureImporter:
       name: 480_356_lachong_4
       rect:
         serializedVersion: 2
-        x: 2087
-        y: 6077
-        width: 141
-        height: 300
+        x: 1920
+        y: 6052
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: 480_356_lachong_5
       rect:
         serializedVersion: 2
-        x: 166
-        y: 5721
-        width: 138
-        height: 301
+        x: 0
+        y: 5696
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -506,12 +506,12 @@ TextureImporter:
       name: 480_356_lachong_6
       rect:
         serializedVersion: 2
-        x: 647
-        y: 5721
-        width: 135
-        height: 302
+        x: 480
+        y: 5696
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -528,12 +528,12 @@ TextureImporter:
       name: 480_356_lachong_7
       rect:
         serializedVersion: 2
-        x: 1128
-        y: 5722
-        width: 137
-        height: 301
+        x: 960
+        y: 5696
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -550,12 +550,12 @@ TextureImporter:
       name: 480_356_lachong_8
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 5721
-        width: 146
-        height: 302
+        x: 1440
+        y: 5696
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -572,12 +572,12 @@ TextureImporter:
       name: 480_356_lachong_9
       rect:
         serializedVersion: 2
-        x: 2087
-        y: 5721
-        width: 148
-        height: 302
+        x: 1920
+        y: 5696
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -594,12 +594,12 @@ TextureImporter:
       name: 480_356_lachong_10
       rect:
         serializedVersion: 2
-        x: 167
-        y: 5366
-        width: 141
-        height: 301
+        x: 0
+        y: 5340
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -616,12 +616,12 @@ TextureImporter:
       name: 480_356_lachong_11
       rect:
         serializedVersion: 2
-        x: 646
-        y: 5365
-        width: 139
-        height: 303
+        x: 480
+        y: 5340
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -638,12 +638,12 @@ TextureImporter:
       name: 480_356_lachong_12
       rect:
         serializedVersion: 2
-        x: 1127
-        y: 5365
-        width: 139
-        height: 303
+        x: 960
+        y: 5340
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -660,12 +660,12 @@ TextureImporter:
       name: 480_356_lachong_13
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 5366
-        width: 140
-        height: 302
+        x: 1440
+        y: 5340
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -682,12 +682,12 @@ TextureImporter:
       name: 480_356_lachong_14
       rect:
         serializedVersion: 2
-        x: 2088
-        y: 5366
-        width: 147
-        height: 302
+        x: 1920
+        y: 5340
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -704,12 +704,12 @@ TextureImporter:
       name: 480_356_lachong_15
       rect:
         serializedVersion: 2
-        x: 168
-        y: 5009
-        width: 147
-        height: 302
+        x: 0
+        y: 4984
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -726,12 +726,12 @@ TextureImporter:
       name: 480_356_lachong_16
       rect:
         serializedVersion: 2
-        x: 647
-        y: 5009
-        width: 144
-        height: 301
+        x: 480
+        y: 4984
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -748,12 +748,12 @@ TextureImporter:
       name: 480_356_lachong_17
       rect:
         serializedVersion: 2
-        x: 1127
-        y: 5009
-        width: 140
-        height: 301
+        x: 960
+        y: 4984
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -770,12 +770,12 @@ TextureImporter:
       name: 480_356_lachong_18
       rect:
         serializedVersion: 2
-        x: 1607
-        y: 5009
-        width: 143
-        height: 300
+        x: 1440
+        y: 4984
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -792,12 +792,12 @@ TextureImporter:
       name: 480_356_lachong_19
       rect:
         serializedVersion: 2
-        x: 2087
-        y: 5009
-        width: 147
-        height: 300
+        x: 1920
+        y: 4984
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -814,12 +814,12 @@ TextureImporter:
       name: 480_356_lachong_20
       rect:
         serializedVersion: 2
-        x: 167
-        y: 4653
-        width: 148
-        height: 301
+        x: 0
+        y: 4628
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -836,12 +836,12 @@ TextureImporter:
       name: 480_356_lachong_21
       rect:
         serializedVersion: 2
-        x: 646
-        y: 4652
-        width: 149
-        height: 301
+        x: 480
+        y: 4628
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -858,12 +858,12 @@ TextureImporter:
       name: 480_356_lachong_22
       rect:
         serializedVersion: 2
-        x: 1127
-        y: 4653
-        width: 148
-        height: 301
+        x: 960
+        y: 4628
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -880,12 +880,12 @@ TextureImporter:
       name: 480_356_lachong_23
       rect:
         serializedVersion: 2
-        x: 1607
-        y: 4652
-        width: 144
-        height: 302
+        x: 1440
+        y: 4628
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -902,12 +902,12 @@ TextureImporter:
       name: 480_356_lachong_24
       rect:
         serializedVersion: 2
-        x: 2086
-        y: 4652
-        width: 142
-        height: 302
+        x: 1920
+        y: 4628
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -924,12 +924,12 @@ TextureImporter:
       name: 480_356_lachong_25
       rect:
         serializedVersion: 2
-        x: 166
-        y: 4296
-        width: 142
-        height: 302
+        x: 0
+        y: 4272
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -946,12 +946,12 @@ TextureImporter:
       name: 480_356_lachong_26
       rect:
         serializedVersion: 2
-        x: 646
-        y: 4296
-        width: 144
-        height: 302
+        x: 480
+        y: 4272
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -968,12 +968,12 @@ TextureImporter:
       name: 480_356_lachong_27
       rect:
         serializedVersion: 2
-        x: 1126
-        y: 4295
-        width: 149
-        height: 303
+        x: 960
+        y: 4272
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -990,12 +990,12 @@ TextureImporter:
       name: 480_356_lachong_28
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 4295
-        width: 150
-        height: 302
+        x: 1440
+        y: 4272
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1012,12 +1012,12 @@ TextureImporter:
       name: 480_356_lachong_29
       rect:
         serializedVersion: 2
-        x: 2086
-        y: 4295
-        width: 148
-        height: 301
+        x: 1920
+        y: 4272
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1034,12 +1034,12 @@ TextureImporter:
       name: 480_356_lachong_30
       rect:
         serializedVersion: 2
-        x: 165
-        y: 3939
-        width: 143
-        height: 301
+        x: 0
+        y: 3916
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1056,12 +1056,12 @@ TextureImporter:
       name: 480_356_lachong_31
       rect:
         serializedVersion: 2
-        x: 645
-        y: 3939
-        width: 141
-        height: 303
+        x: 480
+        y: 3916
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1078,12 +1078,12 @@ TextureImporter:
       name: 480_356_lachong_32
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 3938
-        width: 141
-        height: 303
+        x: 960
+        y: 3916
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1100,12 +1100,12 @@ TextureImporter:
       name: 480_356_lachong_33
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 3938
-        width: 144
-        height: 301
+        x: 1440
+        y: 3916
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1122,12 +1122,12 @@ TextureImporter:
       name: 480_356_lachong_34
       rect:
         serializedVersion: 2
-        x: 2086
-        y: 3938
-        width: 148
-        height: 296
+        x: 1920
+        y: 3916
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1144,12 +1144,12 @@ TextureImporter:
       name: 480_356_lachong_35
       rect:
         serializedVersion: 2
-        x: 165
-        y: 3582
-        width: 145
-        height: 291
+        x: 0
+        y: 3560
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1166,12 +1166,12 @@ TextureImporter:
       name: 480_356_lachong_36
       rect:
         serializedVersion: 2
-        x: 645
-        y: 3582
-        width: 143
-        height: 290
+        x: 480
+        y: 3560
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1188,12 +1188,12 @@ TextureImporter:
       name: 480_356_lachong_37
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 3581
-        width: 143
-        height: 291
+        x: 960
+        y: 3560
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1210,12 +1210,12 @@ TextureImporter:
       name: 480_356_lachong_38
       rect:
         serializedVersion: 2
-        x: 1606
-        y: 3581
-        width: 144
-        height: 291
+        x: 1440
+        y: 3560
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1232,12 +1232,12 @@ TextureImporter:
       name: 480_356_lachong_39
       rect:
         serializedVersion: 2
-        x: 2086
-        y: 3581
-        width: 146
-        height: 292
+        x: 1920
+        y: 3560
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1254,12 +1254,12 @@ TextureImporter:
       name: 480_356_lachong_40
       rect:
         serializedVersion: 2
-        x: 166
-        y: 3225
-        width: 149
-        height: 291
+        x: 0
+        y: 3204
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1276,12 +1276,12 @@ TextureImporter:
       name: 480_356_lachong_41
       rect:
         serializedVersion: 2
-        x: 645
-        y: 3225
-        width: 151
-        height: 291
+        x: 480
+        y: 3204
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1298,12 +1298,12 @@ TextureImporter:
       name: 480_356_lachong_42
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 3225
-        width: 150
-        height: 289
+        x: 960
+        y: 3204
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1320,12 +1320,12 @@ TextureImporter:
       name: 480_356_lachong_43
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 3225
-        width: 148
-        height: 289
+        x: 1440
+        y: 3204
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1342,12 +1342,12 @@ TextureImporter:
       name: 480_356_lachong_44
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 3225
-        width: 141
-        height: 290
+        x: 1920
+        y: 3204
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1364,12 +1364,12 @@ TextureImporter:
       name: 480_356_lachong_45
       rect:
         serializedVersion: 2
-        x: 165
-        y: 2869
-        width: 139
-        height: 291
+        x: 0
+        y: 2848
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1386,12 +1386,12 @@ TextureImporter:
       name: 480_356_lachong_46
       rect:
         serializedVersion: 2
-        x: 645
-        y: 2869
-        width: 140
-        height: 293
+        x: 480
+        y: 2848
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1408,12 +1408,12 @@ TextureImporter:
       name: 480_356_lachong_47
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 2869
-        width: 144
-        height: 294
+        x: 960
+        y: 2848
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1430,12 +1430,12 @@ TextureImporter:
       name: 480_356_lachong_48
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 2869
-        width: 147
-        height: 294
+        x: 1440
+        y: 2848
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1452,12 +1452,12 @@ TextureImporter:
       name: 480_356_lachong_49
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 2869
-        width: 142
-        height: 293
+        x: 1920
+        y: 2848
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1474,12 +1474,12 @@ TextureImporter:
       name: 480_356_lachong_50
       rect:
         serializedVersion: 2
-        x: 164
-        y: 2512
-        width: 138
-        height: 294
+        x: 0
+        y: 2492
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1496,12 +1496,12 @@ TextureImporter:
       name: 480_356_lachong_51
       rect:
         serializedVersion: 2
-        x: 645
-        y: 2512
-        width: 136
-        height: 294
+        x: 480
+        y: 2492
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1518,12 +1518,12 @@ TextureImporter:
       name: 480_356_lachong_52
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 2512
-        width: 137
-        height: 296
+        x: 960
+        y: 2492
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1540,12 +1540,12 @@ TextureImporter:
       name: 480_356_lachong_53
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 2512
-        width: 144
-        height: 296
+        x: 1440
+        y: 2492
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1562,12 +1562,12 @@ TextureImporter:
       name: 480_356_lachong_54
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 2512
-        width: 146
-        height: 296
+        x: 1920
+        y: 2492
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1584,12 +1584,12 @@ TextureImporter:
       name: 480_356_lachong_55
       rect:
         serializedVersion: 2
-        x: 165
-        y: 2157
-        width: 143
-        height: 296
+        x: 0
+        y: 2136
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1606,12 +1606,12 @@ TextureImporter:
       name: 480_356_lachong_56
       rect:
         serializedVersion: 2
-        x: 645
-        y: 2156
-        width: 139
-        height: 300
+        x: 480
+        y: 2136
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1628,12 +1628,12 @@ TextureImporter:
       name: 480_356_lachong_57
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 2156
-        width: 137
-        height: 302
+        x: 960
+        y: 2136
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1650,12 +1650,12 @@ TextureImporter:
       name: 480_356_lachong_58
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 2156
-        width: 135
-        height: 305
+        x: 1440
+        y: 2136
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1672,12 +1672,12 @@ TextureImporter:
       name: 480_356_lachong_59
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 2156
-        width: 140
-        height: 306
+        x: 1920
+        y: 2136
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1694,12 +1694,12 @@ TextureImporter:
       name: 480_356_lachong_60
       rect:
         serializedVersion: 2
-        x: 165
-        y: 1800
-        width: 145
-        height: 307
+        x: 0
+        y: 1780
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1716,12 +1716,12 @@ TextureImporter:
       name: 480_356_lachong_61
       rect:
         serializedVersion: 2
-        x: 645
-        y: 1800
-        width: 148
-        height: 307
+        x: 480
+        y: 1780
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1738,12 +1738,12 @@ TextureImporter:
       name: 480_356_lachong_62
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 1800
-        width: 143
-        height: 306
+        x: 960
+        y: 1780
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1760,12 +1760,12 @@ TextureImporter:
       name: 480_356_lachong_63
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 1800
-        width: 138
-        height: 306
+        x: 1440
+        y: 1780
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1782,12 +1782,12 @@ TextureImporter:
       name: 480_356_lachong_64
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 1800
-        width: 136
-        height: 307
+        x: 1920
+        y: 1780
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1804,12 +1804,12 @@ TextureImporter:
       name: 480_356_lachong_65
       rect:
         serializedVersion: 2
-        x: 165
-        y: 1444
-        width: 140
-        height: 307
+        x: 0
+        y: 1424
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1826,12 +1826,12 @@ TextureImporter:
       name: 480_356_lachong_66
       rect:
         serializedVersion: 2
-        x: 645
-        y: 1444
-        width: 147
-        height: 307
+        x: 480
+        y: 1424
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1848,12 +1848,12 @@ TextureImporter:
       name: 480_356_lachong_67
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 1444
-        width: 149
-        height: 306
+        x: 960
+        y: 1424
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1870,12 +1870,12 @@ TextureImporter:
       name: 480_356_lachong_68
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 1444
-        width: 144
-        height: 306
+        x: 1440
+        y: 1424
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1892,12 +1892,12 @@ TextureImporter:
       name: 480_356_lachong_69
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 1444
-        width: 141
-        height: 307
+        x: 1920
+        y: 1424
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1914,12 +1914,12 @@ TextureImporter:
       name: 480_356_lachong_70
       rect:
         serializedVersion: 2
-        x: 165
-        y: 1088
-        width: 136
-        height: 307
+        x: 0
+        y: 1068
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1936,12 +1936,12 @@ TextureImporter:
       name: 480_356_lachong_71
       rect:
         serializedVersion: 2
-        x: 645
-        y: 1088
-        width: 137
-        height: 307
+        x: 480
+        y: 1068
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1958,12 +1958,12 @@ TextureImporter:
       name: 480_356_lachong_72
       rect:
         serializedVersion: 2
-        x: 1125
-        y: 1088
-        width: 147
-        height: 307
+        x: 960
+        y: 1068
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1980,12 +1980,12 @@ TextureImporter:
       name: 480_356_lachong_73
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 1087
-        width: 155
-        height: 308
+        x: 1440
+        y: 1068
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2002,12 +2002,12 @@ TextureImporter:
       name: 480_356_lachong_74
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 1087
-        width: 149
-        height: 308
+        x: 1920
+        y: 1068
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2024,12 +2024,12 @@ TextureImporter:
       name: 480_356_lachong_75
       rect:
         serializedVersion: 2
-        x: 165
-        y: 732
-        width: 145
-        height: 308
+        x: 0
+        y: 712
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2046,12 +2046,12 @@ TextureImporter:
       name: 480_356_lachong_76
       rect:
         serializedVersion: 2
-        x: 645
-        y: 732
-        width: 143
-        height: 309
+        x: 480
+        y: 712
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2068,12 +2068,12 @@ TextureImporter:
       name: 480_356_lachong_77
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 731
-        width: 143
-        height: 312
+        x: 960
+        y: 712
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2090,12 +2090,12 @@ TextureImporter:
       name: 480_356_lachong_78
       rect:
         serializedVersion: 2
-        x: 1605
-        y: 731
-        width: 142
-        height: 313
+        x: 1440
+        y: 712
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2112,12 +2112,12 @@ TextureImporter:
       name: 480_356_lachong_79
       rect:
         serializedVersion: 2
-        x: 2085
-        y: 731
-        width: 145
-        height: 314
+        x: 1920
+        y: 712
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2134,12 +2134,12 @@ TextureImporter:
       name: 480_356_lachong_80
       rect:
         serializedVersion: 2
-        x: 165
-        y: 375
-        width: 147
-        height: 312
+        x: 0
+        y: 356
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2156,12 +2156,12 @@ TextureImporter:
       name: 480_356_lachong_81
       rect:
         serializedVersion: 2
-        x: 644
-        y: 375
-        width: 149
-        height: 311
+        x: 480
+        y: 356
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2178,12 +2178,12 @@ TextureImporter:
       name: 480_356_lachong_82
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 375
-        width: 148
-        height: 310
+        x: 960
+        y: 356
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2200,12 +2200,12 @@ TextureImporter:
       name: 480_356_lachong_83
       rect:
         serializedVersion: 2
-        x: 1604
-        y: 375
-        width: 147
-        height: 310
+        x: 1440
+        y: 356
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2222,12 +2222,12 @@ TextureImporter:
       name: 480_356_lachong_84
       rect:
         serializedVersion: 2
-        x: 2084
-        y: 375
-        width: 147
-        height: 311
+        x: 1920
+        y: 356
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2244,12 +2244,12 @@ TextureImporter:
       name: 480_356_lachong_85
       rect:
         serializedVersion: 2
-        x: 165
-        y: 19
-        width: 147
-        height: 310
+        x: 0
+        y: 0
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2266,12 +2266,12 @@ TextureImporter:
       name: 480_356_lachong_86
       rect:
         serializedVersion: 2
-        x: 645
-        y: 19
-        width: 149
-        height: 309
+        x: 480
+        y: 0
+        width: 480
+        height: 356
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2288,7 +2288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a01555048252185479ad11c77ff38598
     internalID: 0
     vertices: []
     indices: 
@@ -2296,7 +2296,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":480.0,"y":356.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       480_356_lachong_0: 2640700140360263406
       480_356_lachong_1: -2724539155733803182

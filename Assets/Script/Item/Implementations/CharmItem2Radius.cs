@@ -55,49 +55,37 @@ namespace FeedTheCat.Items
             }
 
             // Select ONE random NPC from affected list
-            charmedNPC = affectedNPCs[Random.Range(0, affectedNPCs.Count)];
+            // Prefer picking the "chosen" charmed NPC from those that can actually
+            // move (excludes Idle NPCs, which never walk regardless of Charm).
+            // If everyone in radius happens to be Idle, fall back to the full
+            // list - they'll just all show the Charm visual and stay frozen.
+            List<NPCMover> movableCandidates = affectedNPCs.FindAll(n => n != null && n.CanMove());
+            List<NPCMover> selectionPool = movableCandidates.Count > 0 ? movableCandidates : affectedNPCs;
 
-            Debug.Log($"CharmItem2Radius.ExecuteEffect: Charmed NPC '{charmedNPC.gameObject.name}' selected from {affectedNPCs.Count} affected NPCs");
+            charmedNPC = selectionPool[Random.Range(0, selectionPool.Count)];
+
+            LogFilter.LogItem($"CharmItem2Radius.ExecuteEffect: Charmed NPC '{charmedNPC.gameObject.name}' selected from {affectedNPCs.Count} affected NPCs");
 
             // Apply Charm status effect to ALL affected NPCs
             // Duration: 2 player turns (as per specification)
+            // Only the chosen NPC gets a moveTarget - that's what tells NPCMover
+            // to actually walk toward the clicked cell each turn. Every other
+            // affected NPC gets moveTarget=null, which keeps it frozen in place.
             StatusEffectSystem statusSystem = StatusEffectSystem.Instance;
             if (statusSystem != null)
             {
                 foreach (NPCMover npc in affectedNPCs)
                 {
-                    statusSystem.ApplyStatusEffect(npc, StatusEffectType.Charm, itemData.EffectDuration);
+                    GridCell moveTarget = (npc == charmedNPC) ? target : null;
+                    statusSystem.ApplyStatusEffect(npc, StatusEffectType.Charm, itemData.EffectDuration, moveTarget);
                 }
 
-                Debug.Log($"CharmItem2Radius.ExecuteEffect: Applied Charm to {affectedNPCs.Count} NPCs for {itemData.EffectDuration} turns");
+                LogFilter.LogItem($"CharmItem2Radius.ExecuteEffect: Applied Charm to {affectedNPCs.Count} NPCs for {itemData.EffectDuration} turns (chosen NPC will walk toward target each turn)");
             }
             else
             {
-                Debug.LogError("CharmItem2Radius.ExecuteEffect: StatusEffectSystem not found");
+                LogFilter.LogItemError("CharmItem2Radius.ExecuteEffect: StatusEffectSystem not found");
             }
-
-            // Command the chosen NPC to move toward target
-            CommandCharmMovement(charmedNPC, target);
-        }
-
-        /// <summary>
-        /// Command the charmed NPC to walk toward the target cell.
-        /// Other NPCs in the effect radius will be frozen.
-        /// </summary>
-        private void CommandCharmMovement(NPCMover npc, GridCell targetCell)
-        {
-            if (npc == null || targetCell == null)
-                return;
-
-            // TODO: Integrate with NPC AI system to make the NPC walk toward targetCell
-            // For now, this is a placeholder. The StatusEffectSystem will handle stopping other NPCs.
-
-            Debug.Log($"CharmItem2Radius.CommandCharmMovement: Commanding '{npc.gameObject.name}' to move toward {targetCell.gameObject.name}");
-
-            // Example integration point:
-            // npc.SetTargetCell(targetCell);
-            // or
-            // npc.BeginWalkingToward(targetCell);
         }
 
         #endregion

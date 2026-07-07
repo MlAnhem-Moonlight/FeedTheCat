@@ -207,7 +207,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -272,12 +272,12 @@ TextureImporter:
       name: 200_200_chemieng_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 2010
-        width: 125
-        height: 165
+        x: 0
+        y: 2000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,12 +294,12 @@ TextureImporter:
       name: 200_200_chemieng_1
       rect:
         serializedVersion: 2
-        x: 219
-        y: 2010
-        width: 121
-        height: 170
+        x: 200
+        y: 2000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: 200_200_chemieng_2
       rect:
         serializedVersion: 2
-        x: 417
-        y: 2013
-        width: 123
-        height: 172
+        x: 400
+        y: 2000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,12 +338,12 @@ TextureImporter:
       name: 200_200_chemieng_3
       rect:
         serializedVersion: 2
-        x: 612
-        y: 2015
-        width: 129
-        height: 177
+        x: 600
+        y: 2000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -360,12 +360,12 @@ TextureImporter:
       name: 200_200_chemieng_4
       rect:
         serializedVersion: 2
-        x: 820
-        y: 2011
-        width: 136
-        height: 177
+        x: 800
+        y: 2000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -382,12 +382,12 @@ TextureImporter:
       name: 200_200_chemieng_5
       rect:
         serializedVersion: 2
-        x: 28
-        y: 1804
-        width: 135
-        height: 176
+        x: 0
+        y: 1800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -404,12 +404,12 @@ TextureImporter:
       name: 200_200_chemieng_6
       rect:
         serializedVersion: 2
-        x: 230
-        y: 1801
-        width: 135
-        height: 179
+        x: 200
+        y: 1800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -426,12 +426,12 @@ TextureImporter:
       name: 200_200_chemieng_7
       rect:
         serializedVersion: 2
-        x: 431
-        y: 1803
-        width: 137
-        height: 181
+        x: 400
+        y: 1800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -448,12 +448,12 @@ TextureImporter:
       name: 200_200_chemieng_8
       rect:
         serializedVersion: 2
-        x: 631
-        y: 1804
-        width: 139
-        height: 183
+        x: 600
+        y: 1800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -470,12 +470,12 @@ TextureImporter:
       name: 200_200_chemieng_9
       rect:
         serializedVersion: 2
-        x: 835
-        y: 1806
-        width: 139
-        height: 194
+        x: 800
+        y: 1800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -492,12 +492,12 @@ TextureImporter:
       name: 200_200_chemieng_10
       rect:
         serializedVersion: 2
-        x: 37
-        y: 1604
-        width: 138
-        height: 192
+        x: 0
+        y: 1600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -514,12 +514,12 @@ TextureImporter:
       name: 200_200_chemieng_11
       rect:
         serializedVersion: 2
-        x: 242
-        y: 1599
-        width: 138
-        height: 183
+        x: 200
+        y: 1600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -536,12 +536,12 @@ TextureImporter:
       name: 200_200_chemieng_12
       rect:
         serializedVersion: 2
-        x: 441
-        y: 1599
-        width: 138
-        height: 185
+        x: 400
+        y: 1600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -558,12 +558,12 @@ TextureImporter:
       name: 200_200_chemieng_13
       rect:
         serializedVersion: 2
-        x: 638
-        y: 1602
-        width: 138
-        height: 191
+        x: 600
+        y: 1600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -580,12 +580,12 @@ TextureImporter:
       name: 200_200_chemieng_14
       rect:
         serializedVersion: 2
-        x: 839
-        y: 1603
-        width: 132
-        height: 192
+        x: 800
+        y: 1600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -602,12 +602,12 @@ TextureImporter:
       name: 200_200_chemieng_15
       rect:
         serializedVersion: 2
-        x: 38
-        y: 1399
-        width: 126
-        height: 183
+        x: 0
+        y: 1400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -624,12 +624,12 @@ TextureImporter:
       name: 200_200_chemieng_16
       rect:
         serializedVersion: 2
-        x: 225
-        y: 1399
-        width: 137
-        height: 182
+        x: 200
+        y: 1400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -646,12 +646,12 @@ TextureImporter:
       name: 200_200_chemieng_17
       rect:
         serializedVersion: 2
-        x: 425
-        y: 1399
-        width: 137
-        height: 182
+        x: 400
+        y: 1400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -668,12 +668,12 @@ TextureImporter:
       name: 200_200_chemieng_18
       rect:
         serializedVersion: 2
-        x: 622
-        y: 1404
-        width: 131
-        height: 191
+        x: 600
+        y: 1400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -690,12 +690,12 @@ TextureImporter:
       name: 200_200_chemieng_19
       rect:
         serializedVersion: 2
-        x: 822
-        y: 1407
-        width: 131
-        height: 191
+        x: 800
+        y: 1400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -712,12 +712,12 @@ TextureImporter:
       name: 200_200_chemieng_20
       rect:
         serializedVersion: 2
-        x: 15
-        y: 1201
-        width: 128
-        height: 187
+        x: 0
+        y: 1200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -734,12 +734,12 @@ TextureImporter:
       name: 200_200_chemieng_21
       rect:
         serializedVersion: 2
-        x: 214
+        x: 200
         y: 1200
-        width: 130
-        height: 182
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -756,12 +756,12 @@ TextureImporter:
       name: 200_200_chemieng_22
       rect:
         serializedVersion: 2
-        x: 417
+        x: 400
         y: 1200
-        width: 124
-        height: 181
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -778,12 +778,12 @@ TextureImporter:
       name: 200_200_chemieng_23
       rect:
         serializedVersion: 2
-        x: 613
-        y: 1207
-        width: 129
-        height: 186
+        x: 600
+        y: 1200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -800,12 +800,12 @@ TextureImporter:
       name: 200_200_chemieng_24
       rect:
         serializedVersion: 2
-        x: 813
-        y: 1207
-        width: 129
-        height: 186
+        x: 800
+        y: 1200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -822,12 +822,12 @@ TextureImporter:
       name: 200_200_chemieng_25
       rect:
         serializedVersion: 2
-        x: 18
-        y: 1010
-        width: 141
-        height: 182
+        x: 0
+        y: 1000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -844,12 +844,12 @@ TextureImporter:
       name: 200_200_chemieng_26
       rect:
         serializedVersion: 2
-        x: 220
-        y: 1008
-        width: 144
-        height: 179
+        x: 200
+        y: 1000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -866,12 +866,12 @@ TextureImporter:
       name: 200_200_chemieng_27
       rect:
         serializedVersion: 2
-        x: 428
-        y: 1005
-        width: 143
-        height: 175
+        x: 400
+        y: 1000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -888,12 +888,12 @@ TextureImporter:
       name: 200_200_chemieng_28
       rect:
         serializedVersion: 2
-        x: 630
-        y: 1010
-        width: 147
-        height: 177
+        x: 600
+        y: 1000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -910,12 +910,12 @@ TextureImporter:
       name: 200_200_chemieng_29
       rect:
         serializedVersion: 2
-        x: 832
-        y: 1013
-        width: 149
-        height: 184
+        x: 800
+        y: 1000
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -932,12 +932,12 @@ TextureImporter:
       name: 200_200_chemieng_30
       rect:
         serializedVersion: 2
-        x: 36
-        y: 811
-        width: 146
-        height: 186
+        x: 0
+        y: 800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -954,12 +954,12 @@ TextureImporter:
       name: 200_200_chemieng_31
       rect:
         serializedVersion: 2
-        x: 238
-        y: 810
-        width: 144
-        height: 185
+        x: 200
+        y: 800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -976,12 +976,12 @@ TextureImporter:
       name: 200_200_chemieng_32
       rect:
         serializedVersion: 2
-        x: 440
-        y: 805
-        width: 143
-        height: 176
+        x: 400
+        y: 800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -998,12 +998,12 @@ TextureImporter:
       name: 200_200_chemieng_33
       rect:
         serializedVersion: 2
-        x: 640
-        y: 805
-        width: 143
-        height: 176
+        x: 600
+        y: 800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1020,12 +1020,12 @@ TextureImporter:
       name: 200_200_chemieng_34
       rect:
         serializedVersion: 2
-        x: 840
-        y: 805
-        width: 142
-        height: 179
+        x: 800
+        y: 800
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1042,12 +1042,12 @@ TextureImporter:
       name: 200_200_chemieng_35
       rect:
         serializedVersion: 2
-        x: 36
-        y: 611
-        width: 140
-        height: 189
+        x: 0
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1064,12 +1064,12 @@ TextureImporter:
       name: 200_200_chemieng_36
       rect:
         serializedVersion: 2
-        x: 236
-        y: 610
-        width: 138
-        height: 189
+        x: 200
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1086,12 +1086,12 @@ TextureImporter:
       name: 200_200_chemieng_37
       rect:
         serializedVersion: 2
-        x: 436
-        y: 605
-        width: 132
-        height: 187
+        x: 400
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1108,12 +1108,12 @@ TextureImporter:
       name: 200_200_chemieng_38
       rect:
         serializedVersion: 2
-        x: 636
-        y: 602
-        width: 129
-        height: 181
+        x: 600
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1130,12 +1130,12 @@ TextureImporter:
       name: 200_200_chemieng_39
       rect:
         serializedVersion: 2
-        x: 835
-        y: 601
-        width: 130
-        height: 179
+        x: 800
+        y: 600
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1152,12 +1152,12 @@ TextureImporter:
       name: 200_200_chemieng_40
       rect:
         serializedVersion: 2
-        x: 27
-        y: 410
-        width: 131
-        height: 181
+        x: 0
+        y: 400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1174,12 +1174,12 @@ TextureImporter:
       name: 200_200_chemieng_41
       rect:
         serializedVersion: 2
-        x: 214
-        y: 401
-        width: 131
-        height: 188
+        x: 200
+        y: 400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1196,12 +1196,12 @@ TextureImporter:
       name: 200_200_chemieng_42
       rect:
         serializedVersion: 2
-        x: 415
+        x: 400
         y: 400
-        width: 130
-        height: 184
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1218,12 +1218,12 @@ TextureImporter:
       name: 200_200_chemieng_43
       rect:
         serializedVersion: 2
-        x: 614
+        x: 600
         y: 400
-        width: 131
-        height: 184
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1240,12 +1240,12 @@ TextureImporter:
       name: 200_200_chemieng_44
       rect:
         serializedVersion: 2
-        x: 818
-        y: 413
-        width: 127
-        height: 180
+        x: 800
+        y: 400
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1262,12 +1262,12 @@ TextureImporter:
       name: 200_200_chemieng_45
       rect:
         serializedVersion: 2
-        x: 20
-        y: 213
-        width: 129
-        height: 180
+        x: 0
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1284,12 +1284,12 @@ TextureImporter:
       name: 200_200_chemieng_46
       rect:
         serializedVersion: 2
-        x: 230
-        y: 205
-        width: 135
-        height: 182
+        x: 200
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1306,12 +1306,12 @@ TextureImporter:
       name: 200_200_chemieng_47
       rect:
         serializedVersion: 2
-        x: 431
-        y: 204
-        width: 137
-        height: 183
+        x: 400
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1328,12 +1328,12 @@ TextureImporter:
       name: 200_200_chemieng_48
       rect:
         serializedVersion: 2
-        x: 631
-        y: 203
-        width: 138
-        height: 184
+        x: 600
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1350,12 +1350,12 @@ TextureImporter:
       name: 200_200_chemieng_49
       rect:
         serializedVersion: 2
-        x: 835
-        y: 213
-        width: 116
-        height: 167
+        x: 800
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1372,12 +1372,12 @@ TextureImporter:
       name: 200_200_chemieng_50
       rect:
         serializedVersion: 2
-        x: 32
-        y: 6
-        width: 118
-        height: 171
+        x: 0
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1394,12 +1394,12 @@ TextureImporter:
       name: 200_200_chemieng_51
       rect:
         serializedVersion: 2
-        x: 228
-        y: 4
-        width: 117
-        height: 171
+        x: 200
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1416,12 +1416,12 @@ TextureImporter:
       name: 200_200_chemieng_52
       rect:
         serializedVersion: 2
-        x: 417
-        y: 9
-        width: 118
-        height: 177
+        x: 400
+        y: 0
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1438,7 +1438,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 62a2ab9a52398d644ac00803f55d397c
     internalID: 0
     vertices: []
     indices: 
@@ -1446,7 +1446,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":200.0,"y":200.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       200_200_chemieng_0: 8390867799116505059
       200_200_chemieng_1: 5824021704794593562

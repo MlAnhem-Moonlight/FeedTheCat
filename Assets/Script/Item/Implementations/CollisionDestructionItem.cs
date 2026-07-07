@@ -23,7 +23,6 @@ namespace FeedTheCat.Items
         [Tooltip("The player's controller component to hook collision events.")]
         private PlayerController playerController;
 
-        [SerializeField]
         [Tooltip("Reference to ItemInventory for quantity checks.")]
         private ItemInventory itemInventory;
 
@@ -85,24 +84,26 @@ namespace FeedTheCat.Items
 
             if (itemData == null)
             {
-                Debug.LogError($"CollisionDestructionItem: ItemData not assigned on {gameObject.name}");
+                LogFilter.LogItemError($"CollisionDestructionItem: ItemData not assigned on {gameObject.name}");
                 return;
             }
+
 
             if (playerController == null)
                 playerController = FindAnyObjectByType<PlayerController>();
 
-            itemInventory = FindAnyObjectByType<ItemInventory>();
+            // Do not rely on inspector-assigned cross-scene references. Resolve ItemInventory at runtime via its singleton.
+            itemInventory = ItemInventory.Instance;
 
             if (playerController == null)
             {
-                Debug.LogError($"CollisionDestructionItem: PlayerController not found in scene");
+                LogFilter.LogItemError($"CollisionDestructionItem: PlayerController not found in scene");
                 return;
             }
 
             if (itemInventory == null)
             {
-                Debug.LogError($"CollisionDestructionItem: ItemInventory.Instance not found in scene");
+                LogFilter.LogItemError($"CollisionDestructionItem: ItemInventory.Instance not found in scene");
                 return;
             }
 
@@ -114,7 +115,7 @@ namespace FeedTheCat.Items
             // playerController.OnNPCCollision += HandleNPCCollision;
 
             isInitialized = true;
-            Debug.Log($"CollisionDestructionItem: Initialized with ItemID '{ItemID}', Current Quantity: {CurrentQuantity}");
+            LogFilter.LogItem($"CollisionDestructionItem: Initialized with ItemID '{ItemID}', Current Quantity: {CurrentQuantity}");
         }
 
         /// <summary>

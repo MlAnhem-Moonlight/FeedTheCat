@@ -70,6 +70,10 @@ MonoBehaviour:
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
+  items:
+  - row: 0
+    column: 0
+    prefabIndex: 0
   destinations:
   - {x: 1, y: 0}
   playerStart: {x: 3, y: 5}

@@ -50,6 +50,13 @@ namespace FeedTheCat.Rewards
         [SerializeField] private Sprite epicFrame;
         [SerializeField] private Sprite legendaryFrame;
 
+        [Header("Rarity VFX")]
+        [SerializeField] private GameObject vfxParent;
+        [SerializeField] private GameObject commonFlame;
+        [SerializeField] private GameObject rareFlame;
+        [SerializeField] private GameObject epicFlame;
+        [SerializeField] private GameObject legendaryFlame;
+
         #endregion
 
         #region Private Fields
@@ -154,6 +161,21 @@ namespace FeedTheCat.Rewards
             };
         }
 
+        private GameObject GetRarityVFX()
+        {
+            if (itemData == null)
+                return null;
+
+            return itemData.Rarity switch
+            {
+                ItemRarity.Common => commonFlame,
+                ItemRarity.Rare => rareFlame,
+                ItemRarity.Epic => epicFlame,
+                ItemRarity.Legendary => legendaryFlame,
+                _ => commonFlame
+            };
+        }
+
         /// <summary>
         /// Get the rarity level as a display string.
         /// </summary>
@@ -208,6 +230,25 @@ namespace FeedTheCat.Rewards
             {
                 rarityBackground.sprite = GetRaritySprite();
                 rarityBackground.SetNativeSize(); // chỉ dùng nếu muốn kích thước theo sprite
+            }
+
+            if (vfxParent != null)
+            {
+                // Xóa VFX cũ
+                foreach (Transform child in vfxParent.transform)
+                {
+                    Destroy(child.gameObject);
+                }
+
+                // Spawn VFX mới theo rarity
+                GameObject rarityVFX = GetRarityVFX();
+                if (rarityVFX != null)
+                {
+                    GameObject vfxInstance = Instantiate(rarityVFX, vfxParent.transform);
+                    vfxInstance.transform.localPosition = Vector3.zero;
+                    vfxInstance.transform.localRotation = Quaternion.identity;
+                    vfxInstance.transform.localScale = Vector3.one;
+                }
             }
 
             // Update button interactability (optional)

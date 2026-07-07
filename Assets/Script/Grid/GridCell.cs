@@ -140,6 +140,10 @@ public class GridCell : MonoBehaviour, IPointerClickHandler
         if (image == null)
             return;
 
+        // Do not highlight cells occupied by NPCs
+        if (occupiedByNPC)
+            return;
+
         if (highlighted)
         {
             // If this cell is a destination, do not override its sprite; only tint it
@@ -159,6 +163,37 @@ public class GridCell : MonoBehaviour, IPointerClickHandler
         {
             ApplyStateVisual();
         }
+    }
+
+    // Highlight used specifically for item previews (allows showing item icon on cell)
+    private Sprite itemHighlightSprite = null;
+    private Color? itemHighlightColor = null;
+
+    public void SetItemHighlight(Sprite sprite, Color? tint = null)
+    {
+        if (image == null) return;
+        if (occupiedByNPC) return; // do not highlight if NPC occupies cell
+
+        itemHighlightSprite = sprite;
+        itemHighlightColor = tint;
+
+        if (sprite != null)
+        {
+            image.sprite = sprite;
+            image.color = tint ?? Color.white;
+        }
+        else if (highlightSprite != null)
+        {
+            image.sprite = highlightSprite;
+            image.color = tint ?? highlightColor;
+        }
+    }
+
+    public void ClearItemHighlight()
+    {
+        itemHighlightSprite = null;
+        itemHighlightColor = null;
+        ApplyStateVisual();
     }
 
     private void ApplyStateVisual()

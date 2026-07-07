@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using FeedTheCat.Items;
 
 // Requires GridCell script on each cell and BoardGenerator to set rows/columns
 public class PlayerController : MonoBehaviour
@@ -327,8 +328,14 @@ public class PlayerController : MonoBehaviour
         MovePlayerObjectToTarget(target);
 
         UpdateHighlights();
-        // notify NPCs that player moved one step
+        // notify NPCs that player moved one step (NPCs read their current
+        // Stun/Charm status here and move - or don't - accordingly)
         OnPlayerStep?.Invoke();
+
+        // Now advance status effect durations for the turn that just happened.
+        // This MUST run after OnPlayerStep so NPCs are still correctly
+        // considered Stunned/Charmed on the exact turn their effect expires.
+        StatusEffectSystem.Instance?.Tick();
     }
 
     private void PlaceAt(int r, int c)
@@ -428,12 +435,12 @@ public class PlayerController : MonoBehaviour
         // unsubscribe
         if (cells == null) return;
         for (int r = 0; r < rows; r++)
-        for (int c = 0; c < columns; c++)
-        {
-            var cell = cells[r, c];
-            if (cell != null)
-                cell.onClick -= HandleCellClicked;
-        }
+            for (int c = 0; c < columns; c++)
+            {
+                var cell = cells[r, c];
+                if (cell != null)
+                    cell.onClick -= HandleCellClicked;
+            }
     }
 
     // Public helper so LevelManager can place the player at runtime after level data is applied

@@ -53,11 +53,11 @@ namespace FeedTheCat.Items
                     statusSystem.ApplyStatusEffect(npc, StatusEffectType.Stun, itemData.EffectDuration);
                 }
 
-                Debug.Log($"StunItem3Radius.ExecuteEffect: Stunned {affectedNPCs.Count} NPCs in {itemData.EffectRadius} radius for {itemData.EffectDuration} turns");
+                LogFilter.LogItem($"StunItem3Radius.ExecuteEffect: Stunned {affectedNPCs.Count} NPCs in {itemData.EffectRadius} radius for {itemData.EffectDuration} turns");
             }
             else
             {
-                Debug.LogError("StunItem3Radius.ExecuteEffect: StatusEffectSystem not found");
+                LogFilter.LogItemError("StunItem3Radius.ExecuteEffect: StatusEffectSystem not found");
             }
         }
 

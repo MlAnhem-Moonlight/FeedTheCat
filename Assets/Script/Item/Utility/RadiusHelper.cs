@@ -95,15 +95,29 @@ namespace FeedTheCat.Items
             if (targetCell == null || npc == null)
                 return false;
 
-            // Use Manhattan distance for grid-based calculations
+            // Prefer grid coordinates when available (NPCMover exposes CurrentRow/CurrentColumn)
+            int npcRow = -1, npcCol = -1;
+            if (npc is NPCMover nm)
+            {
+                npcRow = nm.CurrentRow;
+                npcCol = nm.CurrentColumn;
+            }
+
+            if (npcRow >= 0 && npcCol >= 0)
+            {
+                // Use Manhattan distance on grid coordinates
+                int dr = Mathf.Abs(targetCell.row - npcRow);
+                int dc = Mathf.Abs(targetCell.column - npcCol);
+                int manhattan = dr + dc;
+                return manhattan <= radiusInTiles;
+            }
+
+            // Fallback: world-space distance using RectTransforms
             Vector3 targetPos = targetCell.GetComponent<RectTransform>()?.anchoredPosition ?? targetCell.transform.position;
             Vector3 npcPos = npc.GetComponent<RectTransform>()?.anchoredPosition ?? npc.transform.position;
-
             float distance = Vector3.Distance(targetPos, npcPos);
-
-            // Assume each grid cell is 1 unit; adjust if your grid uses different scaling
-            float maxDistance = radiusInTiles * 100f; // Convert tiles to approximate world distance
-
+            // Heuristic: treat one tile ~100 units (fallback)
+            float maxDistance = radiusInTiles * 100f;
             return distance <= maxDistance;
         }
 

@@ -42,11 +42,19 @@ namespace FeedTheCat.Items
             public StatusEffectType type;
             public int remainingDuration;
 
-            public StatusEffectInstance(NPCMover npc, StatusEffectType effectType, int duration)
+            /// <summary>
+            /// Optional destination cell used by Charm: only the ONE "chosen" charmed NPC
+            /// has this set (non-null), which tells NPCMover to walk toward it each turn.
+            /// All other charmed NPCs have this null and simply stay frozen in place.
+            /// </summary>
+            public GridCell moveTarget;
+
+            public StatusEffectInstance(NPCMover npc, StatusEffectType effectType, int duration, GridCell target)
             {
                 npcMover = npc;
                 type = effectType;
                 remainingDuration = duration;
+                moveTarget = target;
             }
         }
 
@@ -75,16 +83,13 @@ namespace FeedTheCat.Items
             s_instance = this;
         }
 
-        private void OnEnable()
-        {
-            // Subscribe to player step event
-            // PlayerController.OnPlayerStep += OnPlayerStep;
-        }
-
-        private void OnDisable()
-        {
-            // PlayerController.OnPlayerStep -= OnPlayerStep;
-        }
+        // NOTE: This system intentionally does NOT subscribe to
+        // PlayerController.OnPlayerStep directly. If it did, whether NPCMover's
+        // movement check ran before or after this system's decrement would depend
+        // on unpredictable event-subscription order, causing off-by-one bugs in
+        // Stun/Charm duration. Instead, PlayerController explicitly calls Tick()
+        // right after OnPlayerStep is invoked (i.e. after NPCs have already moved
+        // and read their current status), guaranteeing correct ordering.
 
         #endregion
 
@@ -93,7 +98,7 @@ namespace FeedTheCat.Items
         /// <summary>
         /// Apply a status effect to an NPC.
         /// </summary>
-        public void ApplyStatusEffect(NPCMover npc, StatusEffectType effectType, int durationTurns)
+        public void ApplyStatusEffect(NPCMover npc, StatusEffectType effectType, int durationTurns, GridCell moveTarget = null)
         {
             if (npc == null)
             {
@@ -104,17 +109,24 @@ namespace FeedTheCat.Items
             if (effectType == StatusEffectType.None)
                 return;
 
+            if (durationTurns <= 0)
+            {
+                Debug.LogWarning($"StatusEffectSystem.ApplyStatusEffect: durationTurns <= 0 for {effectType} on {npc.gameObject.name}, ignoring (no effect applied)");
+                return;
+            }
+
             // Check if NPC already has this effect
             StatusEffectInstance existingEffect = activeEffects.Find(e => e.npcMover == npc && e.type == effectType);
 
             if (existingEffect != null)
             {
                 existingEffect.remainingDuration = durationTurns;
+                existingEffect.moveTarget = moveTarget;
                 Debug.Log($"StatusEffectSystem: Refreshed {effectType} on {npc.gameObject.name} for {durationTurns} turns");
             }
             else
             {
-                StatusEffectInstance newEffect = new StatusEffectInstance(npc, effectType, durationTurns);
+                StatusEffectInstance newEffect = new StatusEffectInstance(npc, effectType, durationTurns, moveTarget);
                 activeEffects.Add(newEffect);
                 Debug.Log($"StatusEffectSystem: Applied {effectType} to {npc.gameObject.name} for {durationTurns} turns");
             }
@@ -141,11 +153,13 @@ namespace FeedTheCat.Items
         }
 
         /// <summary>
-        /// Check if an NPC has a specific status effect.
+        /// Check if an NPC has a specific status effect that is still active
+        /// (i.e. remainingDuration > 0). An effect applied with 0 turns is
+        /// treated as never having taken hold.
         /// </summary>
         public bool HasStatusEffect(NPCMover npc, StatusEffectType effectType)
         {
-            return activeEffects.Exists(e => e.npcMover == npc && e.type == effectType);
+            return activeEffects.Exists(e => e.npcMover == npc && e.type == effectType && e.remainingDuration > 0);
         }
 
         /// <summary>
@@ -157,14 +171,30 @@ namespace FeedTheCat.Items
             return effect?.remainingDuration ?? 0;
         }
 
+        /// <summary>
+        /// Get the move target associated with a status effect on this NPC (Charm only).
+        /// Returns null if the NPC doesn't have the effect, or has it but is not the
+        /// "chosen" NPC that should walk toward a target (i.e. it should stay frozen).
+        /// </summary>
+        public GridCell GetEffectMoveTarget(NPCMover npc, StatusEffectType effectType)
+        {
+            StatusEffectInstance effect = activeEffects.Find(e => e.npcMover == npc && e.type == effectType);
+            return effect?.moveTarget;
+        }
+
         #endregion
 
         #region Effect Management
 
         /// <summary>
-        /// Called after each player move to decrease effect durations.
+        /// Advance all active status effects by one player turn: decrease durations,
+        /// and remove/disable-visual any effect that has just expired.
+        /// Must be called by PlayerController AFTER OnPlayerStep has been invoked
+        /// (i.e. after NPCs have already read their current status and moved),
+        /// so an NPC is still correctly treated as Stunned/Charmed during the exact
+        /// turn on which its effect finally expires.
         /// </summary>
-        private void OnPlayerStep()
+        public void Tick()
         {
             List<StatusEffectInstance> effectsToRemove = new List<StatusEffectInstance>();
 
