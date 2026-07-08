@@ -274,7 +274,7 @@ public class LevelManager : MonoBehaviour
             }
 
             // spawn items from level data
-            if (level.items != null && level.items.Count > 0 && level.hasWon == false)
+            if (level.items != null && level.items.Count > 0 && level.hasWon == false && level.hasPickup == false)
             {
                 int itemCounter = 0;
                 foreach (var itemDef in level.items)
@@ -599,4 +599,5 @@ public class LevelManager : MonoBehaviour
         }
         return null;
     }
+
 }

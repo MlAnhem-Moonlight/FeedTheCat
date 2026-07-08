@@ -17,6 +17,8 @@ public struct DifficultyResultBFS
 
     public float fitness;
 
+    public int npcScore;
+
     public LevelDifficulty difficulty;
 
     public override string ToString()
@@ -28,6 +30,7 @@ public struct DifficultyResultBFS
             $"PathCount={shortestPathCount} | " +
             $"Branching={branchingFactor:F2} | " +
             $"DeadEnd={deadEndRatio:F2} | " +
+            $"NpcScore={npcScore} | " +
             $"Difficulty={difficulty}";
     }
 }

@@ -99,7 +99,11 @@ namespace FeedTheCat.Items
             if (itemData.ItemType == ItemType.Passive)
                 return false;
 
-            return CurrentQuantity > 0 && !IsOnCooldown();
+            // CRITICAL: Block usage if quantity is 0
+            if (CurrentQuantity <= 0)
+                return false;
+
+            return !IsOnCooldown();
         }
 
         /// <summary>

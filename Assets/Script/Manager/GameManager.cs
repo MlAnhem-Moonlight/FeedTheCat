@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static LevelButton;
 
 public class GameManager : MonoBehaviour
 {
@@ -220,9 +221,9 @@ public class GameManager : MonoBehaviour
             allLevels[next].isLocked = false;
 
         // Save the updated state to persistent storage
-        SaveManager.SaveLevelState(CurrentLevelIndex, CurrentLevel.hasWon, CurrentLevel.isLocked);
+        SaveManager.SaveLevelState(CurrentLevel.levelName, CurrentLevel.hasWon, CurrentLevel.isLocked, CurrentLevel.hasPickup);
         if (next < allLevels.Count)
-            SaveManager.SaveLevelState(next, allLevels[next].hasWon, allLevels[next].isLocked);
+            SaveManager.SaveLevelState(allLevels[next].levelName, allLevels[next].hasWon, allLevels[next].isLocked, allLevels[next].hasPickup);
         winGame = true;
         FindAnyObjectByType<PageManager>()?.RefreshButtons();
         SceneManager.LoadScene("MainMenu");
@@ -248,7 +249,7 @@ public class GameManager : MonoBehaviour
         if (CurrentLevel != null)
         {
             CurrentLevel.hasWon = true;
-            SaveManager.SaveLevelState(currentIndex, CurrentLevel.hasWon, CurrentLevel.isLocked);
+            SaveManager.SaveLevelState(CurrentLevel.levelName, CurrentLevel.hasWon, CurrentLevel.isLocked, CurrentLevel.hasPickup);
             Debug.Log($"GameManager.NextLevel: Marked level '{CurrentLevel.levelName}' as won");
         }
 
@@ -256,7 +257,7 @@ public class GameManager : MonoBehaviour
         if (allLevels[nextIndex] != null)
         {
             allLevels[nextIndex].isLocked = false;
-            SaveManager.SaveLevelState(nextIndex, allLevels[nextIndex].hasWon, allLevels[nextIndex].isLocked);
+            SaveManager.SaveLevelState(allLevels[nextIndex].levelName, allLevels[nextIndex].hasWon, allLevels[nextIndex].isLocked, allLevels[nextIndex].hasPickup);
             Debug.Log($"GameManager.NextLevel: Unlocked level '{allLevels[nextIndex].levelName}'");
         }
 
@@ -290,5 +291,12 @@ public class GameManager : MonoBehaviour
         // Reload the gameplay flow for the current level to ensure proper initialization (spawns, containers, etc.)
         // This uses the SceneTransitionManager which will queue the level and load the loading scene if configured.
         SceneTransitionManager.RestartLevel(CurrentLevel, true);
+    }
+
+
+    [ContextMenu("Reset Level")]
+    public void ResetLevel()
+    {
+        SaveManager.ResetAllLevelStates(allLevels);
     }
 }

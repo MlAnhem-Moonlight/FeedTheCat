@@ -177,6 +177,10 @@ public class BFSSolver
               reachableStates
             : 0f;
 
+        result.npcScore =
+            LevelDifficultyClassifier.ComputeNpcScore(
+                level.npcs);
+
         result.fitness =
             CalculateFitness(
                 result);

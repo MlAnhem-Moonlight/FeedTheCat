@@ -1,16 +1,16 @@
 using UnityEditor;
 using UnityEngine;
 
-public class MAPElitesWindowOld : EditorWindow
+public class MAPElitesWindow : EditorWindow
 {
     private int iterations = 5000;
 
     private MAPElitesGenerator generator;
 
-    [MenuItem("FeedTheCat/MAP-Elites Generator BFS")]
+    [MenuItem("FeedTheCat/MAP-Elites Generator BFS Claude")]
     public static void Open()
     {
-        GetWindow<MAPElitesWindowOld>(
+        GetWindow<MAPElitesWindow>(
             "MAP-Elites");
     }
 
@@ -147,10 +147,17 @@ public class MAPElitesWindowOld : EditorWindow
     private void SaveLevel(
         EliteCellBFS cell)
     {
+        // levelName da duoc MAPElitesArchive.TryInsert dat theo dinh dang
+        // {DoKho}_{TenLevel}, dung lam ten file mac dinh cho dong bo.
+        string defaultName =
+            string.IsNullOrEmpty(cell.level.levelName)
+                ? "GeneratedLevel"
+                : cell.level.levelName;
+
         string path =
             EditorUtility.SaveFilePanelInProject(
                 "Save Level",
-                "GeneratedLevel",
+                defaultName,
                 "asset",
                 "");
 
@@ -161,6 +168,13 @@ public class MAPElitesWindowOld : EditorWindow
             Object.Instantiate(
                 cell.level);
 
+        // Nguoi dung co the doi ten file trong hop thoai luu -> luon dong bo
+        // lai field levelName ben trong LevelData theo dung ten file that su,
+        // de asset va du lieu ben trong khong bi lech nhau (ItemCollector.cs
+        // doc do kho tu levelName, khong doc tu ten file).
+        copy.levelName =
+            System.IO.Path.GetFileNameWithoutExtension(path);
+
         AssetDatabase.CreateAsset(
             copy,
             path);
@@ -169,26 +183,6 @@ public class MAPElitesWindowOld : EditorWindow
 
         Debug.Log(
             "Saved: " + path);
-    }
-
-    private LevelDifficulty Classify(
-    DifficultyResultBFS r)
-    {
-        if (
-            r.shortestPath < 8 &&
-            r.reachableStates < 50)
-        {
-            return LevelDifficulty.Easy;
-        }
-
-        if (
-            r.shortestPath < 20 &&
-            r.reachableStates < 150)
-        {
-            return LevelDifficulty.Medium;
-        }
-
-        return LevelDifficulty.Hard;
     }
 
     private void ExportDifficulty(
@@ -226,9 +220,23 @@ public class MAPElitesWindowOld : EditorWindow
                     Object.Instantiate(
                         cell.level);
 
+                string baseName =
+                    string.IsNullOrEmpty(cell.level.levelName)
+                        ? "Level"
+                        : cell.level.levelName;
+
+                string finalName =
+                    $"{baseName}_{count}";
+
+                // Dong bo field levelName voi ten file that su duoc dung ben
+                // duoi, de 2 level co ten goc trung nhau (vi du 2 ban dot bien
+                // deu ten "Hard_Mutant") van phan biet duoc qua levelName,
+                // khong chi qua ten file tren o dia.
+                copy.levelName = finalName;
+
                 AssetDatabase.CreateAsset(
                     copy,
-                    $"{folder}/Level_{count}.asset");
+                    $"{folder}/{finalName}.asset");
 
                 count++;
             }

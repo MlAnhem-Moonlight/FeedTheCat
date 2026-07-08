@@ -50,6 +50,7 @@ public class LevelData : ScriptableObject
     public bool hasWon = false;
     [Tooltip("If true, level is locked and cannot be played until unlocked")]
     public bool isLocked = true;
+    public bool hasPickup = false;
 }
 
 public enum LevelDifficulty

@@ -173,6 +173,12 @@ public class ItemCollector : MonoBehaviour
 
         // Log reward with rarity
         Debug.Log($"nhận quà + {rarity}");
+        LevelManager levelManager = FindAnyObjectByType<LevelManager>();
+        levelManager.level.hasPickup = true;
+
+        // Save the pickup state to PlayerPrefs
+        SaveManager.SaveLevelState(levelManager.level.levelName, levelManager.level.hasWon, levelManager.level.isLocked, true);
+
         RewardScreenManager rewardScreenManager = FindAnyObjectByType<RewardScreenManager>();
         rewardScreenManager?.rewardBg.SetActive(true);
         // Destroy the item

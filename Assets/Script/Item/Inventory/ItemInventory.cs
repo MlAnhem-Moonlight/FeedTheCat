@@ -75,6 +75,11 @@ namespace FeedTheCat.Items
         /// </summary>
         private bool isLoaded = false;
 
+        /// <summary>
+        /// PlayerPrefs key for storing list of saved item IDs (comma-separated).
+        /// </summary>
+        private const string SAVED_ITEMS_KEY = "inventory_saved_items";
+
         #endregion
 
         #region Properties
@@ -170,7 +175,7 @@ namespace FeedTheCat.Items
 
             OnQuantityChanged?.Invoke(itemID, clampedQuantity, previousQuantity);
 
-            Debug.Log($"ItemInventory: Set {itemID} quantity to {clampedQuantity} (was {previousQuantity})");
+            LogFilter.LogItem($"ItemInventory: Set {itemID} quantity to {clampedQuantity} (was {previousQuantity})");
         }
 
         /// <summary>
@@ -218,14 +223,22 @@ namespace FeedTheCat.Items
         /// </summary>
         public void Save()
         {
+            // Build a list of all saved item IDs
+            List<string> savedItemIDs = new List<string>();
+
             foreach (var kvp in inventory)
             {
                 string key = persistenceKeyPrefix + kvp.Key;
                 PlayerPrefs.SetInt(key, kvp.Value);
+                savedItemIDs.Add(kvp.Key);
             }
 
+            // Store the list of saved item IDs (comma-separated) so we can retrieve them on Load()
+            string savedItemsValue = string.Join(",", savedItemIDs);
+            PlayerPrefs.SetString(SAVED_ITEMS_KEY, savedItemsValue);
+
             PlayerPrefs.Save();
-            Debug.Log("ItemInventory: Saved to PlayerPrefs");
+            LogFilter.LogItem($"ItemInventory: Saved to PlayerPrefs (saved {inventory.Count} items)");
         }
 
         /// <summary>
@@ -238,10 +251,49 @@ namespace FeedTheCat.Items
 
             inventory.Clear();
 
+            // Retrieve the list of saved item IDs from PlayerPrefs
+            string savedItemsValue = PlayerPrefs.GetString(SAVED_ITEMS_KEY, "");
+
+            if (!string.IsNullOrEmpty(savedItemsValue))
+            {
+                string[] itemIDs = savedItemsValue.Split(',');
+
+                foreach (string itemID in itemIDs)
+                {
+                    if (string.IsNullOrWhiteSpace(itemID))
+                        continue;
+
+                    string key = persistenceKeyPrefix + itemID.Trim();
+                    int quantity = PlayerPrefs.GetInt(key, 0);
+
+                    if (quantity > 0)
+                    {
+                        inventory[itemID.Trim()] = quantity;
+                        LogFilter.LogItem($"ItemInventory: Loaded {itemID.Trim()} with quantity {quantity} from PlayerPrefs");
+                    }
+                }
+            }
+
             isLoaded = true;
             OnInventoryLoaded?.Invoke();
 
-            Debug.Log("ItemInventory: Loaded from PlayerPrefs");
+            LogFilter.LogItem($"ItemInventory: Loaded {inventory.Count} items from PlayerPrefs");
+        }
+
+        /// <summary>
+        /// Initialize default item quantities (call this after loading if you want default starting items).
+        /// </summary>
+        public void InitializeDefaultItems(Dictionary<string, int> defaultQuantities)
+        {
+            if (defaultQuantities == null) return;
+
+            foreach (var kvp in defaultQuantities)
+            {
+                if (!inventory.ContainsKey(kvp.Key))
+                {
+                    SetQuantity(kvp.Key, kvp.Value);
+                }
+            }
         }
 
         /// <summary>
@@ -258,7 +310,7 @@ namespace FeedTheCat.Items
             if (quantity > 0)
             {
                 inventory[itemID] = quantity;
-                Debug.Log($"ItemInventory: Loaded {itemID} with quantity {quantity} from PlayerPrefs");
+                LogFilter.LogItem($"ItemInventory: Loaded {itemID} with quantity {quantity} from PlayerPrefs");
             }
         }
 
@@ -271,10 +323,18 @@ namespace FeedTheCat.Items
             inventory.Clear();
 
             List<string> keysToDelete = new List<string>();
-            foreach (string key in GetAllPlayerPrefKeys())
+            string savedItemsValue = PlayerPrefs.GetString(SAVED_ITEMS_KEY, "");
+
+            if (!string.IsNullOrEmpty(savedItemsValue))
             {
-                if (key.StartsWith(persistenceKeyPrefix))
-                    keysToDelete.Add(key);
+                string[] itemIDs = savedItemsValue.Split(',');
+                foreach (string itemID in itemIDs)
+                {
+                    if (!string.IsNullOrWhiteSpace(itemID))
+                    {
+                        keysToDelete.Add(persistenceKeyPrefix + itemID.Trim());
+                    }
+                }
             }
 
             foreach (string key in keysToDelete)
@@ -282,21 +342,11 @@ namespace FeedTheCat.Items
                 PlayerPrefs.DeleteKey(key);
             }
 
+            // Clear the saved items list itself
+            PlayerPrefs.DeleteKey(SAVED_ITEMS_KEY);
             PlayerPrefs.Save();
-            Debug.Log("ItemInventory: All inventory cleared");
-        }
 
-        #endregion
-
-        #region Utility
-
-        /// <summary>
-        /// Get all PlayerPrefs keys.
-        /// </summary>
-        private List<string> GetAllPlayerPrefKeys()
-        {
-            List<string> keys = new List<string>();
-            return keys;
+            LogFilter.LogItem("ItemInventory: All inventory cleared");
         }
 
         #endregion
@@ -308,7 +358,7 @@ namespace FeedTheCat.Items
         {
             if (inventory.Count == 0)
             {
-                Debug.Log("ItemInventory: Empty");
+                LogFilter.LogItem("ItemInventory: Empty");
                 return;
             }
 
@@ -317,7 +367,7 @@ namespace FeedTheCat.Items
             {
                 log += $"  {kvp.Key}: {kvp.Value}\n";
             }
-            Debug.Log(log);
+            LogFilter.LogItem(log);
         }
 
         #endregion

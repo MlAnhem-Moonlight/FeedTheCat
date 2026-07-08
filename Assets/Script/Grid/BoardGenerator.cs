@@ -6,7 +6,9 @@ public class BoardGenerator : MonoBehaviour
 {
     [Header("Board Size")]
     public int rows = 8;
-    public int columns = 8;
+    // Doi thanh 6 de khop voi 8x6 dang dung trong BFSSolver, EnemySimulator, SimBoard, DangerMapBuilder.
+    // Neu scene cua ban da co gia tri khac o Inspector thi gia tri do se duoc uu tien (day chi la default).
+    public int columns = 6;
 
     [Header("References")]
     public GridLayoutGroup grid;
@@ -86,24 +88,24 @@ public class BoardGenerator : MonoBehaviour
             cell.name = $"Cell_{i}";
             // assign row/column if GridCell component exists
             var gc = cell.GetComponent<GridCell>();
-                if (gc != null)
+            if (gc != null)
+            {
+                int r = i / columns;
+                int c = i % columns;
+                gc.row = r;
+                gc.column = c;
+                // default empty state
+                gc.ClearOccupancy();
+                // apply blocked/destination attributes if configured on generator
+                if (blockedCells != null && blockedCells.Contains(new Vector2Int(r, c)))
                 {
-                    int r = i / columns;
-                    int c = i % columns;
-                    gc.row = r;
-                    gc.column = c;
-                    // default empty state
-                    gc.ClearOccupancy();
-                    // apply blocked/destination attributes if configured on generator
-                    if (blockedCells != null && blockedCells.Contains(new Vector2Int(r, c)))
-                    {
-                        gc.SetOccupied(true); // block both player and NPC
-                    }
-                    if (destinationCells != null && destinationCells.Contains(new Vector2Int(r, c)))
-                    {
-                        gc.isDestination = true;
-                    }
+                    gc.SetOccupied(true); // block both player and NPC
                 }
+                if (destinationCells != null && destinationCells.Contains(new Vector2Int(r, c)))
+                {
+                    gc.isDestination = true;
+                }
+            }
             // Ensure the instantiated cell uses the correct RectTransform settings so
             // GridLayoutGroup sizing maps 1:1 to the prefab visuals.
             var rt = cell.GetComponent<RectTransform>();
