@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 8904714c5d4ae7647a5dc7bb8a8f8d54
+guid: fca47743ced28314893ecdf1ff7c6d24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8862641696791446209
-    second: image 33_0
-  - first:
-      213: -5748274148428612734
-    second: image 33_1
+      213: 5027785268714924367
+    second: panels-10_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,75 +109,27 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: image 33_0
+      name: panels-10_0
       rect:
         serializedVersion: 2
-        x: 97
-        y: 174
-        width: 191
-        height: 71
+        x: 4
+        y: 4
+        width: 405
+        height: 573
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3d3e234552910580800000000000000
-      internalID: -8862641696791446209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: image 33_1
-      rect:
-        serializedVersion: 2
-        x: 308
-        y: 175
-        width: 212
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28bf95f1e170a30b0800000000000000
-      internalID: -5748274148428612734
+      spriteID: f49e1b4401846c540800000000000000
+      internalID: 5027785268714924367
       vertices: []
       indices: 
       edges: []
@@ -189,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 4661963b021ff9a4c8b948b57fa7a280
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -199,8 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      image 33_0: -8862641696791446209
-      image 33_1: -5748274148428612734
+      panels-10_0: 5027785268714924367
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
