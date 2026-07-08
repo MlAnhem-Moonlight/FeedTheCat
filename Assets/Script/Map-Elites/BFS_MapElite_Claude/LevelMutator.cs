@@ -17,7 +17,11 @@ public class LevelMutator
     private const int MinNpcCount = 1;
     private const int MaxNpcCount = 12;
 
-    public LevelData Mutate(LevelData source)
+    // target: do kho ma MAPElitesGenerator dang muon nhan candidate nay toi
+    // (dua tren ti le muc tieu, vi du 4:2:1 cho Easy:Medium:Hard). Anh huong
+    // toi trong so cac phep dot bien (them/bot/doi loai NPC) - mac dinh
+    // Medium neu khong truyen vao, giu hanh vi cu.
+    public LevelData Mutate(LevelData source, LevelDifficulty target = LevelDifficulty.Medium)
     {
         LevelData mutant = CloneLevel(source);
 
@@ -28,7 +32,7 @@ public class LevelMutator
 
         for (int i = 0; i < opsCount; i++)
         {
-            ApplyRandomOperation(mutant, occupied);
+            ApplyRandomOperation(mutant, occupied, target);
         }
 
         return mutant;
@@ -86,26 +90,53 @@ public class LevelMutator
 
     private void ApplyRandomOperation(
         LevelData level,
-        HashSet<Vector2Int> occupied)
+        HashSet<Vector2Int> occupied,
+        LevelDifficulty target)
     {
-        // Trong so % cho tung loai dot bien - chinh lai neu muon thien
-        // ve huong nao do (vi du tang % doi NPC de kho tang nhanh hon).
-        int roll = Random.Range(0, 100);
+        // Trong so % cho tung loai dot bien, lech theo do kho muc tieu:
+        // - Easy: uu tien Remove NPC / doi sang loai NPC an toan hon, han che Add NPC.
+        // - Hard: uu tien Add NPC / doi sang loai NPC nguy hiem hon, han che Remove NPC.
+        // - Medium: giu nguyen ti le goc.
+        // Thu tu: MoveNPC, ChangeType, MoveGoal, MovePlayer, MoveItem, AddNPC, RemoveNPC (tong = 100).
+        int[] weights = GetOperationWeights(target);
 
-        if (roll < 35)
-            MoveRandomNPC(level, occupied);
-        else if (roll < 50)
-            ChangeRandomNPCType(level, occupied);
-        else if (roll < 62)
-            MoveGoal(level, occupied);
-        else if (roll < 74)
-            MovePlayer(level, occupied);
-        else if (roll < 86)
-            MoveItem(level, occupied);
-        else if (roll < 93)
-            AddNPC(level, occupied);
-        else
-            RemoveRandomNPC(level, occupied);
+        int roll = Random.Range(0, 100);
+        int cumulative = 0;
+
+        cumulative += weights[0];
+        if (roll < cumulative) { MoveRandomNPC(level, occupied); return; }
+
+        cumulative += weights[1];
+        if (roll < cumulative) { ChangeRandomNPCType(level, occupied, target); return; }
+
+        cumulative += weights[2];
+        if (roll < cumulative) { MoveGoal(level, occupied); return; }
+
+        cumulative += weights[3];
+        if (roll < cumulative) { MovePlayer(level, occupied); return; }
+
+        cumulative += weights[4];
+        if (roll < cumulative) { MoveItem(level, occupied); return; }
+
+        cumulative += weights[5];
+        if (roll < cumulative) { AddNPC(level, occupied, target); return; }
+
+        RemoveRandomNPC(level, occupied);
+    }
+
+    private int[] GetOperationWeights(LevelDifficulty target)
+    {
+        switch (target)
+        {
+            case LevelDifficulty.Easy:
+                return new[] { 30, 20, 10, 10, 10, 3, 17 };
+
+            case LevelDifficulty.Hard:
+                return new[] { 30, 20, 10, 10, 10, 17, 3 };
+
+            default: // Medium - giong ti le goc truoc khi co quota
+                return new[] { 35, 15, 12, 12, 12, 7, 7 };
+        }
     }
 
     private void MoveRandomNPC(
@@ -138,7 +169,8 @@ public class LevelMutator
 
     private void ChangeRandomNPCType(
         LevelData level,
-        HashSet<Vector2Int> occupied)
+        HashSet<Vector2Int> occupied,
+        LevelDifficulty target)
     {
         if (level.npcs.Count == 0)
             return;
@@ -150,7 +182,9 @@ public class LevelMutator
 
         FreeNPCCells(npc, occupied);
 
-        int newType = Random.Range(0, 9);
+        // Loai NPC moi lech theo do kho muc tieu (Easy -> uu tien Idle,
+        // Hard -> uu tien Random Patrol/Way) thay vi random deu 0-8.
+        int newType = LevelGenUtil.GetWeightedRandomPrefabIndex(target);
 
         // Thu giu nguyen vi tri cu voi loai moi truoc (vi du: doi tu Fixed
         // sang Idle can them 1 o nen co the khong con hop le tai cho cu).
@@ -235,12 +269,15 @@ public class LevelMutator
 
     private void AddNPC(
         LevelData level,
-        HashSet<Vector2Int> occupied)
+        HashSet<Vector2Int> occupied,
+        LevelDifficulty target)
     {
         if (level.npcs.Count >= MaxNpcCount)
             return;
 
-        if (LevelGenUtil.TryPlaceNPC(occupied, out NPCDef npc))
+        int prefabIndex = LevelGenUtil.GetWeightedRandomPrefabIndex(target);
+
+        if (LevelGenUtil.TryPlaceNPC(occupied, out NPCDef npc, prefabIndex))
         {
             level.npcs.Add(npc);
         }

@@ -44,6 +44,55 @@ public static class LevelGenUtil
         return prefabIndex <= 3;
     }
 
+    // Trong so chon loai NPC (prefabIndex 0-8) theo tung do kho muc tieu, dung
+    // chung boi MAPElitesGenerator (sinh moi) va LevelMutator (dot bien), de
+    // chu dong tao ra nhieu level Easy/Hard hon thay vi random deu 0-8 roi
+    // hy vong diem so roi dung khoang mong muon.
+    // Thu tu trong so: [0]=IdleUp [1]=IdleDown [2]=IdleLeft [3]=IdleRight
+    //                  [4]=FixedH [5]=FixedV [6]=RandomStepH [7]=RandomStepV [8]=RandomWay
+    private static readonly int[] EasyNpcWeights =
+        { 15, 15, 15, 15, 8, 8, 3, 3, 2 };   // uu tien Idle (an toan nhat)
+
+    private static readonly int[] HardNpcWeights =
+        { 3, 3, 3, 3, 8, 8, 20, 20, 32 };    // uu tien Random Patrol / Random Way (nguy hiem nhat)
+
+    // Medium khong can bang trong so rieng - dung Random.Range(0,9) deu nhu cu.
+
+    public static int GetWeightedRandomPrefabIndex(LevelDifficulty target)
+    {
+        switch (target)
+        {
+            case LevelDifficulty.Easy:
+                return PickWeightedIndex(EasyNpcWeights);
+
+            case LevelDifficulty.Hard:
+                return PickWeightedIndex(HardNpcWeights);
+
+            default:
+                return Random.Range(0, 9);
+        }
+    }
+
+    private static int PickWeightedIndex(int[] weights)
+    {
+        int total = 0;
+        for (int i = 0; i < weights.Length; i++)
+            total += weights[i];
+
+        int roll = Random.Range(0, total);
+        int cumulative = 0;
+
+        for (int i = 0; i < weights.Length; i++)
+        {
+            cumulative += weights[i];
+            if (roll < cumulative)
+                return i;
+        }
+
+        // Khong nen toi day, chi la fallback an toan.
+        return weights.Length - 1;
+    }
+
     // Gom toan bo o dang bi chiem trong 1 level: player, (cac) destination,
     // (cac) item, va tat ca NPC (ke ca o thu 2 cua NPC Idle).
     public static HashSet<Vector2Int> BuildOccupiedCells(LevelData level)

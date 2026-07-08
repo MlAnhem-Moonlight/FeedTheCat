@@ -103,25 +103,73 @@ public class MAPElitesArchive
 
     // Lay ngau nhien 1 level elite dang co trong archive (dung lam "parent"
     // de LevelMutator dot bien). Tra ve null neu archive con trong hoan toan.
-    public LevelData GetRandomElite()
+    //
+    // preferredDifficulty: neu truyen vao, uu tien lay elite CUNG do kho voi
+    // muc tieu (giup dot bien hoi tu nhanh ve dung nhom do kho dang thieu,
+    // thay vi dot bien tu 1 parent ngau nhien co the da o do kho khac han).
+    // Neu archive chua co elite nao thuoc do kho do, roi ve lay ngau nhien
+    // tu toan bo archive nhu cu.
+    public LevelData GetRandomElite(LevelDifficulty? preferredDifficulty = null)
     {
-        List<LevelData> occupiedLevels = new List<LevelData>();
+        List<LevelData> preferredLevels = new List<LevelData>();
+        List<LevelData> allLevels = new List<LevelData>();
 
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
             {
-                if (archive[x, y].occupied)
+                EliteCellBFS cell = archive[x, y];
+
+                if (!cell.occupied)
+                    continue;
+
+                allLevels.Add(cell.level);
+
+                if (preferredDifficulty.HasValue &&
+                    cell.difficulty == preferredDifficulty.Value)
                 {
-                    occupiedLevels.Add(archive[x, y].level);
+                    preferredLevels.Add(cell.level);
                 }
             }
         }
 
-        if (occupiedLevels.Count == 0)
+        List<LevelData> pool =
+            preferredLevels.Count > 0 ? preferredLevels : allLevels;
+
+        if (pool.Count == 0)
             return null;
 
-        return occupiedLevels[
-            Random.Range(0, occupiedLevels.Count)];
+        return pool[
+            Random.Range(0, pool.Count)];
+    }
+
+    // Dem so luong elite dang co trong archive theo tung do kho. Dung boi
+    // MAPElitesGenerator de biet do kho nao dang "thieu" so voi ti le muc
+    // tieu (vi du 4:2:1 cho Easy:Medium:Hard) va chu dong nhan candidate
+    // moi ve dung do kho do.
+    public Dictionary<LevelDifficulty, int> GetDifficultyCounts()
+    {
+        Dictionary<LevelDifficulty, int> counts =
+            new Dictionary<LevelDifficulty, int>
+            {
+                { LevelDifficulty.Easy, 0 },
+                { LevelDifficulty.Medium, 0 },
+                { LevelDifficulty.Hard, 0 },
+            };
+
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                EliteCellBFS cell = archive[x, y];
+
+                if (cell.occupied)
+                {
+                    counts[cell.difficulty]++;
+                }
+            }
+        }
+
+        return counts;
     }
 }

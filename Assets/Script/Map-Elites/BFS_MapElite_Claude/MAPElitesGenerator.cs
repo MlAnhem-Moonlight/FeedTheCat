@@ -9,6 +9,19 @@ public class MAPElitesGenerator
     // da dang hon; giam neu muon hoi tu nhanh quanh cac elite tot.
     private const float RandomInitChance = 0.2f;
 
+    // Ti le muc tieu Easy : Medium : Hard trong archive. Moi vong lap se
+    // tinh do kho nao dang "thieu" nhat so voi ti le nay (dua tren so luong
+    // elite da co trong archive) va chu dong nhan candidate moi ve dung do
+    // kho do (giam/tang so NPC, doi loai NPC an toan/nguy hiem hon). Chinh
+    // cac gia tri nay neu muon ti le khac (vi du 3:2:1, 1:1:1, ...).
+    private static readonly Dictionary<LevelDifficulty, int> TargetDifficultyRatio =
+        new Dictionary<LevelDifficulty, int>
+        {
+            { LevelDifficulty.Easy, 4 },
+            { LevelDifficulty.Medium, 2 },
+            { LevelDifficulty.Hard, 1 },
+        };
+
     public MAPElitesArchive archive;
 
     private BFSSolver solver =
@@ -69,11 +82,15 @@ public class MAPElitesGenerator
     }
 
     // Quyet dinh: sinh moi hoan toan ngau nhien, hay lay 1 elite ngau nhien
-    // tu archive roi dot bien no (mutation-based MAP-Elites).
+    // tu archive roi dot bien no (mutation-based MAP-Elites). Ca 2 nhanh
+    // deu nhan candidate ve dung do kho dang thieu nhat (targetDifficulty).
     private LevelData CreateCandidateLevel(int index)
     {
+        LevelDifficulty targetDifficulty =
+            DetermineTargetDifficulty();
+
         LevelData parent =
-            archive.GetRandomElite();
+            archive.GetRandomElite(targetDifficulty);
 
         bool shouldExplore =
             parent == null ||
@@ -81,13 +98,58 @@ public class MAPElitesGenerator
 
         if (shouldExplore)
         {
-            return CreateRandomLevel(index);
+            return CreateRandomLevel(index, targetDifficulty);
         }
 
-        return mutator.Mutate(parent);
+        return mutator.Mutate(parent, targetDifficulty);
     }
 
-    private LevelData CreateRandomLevel(int index)
+    // Tim do kho dang "thieu" nhat so voi ti le muc tieu (TargetDifficultyRatio),
+    // dua tren so luong elite THUC TE dang co trong archive (khong phai so
+    // luong da sinh ra, vi nhieu candidate bi loai vi khong du tot). Chon do
+    // kho co khoang cach (ti le mong muon - ti le hien tai) lon nhat.
+    private LevelDifficulty DetermineTargetDifficulty()
+    {
+        Dictionary<LevelDifficulty, int> counts =
+            archive.GetDifficultyCounts();
+
+        int total =
+            counts[LevelDifficulty.Easy] +
+            counts[LevelDifficulty.Medium] +
+            counts[LevelDifficulty.Hard];
+
+        int totalRatio =
+            TargetDifficultyRatio[LevelDifficulty.Easy] +
+            TargetDifficultyRatio[LevelDifficulty.Medium] +
+            TargetDifficultyRatio[LevelDifficulty.Hard];
+
+        LevelDifficulty best = LevelDifficulty.Easy;
+        float bestGap = float.NegativeInfinity;
+
+        foreach (var pair in TargetDifficultyRatio)
+        {
+            float desiredProportion =
+                (float)pair.Value / totalRatio;
+
+            float currentProportion =
+                total > 0
+                    ? (float)counts[pair.Key] / total
+                    : 0f;
+
+            float gap =
+                desiredProportion - currentProportion;
+
+            if (gap > bestGap)
+            {
+                bestGap = gap;
+                best = pair.Key;
+            }
+        }
+
+        return best;
+    }
+
+    private LevelData CreateRandomLevel(int index, LevelDifficulty targetDifficulty)
     {
         LevelData level =
             ScriptableObject.CreateInstance<LevelData>();
@@ -129,11 +191,14 @@ public class MAPElitesGenerator
         });
 
         int npcCount =
-            Random.Range(6, 10);
+            GetNpcCountForDifficulty(targetDifficulty);
 
         for (int i = 0; i < npcCount; i++)
         {
-            if (LevelGenUtil.TryPlaceNPC(occupied, out NPCDef npc))
+            int prefabIndex =
+                LevelGenUtil.GetWeightedRandomPrefabIndex(targetDifficulty);
+
+            if (LevelGenUtil.TryPlaceNPC(occupied, out NPCDef npc, prefabIndex))
             {
                 level.npcs.Add(npc);
             }
@@ -142,5 +207,25 @@ public class MAPElitesGenerator
         }
 
         return level;
+    }
+
+    // So luong NPC ban dau lech theo do kho muc tieu: Easy it NPC hon (giam
+    // npcScore va giam kha nang can duong -> shortestPath cung ngan hon),
+    // Hard nhieu NPC hon. Ket hop voi GetWeightedRandomPrefabIndex (uu tien
+    // loai NPC an toan/nguy hiem tuong ung) de chu dong keo diem so ve dung
+    // khoang do kho mong muon, thay vi random 6-9 NPC deu loai nhu cu.
+    private int GetNpcCountForDifficulty(LevelDifficulty targetDifficulty)
+    {
+        switch (targetDifficulty)
+        {
+            case LevelDifficulty.Easy:
+                return Random.Range(2, 5);
+
+            case LevelDifficulty.Hard:
+                return Random.Range(9, 13);
+
+            default: // Medium - giu nguyen range cu
+                return Random.Range(6, 10);
+        }
     }
 }
