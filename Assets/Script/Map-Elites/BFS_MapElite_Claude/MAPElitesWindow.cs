@@ -64,6 +64,25 @@ public class MAPElitesWindow : EditorWindow
             }
 
             GUILayout.EndHorizontal();
+
+            GUILayout.Space(10);
+        }
+
+        // Reclassify Difficulties button is always visible (no generator check needed)
+        // Phan loai lai Easy/Medium/Hard theo tam phan vi (khong can chay
+        // lai BFS) - dung khi ban muon xem lai phan bo hoac archive duoc
+        // giu tu truoc do.
+        if (GUILayout.Button("Reclassify Difficulties"))
+        {
+            if (generator != null && generator.archive != null)
+            {
+                generator.archive.RecalculateDifficulties();
+                Debug.Log("Da phan loai lai do kho cho toan bo archive.");
+            }
+            else
+            {
+                Debug.LogWarning("MAPElitesWindow: No archive loaded. Run 'Generate' first or load an archive.");
+            }
         }
     }
 
@@ -201,6 +220,20 @@ public class MAPElitesWindow : EditorWindow
             FileUtil.GetProjectRelativePath(
                 folder);
 
+        // Tao 1 thu muc con rieng theo ten do kho (vi du "Assets/Levels/Easy")
+        // de cac lan export khac nhau (Easy/Medium/Hard) khong bao gio bi lan
+        // lon file voi nhau khi nhin trong Project window, ke ca khi ban
+        // export nhieu lan vao chung 1 thu muc goc.
+        string difficultyFolder =
+            $"{folder}/{difficulty}";
+
+        if (!AssetDatabase.IsValidFolder(difficultyFolder))
+        {
+            AssetDatabase.CreateFolder(
+                folder,
+                difficulty.ToString());
+        }
+
         int count = 0;
 
         for (int x = 0; x < generator.archive.width; x++)
@@ -236,7 +269,7 @@ public class MAPElitesWindow : EditorWindow
 
                 AssetDatabase.CreateAsset(
                     copy,
-                    $"{folder}/{finalName}.asset");
+                    $"{difficultyFolder}/{finalName}.asset");
 
                 count++;
             }
@@ -245,6 +278,6 @@ public class MAPElitesWindow : EditorWindow
         AssetDatabase.SaveAssets();
 
         Debug.Log(
-            $"Exported {count} {difficulty} levels");
+            $"Exported {count} {difficulty} levels vao {difficultyFolder}");
     }
 }

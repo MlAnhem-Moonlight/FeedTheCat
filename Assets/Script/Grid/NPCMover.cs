@@ -53,6 +53,35 @@ public class NPCMover : MonoBehaviour
     {
         return type != NPCType.Idle;
     }
+
+    // Deterministic mapping from NPCDef.prefabIndex to (type, initialDirection, length),
+    // matching EXACTLY the convention used on the generation side:
+    // SimNPC.InitializeDirection() / LevelGenUtil.GetIdleDirection() / OccupiesTwoCells().
+    // 0-3 = Idle (Up/Down/Left/Right, spans 2 cells), 4-5 = Fixed Patrol (Horizontal/Vertical),
+    // 6-7 = Random-step Patrol (Horizontal/Vertical), 8 = Random Way.
+    // Called by LevelManager right after instantiating the NPC prefab so that in-game
+    // behavior always matches what BFSSolver/LevelGenUtil validated during generation,
+    // instead of depending on whatever type/direction/length happens to be set in that
+    // particular prefab's Inspector.
+    public void ConfigureFromPrefabIndex(int prefabIndex)
+    {
+        switch (prefabIndex)
+        {
+            case 0: type = NPCType.Idle; initialDirection = Direction.Up; length = 2; break;
+            case 1: type = NPCType.Idle; initialDirection = Direction.Down; length = 2; break;
+            case 2: type = NPCType.Idle; initialDirection = Direction.Left; length = 2; break;
+            case 3: type = NPCType.Idle; initialDirection = Direction.Right; length = 2; break;
+            case 4: type = NPCType.PatrolFixed; initialDirection = Direction.Right; length = 1; break;
+            case 5: type = NPCType.PatrolFixed; initialDirection = Direction.Down; length = 1; break;
+            case 6: type = NPCType.PatrolRandomSteps; initialDirection = Direction.Right; length = 1; break;
+            case 7: type = NPCType.PatrolRandomSteps; initialDirection = Direction.Down; length = 1; break;
+            case 8: type = NPCType.RandomDirection; initialDirection = Direction.Right; length = 1; break;
+            default:
+                Debug.LogWarning($"NPCMover.ConfigureFromPrefabIndex: unknown prefabIndex {prefabIndex}, keeping whatever is set in the Inspector ({type}, {initialDirection}, length={length})");
+                break;
+        }
+    }
+
     private Vector2Int dirVec;
     private int stepsRemaining = 0;
 

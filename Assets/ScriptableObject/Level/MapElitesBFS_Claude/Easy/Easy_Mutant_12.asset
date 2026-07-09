@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9fc8949a001d14b9f12011f2dccc05, type: 3}
+  m_Name: Easy_Mutant_12
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelName: Easy_Mutant_12
+  npcs:
+  - row: 7
+    column: 0
+    prefabIndex: 4
+    seed: 702019713
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 7
+    column: 2
+    prefabIndex: 0
+    seed: 1410972463
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 0
+    column: 5
+    prefabIndex: 2
+    seed: -371172678
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 1
+    column: 3
+    prefabIndex: 7
+    seed: 496403171
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 4
+    column: 0
+    prefabIndex: 0
+    seed: -1751711231
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 5
+    column: 2
+    prefabIndex: 7
+    seed: 1376976303
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 5
+    column: 0
+    prefabIndex: 4
+    seed: -34078656
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 3
+    column: 2
+    prefabIndex: 1
+    seed: 14867719
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 2
+    column: 1
+    prefabIndex: 5
+    seed: 1266588704
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 1
+    column: 2
+    prefabIndex: 1
+    seed: -1950991928
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 4
+    column: 1
+    prefabIndex: 7
+    seed: 284038188
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 3
+    column: 4
+    prefabIndex: 2
+    seed: -1178664943
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  items:
+  - row: 7
+    column: 5
+    prefabIndex: 0
+  destinations:
+  - {x: 3, y: 1}
+  playerStart: {x: 6, y: 0}
+  blockedCells: []
+  hasWon: 0
+  isLocked: 1
+  hasPickup: 0

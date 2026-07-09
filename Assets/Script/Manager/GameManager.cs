@@ -42,6 +42,12 @@ public class GameManager : MonoBehaviour
         // Load persistent level states
         SaveManager.LoadAllLevelStates(allLevels);
 
+        // CRITICAL: Ensure first level is always unlocked (for new level lists)
+        if (allLevels != null && allLevels.Count > 0)
+        {
+            allLevels[0].isLocked = false;
+        }
+
         // Ensure there is a valid CurrentLevelIndex after loading states.
         // Default to the first unlocked level if available, otherwise 0.
         if (allLevels != null && allLevels.Count > 0 && CurrentLevelIndex < 0)

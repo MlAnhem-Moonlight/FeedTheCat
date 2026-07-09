@@ -44,53 +44,55 @@ public static class LevelGenUtil
         return prefabIndex <= 3;
     }
 
-    // Trong so chon loai NPC (prefabIndex 0-8) theo tung do kho muc tieu, dung
-    // chung boi MAPElitesGenerator (sinh moi) va LevelMutator (dot bien), de
-    // chu dong tao ra nhieu level Easy/Hard hon thay vi random deu 0-8 roi
-    // hy vong diem so roi dung khoang mong muon.
-    // Thu tu trong so: [0]=IdleUp [1]=IdleDown [2]=IdleLeft [3]=IdleRight
-    //                  [4]=FixedH [5]=FixedV [6]=RandomStepH [7]=RandomStepV [8]=RandomWay
-    private static readonly int[] EasyNpcWeights =
-        { 15, 15, 15, 15, 8, 8, 3, 3, 2 };   // uu tien Idle (an toan nhat)
-
-    private static readonly int[] HardNpcWeights =
-        { 3, 3, 3, 3, 8, 8, 20, 20, 32 };    // uu tien Random Patrol / Random Way (nguy hiem nhat)
-
-    // Medium khong can bang trong so rieng - dung Random.Range(0,9) deu nhu cu.
-
-    public static int GetWeightedRandomPrefabIndex(LevelDifficulty target)
+    // Kiem tra CHAC CHAN 1 level khong co o nao bi 2 thanh phan cung chiem
+    // (player, dich, item, NPC - ke ca o thu 2 cua NPC Idle). Dung nhu 1 luoi
+    // an toan cuoi cung truoc khi chap nhan 1 level, phong truong hop logic
+    // dat o o cac nhanh khac (vi du dot bien) co truong hop chua luong het.
+    public static bool HasOverlap(LevelData level)
     {
-        switch (target)
+        List<Vector2Int> cells = new List<Vector2Int>();
+
+        cells.Add(level.playerStart);
+
+        if (level.destinations != null)
         {
-            case LevelDifficulty.Easy:
-                return PickWeightedIndex(EasyNpcWeights);
-
-            case LevelDifficulty.Hard:
-                return PickWeightedIndex(HardNpcWeights);
-
-            default:
-                return Random.Range(0, 9);
-        }
-    }
-
-    private static int PickWeightedIndex(int[] weights)
-    {
-        int total = 0;
-        for (int i = 0; i < weights.Length; i++)
-            total += weights[i];
-
-        int roll = Random.Range(0, total);
-        int cumulative = 0;
-
-        for (int i = 0; i < weights.Length; i++)
-        {
-            cumulative += weights[i];
-            if (roll < cumulative)
-                return i;
+            cells.AddRange(level.destinations);
         }
 
-        // Khong nen toi day, chi la fallback an toan.
-        return weights.Length - 1;
+        if (level.items != null)
+        {
+            foreach (var item in level.items)
+                cells.Add(new Vector2Int(item.row, item.column));
+        }
+
+        if (level.npcs != null)
+        {
+            foreach (var npc in level.npcs)
+            {
+                Vector2Int pos = new Vector2Int(npc.row, npc.column);
+                cells.Add(pos);
+
+                if (OccupiesTwoCells(npc.prefabIndex))
+                {
+                    Vector2Int second = pos + GetIdleDirection(npc.prefabIndex);
+
+                    if (InBounds(second))
+                        cells.Add(second);
+                }
+            }
+        }
+
+        HashSet<Vector2Int> seen = new HashSet<Vector2Int>();
+
+        foreach (var cell in cells)
+        {
+            // HashSet.Add() tra ve false neu o nay DA co trong seen truoc do
+            // -> chinh la dau hieu bi chong o.
+            if (!seen.Add(cell))
+                return true;
+        }
+
+        return false;
     }
 
     // Gom toan bo o dang bi chiem trong 1 level: player, (cac) destination,
@@ -202,6 +204,56 @@ public static class LevelGenUtil
         // BFSSolver se tu loai level nay neu no khong con giai duoc.
         return GetRandomCell();
     }
+
+    // Trong so chon loai NPC (prefabIndex 0-8) theo tung do kho muc tieu, dung
+    // chung boi MAPElitesGenerator (sinh moi) va LevelMutator (dot bien), de
+    // chu dong tao ra nhieu level Easy/Hard hon thay vi random deu 0-8 roi
+    // hy vong diem so roi dung khoang mong muon.
+    // Thu tu trong so: [0]=IdleUp [1]=IdleDown [2]=IdleLeft [3]=IdleRight
+    //                  [4]=FixedH [5]=FixedV [6]=RandomStepH [7]=RandomStepV [8]=RandomWay
+    private static readonly int[] EasyNpcWeights =
+        { 15, 15, 15, 15, 8, 8, 3, 3, 2 };   // uu tien Idle (an toan nhat)
+
+    private static readonly int[] HardNpcWeights =
+        { 3, 3, 3, 3, 8, 8, 20, 20, 32 };    // uu tien Random Patrol / Random Way (nguy hiem nhat)
+
+    // Medium khong can bang trong so rieng - dung Random.Range(0,9) deu nhu cu.
+
+    public static int GetWeightedRandomPrefabIndex(LevelDifficulty target)
+    {
+        switch (target)
+        {
+            case LevelDifficulty.Easy:
+                return PickWeightedIndex(EasyNpcWeights);
+
+            case LevelDifficulty.Hard:
+                return PickWeightedIndex(HardNpcWeights);
+
+            default:
+                return Random.Range(0, 9);
+        }
+    }
+
+    private static int PickWeightedIndex(int[] weights)
+    {
+        int total = 0;
+        for (int i = 0; i < weights.Length; i++)
+            total += weights[i];
+
+        int roll = Random.Range(0, total);
+        int cumulative = 0;
+
+        for (int i = 0; i < weights.Length; i++)
+        {
+            cumulative += weights[i];
+            if (roll < cumulative)
+                return i;
+        }
+
+        // Khong nen toi day, chi la fallback an toan.
+        return weights.Length - 1;
+    }
+
 
     // Thu tao/dat 1 NPC khong chong len occupied.
     // - forcedPrefabIndex: ep loai NPC cu the (dung khi doi loai 1 NPC co san). Null = random loai (0-8).

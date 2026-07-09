@@ -81,6 +81,12 @@ public class MAPElitesArchive
             cell.fitness =
                 result.fitness;
 
+            // Chi gan difficulty khi level nay THUC SU duoc nhan vao o -
+            // truoc day dong nay nam ngoai if(isBetter) nen 1 candidate bi
+            // TU CHOI (khong du tot) van co the ghi de cell.difficulty, lam
+            // no tam thoi lech voi cell.level (level thuc su dang nam trong o).
+            cell.difficulty = difficulty;
+
             // O nay da co elite cu bi thay the -> huy de khong ro ri bo nho
             // (ScriptableObject.CreateInstance khong tu GC nhu object thuong).
             if (previous != null)
@@ -88,8 +94,6 @@ public class MAPElitesArchive
                 Object.DestroyImmediate(previous);
             }
         }
-
-        cell.difficulty = difficulty;
 
         return isBetter;
     }
@@ -103,16 +107,41 @@ public class MAPElitesArchive
 
     // Lay ngau nhien 1 level elite dang co trong archive (dung lam "parent"
     // de LevelMutator dot bien). Tra ve null neu archive con trong hoan toan.
-    //
-    // preferredDifficulty: neu truyen vao, uu tien lay elite CUNG do kho voi
-    // muc tieu (giup dot bien hoi tu nhanh ve dung nhom do kho dang thieu,
-    // thay vi dot bien tu 1 parent ngau nhien co the da o do kho khac han).
-    // Neu archive chua co elite nao thuoc do kho do, roi ve lay ngau nhien
-    // tu toan bo archive nhu cu.
-    public LevelData GetRandomElite(LevelDifficulty? preferredDifficulty = null)
+    public LevelData GetRandomElite()
     {
-        List<LevelData> preferredLevels = new List<LevelData>();
-        List<LevelData> allLevels = new List<LevelData>();
+        List<LevelData> occupiedLevels = new List<LevelData>();
+
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                if (archive[x, y].occupied)
+                {
+                    occupiedLevels.Add(archive[x, y].level);
+                }
+            }
+        }
+
+        if (occupiedLevels.Count == 0)
+            return null;
+
+        return occupiedLevels[
+            Random.Range(0, occupiedLevels.Count)];
+    }
+
+    // Phan loai lai do kho cua TAT CA level dang co trong archive dua tren
+    // TAM PHAN VI (percentile) cua diem do kho (shortestPath + npcScore)
+    // trong chinh tap level vua sinh ra - thay vi nguong co dinh doan truoc
+    // (LevelDifficultyClassifier.EasyMaxScore/MediumMaxScore). Cach nay dam
+    // bao luon co khoang 1/3 Easy, 1/3 Medium, 1/3 Hard bat ke phan bo NPC
+    // ngau nhien ra sao, tranh tinh trang ty le Easy qua thap/qua cao khi
+    // du lieu thuc te lech xa so voi uoc luong ban dau.
+    //
+    // Nen goi 1 lan sau khi MAPElitesGenerator.Run() chay xong.
+    public void RecalculateDifficulties()
+    {
+        List<EliteCellBFS> occupiedCells = new List<EliteCellBFS>();
+        List<int> scores = new List<int>();
 
         for (int x = 0; x < width; x++)
         {
@@ -123,53 +152,59 @@ public class MAPElitesArchive
                 if (!cell.occupied)
                     continue;
 
-                allLevels.Add(cell.level);
+                occupiedCells.Add(cell);
 
-                if (preferredDifficulty.HasValue &&
-                    cell.difficulty == preferredDifficulty.Value)
-                {
-                    preferredLevels.Add(cell.level);
-                }
+                scores.Add(
+                    LevelDifficultyClassifier.ComputeDifficultyScore(
+                        cell.result.shortestPath,
+                        cell.result.npcScore));
             }
         }
 
-        List<LevelData> pool =
-            preferredLevels.Count > 0 ? preferredLevels : allLevels;
+        if (occupiedCells.Count == 0)
+            return;
 
-        if (pool.Count == 0)
-            return null;
+        List<int> sortedScores = new List<int>(scores);
+        sortedScores.Sort();
 
-        return pool[
-            Random.Range(0, pool.Count)];
+        int easyCutoff = Percentile(sortedScores, 1f / 3f);
+        int mediumCutoff = Percentile(sortedScores, 2f / 3f);
+
+        for (int i = 0; i < occupiedCells.Count; i++)
+        {
+            EliteCellBFS cell = occupiedCells[i];
+            int score = scores[i];
+
+            LevelDifficulty difficulty =
+                score <= easyCutoff
+                    ? LevelDifficulty.Easy
+                    : score <= mediumCutoff
+                        ? LevelDifficulty.Medium
+                        : LevelDifficulty.Hard;
+
+            cell.difficulty = difficulty;
+
+            // Doi lai tien to ten level cho khop voi do kho vua phan loai lai
+            // (bo tien to cu neu co, roi gan tien to moi).
+            string baseName =
+                LevelDifficultyClassifier.StripDifficultyPrefix(
+                    cell.level.levelName);
+
+            cell.level.levelName = $"{difficulty}_{baseName}";
+        }
     }
 
-    // Dem so luong elite dang co trong archive theo tung do kho. Dung boi
-    // MAPElitesGenerator de biet do kho nao dang "thieu" so voi ti le muc
-    // tieu (vi du 4:2:1 cho Easy:Medium:Hard) va chu dong nhan candidate
-    // moi ve dung do kho do.
-    public Dictionary<LevelDifficulty, int> GetDifficultyCounts()
+    private int Percentile(List<int> sortedScores, float percentile)
     {
-        Dictionary<LevelDifficulty, int> counts =
-            new Dictionary<LevelDifficulty, int>
-            {
-                { LevelDifficulty.Easy, 0 },
-                { LevelDifficulty.Medium, 0 },
-                { LevelDifficulty.Hard, 0 },
-            };
+        if (sortedScores.Count == 1)
+            return sortedScores[0];
 
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y < height; y++)
-            {
-                EliteCellBFS cell = archive[x, y];
+        int index =
+            Mathf.Clamp(
+                Mathf.FloorToInt(percentile * (sortedScores.Count - 1)),
+                0,
+                sortedScores.Count - 1);
 
-                if (cell.occupied)
-                {
-                    counts[cell.difficulty]++;
-                }
-            }
-        }
-
-        return counts;
+        return sortedScores[index];
     }
 }

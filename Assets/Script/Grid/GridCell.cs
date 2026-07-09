@@ -121,11 +121,14 @@ public class GridCell : MonoBehaviour, IPointerClickHandler
     }
 
     // Determine if an NPC can enter this cell.
-    // NPCs cannot enter destination cells or cells occupied by other NPCs.
+    // NPCs cannot enter destination cells, cells occupied by other NPCs, or
+    // cells that hold an item (BUG FIX: previously missing the occupiedByItem
+    // check, which let NPCs - including the 2nd cell of an Idle NPC at spawn -
+    // walk onto/spawn onto an item cell and visually cover it).
     // Allow NPCs to enter cells occupied by the player (to enable collisions/interaction).
     public bool IsWalkableForNPC()
     {
-        return !occupiedByNPC && !isDestination;
+        return !occupiedByNPC && !occupiedByItem && !isDestination;
     }
 
     // Player walkability: player cannot enter cells occupied by NPCs or other players.
