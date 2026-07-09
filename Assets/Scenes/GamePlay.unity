@@ -2015,11 +2015,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4913827071770812470, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -135.7
+      value: -135.69998
       objectReference: {fileID: 0}
     - target: {fileID: 4913827071770812470, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -59.826
+      value: -59.82599
       objectReference: {fileID: 0}
     - target: {fileID: 4985779050379281540, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2063,7 +2063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5983120823033549068, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -59.826
+      value: -59.82599
       objectReference: {fileID: 0}
     - target: {fileID: 6125746764259837713, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2111,7 +2111,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6912022816059585478, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
       propertyPath: m_fontSize
-      value: 36.85
+      value: 37.1
       objectReference: {fileID: 0}
     - target: {fileID: 7412753035687118038, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
       propertyPath: m_Pivot.x
@@ -2211,7 +2211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9083611523589908735, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
       propertyPath: m_fontSize
-      value: 52.5
+      value: 52.65
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2221,6 +2221,11 @@ PrefabInstance:
 --- !u!224 &1199139130 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7412753035687118038, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
+  m_PrefabInstance: {fileID: 1199139129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1199139131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6546354284657365678, guid: 7efdcdb7a774c4d498b3030cee1ea4a3, type: 3}
   m_PrefabInstance: {fileID: 1199139129}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1201487928
@@ -2709,6 +2714,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6278815669254478167, guid: 5c4971af4a5029d479df95a0ef844de4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1199139131}
+    - target: {fileID: 6278815669254478167, guid: 5c4971af4a5029d479df95a0ef844de4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8279988199009719718, guid: 5c4971af4a5029d479df95a0ef844de4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2797,6 +2810,11 @@ PrefabInstance:
 --- !u!224 &1515655533 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8279988199009719718, guid: 5c4971af4a5029d479df95a0ef844de4, type: 3}
+  m_PrefabInstance: {fileID: 1515655532}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1515655534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1626243346518420378, guid: 5c4971af4a5029d479df95a0ef844de4, type: 3}
   m_PrefabInstance: {fileID: 1515655532}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1553198372
@@ -3248,7 +3266,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1767281545}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1515655534}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1767281545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3420,8 +3450,8 @@ RectTransform:
   - {fileID: 84209491}
   - {fileID: 1201487929}
   - {fileID: 840188376}
-  - {fileID: 1199139130}
   - {fileID: 1515655533}
+  - {fileID: 1199139130}
   - {fileID: 658602328}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

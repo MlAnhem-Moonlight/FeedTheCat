@@ -16,6 +16,7 @@ MonoBehaviour:
   itemName: Grass
   description: Stun all nearby Cats, preventing movement for 3 turns.
   icon: {fileID: 21300000, guid: 8c076de0048364242b7ed5b2b1539cf5, type: 3}
+  visualPrefab: {fileID: 1587840439410664338, guid: d17b41e8d8c93d645881da7f1fbc371c, type: 3}
   itemType: 0
   effectRadius: 2
   targetType: 0

@@ -16,6 +16,7 @@ MonoBehaviour:
   itemName: Catnip
   description: Stun ALL Cats on the map for 4 turns
   icon: {fileID: 21300000, guid: d78c45bba1d0c6249bac7f315cfa32a5, type: 3}
+  visualPrefab: {fileID: 4176046187975182848, guid: e907a80f0c76211479afe08fe1627a4a, type: 3}
   itemType: 0
   effectRadius: 999
   targetType: 0

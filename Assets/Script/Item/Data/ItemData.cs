@@ -29,6 +29,10 @@ namespace FeedTheCat.Items
         [Tooltip("Item icon displayed in UI.")]
         private Sprite icon;
 
+        [SerializeField]
+        [Tooltip("Prefab instantiated on the GridCell when this item is dropped, so each item can show its own unique visual on the board (e.g. a bomb model for Stun, a heart model for Charm). Leave empty to fall back to a generic icon-based visual.")]
+        private GameObject visualPrefab;
+
         #endregion
 
         #region Effect Properties
@@ -77,6 +81,7 @@ namespace FeedTheCat.Items
         public string ItemName => itemName;
         public string Description => description;
         public Sprite Icon => icon;
+        public GameObject VisualPrefab => visualPrefab;
         public ItemType ItemType => itemType;
         public EffectRadiusType EffectRadius => effectRadius;
         public TargetType TargetType => targetType;

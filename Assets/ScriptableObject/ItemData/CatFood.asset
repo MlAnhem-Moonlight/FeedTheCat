@@ -18,6 +18,7 @@ MonoBehaviour:
 
 '
   icon: {fileID: 4241727045068834795, guid: 492ea52b3b2259949a57f813936e03e7, type: 3}
+  visualPrefab: {fileID: 1621154036339087747, guid: 3bf964eeb966034438105d79ad72a688, type: 3}
   itemType: 0
   effectRadius: 2
   targetType: 0

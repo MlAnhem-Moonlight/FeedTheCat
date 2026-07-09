@@ -275,6 +275,14 @@ namespace FeedTheCat.Items
             }
 
             isLoaded = true;
+
+            // CRITICAL: Trigger OnQuantityChanged for each loaded item so UI updates immediately
+            foreach (var kvp in inventory)
+            {
+                OnQuantityChanged?.Invoke(kvp.Key, kvp.Value, 0);
+                LogFilter.LogItem($"ItemInventory: Triggered UI update for {kvp.Key} (qty={kvp.Value})");
+            }
+
             OnInventoryLoaded?.Invoke();
 
             LogFilter.LogItem($"ItemInventory: Loaded {inventory.Count} items from PlayerPrefs");

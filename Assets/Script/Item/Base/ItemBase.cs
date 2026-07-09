@@ -315,6 +315,7 @@ namespace FeedTheCat.Items
             }
 
             ExecuteEffect(targetCell);
+            SpawnItemVisualOnGrid(targetCell);
             DecreaseQuantity();
 
             if (itemInventory != null)
@@ -464,35 +465,68 @@ namespace FeedTheCat.Items
         }
 
         /// <summary>
-        /// Spawns a visual preview at the target cell.
-        /// Override in derived classes for custom previews.
+        /// Spawns this item's visual on the GridCell it was dropped on, so the
+        /// player can see the item that was used sitting on the board.
+        /// Each item can define its own unique prefab via ItemData.VisualPrefab
+        /// (e.g. a bomb model for a Stun item, a heart model for a Charm item).
+        /// The visual auto-destroys in sync with the item's EffectDuration (it
+        /// disappears on the same turn the underlying status effect expires).
+        /// Override in derived classes if a specific item needs custom placement logic.
         /// </summary>
-        protected virtual void SpawnPreview(GridCell targetCell)
+        protected virtual void SpawnItemVisualOnGrid(GridCell targetCell)
         {
-            // Spawn a visual preview of the item on the board (do not remove toolbar icon)
-            LogFilter.LogItem($"ItemBase.SpawnPreview: Spawning preview for {ItemData.ItemName} at {targetCell.gameObject.name}");
+            if (targetCell == null || itemData == null)
+                return;
 
-            // Default behavior: instantiate a lightweight preview under the grid so players see placement
-            if (ItemData?.Icon == null) return;
+            GameObject visualGo;
 
-            var previewGo = new GameObject($"ItemPreview_{ItemID}", typeof(RectTransform), typeof(UnityEngine.UI.Image));
-            var img = previewGo.GetComponent<UnityEngine.UI.Image>();
-            img.sprite = ItemData.Icon;
-            img.raycastTarget = false;
+            if (itemData.VisualPrefab != null)
+            {
+                // Preferred path: each item has its own dedicated prefab (model/animation/particles/etc).
+                visualGo = Object.Instantiate(itemData.VisualPrefab, targetCell.transform);
+            }
+            else if (itemData.Icon != null)
+            {
+                // Fallback: no dedicated prefab assigned yet, just show the item's icon.
+                LogFilter.LogItemWarning($"ItemBase.SpawnItemVisualOnGrid: No VisualPrefab assigned for '{ItemData.ItemName}' (ItemID={ItemID}), falling back to icon sprite.");
 
-            // Parent under the target cell so it visually sits on that cell
-            var rt = previewGo.GetComponent<RectTransform>();
+                visualGo = new GameObject($"ItemVisual_{ItemID}", typeof(RectTransform), typeof(UnityEngine.UI.Image));
+                var img = visualGo.GetComponent<UnityEngine.UI.Image>();
+                img.sprite = itemData.Icon;
+                img.raycastTarget = false;
+            }
+            else
+            {
+                LogFilter.LogItemWarning($"ItemBase.SpawnItemVisualOnGrid: No VisualPrefab or Icon assigned for '{ItemID}', nothing to show on grid.");
+                return;
+            }
+
+            // Center the visual on the cell it landed on.
+            var rt = visualGo.GetComponent<RectTransform>();
+            if (rt == null)
+                rt = visualGo.AddComponent<RectTransform>();
+
             rt.SetParent(targetCell.transform, false);
             rt.anchorMin = new Vector2(0.5f, 0.5f);
             rt.anchorMax = new Vector2(0.5f, 0.5f);
-            rt.sizeDelta = new Vector2(64, 64);
+            rt.pivot = new Vector2(0.5f, 0.5f);
             rt.anchoredPosition = Vector2.zero;
+            rt.localScale = Vector3.one;
 
-            // Also request GridCell to set its item highlight so preview is integrated with cell visuals
-            targetCell.SetItemHighlight(ItemData.Icon, Color.white);
+            // Match the prefab's size to the GridCell it's placed on, so it visually fits the tile.
+            var cellRect = targetCell.GetComponent<RectTransform>();
+            rt.sizeDelta = cellRect != null ? cellRect.rect.size : new Vector2(64, 64);
 
-            // Destroy preview after a short duration (or let caller manage)
-            Object.Destroy(previewGo, 1.5f);
+            visualGo.name = $"ItemVisual_{ItemID}";
+
+            // Auto-destroy the visual in sync with the item's effect duration (in player turns).
+            // Items with EffectDuration <= 0 keep their visual on the board permanently.
+            var lifetime = visualGo.GetComponent<ItemVisualEffect>();
+            if (lifetime == null)
+                lifetime = visualGo.AddComponent<ItemVisualEffect>();
+            lifetime.Initialize(itemData.EffectDuration);
+
+            LogFilter.LogItem($"ItemBase.SpawnItemVisualOnGrid: Spawned visual for '{ItemData.ItemName}' on {targetCell.gameObject.name} (ItemID={ItemID}, duration={itemData.EffectDuration} turns)");
         }
 
         #endregion
