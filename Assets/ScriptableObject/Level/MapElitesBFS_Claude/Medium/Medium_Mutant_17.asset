@@ -14,97 +14,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Medium_Mutant_17
   npcs:
-  - row: 1
-    column: 0
-    prefabIndex: 1
-    seed: 702019713
+  - row: 3
+    column: 1
+    prefabIndex: 2
+    seed: 1660562558
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
-  - row: 7
+  - row: 0
     column: 2
-    prefabIndex: 0
-    seed: 1410972463
+    prefabIndex: 3
+    seed: 523023005
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
-  - row: 7
+  - row: 2
     column: 3
-    prefabIndex: 4
-    seed: -371172678
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 1
-    column: 3
-    prefabIndex: 7
-    seed: 496403171
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 4
-    column: 0
     prefabIndex: 0
-    seed: -1751711231
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 5
-    column: 2
-    prefabIndex: 7
-    seed: 1376976303
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 7
-    column: 0
-    prefabIndex: 4
-    seed: -34078656
+    seed: 802207089
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 3
-    column: 2
-    prefabIndex: 1
-    seed: 14867719
+    column: 4
+    prefabIndex: 8
+    seed: -815577516
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 7
+    column: 3
+    prefabIndex: 8
+    seed: 1183780196
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 4
-    column: 1
+    column: 2
+    prefabIndex: 1
+    seed: -724238523
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 2
+    column: 2
     prefabIndex: 5
-    seed: 1266588704
+    seed: 871608275
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 1
-    column: 1
+    column: 0
     prefabIndex: 7
-    seed: -1950991928
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 5
-    column: 5
-    prefabIndex: 4
-    seed: 1662547755
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 4
-    column: 4
-    prefabIndex: 2
-    seed: 2069192601
+    seed: 1507247894
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   items:
-  - row: 2
+  - row: 1
     column: 2
     prefabIndex: 0
   destinations:
-  - {x: 2, y: 1}
-  playerStart: {x: 6, y: 0}
+  - {x: 3, y: 3}
+  playerStart: {x: 0, y: 0}
   blockedCells: []
   hasWon: 0
   isLocked: 1

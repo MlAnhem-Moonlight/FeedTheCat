@@ -181,11 +181,131 @@ public class BFSSolver
             LevelDifficultyClassifier.ComputeNpcScore(
                 level.npcs);
 
+        // BFS goc o tren CHI quan tam toi dich, hoan toan bo qua item -> 1
+        // level van bi coi la solvable ke ca khi NPC chan kin duong toi item
+        // (reward "chet", khong bao gio nhat duoc). EvaluateItemFeasibility
+        // chay 1 BFS rieng tren khong gian trang thai (vi tri, luot, da-nhat-
+        // item-hay-chua) de biet CHINH XAC co duong nao vua nhat item vua
+        // toi duoc dich hay khong.
+        EvaluateItemFeasibility(
+            level,
+            danger,
+            maxTurns,
+            out bool itemReachable,
+            out int fullClearShortestPath);
+
+        result.itemReachable = itemReachable;
+        result.fullClearShortestPath = fullClearShortestPath;
+        result.fullClearSolvable = fullClearShortestPath >= 0;
+
         result.fitness =
             CalculateFitness(
                 result);
 
         return result;
+    }
+
+    // Kiem tra kha thi cua viec "vua an reward vua thang": BFS tren khong
+    // gian trang thai (vi tri, luot, hasItem) thay vi chi (vi tri, luot) nhu
+    // BFS chinh. hasItem chi chuyen 0 -> 1 khi di qua o item, va giu nguyen
+    // 1 sau do (item nhat 1 lan la con mai, giong hanh vi thuc te trong game).
+    // Chi xet item dau tien trong danh sach (hien tai generator luon chi tao
+    // dung 1 item cho moi level).
+    private void EvaluateItemFeasibility(
+        LevelData level,
+        DangerMapBuilder danger,
+        int maxTurns,
+        out bool itemReachable,
+        out int fullClearShortestPath)
+    {
+        itemReachable = false;
+        fullClearShortestPath = -1;
+
+        if (level.items == null || level.items.Count == 0)
+        {
+            // Khong co item nao trong level -> yeu cau nay khong ap dung.
+            return;
+        }
+
+        Vector2Int itemPos =
+            new Vector2Int(level.items[0].row, level.items[0].column);
+
+        // visited[turn, 0/1]: da tung o vi tri nay tai luot 'turn' voi
+        // hasItem = 0 (chua nhat) hay 1 (da nhat) hay chua.
+        HashSet<Vector2Int>[,] visited =
+            new HashSet<Vector2Int>[maxTurns + 1, 2];
+
+        for (int t = 0; t <= maxTurns; t++)
+        {
+            visited[t, 0] = new HashSet<Vector2Int>();
+            visited[t, 1] = new HashSet<Vector2Int>();
+        }
+
+        int startHasItem =
+            (level.playerStart == itemPos) ? 1 : 0;
+
+        if (startHasItem == 1)
+            itemReachable = true;
+
+        Queue<(Vector2Int pos, int turn, int hasItem)> queue =
+            new Queue<(Vector2Int, int, int)>();
+
+        queue.Enqueue((level.playerStart, 0, startHasItem));
+        visited[0, startHasItem].Add(level.playerStart);
+
+        while (queue.Count > 0)
+        {
+            var (pos, turn, hasItem) = queue.Dequeue();
+
+            bool atGoal = IsGoal(pos.x, pos.y, level);
+
+            if (atGoal)
+            {
+                // Toi dich la trang thai "hap thu" (giong het hanh vi win
+                // thuc te trong game - khong di tiep sau khi thang).
+                if (hasItem == 1 && fullClearShortestPath < 0)
+                {
+                    // BFS duyet theo thu tu luot tang dan nen lan dau tien
+                    // gap (hasItem=1, atGoal) chinh la duong ngan nhat.
+                    fullClearShortestPath = turn;
+                }
+
+                continue;
+            }
+
+            if (turn >= maxTurns)
+                continue;
+
+            foreach (var move in Moves)
+            {
+                int nr = pos.x + move.x;
+                int nc = pos.y + move.y;
+
+                if (nr < 0 || nr >= Rows || nc < 0 || nc >= Cols)
+                    continue;
+
+                Vector2Int nextPos = new Vector2Int(nr, nc);
+                bool nextIsGoal = IsGoal(nr, nc, level);
+
+                // Giong BFS chinh: o dich luon an toan (khong bi tinh la
+                // "nguy hiem" du danger map co danh dau hay khong).
+                if (!nextIsGoal && danger.IsDanger(turn + 1, nr, nc))
+                    continue;
+
+                int nextHasItem = hasItem;
+                if (nextPos == itemPos)
+                    nextHasItem = 1;
+
+                if (nextHasItem == 1)
+                    itemReachable = true;
+
+                if (!visited[turn + 1, nextHasItem].Contains(nextPos))
+                {
+                    visited[turn + 1, nextHasItem].Add(nextPos);
+                    queue.Enqueue((nextPos, turn + 1, nextHasItem));
+                }
+            }
+        }
     }
 
     private bool IsGoal(

@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: Pate
   m_EditorClassIdentifier: Assembly-CSharp::FeedTheCat.Items.ItemData
   itemID: protective_amulet
-  itemName: Pate
-  description: Saves you when Cats got you. Consumes one charge per use.
+  itemName:
+    english: Pate
+    vietnamese: Pate
+  description:
+    english: Saves you when the cat got you. Consumes one charge per use.
+    vietnamese: "Gi\xFAp b\u1EA1n khi con m\xE8o b\u1EAFt \u0111\u01B0\u1EE3c b\u1EA1n.
+      Ti\xEAu th\u1EE5 m\u1ED9t cho m\u1ED7i l\u1EA7n s\u1EED d\u1EE5ng."
   icon: {fileID: 5533248622438814859, guid: d3afc0bed3c5f994a966e6816f738ade, type: 3}
+  visualPrefab: {fileID: 0}
   itemType: 1
   effectRadius: 1
   targetType: 0

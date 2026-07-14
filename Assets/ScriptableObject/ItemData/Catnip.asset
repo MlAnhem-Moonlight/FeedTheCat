@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Catnip
   m_EditorClassIdentifier: Assembly-CSharp::FeedTheCat.Items.ItemData
   itemID: stun_pulse_4all
-  itemName: Catnip
-  description: Stun ALL Cats on the map for 4 turns
+  itemName:
+    english: Catnip
+    vietnamese: "C\u1ECF m\xE8o"
+  description:
+    english: Stun ALL cats on the map for 4 turns.
+    vietnamese: "L\xE0m cho t\u1EA5t c\u1EA3 m\xE8o tr\xEAn b\u1EA3n \u0111\u1ED3
+      b\u1ECB cho\xE1ng trong 4 l\u01B0\u1EE3t."
   icon: {fileID: 21300000, guid: d78c45bba1d0c6249bac7f315cfa32a5, type: 3}
   visualPrefab: {fileID: 4176046187975182848, guid: e907a80f0c76211479afe08fe1627a4a, type: 3}
   itemType: 0

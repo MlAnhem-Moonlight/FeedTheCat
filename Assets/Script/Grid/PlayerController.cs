@@ -68,6 +68,7 @@ public class PlayerController : MonoBehaviour
             Debug.LogWarning("PlayerController: No EventSystem in scene. Add one for UI pointer events.");
 
         StartCoroutine(InitializeAndPlace());
+
     }
 
     private IEnumerator InitializeAndPlace()
@@ -194,6 +195,8 @@ public class PlayerController : MonoBehaviour
         isInitialPlacement = true;  // Mark this as initial placement
         PlaceAt(r, c);
         isInitialPlacement = false;
+        CollisionDestructionItem cdi = FindAnyObjectByType<CollisionDestructionItem>();
+        cdi?.InitializeReferences();
     }
 
     // Position player object without making it a child of the GridLayoutGroup.

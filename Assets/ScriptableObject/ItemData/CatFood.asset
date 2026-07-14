@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: CatFood
   m_EditorClassIdentifier: Assembly-CSharp::FeedTheCat.Items.ItemData
   itemID: charm_spell_2
-  itemName: Cat Food
-  description: 'Charm a nearby Cats to move toward target. 2-turn duration.
-
-'
+  itemName:
+    english: Cat Food
+    vietnamese: "H\u1EA1t m\xE8o"
+  description:
+    english: Charm a nearby cats to move toward target. 2-turn duration.
+    vietnamese: "Thu h\xFAt nh\u1EEFng con m\xE8o g\u1EA7n \u0111\xF3 \u0111\u1EC3
+      ch\xFAng ti\u1EBFn v\u1EC1 m\u1EE5c ti\xEAu. Th\u1EDDi gian k\xE9o d\xE0i 2
+      l\u01B0\u1EE3t."
   icon: {fileID: 4241727045068834795, guid: 492ea52b3b2259949a57f813936e03e7, type: 3}
   visualPrefab: {fileID: 1621154036339087747, guid: 3bf964eeb966034438105d79ad72a688, type: 3}
   itemType: 0

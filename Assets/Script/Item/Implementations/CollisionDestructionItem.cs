@@ -64,10 +64,10 @@ namespace FeedTheCat.Items
 
         #region Lifecycle
 
-        private void Start()
-        {
-            InitializeReferences();
-        }
+        //private void Start()
+        //{
+        //    InitializeReferences();
+        //}
 
         private void OnDestroy()
         {
@@ -77,7 +77,7 @@ namespace FeedTheCat.Items
         /// <summary>
         /// Initialize cached references and subscribe to collision events.
         /// </summary>
-        private void InitializeReferences()
+        public void InitializeReferences()
         {
             if (isInitialized)
                 return;

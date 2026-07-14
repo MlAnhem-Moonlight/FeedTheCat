@@ -7,7 +7,14 @@ public class MAPElitesGenerator
     // elite co san trong archive (exploitation). Ap dung tu vong lap dau
     // tien archive co it nhat 1 elite. Tang gia tri nay neu muon archive
     // da dang hon; giam neu muon hoi tu nhanh quanh cac elite tot.
-    private const float RandomInitChance = 0.2f;
+    //
+    // Tang tu 0.2 -> 0.4: o muc 0.2, ~80% level la dot bien tu elite co san,
+    // khien cac level trong cung 1 do kho de hoi tu ve vai "khuon mau" giong
+    // nhau (cung tuyen duong, cung so buoc) do fitness landscape co gradient
+    // ro rang keo dot bien ve cung 1 huong toi uu. Nang ti le random-init len
+    // giup archive giu duoc nhieu bo cuc (vi tri player/dich/item/NPC) khac
+    // nhau hon cho cung 1 khoang do kho.
+    private const float RandomInitChance = 0.4f;
 
     // Ti le muc tieu Easy:Medium:Hard khi chon "do kho ky vong" (aspirational
     // difficulty) cho 1 candidate MOI - dung de quyet dinh so luong NPC va
@@ -56,7 +63,12 @@ public class MAPElitesGenerator
             DifficultyResultBFS d =
                 solver.Evaluate(level);
 
-            if (!d.solvable)
+            // Level chi duoc chap nhan neu: (1) toi duoc dich, VA (2) co it
+            // nhat 1 duong vua nhat duoc item vua toi duoc dich. Truoc day
+            // chi kiem tra (1), nen co truong hop NPC chan kin item khien
+            // reward khong bao gio nhat duoc du level van "solvable" (thang
+            // duoc theo duong khac, khong di qua item).
+            if (!d.solvable || !d.fullClearSolvable)
             {
                 Object.DestroyImmediate(level);
                 continue;
@@ -85,8 +97,8 @@ public class MAPElitesGenerator
         }
 
         // Sau khi da sinh xong toan bo iterations, phan loai lai do kho theo
-        // TAM PHAN VI cua diem (shortestPath + npcScore) trong chinh tap
-        // level vua sinh ra. Cach nay dam bao ty le Easy/Medium/Hard luon
+        // TAM PHAN VI cua diem (fullClearShortestPath + npcScore) trong chinh
+        // tap level vua sinh ra. Cach nay dam bao ty le Easy/Medium/Hard luon
         // can doi (~1/3 moi loai) thay vi phu thuoc vao nguong co dinh doan
         // truoc (LevelDifficultyClassifier.EasyMaxScore/MediumMaxScore) -
         // von de bi lech neu cau hinh NPC (so luong/loai) thay doi.
@@ -224,20 +236,26 @@ public class MAPElitesGenerator
 
     // So luong NPC theo do kho ky vong - Easy giu it NPC hon han (kem theo
     // trong so uu tien Idle o GetWeightedRandomPrefabIndex), Hard nhieu NPC
-    // nguy hiem hon, Medium giu nguyen khoang cu (6-9) de khong doi hanh vi
-    // hien tai qua nhieu.
+    // nguy hiem hon.
+    //
+    // GIAM so voi truoc (Easy 3-5 / Medium 6-9 / Hard 8-12) vi board chi co
+    // 8x6 = 48 o. NPC loai Idle (prefabIndex 0-3) chiem 2 o, nen o muc Hard
+    // cu (toi da 12 NPC) co the chiem toi ~24/48 o - qua nua ban do - cong
+    // them 3 o cho player/dich/item khien ban do bi nghet, kho tim duong,
+    // va de bi loai do khong con cho dat NPC/khong con giai duoc. Muc moi
+    // giu ty le tuong doi Easy < Medium < Hard nhung ep tran thap hon han.
     private int GetNpcCountForDifficulty(LevelDifficulty target)
     {
         switch (target)
         {
             case LevelDifficulty.Easy:
-                return Random.Range(3, 6); // 3-5 NPC, uu tien Idle
+                return Random.Range(2, 5); // 2-4 NPC, uu tien Idle
 
             case LevelDifficulty.Hard:
-                return Random.Range(8, 13); // 8-12 NPC, uu tien Random Patrol/Way
+                return Random.Range(6, 10); // 6-9 NPC, uu tien Random Patrol/Way
 
             default:
-                return Random.Range(6, 10); // Medium - giu nguyen hanh vi cu
+                return Random.Range(4, 8); // Medium - 4-7 NPC
         }
     }
 }

@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Grass
   m_EditorClassIdentifier: Assembly-CSharp::FeedTheCat.Items.ItemData
   itemID: stun_blast_3
-  itemName: Grass
-  description: Stun all nearby Cats, preventing movement for 3 turns.
+  itemName:
+    english: Grass
+    vietnamese: "C\u1ECF"
+  description:
+    english: Stun all nearby NPCs, preventing movement for 3 turns.
+    vietnamese: "L\xE0m cho\xE1ng t\u1EA5t c\u1EA3 c\xE1c NPC xung quanh, ng\u0103n
+      ch\u1EB7n di chuy\u1EC3n trong 3 l\u01B0\u1EE3t."
   icon: {fileID: 21300000, guid: 8c076de0048364242b7ed5b2b1539cf5, type: 3}
   visualPrefab: {fileID: 1587840439410664338, guid: d17b41e8d8c93d645881da7f1fbc371c, type: 3}
   itemType: 0

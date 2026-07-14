@@ -14,69 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Easy_Mutant_3
   npcs:
+  - row: 3
+    column: 5
+    prefabIndex: 4
+    seed: 1317450967
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 0
+    column: 1
+    prefabIndex: 2
+    seed: -360842296
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
   - row: 2
-    column: 2
-    prefabIndex: 3
-    seed: 702019713
+    column: 3
+    prefabIndex: 2
+    seed: 511942033
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 7
-    column: 2
-    prefabIndex: 0
-    seed: 1410972463
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 6
-    column: 4
-    prefabIndex: 2
-    seed: 496403171
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 4
-    column: 0
-    prefabIndex: 0
-    seed: -1751711231
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 5
-    column: 2
-    prefabIndex: 7
-    seed: 1376976303
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 3
-    column: 2
-    prefabIndex: 1
-    seed: 14867719
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 4
     column: 1
     prefabIndex: 5
-    seed: 1266588704
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 2
-    column: 0
-    prefabIndex: 8
-    seed: 91180739
+    seed: -1282146330
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   items:
   - row: 1
-    column: 2
+    column: 4
     prefabIndex: 0
   destinations:
-  - {x: 3, y: 1}
-  playerStart: {x: 7, y: 0}
+  - {x: 5, y: 2}
+  playerStart: {x: 1, y: 3}
   blockedCells: []
   hasWon: 0
   isLocked: 1

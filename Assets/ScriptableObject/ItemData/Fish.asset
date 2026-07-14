@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: Fish
   m_EditorClassIdentifier: Assembly-CSharp::FeedTheCat.Items.ItemData
   itemID: charm_aura_4
-  itemName: Fish
-  description: Charm nearby Cats with extended range. 4-turn duration.
+  itemName:
+    english: FIsh
+    vietnamese: "C\xE1"
+  description:
+    english: Charm nearby cats with extended range. 4-turn duration.
+    vietnamese: "Thu h\xFAt m\xE8o g\u1EA7n \u0111\xF3 v\u1EDBi ph\u1EA1m vi m\u1EDF
+      r\u1ED9ng. Th\u1EDDi gian k\xE9o d\xE0i 4 l\u01B0\u1EE3t."
   icon: {fileID: 6413591311797324798, guid: 6a94aaea31516f145adc7234738f05e2, type: 3}
   visualPrefab: {fileID: 5909726243354774332, guid: 521a788d74b21da42bf1a6f9fc12f7ca, type: 3}
   itemType: 0

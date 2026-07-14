@@ -14,83 +14,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Easy_Mutant_27
   npcs:
-  - row: 1
-    column: 4
-    prefabIndex: 4
-    seed: 702019713
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 7
-    column: 2
-    prefabIndex: 0
-    seed: 1410972463
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 7
-    column: 3
-    prefabIndex: 4
-    seed: -371172678
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 4
-    column: 0
-    prefabIndex: 0
-    seed: -1751711231
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 5
-    column: 3
-    prefabIndex: 3
-    seed: -34078656
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
   - row: 3
-    column: 2
-    prefabIndex: 1
-    seed: 14867719
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 5
-    column: 5
-    prefabIndex: 5
-    seed: 1266588704
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 1
     column: 1
-    prefabIndex: 7
-    seed: -1950991928
+    prefabIndex: 2
+    seed: 1660562558
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 0
+    column: 2
+    prefabIndex: 3
+    seed: 523023005
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 2
+    column: 3
+    prefabIndex: 0
+    seed: 802207089
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 4
-    column: 1
+    column: 4
     prefabIndex: 8
-    seed: -1075298930
+    seed: -815577516
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 0
     column: 1
+    prefabIndex: 8
+    seed: 1183780196
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 1
+    column: 0
     prefabIndex: 5
-    seed: -250297304
+    seed: 871608275
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   items:
-  - row: 3
-    column: 4
+  - row: 1
+    column: 2
     prefabIndex: 0
   destinations:
-  - {x: 3, y: 1}
-  playerStart: {x: 6, y: 0}
+  - {x: 2, y: 2}
+  playerStart: {x: 0, y: 0}
   blockedCells: []
   hasWon: 0
   isLocked: 1

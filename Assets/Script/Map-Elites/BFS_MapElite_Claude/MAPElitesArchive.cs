@@ -37,9 +37,22 @@ public class MAPElitesArchive
         LevelData level,
         DifficultyResultBFS result)
     {
+        // Truoc day chia shortestPath cho 2 de fit vao 20 bucket, nhung tren
+        // board 8x6 thi shortestPath thuc te chi roi vao khoang ~0-15, chia 2
+        // chi con ~7-8 bucket thuc su duoc dung -> nhieu bo cuc (vi tri
+        // player/dich/item/NPC) khac nhau nhung co cung so buoc bi don chung
+        // vao 1 o, chi elite fitness cao nhat song sot, phan con lai bi huy.
+        // Bo phep chia 2 de tan dung het do phan giai 20 bucket, giu duoc
+        // nhieu bo cuc khac nhau hon cho cung 1 khoang do kho.
+        //
+        // Dung fullClearShortestPath (duong di THUC SU phai di, bao gom ca
+        // ghe qua item) thay vi shortestPath (chi tinh rieng duong toi dich,
+        // bo qua item) - vi tu khi MAPElitesGenerator da loc bo cac level
+        // khong the "vua an item vua thang", fullClearShortestPath moi la con
+        // so phan anh dung do kho nguoi choi thuc su gap phai.
         int x =
             Mathf.Clamp(
-                result.shortestPath / 2,
+                result.fullClearShortestPath,
                 0,
                 width - 1);
 
@@ -52,13 +65,14 @@ public class MAPElitesArchive
         EliteCellBFS cell =
             archive[x, y];
 
-        // Do kho duoc tinh tu ca so buoc ngan nhat de thang (shortestPath)
-        // VA tong diem nguy hiem cua cac NPC (npcScore, da tinh san trong
-        // BFSSolver.Evaluate) - dung 1 nguon logic duy nhat (LevelDifficultyClassifier)
-        // thay vi suy ra tu vi tri o (x, y) trong luoi archive nhu truoc.
+        // Do kho duoc tinh tu ca so buoc ngan nhat de VUA AN ITEM VUA THANG
+        // (fullClearShortestPath) VA tong diem nguy hiem cua cac NPC
+        // (npcScore, da tinh san trong BFSSolver.Evaluate) - dung 1 nguon
+        // logic duy nhat (LevelDifficultyClassifier) thay vi suy ra tu vi tri
+        // o (x, y) trong luoi archive nhu truoc.
         LevelDifficulty difficulty =
             LevelDifficultyClassifier.Classify(
-                result.shortestPath,
+                result.fullClearShortestPath,
                 result.npcScore);
 
         // Dat ten ngay khi biet do kho, dung format {DoKho}_{TenLevel}
@@ -156,7 +170,7 @@ public class MAPElitesArchive
 
                 scores.Add(
                     LevelDifficultyClassifier.ComputeDifficultyScore(
-                        cell.result.shortestPath,
+                        cell.result.fullClearShortestPath,
                         cell.result.npcScore));
             }
         }

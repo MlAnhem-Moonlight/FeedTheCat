@@ -4,7 +4,73 @@ using UnityEngine;
 namespace FeedTheCat.Items
 {
     /// <summary>
+    /// Stores localized text in multiple languages.
+    /// Serializable so it can be embedded in ScriptableObjects like ItemData.
+    /// </summary>
+    [System.Serializable]
+    public class LocalizedString
+    {
+        [TextArea(2, 4)]
+        [SerializeField]
+        [Tooltip("English version of the text")]
+        public string english = "";
+
+        [TextArea(2, 4)]
+        [SerializeField]
+        [Tooltip("Vietnamese version of the text")]
+        public string vietnamese = "";
+
+        /// <summary>
+        /// Get the text based on current system language.
+        /// Defaults to English if language not supported.
+        /// </summary>
+        public string GetLocalizedText()
+        {
+            string systemLang = Application.systemLanguage.ToString().ToLower();
+            if (systemLang.Contains("vietnamese"))
+                return vietnamese;
+            return english;
+        }
+
+        /// <summary>
+        /// Get text in a specific language.
+        /// </summary>
+        public string GetText(string languageCode)
+        {
+            return languageCode switch
+            {
+                "en" => english,
+                "vi" => vietnamese,
+                _ => english
+            };
+        }
+
+        /// <summary>
+        /// Constructor for convenience.
+        /// </summary>
+        public LocalizedString(string en = "", string vi = "")
+        {
+            english = en;
+            vietnamese = vi;
+        }
+
+        /// <summary>
+        /// Check if all language variants are filled.
+        /// </summary>
+        public bool IsComplete()
+        {
+            return !string.IsNullOrWhiteSpace(english) && !string.IsNullOrWhiteSpace(vietnamese);
+        }
+
+        public override string ToString()
+        {
+            return GetLocalizedText();
+        }
+    }
+
+    /// <summary>
     /// ScriptableObject that defines all properties for a consumable item.
+    /// Supports localized name and description in multiple languages.
     /// </summary>
     [CreateAssetMenu(fileName = "Item_", menuName = "FeedTheCat/Item/ItemData")]
     public class ItemData : ScriptableObject
@@ -17,13 +83,13 @@ namespace FeedTheCat.Items
         private string itemID = "item_placeholder";
 
         [SerializeField]
-        [Tooltip("Display name of the item.")]
-        private string itemName = "New Item";
+        [Tooltip("Display name of the item (localized in multiple languages).")]
+        private LocalizedString itemName = new LocalizedString("New Item", "Item mới");
 
         [SerializeField]
-        [TextArea(2, 4)]
-        [Tooltip("Description of the item's effect.")]
-        private string description = "Item description";
+        //[TextArea(2, 4)]
+        [Tooltip("Description of the item's effect (localized in multiple languages).")]
+        private LocalizedString description = new LocalizedString("Item description", "Mô tả item");
 
         [SerializeField]
         [Tooltip("Item icon displayed in UI.")]
@@ -78,8 +144,27 @@ namespace FeedTheCat.Items
         #region Properties (Getters)
 
         public string ItemID => itemID;
-        public string ItemName => itemName;
-        public string Description => description;
+
+        /// <summary>
+        /// Get item name in current language (based on system language).
+        /// </summary>
+        public string ItemName => itemName.GetLocalizedText();
+
+        /// <summary>
+        /// Get item name in specific language.
+        /// </summary>
+        public string GetItemName(string languageCode) => itemName.GetText(languageCode);
+
+        /// <summary>
+        /// Get description in current language (based on system language).
+        /// </summary>
+        public string Description => description.GetLocalizedText();
+
+        /// <summary>
+        /// Get description in specific language.
+        /// </summary>
+        public string GetDescription(string languageCode) => description.GetText(languageCode);
+
         public Sprite Icon => icon;
         public GameObject VisualPrefab => visualPrefab;
         public ItemType ItemType => itemType;
@@ -93,7 +178,7 @@ namespace FeedTheCat.Items
         #endregion
 
         /// <summary>
-        /// Validates that ItemID is set and unique.
+        /// Validates that ItemID is set and localized strings are complete.
         /// </summary>
         [ContextMenu("Validate Item Data")]
         public void ValidateItemData()
@@ -101,6 +186,16 @@ namespace FeedTheCat.Items
             if (string.IsNullOrWhiteSpace(itemID))
             {
                 Debug.LogWarning($"ItemData '{name}': ItemID is empty. Assign a unique identifier.", this);
+            }
+
+            if (itemName == null || !itemName.IsComplete())
+            {
+                Debug.LogWarning($"ItemData '{name}': Item name is not complete in all languages.", this);
+            }
+
+            if (description == null || !description.IsComplete())
+            {
+                Debug.LogWarning($"ItemData '{name}': Description is not complete in all languages.", this);
             }
         }
     }

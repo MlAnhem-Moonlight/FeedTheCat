@@ -15,7 +15,12 @@ public class LevelMutator
     private const int MaxOps = 3;
 
     private const int MinNpcCount = 1;
-    private const int MaxNpcCount = 12;
+
+    // Giam tu 12 -> 9 de khop voi tran NPC moi cua MAPElitesGenerator (Hard
+    // toi da 9 NPC luc sinh moi) - tranh truong hop AddNPC lien tuc qua nhieu
+    // vong dot bien lai day so luong NPC vuot xa muc sinh-moi ban dau, gay
+    // nghet ban do 8x6.
+    private const int MaxNpcCount = 9;
 
     // target: do kho ma MAPElitesGenerator dang muon nhan candidate nay toi
     // (dua tren ti le muc tieu, vi du 4:2:1 cho Easy:Medium:Hard). Anh huong

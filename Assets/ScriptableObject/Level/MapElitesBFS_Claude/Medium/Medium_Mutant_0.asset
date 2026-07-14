@@ -14,97 +14,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Medium_Mutant_0
   npcs:
-  - row: 4
-    column: 1
-    prefabIndex: 2
-    seed: 702019713
+  - row: 1
+    column: 2
+    prefabIndex: 0
+    seed: 884210982
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
-  - row: 1
+  - row: 6
     column: 3
     prefabIndex: 0
-    seed: 1410972463
+    seed: -929903747
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
-  - row: 7
-    column: 3
-    prefabIndex: 7
-    seed: -371172678
+  - row: 4
+    column: 2
+    prefabIndex: 0
+    seed: 148612328
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 2
     column: 3
-    prefabIndex: 1
-    seed: -1528569266
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 5
-    column: 2
-    prefabIndex: 7
-    seed: 496403171
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 5
-    column: 0
-    prefabIndex: 4
-    seed: -34078656
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 3
-    column: 2
-    prefabIndex: 1
-    seed: 14867719
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 7
-    column: 4
-    prefabIndex: 5
-    seed: 1266588704
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 3
-    column: 4
-    prefabIndex: 8
-    seed: 1294594405
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 5
-    column: 4
     prefabIndex: 2
-    seed: 704317690
+    seed: -713951219
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
-  - row: 1
+  - row: 4
     column: 5
     prefabIndex: 8
-    seed: -1115328533
+    seed: 2044251070
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
-  - row: 7
-    column: 5
+  - row: 0
+    column: 1
     prefabIndex: 4
-    seed: 1029923872
+    seed: -123889514
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   items:
-  - row: 1
-    column: 4
+  - row: 6
+    column: 2
     prefabIndex: 0
   destinations:
-  - {x: 6, y: 5}
-  playerStart: {x: 7, y: 1}
+  - {x: 7, y: 5}
+  playerStart: {x: 1, y: 1}
   blockedCells: []
   hasWon: 0
   isLocked: 1
