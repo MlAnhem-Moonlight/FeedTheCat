@@ -43,6 +43,6 @@ MonoBehaviour:
   - {x: 3, y: 5}
   playerStart: {x: 1, y: 3}
   blockedCells: []
-  hasWon: 0
-  isLocked: 1
-  hasPickup: 0
+  hasWon: 1
+  isLocked: 0
+  hasPickup: 1
