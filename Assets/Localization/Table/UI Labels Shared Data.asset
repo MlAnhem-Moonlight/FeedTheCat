@@ -31,6 +31,14 @@ MonoBehaviour:
     m_Key: uiSetting
     m_Metadata:
       m_Items: []
+  - m_Id: 363382936080384
+    m_Key: uiTitleWin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369157075013632
+    m_Key: uiTitleLose
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

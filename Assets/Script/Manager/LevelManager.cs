@@ -258,29 +258,26 @@ public class LevelManager : MonoBehaviour
                 if (mover != null)
                 {
                     mover.boardGenerator = boardGenerator;
-                    mover.startRow = def.row;
-                    mover.startColumn = def.column;
 
-                    // BUG FIX: type/initialDirection/length/fixedSteps/minRandomSteps/
-                    // maxRandomSteps were NEVER set from the NPCDef that BFSSolver used
-                    // to validate solvability and LevelGenUtil used to guarantee no cell
-                    // overlap. Runtime behavior silently depended on whatever values the
-                    // chosen prefab happened to have configured in its own Inspector,
-                    // completely independent of def.prefabIndex/fixedSteps/etc. If any
-                    // prefab's Inspector config didn't exactly match the convention used
-                    // during generation (see SimNPC.InitializeDirection / LevelGenUtil.
-                    // GetIdleDirection), the NPC's real in-game span/direction/step-count
-                    // could differ from what generation validated - e.g. an Idle NPC
-                    // spawned with length=1 instead of 2 would leave its "reserved" 2nd
-                    // cell unmarked, letting another NPC or the item end up on it. Now we
-                    // derive type/direction/length deterministically from prefabIndex
-                    // (ConfigureFromPrefabIndex uses the exact same mapping as generation)
-                    // and copy the step-count fields so runtime behavior matches what was
-                    // actually simulated/validated.
-                    mover.ConfigureFromPrefabIndex(def.prefabIndex);
-                    mover.fixedSteps = def.fixedSteps;
-                    mover.minRandomSteps = def.minRandomSteps;
-                    mover.maxRandomSteps = def.maxRandomSteps;
+                    // BUG FIX (tiep tuc): truoc day co goi ConfigureFromPrefabIndex +
+                    // gan rieng le fixedSteps/minRandomSteps/maxRandomSteps, NHUNG
+                    // "def.seed" chua bao gio duoc truyen xuong NPCMover ca. NPCMover
+                    // lai dung UnityEngine.Random (khong seed) cho moi buoc di ngau
+                    // nhien (Patrol Random Steps, Random Way), trong khi SimNPC ben
+                    // BFSSolver dung System.Random(def.seed) xac dinh. Ket qua: NPC
+                    // luc choi thuc te di CHUYEN KHAC HOAN TOAN so voi quy dao ma
+                    // BFSSolver da mo phong de xac nhan level nay "solvable" - level
+                    // sinh cang nhieu iteration (cang bi day ve cau hinh chi con 1
+                    // duong song sot mong manh) thi sai lech nay cang de lam NPC
+                    // chan chet duong di trong game that.
+                    //
+                    // Initialize(def) thay the toan bo khoi gan field rieng le o
+                    // tren: no gan startRow/startColumn/fixedSteps/minRandomSteps/
+                    // maxRandomSteps, GOI ConfigureFromPrefabIndex, VA quan trong
+                    // nhat la new System.Random(def.seed) - dung 1 nguon duy nhat
+                    // voi SimNPC(NPCDef npc) ben phia generator, dam bao hanh vi
+                    // NPC luc choi khop chinh xac voi luc BFS da xac nhan an toan.
+                    mover.Initialize(def);
 
                     // give mover the shared NPC container so all NPCs use one parent
                     if (sharedNpcContainer != null)

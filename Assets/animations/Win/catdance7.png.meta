@@ -1,0 +1,2486 @@
+fileFormatVersion: 2
+guid: 9a03d953a403a0242854b26dba869ed1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1157201605597939515
+    second: catdance7_0
+  - first:
+      213: -5139820919185339132
+    second: catdance7_1
+  - first:
+      213: 6854299550380725715
+    second: catdance7_2
+  - first:
+      213: 6218310684821141965
+    second: catdance7_3
+  - first:
+      213: -8371680193300480689
+    second: catdance7_4
+  - first:
+      213: 5815275037291319795
+    second: catdance7_5
+  - first:
+      213: 2637261210865732299
+    second: catdance7_6
+  - first:
+      213: 1687490381762025618
+    second: catdance7_7
+  - first:
+      213: -6260785756492456450
+    second: catdance7_8
+  - first:
+      213: 6328491206313377992
+    second: catdance7_9
+  - first:
+      213: 4716742890548392382
+    second: catdance7_10
+  - first:
+      213: 339027871325193245
+    second: catdance7_11
+  - first:
+      213: 2739888161328155065
+    second: catdance7_12
+  - first:
+      213: -4427500764605173643
+    second: catdance7_13
+  - first:
+      213: -8847211496843141430
+    second: catdance7_14
+  - first:
+      213: 4003683034352962103
+    second: catdance7_15
+  - first:
+      213: -6730254223851508435
+    second: catdance7_16
+  - first:
+      213: -2801652519926778315
+    second: catdance7_17
+  - first:
+      213: -4690335887065131545
+    second: catdance7_18
+  - first:
+      213: 1770984627798053699
+    second: catdance7_19
+  - first:
+      213: -2175234312876691376
+    second: catdance7_20
+  - first:
+      213: 1364389803445318642
+    second: catdance7_21
+  - first:
+      213: 7974645378943745483
+    second: catdance7_22
+  - first:
+      213: -7455354174635207041
+    second: catdance7_23
+  - first:
+      213: 3669021586483214516
+    second: catdance7_24
+  - first:
+      213: -1653222113867467293
+    second: catdance7_25
+  - first:
+      213: -9182517660307681140
+    second: catdance7_26
+  - first:
+      213: -6893894546316959052
+    second: catdance7_27
+  - first:
+      213: 1883539596802489296
+    second: catdance7_28
+  - first:
+      213: -591676665456288373
+    second: catdance7_29
+  - first:
+      213: -3894557685704008605
+    second: catdance7_30
+  - first:
+      213: 4853261238662257386
+    second: catdance7_31
+  - first:
+      213: -566301601867435973
+    second: catdance7_32
+  - first:
+      213: 1211374006152456704
+    second: catdance7_33
+  - first:
+      213: 5955494248067363002
+    second: catdance7_34
+  - first:
+      213: -4229061164179181544
+    second: catdance7_35
+  - first:
+      213: -4488134500340534464
+    second: catdance7_36
+  - first:
+      213: -6577642275489867341
+    second: catdance7_37
+  - first:
+      213: -4675509851589358805
+    second: catdance7_38
+  - first:
+      213: 1046341284023761220
+    second: catdance7_39
+  - first:
+      213: -1147180343586233351
+    second: catdance7_40
+  - first:
+      213: 1520350649184904005
+    second: catdance7_41
+  - first:
+      213: 197492732549619043
+    second: catdance7_42
+  - first:
+      213: -5923759932998691590
+    second: catdance7_43
+  - first:
+      213: 4280333368624129441
+    second: catdance7_44
+  - first:
+      213: -5489767610509957330
+    second: catdance7_45
+  - first:
+      213: -267706465537255375
+    second: catdance7_46
+  - first:
+      213: -3280155073363917660
+    second: catdance7_47
+  - first:
+      213: -1097124135960394363
+    second: catdance7_48
+  - first:
+      213: -78196804164182856
+    second: catdance7_49
+  - first:
+      213: 5970234209167974050
+    second: catdance7_50
+  - first:
+      213: 7383712778838930377
+    second: catdance7_51
+  - first:
+      213: 6285608781498538122
+    second: catdance7_52
+  - first:
+      213: -3242338426046288673
+    second: catdance7_53
+  - first:
+      213: 793392262430065508
+    second: catdance7_54
+  - first:
+      213: 498583455252469232
+    second: catdance7_55
+  - first:
+      213: 433115409310429570
+    second: catdance7_56
+  - first:
+      213: -1885766443088352563
+    second: catdance7_57
+  - first:
+      213: 3345664110122931559
+    second: catdance7_58
+  - first:
+      213: 4726156981988372110
+    second: catdance7_59
+  - first:
+      213: -1552210542795458027
+    second: catdance7_60
+  - first:
+      213: 8792839156581197085
+    second: catdance7_61
+  - first:
+      213: -1338194955556805465
+    second: catdance7_62
+  - first:
+      213: -5018484227833983323
+    second: catdance7_63
+  - first:
+      213: 827048453074433076
+    second: catdance7_64
+  - first:
+      213: 4332237816825268755
+    second: catdance7_65
+  - first:
+      213: -8137744099165184329
+    second: catdance7_66
+  - first:
+      213: -4597768211975985257
+    second: catdance7_67
+  - first:
+      213: -1363893949124540419
+    second: catdance7_68
+  - first:
+      213: -8122757060131314203
+    second: catdance7_69
+  - first:
+      213: 3376753607578638214
+    second: catdance7_70
+  - first:
+      213: 8631644424304091099
+    second: catdance7_71
+  - first:
+      213: -4270424610539899888
+    second: catdance7_72
+  - first:
+      213: 3432764644138061825
+    second: catdance7_73
+  - first:
+      213: -719261650514470570
+    second: catdance7_74
+  - first:
+      213: -4474189410193416330
+    second: catdance7_75
+  - first:
+      213: -801335229683424916
+    second: catdance7_76
+  - first:
+      213: 2099796407320455957
+    second: catdance7_77
+  - first:
+      213: 2424654363446125327
+    second: catdance7_78
+  - first:
+      213: 8946345930026430793
+    second: catdance7_79
+  - first:
+      213: 1227658671531543578
+    second: catdance7_80
+  - first:
+      213: 4996678523459963914
+    second: catdance7_81
+  - first:
+      213: -7682913251582020953
+    second: catdance7_82
+  - first:
+      213: -6427603266119899689
+    second: catdance7_83
+  - first:
+      213: 2311624119396286142
+    second: catdance7_84
+  - first:
+      213: 3613094455236694224
+    second: catdance7_85
+  - first:
+      213: -7489638670711867042
+    second: catdance7_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: catdance7_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8638
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b374d2baab43f0010800000000000000
+      internalID: 1157201605597939515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 8638
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d06de1b10bba8b0800000000000000
+      internalID: -5139820919185339132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 8638
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d5109c102d5f1f50800000000000000
+      internalID: 6854299550380725715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 8638
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc9b7cf2f90eb4650800000000000000
+      internalID: 6218310684821141965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 8638
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4db6212831d1db80800000000000000
+      internalID: -8371680193300480689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8158
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f112f4f5d104b050800000000000000
+      internalID: 5815275037291319795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_6
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 8158
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca8195391f699420800000000000000
+      internalID: 2637261210865732299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_7
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 8158
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29850debf8b2b6710800000000000000
+      internalID: 1687490381762025618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_8
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 8158
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd117986883d19a0800000000000000
+      internalID: -6260785756492456450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 8158
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c00e7ce83153d750800000000000000
+      internalID: 6328491206313377992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7678
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb17cf72bac357140800000000000000
+      internalID: 4716742890548392382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 7678
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d148b4f7d0874b400800000000000000
+      internalID: 339027871325193245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_12
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 7678
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b9434424c9060620800000000000000
+      internalID: 2739888161328155065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_13
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 7678
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57030f2338b5e82c0800000000000000
+      internalID: -4427500764605173643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_14
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 7678
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace99e5a404683580800000000000000
+      internalID: -8847211496843141430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7198
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73acddfd180ff8730800000000000000
+      internalID: 4003683034352962103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_16
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 7198
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d224b11755992a0800000000000000
+      internalID: -6730254223851508435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 7198
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536bfad70e78e19d0800000000000000
+      internalID: -2801652519926778315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_18
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 7198
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e557367c5498eeb0800000000000000
+      internalID: -4690335887065131545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_19
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 7198
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343949ac22dc39810800000000000000
+      internalID: 1770984627798053699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6718
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0507eb5dae300d1e0800000000000000
+      internalID: -2175234312876691376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 6718
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f3f5812c494fe210800000000000000
+      internalID: 1364389803445318642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_22
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 6718
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcdf6ad78b1abae60800000000000000
+      internalID: 7974645378943745483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_23
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 6718
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76942ad0e2498890800000000000000
+      internalID: -7455354174635207041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 6718
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8729f81bbfae230800000000000000
+      internalID: 3669021586483214516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6238
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5fb102f339e09e0800000000000000
+      internalID: -1653222113867467293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 6238
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c801c99c6d4219080800000000000000
+      internalID: -9182517660307681140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_27
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 6238
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b266cf7f67f350a0800000000000000
+      internalID: -6893894546316959052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_28
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 6238
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db7bcba84da32a10800000000000000
+      internalID: 1883539596802489296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_29
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 6238
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d17952531f9c7f0800000000000000
+      internalID: -591676665456288373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5758
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36c585a4b60c3f9c0800000000000000
+      internalID: -3894557685704008605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 5758
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aead2a4026f3a5340800000000000000
+      internalID: 4853261238662257386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_32
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 5758
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30f4f881b71428f0800000000000000
+      internalID: -566301601867435973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_33
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 5758
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00aebde8d3aafc010800000000000000
+      internalID: 1211374006152456704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_34
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5758
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0ffed077a26a250800000000000000
+      internalID: 5955494248067363002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5278
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81033b7174b5f45c0800000000000000
+      internalID: -4229061164179181544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_36
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 5278
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043f60b7371f6b1c0800000000000000
+      internalID: -4488134500340534464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_37
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 5278
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b995d5433587b4a0800000000000000
+      internalID: -6577642275489867341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_38
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 5278
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b4d28df804d1fb0800000000000000
+      internalID: -4675509851589358805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 5278
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449ff04aad9558e00800000000000000
+      internalID: 1046341284023761220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4798
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f36b373e856410f0800000000000000
+      internalID: -1147180343586233351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_41
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 4798
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54363ba3cde591510800000000000000
+      internalID: 1520350649184904005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_42
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 4798
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d57590892adb200800000000000000
+      internalID: 197492732549619043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_43
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4798
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4dbe2f9b39acda0800000000000000
+      internalID: -5923759932998691590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_44
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4798
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5a715458cc66b30800000000000000
+      internalID: 4280333368624129441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4318
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27eb1cb17d60d3b0800000000000000
+      internalID: -5489767610509957330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_46
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 4318
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1389391536ae84cf0800000000000000
+      internalID: -267706465537255375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_47
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 4318
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4c2fbf65c8a72d0800000000000000
+      internalID: -3280155073363917660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_48
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 4318
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585c291496b36c0f0800000000000000
+      internalID: -1097124135960394363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_49
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4318
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc1931cb603aeef0800000000000000
+      internalID: -78196804164182856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3838
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ae975fa1688ad250800000000000000
+      internalID: 5970234209167974050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3838
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3f43ad6a7387660800000000000000
+      internalID: 7383712778838930377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_52
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3838
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a88db4a52e7fa3750800000000000000
+      internalID: 6285608781498538122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_53
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3838
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc69e15166e003d0800000000000000
+      internalID: -3242338426046288673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_54
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3838
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46300b12f02b20b00800000000000000
+      internalID: 793392262430065508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3358
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f5d53dc2035be600800000000000000
+      internalID: 498583455252469232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_56
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3358
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28132b68b2cb20600800000000000000
+      internalID: 433115409310429570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_57
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3358
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcaed56496964d5e0800000000000000
+      internalID: -1885766443088352563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_58
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3358
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76596a538cf2e6e20800000000000000
+      internalID: 3345664110122931559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_59
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3358
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e26202cbea69140800000000000000
+      internalID: 4726156981988372110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2878
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a7f0c3cb0757ae0800000000000000
+      internalID: -1552210542795458027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_61
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2878
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15ea2f50a0760a70800000000000000
+      internalID: 8792839156581197085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_62
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2878
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a421d927c6cd6de0800000000000000
+      internalID: -1338194955556805465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_63
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2878
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae0e011f23ca5ab0800000000000000
+      internalID: -5018484227833983323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_64
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2878
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 434b989af244a7b00800000000000000
+      internalID: 827048453074433076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2398
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a426a57533f1c30800000000000000
+      internalID: 4332237816825268755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_66
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2398
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be5a308bdce01f80800000000000000
+      internalID: -8137744099165184329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_67
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2398
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797a695db227130c0800000000000000
+      internalID: -4597768211975985257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_68
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2398
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df78023fda9721de0800000000000000
+      internalID: -1363893949124540419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_69
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2398
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5a3127d7b264f80800000000000000
+      internalID: -8122757060131314203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1918
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6875eb9e383acde20800000000000000
+      internalID: 3376753607578638214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_71
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1918
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdf502a1fd2c9c770800000000000000
+      internalID: 8631644424304091099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_72
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1918
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014fea041776cb4c0800000000000000
+      internalID: -4270424610539899888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_73
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1918
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1009e5b9141a3af20800000000000000
+      internalID: 3432764644138061825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_74
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1918
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6591684f65ba406f0800000000000000
+      internalID: -719261650514470570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1438
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f5b9bcf6c78e1c0800000000000000
+      internalID: -4474189410193416330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_76
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1438
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c61a6b0bad511e4f0800000000000000
+      internalID: -801335229683424916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_77
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1438
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b2afe05b9f32d10800000000000000
+      internalID: 2099796407320455957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_78
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1438
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03ae441c4a16a120800000000000000
+      internalID: 2424654363446125327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_79
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1438
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941bcfc393ec72c70800000000000000
+      internalID: 8946345930026430793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 958
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1cc01eae05890110800000000000000
+      internalID: 1227658671531543578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_81
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 958
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c87afb4a4c75540800000000000000
+      internalID: 4996678523459963914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_82
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 958
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2ff4f7a1fc06590800000000000000
+      internalID: -7682913251582020953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_83
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 958
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d568c562e09cc6a0800000000000000
+      internalID: -6427603266119899689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_84
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 958
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe37da93e9841020800000000000000
+      internalID: 2311624119396286142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 478
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d01158934a442230800000000000000
+      internalID: 3613094455236694224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_86
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 478
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59b0309f457f0890800000000000000
+      internalID: -7489638670711867042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_87
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 478
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff5af5dce1056e4c82c1ba7368d367b
+      internalID: -912460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_88
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 478
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145cd49d550581a48a02b20d7eb51d19
+      internalID: 2081095479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_89
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 478
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95562b4abd1124949bec0a6bd278f238
+      internalID: -1059735458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: catdance7_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 478
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6fa9a3463b386438d37910c4e05bbc
+      internalID: 916574186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6cddb0fef837f0642844a2deeebd06aa
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":480.0,"y":480.0},"gridSpriteOffset":{"x":0.0,"y":2.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      catdance7_0: 1157201605597939515
+      catdance7_1: -5139820919185339132
+      catdance7_10: 4716742890548392382
+      catdance7_11: 339027871325193245
+      catdance7_12: 2739888161328155065
+      catdance7_13: -4427500764605173643
+      catdance7_14: -8847211496843141430
+      catdance7_15: 4003683034352962103
+      catdance7_16: -6730254223851508435
+      catdance7_17: -2801652519926778315
+      catdance7_18: -4690335887065131545
+      catdance7_19: 1770984627798053699
+      catdance7_2: 6854299550380725715
+      catdance7_20: -2175234312876691376
+      catdance7_21: 1364389803445318642
+      catdance7_22: 7974645378943745483
+      catdance7_23: -7455354174635207041
+      catdance7_24: 3669021586483214516
+      catdance7_25: -1653222113867467293
+      catdance7_26: -9182517660307681140
+      catdance7_27: -6893894546316959052
+      catdance7_28: 1883539596802489296
+      catdance7_29: -591676665456288373
+      catdance7_3: 6218310684821141965
+      catdance7_30: -3894557685704008605
+      catdance7_31: 4853261238662257386
+      catdance7_32: -566301601867435973
+      catdance7_33: 1211374006152456704
+      catdance7_34: 5955494248067363002
+      catdance7_35: -4229061164179181544
+      catdance7_36: -4488134500340534464
+      catdance7_37: -6577642275489867341
+      catdance7_38: -4675509851589358805
+      catdance7_39: 1046341284023761220
+      catdance7_4: -8371680193300480689
+      catdance7_40: -1147180343586233351
+      catdance7_41: 1520350649184904005
+      catdance7_42: 197492732549619043
+      catdance7_43: -5923759932998691590
+      catdance7_44: 4280333368624129441
+      catdance7_45: -5489767610509957330
+      catdance7_46: -267706465537255375
+      catdance7_47: -3280155073363917660
+      catdance7_48: -1097124135960394363
+      catdance7_49: -78196804164182856
+      catdance7_5: 5815275037291319795
+      catdance7_50: 5970234209167974050
+      catdance7_51: 7383712778838930377
+      catdance7_52: 6285608781498538122
+      catdance7_53: -3242338426046288673
+      catdance7_54: 793392262430065508
+      catdance7_55: 498583455252469232
+      catdance7_56: 433115409310429570
+      catdance7_57: -1885766443088352563
+      catdance7_58: 3345664110122931559
+      catdance7_59: 4726156981988372110
+      catdance7_6: 2637261210865732299
+      catdance7_60: -1552210542795458027
+      catdance7_61: 8792839156581197085
+      catdance7_62: -1338194955556805465
+      catdance7_63: -5018484227833983323
+      catdance7_64: 827048453074433076
+      catdance7_65: 4332237816825268755
+      catdance7_66: -8137744099165184329
+      catdance7_67: -4597768211975985257
+      catdance7_68: -1363893949124540419
+      catdance7_69: -8122757060131314203
+      catdance7_7: 1687490381762025618
+      catdance7_70: 3376753607578638214
+      catdance7_71: 8631644424304091099
+      catdance7_72: -4270424610539899888
+      catdance7_73: 3432764644138061825
+      catdance7_74: -719261650514470570
+      catdance7_75: -4474189410193416330
+      catdance7_76: -801335229683424916
+      catdance7_77: 2099796407320455957
+      catdance7_78: 2424654363446125327
+      catdance7_79: 8946345930026430793
+      catdance7_8: -6260785756492456450
+      catdance7_80: 1227658671531543578
+      catdance7_81: 4996678523459963914
+      catdance7_82: -7682913251582020953
+      catdance7_83: -6427603266119899689
+      catdance7_84: 2311624119396286142
+      catdance7_85: 3613094455236694224
+      catdance7_86: -7489638670711867042
+      catdance7_87: -912460
+      catdance7_88: 2081095479
+      catdance7_89: -1059735458
+      catdance7_9: 6328491206313377992
+      catdance7_90: 916574186
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

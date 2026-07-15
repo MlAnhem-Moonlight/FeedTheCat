@@ -14,62 +14,76 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelData
   levelName: Hard_Mutant_2
   npcs:
-  - row: 1
-    column: 4
-    prefabIndex: 0
-    seed: 884210982
+  - row: 2
+    column: 3
+    prefabIndex: 1
+    seed: -1049022133
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 5
-    column: 3
-    prefabIndex: 1
-    seed: -929903747
+    column: 4
+    prefabIndex: 4
+    seed: -374688509
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 4
     column: 2
     prefabIndex: 0
-    seed: 148612328
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 2
-    column: 3
-    prefabIndex: 0
-    seed: -713951219
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 2
-    column: 0
-    prefabIndex: 8
-    seed: 2044251070
+    seed: 1558539455
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 1
-    column: 5
-    prefabIndex: 6
-    seed: -2038139031
+    column: 2
+    prefabIndex: 1
+    seed: 412046407
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
-  - row: 7
-    column: 3
-    prefabIndex: 6
-    seed: 2142865754
+  - row: 3
+    column: 0
+    prefabIndex: 0
+    seed: -2019729082
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 0
+    column: 2
+    prefabIndex: 7
+    seed: -873028881
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 1
+    column: 1
+    prefabIndex: 7
+    seed: -1176085931
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 4
+    column: 0
+    prefabIndex: 5
+    seed: -1460241111
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 5
+    column: 2
+    prefabIndex: 7
+    seed: 366303631
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   items:
-  - row: 5
-    column: 0
+  - row: 3
+    column: 1
     prefabIndex: 0
   destinations:
-  - {x: 3, y: 3}
-  playerStart: {x: 1, y: 1}
+  - {x: 6, y: 1}
+  playerStart: {x: 0, y: 0}
   blockedCells: []
   hasWon: 0
   isLocked: 1

@@ -49,6 +49,17 @@ public class MAPElitesGenerator
     {
         int validLevels = 0;
 
+        // Dem ly do bi loai o TUNG buoc, giup nhin ra ngan sach iterations
+        // dang "mat" vao dau (vi du: da so bi loai vi khong the vua an item
+        // vua thang -> co the can giam so NPC/do kho Hard, hoac tang
+        // iterations; da so bi loai vi archive da co elite tot hon o cung
+        // o -> archive dang bao hoa, tang iterations se it hieu qua hon la
+        // tang do phan giai archive).
+        int rejectedOverlap = 0;
+        int rejectedUnsolvable = 0;
+        int rejectedNotFullClear = 0;
+        int rejectedNotBetterThanElite = 0;
+
         for (int i = 0; i < iterations; i++)
         {
             LevelData level =
@@ -57,6 +68,7 @@ public class MAPElitesGenerator
             if (level == null)
             {
                 // Khong tao duoc candidate khong-chong-o sau nhieu lan thu -> bo qua vong lap nay
+                rejectedOverlap++;
                 continue;
             }
 
@@ -68,8 +80,16 @@ public class MAPElitesGenerator
             // chi kiem tra (1), nen co truong hop NPC chan kin item khien
             // reward khong bao gio nhat duoc du level van "solvable" (thang
             // duoc theo duong khac, khong di qua item).
-            if (!d.solvable || !d.fullClearSolvable)
+            if (!d.solvable)
             {
+                rejectedUnsolvable++;
+                Object.DestroyImmediate(level);
+                continue;
+            }
+
+            if (!d.fullClearSolvable)
+            {
+                rejectedNotFullClear++;
                 Object.DestroyImmediate(level);
                 continue;
             }
@@ -83,6 +103,7 @@ public class MAPElitesGenerator
             {
                 // Level giai duoc nhung khong du tot de vao archive
                 // (o cua no da co elite tot hon) -> huy de tranh ro ri bo nho.
+                rejectedNotBetterThanElite++;
                 Object.DestroyImmediate(level);
             }
             else
@@ -95,6 +116,13 @@ public class MAPElitesGenerator
                 System.GC.Collect();
             }
         }
+
+        Debug.Log(
+            $"[MAPElites] Ly do loai candidate - " +
+            $"Overlap: {rejectedOverlap} | " +
+            $"Unsolvable (khong toi duoc dich): {rejectedUnsolvable} | " +
+            $"Khong the vua an item vua thang: {rejectedNotFullClear} | " +
+            $"Da co elite tot hon o cung o: {rejectedNotBetterThanElite}");
 
         // Sau khi da sinh xong toan bo iterations, phan loai lai do kho theo
         // TAM PHAN VI cua diem (fullClearShortestPath + npcScore) trong chinh

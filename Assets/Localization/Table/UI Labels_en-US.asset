@@ -34,6 +34,14 @@ MonoBehaviour:
     m_Localized: SETTINGS
     m_Metadata:
       m_Items: []
+  - m_Id: 363382936080384
+    m_Localized: WIN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 369157075013632
+    m_Localized: LOSE
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

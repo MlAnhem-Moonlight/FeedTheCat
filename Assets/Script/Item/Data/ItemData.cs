@@ -1,11 +1,16 @@
 using System;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 namespace FeedTheCat.Items
 {
     /// <summary>
     /// Stores localized text in multiple languages.
     /// Serializable so it can be embedded in ScriptableObjects like ItemData.
+    /// Language is now driven by Unity Localization's LocalizationSettings.SelectedLocale
+    /// (not Application.systemLanguage), so it follows whatever language the
+    /// player picks in-game, not just the OS language at startup.
     /// </summary>
     [System.Serializable]
     public class LocalizedString
@@ -21,28 +26,33 @@ namespace FeedTheCat.Items
         public string vietnamese = "";
 
         /// <summary>
-        /// Get the text based on current system language.
-        /// Defaults to English if language not supported.
+        /// Get the text based on the player's currently selected language
+        /// (UnityEngine.Localization.Settings.LocalizationSettings.SelectedLocale).
+        /// Falls back to English if localization isn't initialized yet or the
+        /// selected locale isn't one we have a translation for.
         /// </summary>
         public string GetLocalizedText()
         {
-            string systemLang = Application.systemLanguage.ToString().ToLower();
-            if (systemLang.Contains("vietnamese"))
-                return vietnamese;
-            return english;
+            Locale selectedLocale = LocalizationSettings.HasSettings ? LocalizationSettings.SelectedLocale : null;
+            string code = selectedLocale != null ? selectedLocale.Identifier.Code : "en";
+            return GetText(code);
         }
 
         /// <summary>
-        /// Get text in a specific language.
+        /// Get text in a specific language. Accepts full locale codes
+        /// (e.g. "en-US", "vi-VN") as well as short codes ("en", "vi").
         /// </summary>
         public string GetText(string languageCode)
         {
-            return languageCode switch
-            {
-                "en" => english,
-                "vi" => vietnamese,
-                _ => english
-            };
+            if (string.IsNullOrEmpty(languageCode))
+                return english;
+
+            string code = languageCode.ToLowerInvariant();
+
+            if (code.StartsWith("vi"))
+                return vietnamese;
+
+            return english;
         }
 
         /// <summary>

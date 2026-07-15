@@ -37,9 +37,43 @@ public class NPCMover : MonoBehaviour
     private int currentRow;
     private int currentColumn;
 
+    // RNG rieng cho NPC nay, PHAI duoc seed tu NPCDef.seed (xem Initialize())
+    // de khop CHINH XAC voi SimNPC.rng dung trong BFSSolver luc generate.
+    //
+    // TRUOC DAY: moi cho random step-count/huong-di deu dung
+    // UnityEngine.Random (RNG toan cuc, KHONG lien quan gi toi npc.seed) ->
+    // NPC luc choi thuc te di CHUYEN HOAN TOAN KHAC voi quy dao ma BFSSolver
+    // da mo phong de xac nhan level "solvable". Day la nguyen nhan chinh
+    // khien level nhieu iteration (bi MAP-Elites day ve cau hinh "chi co
+    // dung 1 duong song sot mong manh") de vo tinh bi NPC that chan chet
+    // duong di, du BFS da xac nhan solvable/fullClearSolvable tren giay.
+    private System.Random rng;
+
     // Expose current grid coordinates for other systems (radius checks, debugging)
     public int CurrentRow => currentRow;
     public int CurrentColumn => currentColumn;
+
+    /// <summary>
+    /// Goi ngay sau khi Instantiate prefab NPC va TRUOC KHI Start() chay (tuc
+    /// la ngay trong cung frame instantiate - Start() cua Unity chi chay o
+    /// frame/Update dau tien nen thu tu nay luon dam bao duoc). Thiet lap
+    /// toan bo thong so NPC (vi tri, loai, so buoc, VA quan trong nhat la
+    /// RNG seed) tu dung 1 nguon NPCDef - giong het cach SimNPC(NPCDef npc)
+    /// khoi tao ben phia generator, de hanh vi luc choi khop 100% voi luc
+    /// BFSSolver da mo phong va xac nhan level nay an toan.
+    /// </summary>
+    public void Initialize(NPCDef def)
+    {
+        startRow = def.row;
+        startColumn = def.column;
+        fixedSteps = def.fixedSteps;
+        minRandomSteps = def.minRandomSteps;
+        maxRandomSteps = def.maxRandomSteps;
+
+        rng = new System.Random(def.seed);
+
+        ConfigureFromPrefabIndex(def.prefabIndex);
+    }
 
     /// <summary>
     /// Whether this NPC is capable of moving at all. Idle NPCs never move under
@@ -122,6 +156,22 @@ public class NPCMover : MonoBehaviour
         if (boardGenerator == null)
             boardGenerator = FindAnyObjectByType<BoardGenerator>();
 
+        // An toan cuoi cung: neu ai do quen goi Initialize(NPCDef) sau khi
+        // Instantiate (vi du code cu con dat startRow/startColumn/type truc
+        // tiep tu Inspector hoac field-by-field), dung UnityEngine.Random
+        // lam nguon fallback thay vi NullReferenceException - nhung canh bao
+        // ro rang vi hanh vi NPC nay se KHONG khop voi BFSSolver da mo
+        // phong (mat toan bo bao dam "solvable" cua level).
+        if (rng == null)
+        {
+            Debug.LogWarning(
+                $"NPCMover.Start: '{gameObject.name}' chua duoc goi Initialize(NPCDef) " +
+                "-> dung RNG khong seed (fallback). Hanh vi NPC se KHONG khop voi " +
+                "BFSSolver luc generate, level co the khong con dam bao solvable!");
+
+            rng = new System.Random();
+        }
+
         // set starting direction
         dirVec = DirectionToVec(initialDirection);
 
@@ -175,10 +225,15 @@ public class NPCMover : MonoBehaviour
                 stepsRemaining = fixedSteps;
                 break;
             case NPCType.PatrolRandomSteps:
-                stepsRemaining = UnityEngine.Random.Range(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1);
+                stepsRemaining = rng.Next(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1);
                 break;
             case NPCType.RandomDirection:
-                stepsRemaining = UnityEngine.Random.Range(1, Mathf.Max(1, maxStepsBeforeChange) + 1);
+                // SUA: truoc day dung field "maxStepsBeforeChange" (khong lien
+                // quan gi toi NPCDef), khien so buoc luc choi LECH HOAN TOAN so
+                // voi SimNPC.InitializeStepCounter() case 8 (dung
+                // minRandomSteps/maxRandomSteps). Doi sang dung dung 2 field
+                // nay de khop 100% voi mo phong ben BFSSolver.
+                stepsRemaining = rng.Next(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1);
                 break;
         }
     }
@@ -466,7 +521,7 @@ public class NPCMover : MonoBehaviour
         if (stepsRemaining <= 0)
         {
             if (randomizeCountWhenReset)
-                stepsRemaining = UnityEngine.Random.Range(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1);
+                stepsRemaining = rng.Next(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1);
             else
                 stepsRemaining = fixedSteps;
         }
@@ -488,7 +543,7 @@ public class NPCMover : MonoBehaviour
         {
             // hit wall or obstacle -> reverse direction and reset steps
             dirVec = -dirVec;
-            stepsRemaining = randomizeCountWhenReset ? UnityEngine.Random.Range(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1) : fixedSteps;
+            stepsRemaining = randomizeCountWhenReset ? rng.Next(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1) : fixedSteps;
             return; // no move this turn
         }
 
@@ -500,7 +555,7 @@ public class NPCMover : MonoBehaviour
         if (stepsRemaining <= 0)
         {
             dirVec = -dirVec;
-            stepsRemaining = randomizeCountWhenReset ? UnityEngine.Random.Range(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1) : fixedSteps;
+            stepsRemaining = randomizeCountWhenReset ? rng.Next(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1) : fixedSteps;
             Debug.Log($"NPCMover.PatrolStep: completed steps at ({currentRow},{currentColumn}), reversing to ({dirVec.x},{dirVec.y}), nextSteps={stepsRemaining}");
         }
     }
@@ -510,8 +565,10 @@ public class NPCMover : MonoBehaviour
         if (stepsRemaining <= 0 || dirVec == Vector2Int.zero)
         {
             // pick random direction
-            dirVec = DirectionToVec((Direction)UnityEngine.Random.Range(0, 4));
-            stepsRemaining = UnityEngine.Random.Range(1, Mathf.Max(1, maxStepsBeforeChange) + 1);
+            dirVec = DirectionToVec((Direction)rng.Next(0, 4));
+            // Dung minRandomSteps/maxRandomSteps (khop SimNPC case 8), khong
+            // dung maxStepsBeforeChange nhu truoc.
+            stepsRemaining = rng.Next(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1);
         }
 
         int nextR = currentRow + dirVec.y;
@@ -527,8 +584,8 @@ public class NPCMover : MonoBehaviour
         if (nextCell == null || !nextCell.IsWalkableForNPC() || !spanWalkable)
         {
             // pick a different random direction next time
-            dirVec = DirectionToVec((Direction)UnityEngine.Random.Range(0, 4));
-            stepsRemaining = UnityEngine.Random.Range(1, Mathf.Max(1, maxStepsBeforeChange) + 1);
+            dirVec = DirectionToVec((Direction)rng.Next(0, 4));
+            stepsRemaining = rng.Next(minRandomSteps, Mathf.Max(minRandomSteps, maxRandomSteps) + 1);
             return;
         }
 

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 using FeedTheCat;
 using FeedTheCat.Items;
 
@@ -99,6 +101,26 @@ namespace FeedTheCat.Rewards
             InitializeReferences();
         }
 
+        private void OnEnable()
+        {
+            // If the player switches language while this card is on screen,
+            // refresh the localized name/description without touching icon/VFX/rarity.
+            LocalizationSettings.SelectedLocaleChanged += HandleLocaleChanged;
+        }
+
+        private void OnDisable()
+        {
+            LocalizationSettings.SelectedLocaleChanged -= HandleLocaleChanged;
+        }
+
+        private void HandleLocaleChanged(Locale newLocale)
+        {
+            if (itemData == null)
+                return;
+
+            RefreshLocalizedText();
+        }
+
         /// <summary>
         /// Initialize UI component references and setup button callback.
         /// </summary>
@@ -191,6 +213,23 @@ namespace FeedTheCat.Rewards
         #endregion
 
         #region Private Methods
+
+        /// <summary>
+        /// Re-pull just the localized name/description from ItemData and push
+        /// them into the UI. Called on language change - deliberately doesn't
+        /// touch icon, rarity frame, or VFX (those don't depend on language).
+        /// </summary>
+        private void RefreshLocalizedText()
+        {
+            if (itemData == null)
+                return;
+
+            if (itemNameText != null)
+                itemNameText.text = itemData.ItemName;
+
+            if (descriptionText != null)
+                descriptionText.text = itemData.Description;
+        }
 
         /// <summary>
         /// Update all UI elements with card data.
