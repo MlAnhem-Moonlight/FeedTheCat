@@ -3,29 +3,54 @@ using UnityEngine;
 
 public class MAPElitesArchive
 {
-    private EliteCellBFS[,] archive;
+    // So bucket cho chieu thu 3 (z) = SO LUONG NPC trong level. Moi bucket
+    // ung voi CHINH XAC 1 gia tri npcs.Count (0..9), khong gop nhom, vi
+    // MaxNpcCount trong LevelMutator hien la 8-9 - pham vi nho nen khong can
+    // gop bucket, giu do phan giai toi da.
+    //
+    // FIX GOC cho van de "moi do kho deu spawn ~9 NPC": truoc day archive
+    // chi co 2 chieu (do dai duong di, so trang thai kha dung), nen 1 level
+    // it NPC (vi du 2 NPC, muc tieu Easy) va 1 level nhieu NPC (vi du 9 NPC,
+    // muc tieu Hard) CO THE roi vao CHUNG 1 o archive (neu tinh co co cung
+    // fullClearShortestPath/reachableStates) va CANH TRANH truc tiep qua
+    // fitness. Vi CalculateFitness thuong rat manh cho deadEndRatio (cang
+    // nhieu NPC → cang nhieu trang thai "ngo cut" → fitness cang cao), level
+    // nhieu NPC gan nhu LUON THANG trong canh tranh nay, dan den toan bo
+    // archive dan bi "keo" ve cau hinh NPC toi da bat ke do kho du dinh ban
+    // dau. Them so luong NPC lam 1 chieu MAP-Elites RIENG giup level it NPC
+    // co "cho dung" rieng, khong con bi level nhieu NPC de bep nua.
+    public const int MaxNpcCountDimension = 10;
+
+    private EliteCellBFS[,,] archive;
 
     public int width;
     public int height;
+    public int depth;
 
     public MAPElitesArchive(
         int width,
-        int height)
+        int height,
+        int depth)
     {
         this.width = width;
         this.height = height;
+        this.depth = depth;
 
         archive =
             new EliteCellBFS[
                 width,
-                height];
+                height,
+                depth];
 
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
             {
-                archive[x, y] =
-                    new EliteCellBFS();
+                for (int z = 0; z < depth; z++)
+                {
+                    archive[x, y, z] =
+                        new EliteCellBFS();
+                }
             }
         }
     }
@@ -62,14 +87,27 @@ public class MAPElitesArchive
                 0,
                 height - 1);
 
+        // Chieu z: so luong NPC thuc te cua level nay. Xem giai thich chi
+        // tiet o MaxNpcCountDimension phia tren.
+        int npcCount =
+            level.npcs != null
+                ? level.npcs.Count
+                : 0;
+
+        int z =
+            Mathf.Clamp(
+                npcCount,
+                0,
+                depth - 1);
+
         EliteCellBFS cell =
-            archive[x, y];
+            archive[x, y, z];
 
         // Do kho duoc tinh tu ca so buoc ngan nhat de VUA AN ITEM VUA THANG
         // (fullClearShortestPath) VA tong diem nguy hiem cua cac NPC
         // (npcScore, da tinh san trong BFSSolver.Evaluate) - dung 1 nguon
         // logic duy nhat (LevelDifficultyClassifier) thay vi suy ra tu vi tri
-        // o (x, y) trong luoi archive nhu truoc.
+        // o (x, y, z) trong luoi archive nhu truoc.
         LevelDifficulty difficulty =
             LevelDifficultyClassifier.Classify(
                 result.fullClearShortestPath,
@@ -114,9 +152,10 @@ public class MAPElitesArchive
 
     public EliteCellBFS Get(
         int x,
-        int y)
+        int y,
+        int z)
     {
-        return archive[x, y];
+        return archive[x, y, z];
     }
 
     // Lay ngau nhien 1 level elite dang co trong archive (dung lam "parent"
@@ -129,9 +168,12 @@ public class MAPElitesArchive
         {
             for (int y = 0; y < height; y++)
             {
-                if (archive[x, y].occupied)
+                for (int z = 0; z < depth; z++)
                 {
-                    occupiedLevels.Add(archive[x, y].level);
+                    if (archive[x, y, z].occupied)
+                    {
+                        occupiedLevels.Add(archive[x, y, z].level);
+                    }
                 }
             }
         }
@@ -144,12 +186,12 @@ public class MAPElitesArchive
     }
 
     // Phan loai lai do kho cua TAT CA level dang co trong archive dua tren
-    // TAM PHAN VI (percentile) cua diem do kho (shortestPath + npcScore)
-    // trong chinh tap level vua sinh ra - thay vi nguong co dinh doan truoc
-    // (LevelDifficultyClassifier.EasyMaxScore/MediumMaxScore). Cach nay dam
-    // bao luon co khoang 1/3 Easy, 1/3 Medium, 1/3 Hard bat ke phan bo NPC
-    // ngau nhien ra sao, tranh tinh trang ty le Easy qua thap/qua cao khi
-    // du lieu thuc te lech xa so voi uoc luong ban dau.
+    // TAM PHAN VI (percentile) cua diem do kho (fullClearShortestPath +
+    // npcScore) trong chinh tap level vua sinh ra - thay vi nguong co dinh
+    // doan truoc (LevelDifficultyClassifier.EasyMaxScore/MediumMaxScore).
+    // Cach nay dam bao luon co khoang 1/3 Easy, 1/3 Medium, 1/3 Hard bat ke
+    // phan bo NPC ngau nhien ra sao, tranh tinh trang ty le Easy qua thap/
+    // qua cao khi du lieu thuc te lech xa so voi uoc luong ban dau.
     //
     // Nen goi 1 lan sau khi MAPElitesGenerator.Run() chay xong.
     public void RecalculateDifficulties()
@@ -161,17 +203,20 @@ public class MAPElitesArchive
         {
             for (int y = 0; y < height; y++)
             {
-                EliteCellBFS cell = archive[x, y];
+                for (int z = 0; z < depth; z++)
+                {
+                    EliteCellBFS cell = archive[x, y, z];
 
-                if (!cell.occupied)
-                    continue;
+                    if (!cell.occupied)
+                        continue;
 
-                occupiedCells.Add(cell);
+                    occupiedCells.Add(cell);
 
-                scores.Add(
-                    LevelDifficultyClassifier.ComputeDifficultyScore(
-                        cell.result.fullClearShortestPath,
-                        cell.result.npcScore));
+                    scores.Add(
+                        LevelDifficultyClassifier.ComputeDifficultyScore(
+                            cell.result.fullClearShortestPath,
+                            cell.result.npcScore));
+                }
             }
         }
 

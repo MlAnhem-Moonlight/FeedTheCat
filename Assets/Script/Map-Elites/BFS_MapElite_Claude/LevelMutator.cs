@@ -16,11 +16,11 @@ public class LevelMutator
 
     private const int MinNpcCount = 1;
 
-    // Giam tu 12 -> 9 de khop voi tran NPC moi cua MAPElitesGenerator (Hard
-    // toi da 9 NPC luc sinh moi) - tranh truong hop AddNPC lien tuc qua nhieu
-    // vong dot bien lai day so luong NPC vuot xa muc sinh-moi ban dau, gay
-    // nghet ban do 8x6.
-    private const int MaxNpcCount = 9;
+    // Giam tu 12 -> 9 -> 8 de khop voi tran NPC moi cua MAPElitesGenerator
+    // (Hard toi da 5-8 NPC luc sinh moi) - tranh truong hop AddNPC lien tuc
+    // qua nhieu vong dot bien lai day so luong NPC vuot xa muc sinh-moi ban
+    // dau, gay nghet ban do 8x6.
+    private const int MaxNpcCount = 8;
 
     // target: do kho ma MAPElitesGenerator dang muon nhan candidate nay toi
     // (dua tren ti le muc tieu, vi du 4:2:1 cho Easy:Medium:Hard). Anh huong
@@ -217,13 +217,36 @@ public class LevelMutator
 
         occupied.Remove(level.destinations[0]);
 
-        // Dich moi phai cach player it nhat MinPlayerGoalDistance,
-        // tranh dot bien vo tinh keo dich lai sat player.
-        Vector2Int newGoal =
-            LevelGenUtil.GetUniqueRandomCellFarFrom(
-                occupied,
-                level.playerStart,
-                LevelGenUtil.MinPlayerGoalDistance);
+        Vector2Int newGoal;
+
+        if (level.items.Count > 0)
+        {
+            // Dich moi phai VUA cach player it nhat MinPlayerGoalDistance,
+            // VUA cach item it nhat MinItemGoalDistance - tranh dot bien vo
+            // tinh keo dich lai sat player HOAC sat item co san.
+            Vector2Int itemPos =
+                new Vector2Int(
+                    level.items[0].row,
+                    level.items[0].column);
+
+            newGoal =
+                LevelGenUtil.GetUniqueRandomCellFarFromBoth(
+                    occupied,
+                    level.playerStart,
+                    LevelGenUtil.MinPlayerGoalDistance,
+                    itemPos,
+                    LevelGenUtil.MinItemGoalDistance);
+        }
+        else
+        {
+            // Dich moi phai cach player it nhat MinPlayerGoalDistance,
+            // tranh dot bien vo tinh keo dich lai sat player.
+            newGoal =
+                LevelGenUtil.GetUniqueRandomCellFarFrom(
+                    occupied,
+                    level.playerStart,
+                    LevelGenUtil.MinPlayerGoalDistance);
+        }
 
         occupied.Add(newGoal);
         level.destinations[0] = newGoal;
@@ -262,8 +285,19 @@ public class LevelMutator
         ItemDef item = level.items[0];
         occupied.Remove(new Vector2Int(item.row, item.column));
 
+        // Item moi phai cach dich it nhat MinItemGoalDistance - tranh dot
+        // bien vo tinh keo item lai sat dich (nguoi choi toi dich la vo tinh
+        // "tien" luon reward ma khong can chu y gi ca).
+        Vector2Int reference =
+            level.destinations.Count > 0
+                ? level.destinations[0]
+                : level.playerStart;
+
         Vector2Int newPos =
-            LevelGenUtil.GetUniqueRandomCell(occupied);
+            LevelGenUtil.GetUniqueRandomCellFarFrom(
+                occupied,
+                reference,
+                LevelGenUtil.MinItemGoalDistance);
 
         occupied.Add(newPos);
 

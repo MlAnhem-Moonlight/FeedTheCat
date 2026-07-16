@@ -141,9 +141,126 @@ public static class LevelGenUtil
     // hoac qua kho tim duoc vi tri hop le.
     public const int MinPlayerGoalDistance = 4;
 
+    // Khoang cach Manhattan toi thieu giua item (reward) va dich. Truoc day
+    // item duoc dat hoan toan ngau nhien (chi tranh chong o), nen co truong
+    // hop item nam NGAY SAT dich - nguoi choi buoc 1-2 buoc la nhat duoc
+    // item roi thang luon, lam reward mat y nghia "phai di vong qua lay".
+    public const int MinItemGoalDistance = 3;
+
+    // Tran so NPC toi da theo TUNG do kho, dung chung boi:
+    // - MAPElitesGenerator (luc sinh moi, gioi han GetNpcCountForDifficulty)
+    // - LevelMutator (luc dot bien, AddNPC khong duoc vuot tran nay)
+    // - LevelDifficultyClassifier (luc phan loai, ep 1 level qua nhieu NPC
+    //   phai bi day xuong do kho cao hon, KE CA KHI diem so/quang duong cua
+    //   no thap - tranh tinh trang 1 level 9 NPC van bi (hoac duoc) xep Easy
+    //   chi vi shortestPath ngan).
+    //
+    // Truoc day KHONG co tran cung nay - CalculateFitness (BFSSolver) thuong
+    // branchingFactor/deadEndRatio, ca 2 deu tang theo so NPC, nen trong MAP-
+    // Elites, o nao cung "thang" ve phia candidate NHIEU NPC NHAT co the, bat
+    // ke o do sau nay duoc gan nhan Easy hay Hard (nhan chi dua tren percentile
+    // tuong doi, khong co tran tuyet doi) -> hau qua la moi do kho deu hoi tu
+    // ve ~9 NPC nhu nhau.
+    public const int EasyMaxNpcCount = 3;
+    public const int MediumMaxNpcCount = 6;
+    public const int MaxNpcCount = 9; // tran chung cho Hard va cho dot bien
+
     public static int ManhattanDistance(Vector2Int a, Vector2Int b)
     {
         return Mathf.Abs(a.x - b.x) + Mathf.Abs(a.y - b.y);
+    }
+
+    // 1 rang buoc khoang cach toi thieu Manhattan toi 1 diem tham chieu, dung
+    // cho GetUniqueRandomCellFarFromAll khi can thoa MAN NHIEU rang buoc cung
+    // luc (vi du: dich phai vua cach xa player VUA cach xa item).
+    public struct DistanceConstraint
+    {
+        public Vector2Int reference;
+        public int minDistance;
+
+        public DistanceConstraint(Vector2Int reference, int minDistance)
+        {
+            this.reference = reference;
+            this.minDistance = minDistance;
+        }
+    }
+
+    // Lay 1 o trong (khong nam trong occupied) thoa man CUNG LUC nhieu rang
+    // buoc khoang cach toi thieu (vi du: dich can cach player >= 4 O VA cach
+    // item >= 3). Neu sau nhieu lan thu khong tim duoc o nao thoa man HET tat
+    // ca rang buoc, tra ve o co "slack" (khoang du) nho nhat trong so cac rang
+    // buoc lon nhat - tuc la o gan thoa man nhat - thay vi that bai hoan toan.
+    public static Vector2Int GetUniqueRandomCellFarFromAll(
+        HashSet<Vector2Int> occupied,
+        List<DistanceConstraint> constraints)
+    {
+        if (constraints == null || constraints.Count == 0)
+            return GetUniqueRandomCell(occupied);
+
+        const int maxAttempts = 200;
+
+        Vector2Int bestCell = default;
+        int bestSlack = int.MinValue;
+        bool foundAny = false;
+
+        for (int i = 0; i < maxAttempts; i++)
+        {
+            Vector2Int cell = GetRandomCell();
+
+            if (occupied.Contains(cell))
+                continue;
+
+            bool satisfiesAll = true;
+            int minSlack = int.MaxValue;
+
+            foreach (var c in constraints)
+            {
+                int distance = ManhattanDistance(cell, c.reference);
+                int slack = distance - c.minDistance;
+
+                if (slack < minSlack)
+                    minSlack = slack;
+
+                if (distance < c.minDistance)
+                    satisfiesAll = false;
+            }
+
+            if (satisfiesAll)
+                return cell;
+
+            if (minSlack > bestSlack)
+            {
+                bestSlack = minSlack;
+                bestCell = cell;
+                foundAny = true;
+            }
+        }
+
+        if (foundAny)
+            return bestCell;
+
+        // Cuc hiem: khong tim duoc o trong nao ca trong maxAttempts lan thu.
+        return GetUniqueRandomCell(occupied);
+    }
+
+    // Tien ich goi lai GetUniqueRandomCellFarFromAll cho truong hop pho bien
+    // nhat: CUNG LUC thoa man 2 rang buoc khoang cach (vi du: dich phai vua
+    // cach xa player VUA cach xa item). Giu 1 nguon logic duy nhat (khong lap
+    // lai vong lap tim o) thay vi viet rieng 1 ham tim-kiem khac.
+    public static Vector2Int GetUniqueRandomCellFarFromBoth(
+        HashSet<Vector2Int> occupied,
+        Vector2Int reference1,
+        int minDistance1,
+        Vector2Int reference2,
+        int minDistance2)
+    {
+        return GetUniqueRandomCellFarFromAll(
+            occupied,
+            new List<DistanceConstraint>
+            {
+                new DistanceConstraint(reference1, minDistance1),
+                new DistanceConstraint(reference2, minDistance2)
+            });
     }
 
     // Lay 1 o trong (khong nam trong occupied) va cach reference it nhat

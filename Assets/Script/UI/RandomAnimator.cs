@@ -1,12 +1,20 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class RandomAnimator : MonoBehaviour
 {
     [SerializeField] private Animator animator;
 
-    [Header("Tên các State trong Animator")]
-    [SerializeField] private string[] animationStates;
+    private readonly List<string> stateNames = new();
+
+    private void Awake()
+    {
+        if (animator == null)
+            animator = GetComponent<Animator>();
+
+        CacheAnimations();
+    }
 
     private void OnEnable()
     {
@@ -14,34 +22,47 @@ public class RandomAnimator : MonoBehaviour
     }
 
     /// <summary>
-    /// Phát ngẫu nhiên một animation.
+    /// Lấy toàn bộ AnimationClip trong AnimatorController.
     /// </summary>
-    public void PlayRandomAnimation()
+    private void CacheAnimations()
     {
-        if (animator == null || animationStates == null || animationStates.Length == 0)
+        stateNames.Clear();
+
+        if (animator == null || animator.runtimeAnimatorController == null)
             return;
 
-        int index = Random.Range(0, animationStates.Length);
-        animator.Play(animationStates[index], 0, 0f);
+        foreach (AnimationClip clip in animator.runtimeAnimatorController.animationClips)
+        {
+            // Tránh clip bị trùng
+            if (!stateNames.Contains(clip.name))
+                stateNames.Add(clip.name);
+        }
     }
 
-    /// <summary>
-    /// Phát một animation ngẫu nhiên nhưng không trùng animation hiện tại.
-    /// </summary>
+    public void PlayRandomAnimation()
+    {
+        if (stateNames.Count == 0)
+            return;
+
+        int index = Random.Range(0, stateNames.Count);
+        animator.Play(stateNames[index], 0, 0f);
+    }
+
     public void PlayRandomAnimationNoRepeat()
     {
-        if (animator == null || animationStates == null || animationStates.Length <= 1)
+        if (stateNames.Count <= 1)
         {
             PlayRandomAnimation();
             return;
         }
 
-        AnimatorStateInfo currentState = animator.GetCurrentAnimatorStateInfo(0);
+        AnimatorStateInfo current = animator.GetCurrentAnimatorStateInfo(0);
 
         int currentIndex = -1;
-        for (int i = 0; i < animationStates.Length; i++)
+
+        for (int i = 0; i < stateNames.Count; i++)
         {
-            if (currentState.IsName(animationStates[i]))
+            if (current.IsName(stateNames[i]))
             {
                 currentIndex = i;
                 break;
@@ -51,11 +72,11 @@ public class RandomAnimator : MonoBehaviour
         int newIndex;
         do
         {
-            newIndex = Random.Range(0, animationStates.Length);
+            newIndex = Random.Range(0, stateNames.Count);
         }
         while (newIndex == currentIndex);
 
-        animator.Play(animationStates[newIndex], 0, 0f);
+        animator.Play(stateNames[newIndex], 0, 0f);
     }
 
     public void PlayRandomLoop()
@@ -70,7 +91,7 @@ public class RandomAnimator : MonoBehaviour
         {
             PlayRandomAnimationNoRepeat();
 
-            yield return null; // Chờ Animator cập nhật state
+            yield return null;
 
             AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
             yield return new WaitForSeconds(state.length);

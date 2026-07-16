@@ -39,10 +39,15 @@ public class MAPElitesGenerator
 
     public MAPElitesGenerator()
     {
+        // Chieu thu 3 (depth) = so luong NPC (0..MaxNpcCountDimension-1). Xem
+        // giai thich chi tiet trong MAPElitesArchive.cs - day la fix chinh
+        // cho van de "moi do kho deu ~9 NPC" (level it NPC va nhieu NPC gio
+        // KHONG con canh tranh chung 1 o archive nua).
         archive =
             new MAPElitesArchive(
                 20,
-                20);
+                20,
+                MAPElitesArchive.MaxNpcCountDimension);
     }
 
     public void Run(int iterations)
@@ -233,7 +238,10 @@ public class MAPElitesGenerator
         level.playerStart = playerStart;
 
         Vector2Int itemPos =
-            LevelGenUtil.GetUniqueRandomCell(occupied);
+            LevelGenUtil.GetUniqueRandomCellFarFrom(
+                occupied,
+                destination,
+                LevelGenUtil.MinItemGoalDistance);
 
         occupied.Add(itemPos);
         level.items.Add(new ItemDef
@@ -262,28 +270,32 @@ public class MAPElitesGenerator
         return level;
     }
 
-    // So luong NPC theo do kho ky vong - Easy giu it NPC hon han (kem theo
-    // trong so uu tien Idle o GetWeightedRandomPrefabIndex), Hard nhieu NPC
-    // nguy hiem hon.
+    // So luong NPC theo do kho ky vong. Giam THEM 1 lan nua so voi ban truoc
+    // (Easy 2-4 / Medium 4-7 / Hard 6-9), ĐẶC BIET la Easy - vi truoc day du
+    // da co trong so muc tieu, MAP-Elites van co xu huong "keo" moi o ve
+    // gan sat NPC toi da (~9) BAT KE do kho du dinh, do fitness thuong rat
+    // manh cho deadEndRatio (cang nhieu NPC → cang nhieu ngo cut → fitness
+    // cang cao), khien cac candidate it NPC bi candidate nhieu NPC "de bep"
+    // moi khi canh tranh chung 1 o archive.
     //
-    // GIAM so voi truoc (Easy 3-5 / Medium 6-9 / Hard 8-12) vi board chi co
-    // 8x6 = 48 o. NPC loai Idle (prefabIndex 0-3) chiem 2 o, nen o muc Hard
-    // cu (toi da 12 NPC) co the chiem toi ~24/48 o - qua nua ban do - cong
-    // them 3 o cho player/dich/item khien ban do bi nghet, kho tim duong,
-    // va de bi loai do khong con cho dat NPC/khong con giai duoc. Muc moi
-    // giu ty le tuong doi Easy < Medium < Hard nhung ep tran thap hon han.
+    // Fix goc: MAPElitesArchive gio dung THEM so luong NPC lam 1 chieu MAP-
+    // Elites rieng (xem MAPElitesArchive.cs), nen level it NPC va nhieu NPC
+    // KHONG CON canh tranh truc tiep voi nhau nua - moi muc NPC co "cho
+    // dung" rieng trong archive. Giam khoang gia tri o day chi con dong vai
+    // tro dinh huong ban dau cho generation, khong con la tuyen phong thu
+    // duy nhat nhu truoc.
     private int GetNpcCountForDifficulty(LevelDifficulty target)
     {
         switch (target)
         {
             case LevelDifficulty.Easy:
-                return Random.Range(2, 5); // 2-4 NPC, uu tien Idle
+                return Random.Range(1, 4); // 1-3 NPC, uu tien Idle
 
             case LevelDifficulty.Hard:
-                return Random.Range(6, 10); // 6-9 NPC, uu tien Random Patrol/Way
+                return Random.Range(5, 9); // 5-8 NPC, uu tien Random Patrol/Way
 
             default:
-                return Random.Range(4, 8); // Medium - 4-7 NPC
+                return Random.Range(3, 6); // Medium - 3-5 NPC
         }
     }
 }

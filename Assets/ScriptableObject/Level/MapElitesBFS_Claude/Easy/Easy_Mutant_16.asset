@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9fc8949a001d14b9f12011f2dccc05, type: 3}
+  m_Name: Easy_Mutant_16
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelName: Easy_Mutant_16
+  npcs:
+  - row: 0
+    column: 1
+    prefabIndex: 5
+    seed: 1019292731
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 7
+    column: 2
+    prefabIndex: 0
+    seed: 1316513499
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 2
+    column: 0
+    prefabIndex: 4
+    seed: -704918515
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  items:
+  - row: 3
+    column: 4
+    prefabIndex: 0
+  destinations:
+  - {x: 5, y: 0}
+  playerStart: {x: 2, y: 4}
+  blockedCells: []
+  hasWon: 0
+  isLocked: 1
+  hasPickup: 0

@@ -15,65 +15,51 @@ MonoBehaviour:
   levelName: Hard_Mutant_5
   npcs:
   - row: 2
-    column: 3
-    prefabIndex: 1
-    seed: -1049022133
+    column: 2
+    prefabIndex: 3
+    seed: 2012975242
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 5
-    column: 5
+    column: 2
+    prefabIndex: 8
+    seed: 35009726
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 7
+    column: 3
     prefabIndex: 4
-    seed: -374688509
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 4
-    column: 2
-    prefabIndex: 0
-    seed: 1558539455
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 1
-    column: 2
-    prefabIndex: 1
-    seed: 412046407
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 3
-    column: 0
-    prefabIndex: 0
-    seed: -2019729082
+    seed: 634115813
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
   - row: 0
-    column: 2
-    prefabIndex: 7
-    seed: -873028881
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 1
-    column: 1
-    prefabIndex: 7
-    seed: -1176085931
-    fixedSteps: 3
-    minRandomSteps: 1
-    maxRandomSteps: 4
-  - row: 4
-    column: 0
+    column: 3
     prefabIndex: 1
-    seed: -1460241111
+    seed: -1717328940
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
-  - row: 5
-    column: 2
-    prefabIndex: 4
-    seed: 366303631
+  - row: 3
+    column: 4
+    prefabIndex: 7
+    seed: 1981914357
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 7
+    column: 4
+    prefabIndex: 8
+    seed: -408522303
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 0
+    column: 4
+    prefabIndex: 3
+    seed: 968470597
     fixedSteps: 3
     minRandomSteps: 1
     maxRandomSteps: 4
@@ -82,8 +68,8 @@ MonoBehaviour:
     column: 1
     prefabIndex: 0
   destinations:
-  - {x: 4, y: 4}
-  playerStart: {x: 0, y: 0}
+  - {x: 4, y: 5}
+  playerStart: {x: 1, y: 1}
   blockedCells: []
   hasWon: 0
   isLocked: 1

@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: uiTitleLose
     m_Metadata:
       m_Items: []
+  - m_Id: 721255914442752
+    m_Key: uiMainMenuTitle
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

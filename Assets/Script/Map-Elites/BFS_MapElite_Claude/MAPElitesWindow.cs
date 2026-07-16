@@ -6,6 +6,12 @@ public class MAPElitesWindow : EditorWindow
 {
     private int iterations = 5000;
 
+    // Archive gio la 3 chieu (them "so luong NPC" lam chieu z - xem
+    // MAPElitesArchive.MaxNpcCountDimension). Luoi hien thi 2D (DrawArchive)
+    // chi xem duoc 1 "lat cat" tai 1 gia tri z (so NPC) tai 1 thoi diem, nen
+    // can 1 thanh truot de chon xem lat cat nao.
+    private int viewNpcCount = 0;
+
     private MAPElitesGenerator generator;
 
     [MenuItem("FeedTheCat/MAP-Elites Generator BFS Claude")]
@@ -38,6 +44,15 @@ public class MAPElitesWindow : EditorWindow
 
         if (generator != null)
         {
+            // Archive 3 chieu -> chon xem lat cat nao theo so NPC (chieu z).
+            // Vi du keo ve 2 se chi hien thi cac o co DUNG 2 NPC trong archive.
+            viewNpcCount =
+                EditorGUILayout.IntSlider(
+                    "Xem lat cat theo so NPC",
+                    viewNpcCount,
+                    0,
+                    generator.archive.depth - 1);
+
             DrawArchive();
         }
         GUILayout.Space(20);
@@ -102,7 +117,7 @@ public class MAPElitesWindow : EditorWindow
     private void DrawArchive()
     {
         GUILayout.Label(
-            "Archive");
+            $"Archive (so NPC = {viewNpcCount})");
 
         for (
             int y = generator.archive.height - 1;
@@ -117,7 +132,7 @@ public class MAPElitesWindow : EditorWindow
                 x++)
             {
                 EliteCellBFS cell =
-                    generator.archive.Get(x, y);
+                    generator.archive.Get(x, y, viewNpcCount);
                 if (!cell.occupied)
                 {
                     GUI.backgroundColor =
@@ -299,55 +314,61 @@ public class MAPElitesWindow : EditorWindow
         {
             for (int y = 0; y < generator.archive.height; y++)
             {
-                EliteCellBFS cell =
-                    generator.archive.Get(x, y);
+                // Archive gio la 3 chieu (them chieu z = so luong NPC) - phai
+                // duyet CA z thi moi lay het duoc toan bo level cua 1 do kho,
+                // neu khong se chi export dung 1 "lat cat" NPC-count ma thoi.
+                for (int z = 0; z < generator.archive.depth; z++)
+                {
+                    EliteCellBFS cell =
+                        generator.archive.Get(x, y, z);
 
-                if (!cell.occupied)
-                    continue;
+                    if (!cell.occupied)
+                        continue;
 
-                if (cell.difficulty != difficulty)
-                    continue;
+                    if (cell.difficulty != difficulty)
+                        continue;
 
-                LevelData copy =
-                    Object.Instantiate(
-                        cell.level);
+                    LevelData copy =
+                        Object.Instantiate(
+                            cell.level);
 
-                string baseName =
-                    string.IsNullOrEmpty(cell.level.levelName)
-                        ? "Level"
-                        : cell.level.levelName;
+                    string baseName =
+                        string.IsNullOrEmpty(cell.level.levelName)
+                            ? "Level"
+                            : cell.level.levelName;
 
-                // Truoc day dung "{baseName}_{count}" voi count rieng cho
-                // MOI lan goi ExportDifficulty (luon bat dau lai tu 0) - nen
-                // 2 lan export vao chung 1 folder (vi du chay Generate roi
-                // Export 2 lan) rat de tao ra dung 1 ten file, khien
-                // AssetDatabase.CreateAsset GHI DE am tham len file cua lan
-                // truoc ma khong bao loi gi ca. Gio tim ten DUY NHAT thuc su
-                // (kiem tra ca file da co san tren dia lan cac ten da dung
-                // trong chinh lan export nay) roi moi tao asset.
-                string desiredName =
-                    $"{baseName}_{count}";
+                    // Truoc day dung "{baseName}_{count}" voi count rieng cho
+                    // MOI lan goi ExportDifficulty (luon bat dau lai tu 0) - nen
+                    // 2 lan export vao chung 1 folder (vi du chay Generate roi
+                    // Export 2 lan) rat de tao ra dung 1 ten file, khien
+                    // AssetDatabase.CreateAsset GHI DE am tham len file cua lan
+                    // truoc ma khong bao loi gi ca. Gio tim ten DUY NHAT thuc su
+                    // (kiem tra ca file da co san tren dia lan cac ten da dung
+                    // trong chinh lan export nay) roi moi tao asset.
+                    string desiredName =
+                        $"{baseName}_{count}";
 
-                string assetPath =
-                    GetUniqueAssetPath(
-                        difficultyFolder,
-                        desiredName,
-                        usedInThisRun);
+                    string assetPath =
+                        GetUniqueAssetPath(
+                            difficultyFolder,
+                            desiredName,
+                            usedInThisRun);
 
-                string finalName =
-                    System.IO.Path.GetFileNameWithoutExtension(assetPath);
+                    string finalName =
+                        System.IO.Path.GetFileNameWithoutExtension(assetPath);
 
-                // Dong bo field levelName voi ten file THAT SU duoc dung ben
-                // duoi (sau khi da tranh trung ten), de 2 level co ten goc
-                // trung nhau van phan biet duoc qua levelName, khong chi qua
-                // ten file tren o dia.
-                copy.levelName = finalName;
+                    // Dong bo field levelName voi ten file THAT SU duoc dung ben
+                    // duoi (sau khi da tranh trung ten), de 2 level co ten goc
+                    // trung nhau van phan biet duoc qua levelName, khong chi qua
+                    // ten file tren o dia.
+                    copy.levelName = finalName;
 
-                AssetDatabase.CreateAsset(
-                    copy,
-                    assetPath);
+                    AssetDatabase.CreateAsset(
+                        copy,
+                        assetPath);
 
-                count++;
+                    count++;
+                } // end for z
             }
         }
 

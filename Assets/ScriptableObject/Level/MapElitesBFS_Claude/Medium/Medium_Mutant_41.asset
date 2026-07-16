@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff9fc8949a001d14b9f12011f2dccc05, type: 3}
+  m_Name: Medium_Mutant_41
+  m_EditorClassIdentifier: Assembly-CSharp::LevelData
+  levelName: Medium_Mutant_41
+  npcs:
+  - row: 2
+    column: 4
+    prefabIndex: 4
+    seed: 190143908
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 4
+    column: 0
+    prefabIndex: 0
+    seed: -166584904
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 0
+    column: 4
+    prefabIndex: 5
+    seed: -1459608242
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 4
+    column: 5
+    prefabIndex: 0
+    seed: -1504046182
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  - row: 0
+    column: 3
+    prefabIndex: 1
+    seed: -281387381
+    fixedSteps: 3
+    minRandomSteps: 1
+    maxRandomSteps: 4
+  items:
+  - row: 6
+    column: 4
+    prefabIndex: 0
+  destinations:
+  - {x: 6, y: 0}
+  playerStart: {x: 1, y: 5}
+  blockedCells: []
+  hasWon: 0
+  isLocked: 1
+  hasPickup: 0
