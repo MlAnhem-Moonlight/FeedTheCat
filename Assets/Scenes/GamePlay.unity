@@ -463,6 +463,7 @@ GameObject:
   - component: {fileID: 245480147}
   - component: {fileID: 245480146}
   - component: {fileID: 245480148}
+  - component: {fileID: 245480149}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -529,6 +530,19 @@ MonoBehaviour:
   inGameMenuPanel: {fileID: 0}
   winPanel: {fileID: 840188377}
   losePanel: {fileID: 1201487930}
+--- !u!114 &245480149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245480145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dafd1ca55ef8784c96f3cfb3889ad7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMoveAudio
+  stepSfxId: player_step
 --- !u!1 &321347941
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,7 +1608,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5146130655109902987, guid: 5be67ea9a4817484fba27f5923c68331, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 840188378}
   m_SourcePrefab: {fileID: 100100000, guid: 5be67ea9a4817484fba27f5923c68331, type: 3}
 --- !u!224 &840188376 stripped
 RectTransform:
@@ -1606,6 +1623,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5146130655109902987, guid: 5be67ea9a4817484fba27f5923c68331, type: 3}
   m_PrefabInstance: {fileID: 840188375}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &840188378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840188377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58620b6cd64294943856ec03906a514a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenSoundOnEnable
+  sfxId: win_sound
+  duckMusic: 1
+  duckedMusicVolume: 0.2
 --- !u!1 &898967185
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,7 +2860,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1936818540277144421, guid: bd83a795b2b8e024e97ec818fe6ea532, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1201487931}
   m_SourcePrefab: {fileID: 100100000, guid: bd83a795b2b8e024e97ec818fe6ea532, type: 3}
 --- !u!224 &1201487929 stripped
 RectTransform:
@@ -2840,6 +2875,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1936818540277144421, guid: bd83a795b2b8e024e97ec818fe6ea532, type: 3}
   m_PrefabInstance: {fileID: 1201487928}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1201487931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201487930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58620b6cd64294943856ec03906a514a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenSoundOnEnable
+  sfxId: lose_sound
+  duckMusic: 1
+  duckedMusicVolume: 0.1
 --- !u!1 &1305801403
 GameObject:
   m_ObjectHideFlags: 0
