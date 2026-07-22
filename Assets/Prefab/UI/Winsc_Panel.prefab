@@ -536,7 +536,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomAnimator
   animator: {fileID: 7121362786904951636}
-  animationStates: []
 --- !u!1 &6905490507684987325
 GameObject:
   m_ObjectHideFlags: 0

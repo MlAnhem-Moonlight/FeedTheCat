@@ -1,0 +1,1574 @@
+fileFormatVersion: 2
+guid: 6064f7976329edf4794699dcf98ee7bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8268019828716411523
+    second: Cat-Walk_432x248_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2976
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a17867a38edb270800000000000000
+      internalID: 8268019828716411523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_1
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2976
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f763e73b77b36174c8931b69191781fc
+      internalID: -1070772407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_2
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2976
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b7ccc5e9e083642990f759db2f8260
+      internalID: 208062822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_3
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2976
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543c7ff8724f4a348ba94403c1f09b1e
+      internalID: 1040023618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_4
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2976
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6124eb12d468f954cac91c6f8284e08c
+      internalID: -1921927177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2728
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d206778c22ce049bb3f36243fc12c9
+      internalID: 1655686499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2728
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3d1fddf521c3646b727ff3d77a8415
+      internalID: 2119262152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_7
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2728
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32e628cf2fd1a043b243e0955b64362
+      internalID: -791157870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_8
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2728
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f167972cc4fb57c4d854cb3bba5aaf2e
+      internalID: -999346963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_9
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2728
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0638a647938c18145ad6c82da0ef3fdd
+      internalID: -1816949334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2480
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cca98630354fa14c933f521ada58560
+      internalID: -76408388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_11
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2480
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fde53514ccb894892d12cb0e0b5764
+      internalID: -1477037886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_12
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2480
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b92707a63f0f8d43b2df95aa2c3e2ed
+      internalID: -1280492493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_13
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2480
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f5d46e64ad17948a1f9d1aa63a8b9c
+      internalID: -767658796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_14
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2480
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcc990b08de18c48b89e631c2eab59c
+      internalID: 892711265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2232
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2da562f8ba8914fbda2db1750f4db4
+      internalID: -1997804566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_16
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2232
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9516854458d956a46ac7ef675b01f406
+      internalID: 531328603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_17
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 2232
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef30b0798c1904043a9ccadd0fdb86fc
+      internalID: 149334273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_18
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2232
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554c328818ecf86478c20dd42edebe75
+      internalID: 953728713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_19
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 2232
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 727c5593fcf80ad45bdf6e1f4f8fbfa8
+      internalID: -784969175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1984
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4926fec18ff8443a4264aa10658adc
+      internalID: 1799930070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_21
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1984
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c8dc2b2b17c5a4cbf91f5b2e93b38f
+      internalID: 868040667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1984
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ebe17f40adefc43911e40397d6896c
+      internalID: 42740653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_23
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1984
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bb9e082ecb99d749b39c559e257752e
+      internalID: 2018564187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_24
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1984
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0ed1ef7833f85489c80ae7bb9be732
+      internalID: -538179571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1736
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70695ea441d1474aa1379923ab49dca
+      internalID: 1390432371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1736
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf12dda8767531148ab553b0156849dd
+      internalID: 1066948874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1736
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e01fc2fee7f60449967f34dfb6eb80
+      internalID: 1604368013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_28
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1736
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb95ee26a4710441a432ca59440e4ae
+      internalID: -1323545277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_29
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1736
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216f8f58a07d1184288b0cfff2f693d7
+      internalID: 1933171797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1488
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6313baa2dc04e4d92371ec03ed1156
+      internalID: 1418304042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_31
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1488
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79008c1b07cfd22429f2cc70c5178d6c
+      internalID: 1986592757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_32
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1488
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d0655ec2d3db2419e428840aa62765
+      internalID: 1098418367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_33
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1488
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeba2717b697363429c226d4042b4410
+      internalID: 459484283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_34
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1488
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20c11a6fe7b9604a93d9b3584026e3f
+      internalID: -1841967782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1240
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c06a0061f3daf4da71d3812e5c4369
+      internalID: -2050857163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_36
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1240
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fa8a92236de0746aa0fabebbf294ab
+      internalID: 362781449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_37
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1240
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494c50c4d5f0fa443b166db06052cf95
+      internalID: -804785224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_38
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1240
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1746fb8cfae279c43bf85ca87deb1e7f
+      internalID: 481516114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_39
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1240
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a753f9a92ef3fe4b94ed3538ab86d8f
+      internalID: 1496696306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 992
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24db13eae96ec6439d896cca99beea2
+      internalID: -1443029410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_41
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 992
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28eede26c982ffb4d86b8a9ca68067d8
+      internalID: 1454530573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_42
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 992
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797f6442ff28f1a45ba09c98daa30000
+      internalID: -827126128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_43
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 992
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f758b39a5acb540b0c749320bd96d6
+      internalID: 1331615092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_44
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 992
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc9bc4ac884a9c48afcce6f3fdf5d1c
+      internalID: 1806048722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 744
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcbbbaee4320da489a01977c764d673
+      internalID: 991450289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_46
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 744
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d8e3e5445c7544cba4582ece25a7c0
+      internalID: -751875259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_47
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 744
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7264a4400023940b7b8ca6655d01cd
+      internalID: -2035600842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_48
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 744
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 218dab12c2d36ca4ba3058b1eb522587
+      internalID: -1374215073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_49
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 744
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d232fd227bdd0947987ff7b23bfa797
+      internalID: 1412424470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d7aabfd99fa9a4d9a333c13a1de89e
+      internalID: 7392926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_51
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 496
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957f7c27df6d68d4383f476338fe3b52
+      internalID: 413221468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_52
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 496
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb3f9cef03ab94442ac8ad742e57d7a8
+      internalID: -2022484498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_53
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 496
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917be11689cf52147b326d715d634f9d
+      internalID: 1082235107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_54
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 496
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5960abba1e39f1947b7f8ed3cc6ea724
+      internalID: -1510701929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7096db888a680ec48b49bdbfec37ed38
+      internalID: -572536211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_56
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 248
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3255a384ba623d442908ee3262d9b8cd
+      internalID: 317481392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_57
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 248
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae294c30aebb23f4b9d5a1db96c4a4a3
+      internalID: -2041114946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_58
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 248
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173789ac4b306fd409ddf2cdde5b273e
+      internalID: -1623867700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_59
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 248
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f9b9a3a79b70143978f76b06775372
+      internalID: 361454601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8562f42d30a221248a214a0be89a1310
+      internalID: -378760667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Walk_432x248_61
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 432
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56fc06776c88224facc123b4a02e849
+      internalID: -683122334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2bf4ce9149e89f04fad493125459fb4f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":432.0,"y":248.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Cat-Walk_432x248_0: 8268019828716411523
+      Cat-Walk_432x248_1: -1070772407
+      Cat-Walk_432x248_10: -76408388
+      Cat-Walk_432x248_11: -1477037886
+      Cat-Walk_432x248_12: -1280492493
+      Cat-Walk_432x248_13: -767658796
+      Cat-Walk_432x248_14: 892711265
+      Cat-Walk_432x248_15: -1997804566
+      Cat-Walk_432x248_16: 531328603
+      Cat-Walk_432x248_17: 149334273
+      Cat-Walk_432x248_18: 953728713
+      Cat-Walk_432x248_19: -784969175
+      Cat-Walk_432x248_2: 208062822
+      Cat-Walk_432x248_20: 1799930070
+      Cat-Walk_432x248_21: 868040667
+      Cat-Walk_432x248_22: 42740653
+      Cat-Walk_432x248_23: 2018564187
+      Cat-Walk_432x248_24: -538179571
+      Cat-Walk_432x248_25: 1390432371
+      Cat-Walk_432x248_26: 1066948874
+      Cat-Walk_432x248_27: 1604368013
+      Cat-Walk_432x248_28: -1323545277
+      Cat-Walk_432x248_29: 1933171797
+      Cat-Walk_432x248_3: 1040023618
+      Cat-Walk_432x248_30: 1418304042
+      Cat-Walk_432x248_31: 1986592757
+      Cat-Walk_432x248_32: 1098418367
+      Cat-Walk_432x248_33: 459484283
+      Cat-Walk_432x248_34: -1841967782
+      Cat-Walk_432x248_35: -2050857163
+      Cat-Walk_432x248_36: 362781449
+      Cat-Walk_432x248_37: -804785224
+      Cat-Walk_432x248_38: 481516114
+      Cat-Walk_432x248_39: 1496696306
+      Cat-Walk_432x248_4: -1921927177
+      Cat-Walk_432x248_40: -1443029410
+      Cat-Walk_432x248_41: 1454530573
+      Cat-Walk_432x248_42: -827126128
+      Cat-Walk_432x248_43: 1331615092
+      Cat-Walk_432x248_44: 1806048722
+      Cat-Walk_432x248_45: 991450289
+      Cat-Walk_432x248_46: -751875259
+      Cat-Walk_432x248_47: -2035600842
+      Cat-Walk_432x248_48: -1374215073
+      Cat-Walk_432x248_49: 1412424470
+      Cat-Walk_432x248_5: 1655686499
+      Cat-Walk_432x248_50: 7392926
+      Cat-Walk_432x248_51: 413221468
+      Cat-Walk_432x248_52: -2022484498
+      Cat-Walk_432x248_53: 1082235107
+      Cat-Walk_432x248_54: -1510701929
+      Cat-Walk_432x248_55: -572536211
+      Cat-Walk_432x248_56: 317481392
+      Cat-Walk_432x248_57: -2041114946
+      Cat-Walk_432x248_58: -1623867700
+      Cat-Walk_432x248_59: 361454601
+      Cat-Walk_432x248_6: 2119262152
+      Cat-Walk_432x248_60: -378760667
+      Cat-Walk_432x248_61: -683122334
+      Cat-Walk_432x248_7: -791157870
+      Cat-Walk_432x248_8: -999346963
+      Cat-Walk_432x248_9: -1816949334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

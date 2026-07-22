@@ -1,0 +1,1574 @@
+fileFormatVersion: 2
+guid: ffedfc279e27c644e952bfccc3f03e9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7889703527787898823
+    second: Cat-tray_248x432_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-tray_248x432_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5184
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9385e036174228290800000000000000
+      internalID: -7889703527787898823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 5184
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c056f7e7415e4b6459c796587d17a155
+      internalID: 1390996494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_2
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 5184
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6829fb8aa5630fd45bc28d55b19b94e4
+      internalID: -2117744922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_3
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 5184
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dec9645982f6cc4a9ceda6317ecfdc7
+      internalID: 94474365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_4
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 5184
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cbcaddf3cba1143a10aac4b7ec1656
+      internalID: 547291913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4752
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cf721c456006740aeed5cb7dcbeed9
+      internalID: 1477302518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_6
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 4752
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d110735d07d31f45ab2910078050d91
+      internalID: -255430675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_7
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 4752
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99c87cda2834184fb667ced06d42d38
+      internalID: 993309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_8
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 4752
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43aba9a083d3c9a4387e5619d19b47f9
+      internalID: 2140301886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_9
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 4752
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 757f53e21c92b564c9d588947f83ba00
+      internalID: 214835793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f817a7995ee35642b1a07a913311054
+      internalID: -1885317437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_11
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 4320
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c45536c642e464eaa73eba3abe80b7
+      internalID: 356300930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_12
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 4320
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4bc16df01a8ce4dae303fe020f48f0
+      internalID: -104584917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_13
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 4320
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2233511edfc07e040b6d238f71e25d9e
+      internalID: 847671864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_14
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 4320
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f532e3160d808d4ebe8e25993800cd2
+      internalID: -235673503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3888
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7701fe6ec45adb4c80a589645ccfbf6
+      internalID: -574467510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_16
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 3888
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a254dc4b1a8d37c4dbc317129248370a
+      internalID: -1800790021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_17
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 3888
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab027c169f26adb40a4f2dbae5d2d2b4
+      internalID: -1258732355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_18
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 3888
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca7e2adb8504e04481008bc6d06abf4
+      internalID: -952697069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_19
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 3888
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2862b04c3f543e34abf9fbf54ea9b190
+      internalID: -1731094073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3456
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec78679da6dbe045b91bdf3877d6314
+      internalID: -238756727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_21
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 3456
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c026e51bde91ab64f852953200a43c6a
+      internalID: -1185218806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_22
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 3456
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee43260143bcdb46bbef57054b6f45a
+      internalID: 462191600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_23
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 3456
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 879a728d749409e48b315d7b15a78711
+      internalID: -1691202498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_24
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 3456
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9be98b978cef446ae380bee6ee278f
+      internalID: 1914797982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3024
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a1a94f276faba4fbd7c81ab3d1c5af
+      internalID: -1421446036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_26
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 3024
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de7c6afef15d264cb147ba1fc0c1ec3
+      internalID: -661095517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_27
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 3024
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23eb3a452d86ad540bbb552a3900616c
+      internalID: 1966334651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_28
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 3024
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af815fcb45625304fac681563c17ad13
+      internalID: 1116344142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_29
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 3024
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90600beea3bbada4892498a3aff7c5bb
+      internalID: 215910565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2592
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60696c8dd6274ee4bb8ab1d677f5a503
+      internalID: -1334364485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_31
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 2592
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88266e5e110b6924ea6ca7e042052aae
+      internalID: 1293840299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_32
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 2592
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36561bb721d50c41a153ca285d171b3
+      internalID: 1145325113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_33
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 2592
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52f7e68abcd755244a0ffeedfe98a000
+      internalID: -47463263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_34
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2592
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6714d3b2cb6cab64f8834fe9cc030a39
+      internalID: -1562137187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63077e534fe48a1439c388ae89623b95
+      internalID: 191995397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_36
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 2160
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99989a52d476cc24cac7a1fc83edd636
+      internalID: -723815732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_37
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 2160
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018b0b8d0cb7bac43bf496a74b6740c1
+      internalID: 263952179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_38
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 2160
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880158d97e88f8347aeaf49e7500ba77
+      internalID: -183530301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_39
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 2160
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf2e3f255f2b01498d5658f6546f244
+      internalID: -688771128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58dafca4749993459e123ffff237013
+      internalID: -874160276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_41
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1728
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02dd936a8444c0439e3e274608510b5
+      internalID: 1167493698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_42
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1728
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7541eed3d0a19fb4c8e59aec19c2cb84
+      internalID: -1799341525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_43
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1728
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7600524c4010846a3cbb6b2030ffaf
+      internalID: 1032481982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_44
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1728
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bb4e357d83dae4087f4b1916080b37
+      internalID: 1862086010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1296
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c210abb5b56da48918f837060d4950
+      internalID: 1922979989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_46
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1296
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34782c0557a5b9f4da821a5db723645b
+      internalID: -64484128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_47
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1296
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67659ad0c5b5dbb45bc46c82496cfe88
+      internalID: 1113497943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_48
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1296
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32bdcaa76a87844e9393e13bd42d240
+      internalID: -214946109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_49
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 1296
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397bd1dcbdf9cb7408c2f1e00ebf2231
+      internalID: -281880724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7550b43803365ce43baf297af2fbf44f
+      internalID: 622608915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_51
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 864
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35500bd83af8f804089de66148eca84d
+      internalID: -230660560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_52
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 864
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c19f3d2ff7b214f8c7884b431568f2
+      internalID: 672074726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_53
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 864
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62164a16564643d41ab81018124d1ab2
+      internalID: -379769737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_54
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 864
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd2bfcfff50d9846ac3a5ed06d264d5
+      internalID: 1338364602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d043dcafb42f84649a83d0b7b4413e64
+      internalID: -2058552836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_56
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 432
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56c078b76091544fab2b34a779b2924
+      internalID: 913124540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_57
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 432
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc75ab8efdeadd4c973d31bb38e4471
+      internalID: -1322729432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_58
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 432
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b247c0ea18618340a66959c392d4829
+      internalID: 1623582327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_59
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 432
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3211b7d57912ce24c81365e8c3d9262c
+      internalID: -638543536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbf1814fa57c0e4aa14dfe2ee28ddd1
+      internalID: -974721241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-tray_248x432_61
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 248
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8092dd7156f2db34ea07d5958a8da199
+      internalID: 734010355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 779d3f2d281de54459ef381af75226c7
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":248.0,"y":432.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Cat-tray_248x432_0: -7889703527787898823
+      Cat-tray_248x432_1: 1390996494
+      Cat-tray_248x432_10: -1885317437
+      Cat-tray_248x432_11: 356300930
+      Cat-tray_248x432_12: -104584917
+      Cat-tray_248x432_13: 847671864
+      Cat-tray_248x432_14: -235673503
+      Cat-tray_248x432_15: -574467510
+      Cat-tray_248x432_16: -1800790021
+      Cat-tray_248x432_17: -1258732355
+      Cat-tray_248x432_18: -952697069
+      Cat-tray_248x432_19: -1731094073
+      Cat-tray_248x432_2: -2117744922
+      Cat-tray_248x432_20: -238756727
+      Cat-tray_248x432_21: -1185218806
+      Cat-tray_248x432_22: 462191600
+      Cat-tray_248x432_23: -1691202498
+      Cat-tray_248x432_24: 1914797982
+      Cat-tray_248x432_25: -1421446036
+      Cat-tray_248x432_26: -661095517
+      Cat-tray_248x432_27: 1966334651
+      Cat-tray_248x432_28: 1116344142
+      Cat-tray_248x432_29: 215910565
+      Cat-tray_248x432_3: 94474365
+      Cat-tray_248x432_30: -1334364485
+      Cat-tray_248x432_31: 1293840299
+      Cat-tray_248x432_32: 1145325113
+      Cat-tray_248x432_33: -47463263
+      Cat-tray_248x432_34: -1562137187
+      Cat-tray_248x432_35: 191995397
+      Cat-tray_248x432_36: -723815732
+      Cat-tray_248x432_37: 263952179
+      Cat-tray_248x432_38: -183530301
+      Cat-tray_248x432_39: -688771128
+      Cat-tray_248x432_4: 547291913
+      Cat-tray_248x432_40: -874160276
+      Cat-tray_248x432_41: 1167493698
+      Cat-tray_248x432_42: -1799341525
+      Cat-tray_248x432_43: 1032481982
+      Cat-tray_248x432_44: 1862086010
+      Cat-tray_248x432_45: 1922979989
+      Cat-tray_248x432_46: -64484128
+      Cat-tray_248x432_47: 1113497943
+      Cat-tray_248x432_48: -214946109
+      Cat-tray_248x432_49: -281880724
+      Cat-tray_248x432_5: 1477302518
+      Cat-tray_248x432_50: 622608915
+      Cat-tray_248x432_51: -230660560
+      Cat-tray_248x432_52: 672074726
+      Cat-tray_248x432_53: -379769737
+      Cat-tray_248x432_54: 1338364602
+      Cat-tray_248x432_55: -2058552836
+      Cat-tray_248x432_56: 913124540
+      Cat-tray_248x432_57: -1322729432
+      Cat-tray_248x432_58: 1623582327
+      Cat-tray_248x432_59: -638543536
+      Cat-tray_248x432_6: -255430675
+      Cat-tray_248x432_60: -974721241
+      Cat-tray_248x432_61: 734010355
+      Cat-tray_248x432_7: 993309
+      Cat-tray_248x432_8: 2140301886
+      Cat-tray_248x432_9: 214835793
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
