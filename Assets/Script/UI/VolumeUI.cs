@@ -26,6 +26,7 @@ public class VolumeUI : MonoBehaviour
 
     void Start()
     {
+        AudioManager.Instance.PlayMusic("theme_menu");
         UpdateMusic();
         UpdateSFX();
     }

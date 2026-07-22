@@ -36,6 +36,7 @@ public class MainMenuManager : MonoBehaviour
         {
             //LogFilter.LogLevelTransfer("MainMenuManager: GameManager not found in scene");
         }
+        AudioManager.Instance.PlayMusic("theme_menu");
     }
 
     /// <summary>
