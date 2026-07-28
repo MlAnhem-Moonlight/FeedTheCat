@@ -28,6 +28,8 @@ public class ItemCollector : MonoBehaviour
     private Image image;
     private bool hasBeenCollected = false;
 
+    public string difficultyLevel; // Difficulty level as string (e.g., "Easy", "Medium", "Hard")
+
     #region Properties
 
     /// <summary>
@@ -88,6 +90,7 @@ public class ItemCollector : MonoBehaviour
         rewardGenerator.itemCollector = this;
         RewardScreenManager rewardScreenManager = FindAnyObjectByType<RewardScreenManager>();
         rewardScreenManager.SetupRewardScreen();
+        difficultyLevel = GetDifficultyFromLevelName();
     }
 
     private void OnDestroy()

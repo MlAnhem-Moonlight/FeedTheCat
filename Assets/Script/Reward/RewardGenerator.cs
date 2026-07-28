@@ -50,8 +50,8 @@ namespace FeedTheCat.Rewards
             probabilities = new[] { 0.60f, 0.35f, 0.05f },
             quantityRanges = new[]
             {
-                new Vector2Int(1, 5),   // Common: 1-5
-                new Vector2Int(1, 3),   // Rare: 1-3
+                new Vector2Int(1, 3),   // Common: 1-3
+                new Vector2Int(1, 2),   // Rare: 1-2
                 new Vector2Int(1, 1)    // Epic: 1
             }
         };
@@ -66,9 +66,9 @@ namespace FeedTheCat.Rewards
             probabilities = new[] { 0.35f, 0.45f, 0.20f },
             quantityRanges = new[]
             {
-                new Vector2Int(2, 5),   // Common: 2-5
-                new Vector2Int(2, 6),   // Rare: 2-6
-                new Vector2Int(1, 3)    // Epic: 1-3
+                new Vector2Int(2, 4),   // Common: 2-4
+                new Vector2Int(2, 3),   // Rare: 2-3
+                new Vector2Int(1, 1)    // Epic: 1
             }
         };
 
@@ -82,9 +82,9 @@ namespace FeedTheCat.Rewards
             probabilities = new[] { 0.25f, 0.40f, 0.25f, 0.05f },
             quantityRanges = new[]
             {
-                new Vector2Int(5, 8),   // Common: 5-8
-                new Vector2Int(3, 8),   // Rare: 3-8
-                new Vector2Int(2, 5),   // Epic: 2-5
+                new Vector2Int(3, 4),   // Common: 3-4
+                new Vector2Int(3, 4),   // Rare: 3-4
+                new Vector2Int(1, 3),   // Epic: 1-3
                 new Vector2Int(1, 1)    // Legendary: 1
             }
         };

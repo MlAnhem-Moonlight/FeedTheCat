@@ -305,4 +305,131 @@ public class GameManager : MonoBehaviour
     {
         SaveManager.ResetAllLevelStates(allLevels);
     }
+
+    #region Level Shuffling By Difficulty
+
+    /// <summary>
+    /// Repeating difficulty pattern used to re-order allLevels:
+    /// Easy, Easy, Medium, Easy, Easy, Hard -> then repeats.
+    /// (2 easy levels, then 1 medium; after 5 levels total -- 4 easy + 1 medium -- a hard level follows.)
+    /// </summary>
+    private static readonly string[] DifficultyShufflePattern = { "easy", "easy", "medium", "easy", "easy", "hard" };
+
+    /// <summary>
+    /// Rearranges allLevels to follow DifficultyShufflePattern, based on the difficulty parsed
+    /// from each LevelData's levelName (format "{difficulty}_levelName", e.g. "Easy_Level1").
+    /// If there is no level left of the required difficulty for a slot, a random level is
+    /// picked from whatever remains in the pool (regardless of difficulty) so no level is skipped.
+    /// </summary>
+    [ContextMenu("Shuffle Levels By Difficulty")]
+    public void ShuffleLevelsByDifficulty()
+    {
+        if (allLevels == null || allLevels.Count == 0)
+        {
+            Debug.LogWarning("GameManager.ShuffleLevelsByDifficulty: allLevels is empty");
+            return;
+        }
+
+        // Group levels into pools by parsed difficulty, preserving original order within each pool.
+        List<LevelData> easyPool = new List<LevelData>();
+        List<LevelData> mediumPool = new List<LevelData>();
+        List<LevelData> hardPool = new List<LevelData>();
+        List<LevelData> otherPool = new List<LevelData>(); // unrecognized/missing difficulty prefix
+
+        foreach (var level in allLevels)
+        {
+            if (level == null)
+                continue;
+
+            switch (GetDifficultyPrefix(level.levelName))
+            {
+                case "easy":
+                    easyPool.Add(level);
+                    break;
+                case "medium":
+                    mediumPool.Add(level);
+                    break;
+                case "hard":
+                    hardPool.Add(level);
+                    break;
+                default:
+                    otherPool.Add(level);
+                    break;
+            }
+        }
+
+        List<LevelData> result = new List<LevelData>(allLevels.Count);
+
+        for (int i = 0; i < allLevels.Count; i++)
+        {
+            string neededDifficulty = DifficultyShufflePattern[i % DifficultyShufflePattern.Length];
+
+            List<LevelData> targetPool = neededDifficulty switch
+            {
+                "easy" => easyPool,
+                "medium" => mediumPool,
+                "hard" => hardPool,
+                _ => null
+            };
+
+            LevelData chosen = null;
+
+            if (targetPool != null && targetPool.Count > 0)
+            {
+                chosen = targetPool[0];
+                targetPool.RemoveAt(0);
+            }
+            else
+            {
+                // Not enough levels of the required difficulty left: pick a random level
+                // from whatever is still remaining across all pools.
+                List<LevelData> leftovers = new List<LevelData>();
+                leftovers.AddRange(easyPool);
+                leftovers.AddRange(mediumPool);
+                leftovers.AddRange(hardPool);
+                leftovers.AddRange(otherPool);
+
+                if (leftovers.Count == 0)
+                {
+                    Debug.LogWarning($"GameManager.ShuffleLevelsByDifficulty: No levels left to fill slot {i}. Stopping early.");
+                    break;
+                }
+
+                int randomIndex = Random.Range(0, leftovers.Count);
+                chosen = leftovers[randomIndex];
+
+                easyPool.Remove(chosen);
+                mediumPool.Remove(chosen);
+                hardPool.Remove(chosen);
+                otherPool.Remove(chosen);
+
+                Debug.LogWarning($"GameManager.ShuffleLevelsByDifficulty: No '{neededDifficulty}' level left for slot {i}. " +
+                    $"Used random fallback level '{chosen.levelName}' instead.");
+            }
+
+            result.Add(chosen);
+        }
+
+        // Mutate allLevels in place so any external references to this List<LevelData> stay valid.
+        allLevels.Clear();
+        allLevels.AddRange(result);
+
+        Debug.Log($"GameManager.ShuffleLevelsByDifficulty: Reordered {allLevels.Count} levels using pattern " +
+            $"[{string.Join(", ", DifficultyShufflePattern)}] (repeating).");
+    }
+
+    /// <summary>
+    /// Parse the difficulty prefix from a level name (format "{difficulty}_levelName").
+    /// Returns lowercase difficulty string ("easy"/"medium"/"hard"), or empty string if unrecognized.
+    /// </summary>
+    private string GetDifficultyPrefix(string levelName)
+    {
+        if (string.IsNullOrEmpty(levelName))
+            return string.Empty;
+
+        string[] parts = levelName.Split('_');
+        return parts.Length > 0 ? parts[0].ToLower() : string.Empty;
+    }
+
+    #endregion
 }

@@ -214,6 +214,23 @@ namespace FeedTheCat.Items
             SetQuantity(itemID, newQty);
         }
 
+        /// <summary>
+        /// Reset a single item's quantity back to 0.
+        /// Does not persist automatically; call Save() afterward if needed.
+        /// </summary>
+        public void ResetItem(string itemID)
+        {
+            if (string.IsNullOrEmpty(itemID))
+            {
+                Debug.LogWarning("ItemInventory.ResetItem: itemID is empty");
+                return;
+            }
+
+            SetQuantity(itemID, 0);
+
+            LogFilter.LogItem($"ItemInventory: Reset {itemID} to 0");
+        }
+
         #endregion
 
         #region Persistence
