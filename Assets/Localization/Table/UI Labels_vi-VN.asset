@@ -46,6 +46,10 @@ MonoBehaviour:
     m_Localized: Like herding cats
     m_Metadata:
       m_Items: []
+  - m_Id: 5490550950346752
+    m_Localized: "\u0110\xCDCH \u0110\u1EBEN"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

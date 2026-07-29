@@ -57,11 +57,11 @@ namespace FeedTheCat.Items
                     }
                 }
 
-                LogFilter.LogItem($"StunItemEntireMap.ExecuteEffect: Stunned {allNPCs.Length} NPCs on entire map for {itemData.EffectDuration} turns");
+                Debug.Log($"StunItemEntireMap.ExecuteEffect: Stunned {allNPCs.Length} NPCs on entire map for {itemData.EffectDuration} turns");
             }
             else
             {
-                LogFilter.LogItemError("StunItemEntireMap.ExecuteEffect: StatusEffectSystem not found");
+                Debug.LogError("StunItemEntireMap.ExecuteEffect: StatusEffectSystem not found");
             }
         }
 

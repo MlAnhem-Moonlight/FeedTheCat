@@ -64,7 +64,7 @@ namespace FeedTheCat.Items
 
             charmedNPC = selectionPool[Random.Range(0, selectionPool.Count)];
 
-            LogFilter.LogItem($"CharmItem4Radius.ExecuteEffect: Charmed NPC '{charmedNPC.gameObject.name}' selected from {affectedNPCs.Count} affected NPCs");
+            Debug.Log($"CharmItem4Radius.ExecuteEffect: Charmed NPC '{charmedNPC.gameObject.name}' selected from {affectedNPCs.Count} affected NPCs");
 
             // Apply Charm status effect to ALL affected NPCs
             // Duration: 4 player turns (as per specification)
@@ -80,11 +80,11 @@ namespace FeedTheCat.Items
                     statusSystem.ApplyStatusEffect(npc, StatusEffectType.Charm, itemData.EffectDuration, moveTarget);
                 }
 
-                LogFilter.LogItem($"CharmItem4Radius.ExecuteEffect: Applied Charm to {affectedNPCs.Count} NPCs for {itemData.EffectDuration} turns (chosen NPC will walk toward target each turn)");
+                Debug.Log($"CharmItem4Radius.ExecuteEffect: Applied Charm to {affectedNPCs.Count} NPCs for {itemData.EffectDuration} turns (chosen NPC will walk toward target each turn)");
             }
             else
             {
-                LogFilter.LogItemError("CharmItem4Radius.ExecuteEffect: StatusEffectSystem not found");
+                Debug.LogError("CharmItem4Radius.ExecuteEffect: StatusEffectSystem not found");
             }
         }
 

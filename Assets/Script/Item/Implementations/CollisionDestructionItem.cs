@@ -84,7 +84,7 @@ namespace FeedTheCat.Items
 
             if (itemData == null)
             {
-                LogFilter.LogItemError($"CollisionDestructionItem: ItemData not assigned on {gameObject.name}");
+                Debug.LogError($"CollisionDestructionItem: ItemData not assigned on {gameObject.name}");
                 return;
             }
 
@@ -97,13 +97,13 @@ namespace FeedTheCat.Items
 
             if (playerController == null)
             {
-                LogFilter.LogItemError($"CollisionDestructionItem: PlayerController not found in scene");
+                Debug.LogError($"CollisionDestructionItem: PlayerController not found in scene");
                 return;
             }
 
             if (itemInventory == null)
             {
-                LogFilter.LogItemError($"CollisionDestructionItem: ItemInventory.Instance not found in scene");
+                Debug.LogError($"CollisionDestructionItem: ItemInventory.Instance not found in scene");
                 return;
             }
 
@@ -115,7 +115,7 @@ namespace FeedTheCat.Items
             // playerController.OnNPCCollision += HandleNPCCollision;
 
             isInitialized = true;
-            LogFilter.LogItem($"CollisionDestructionItem: Initialized with ItemID '{ItemID}', Current Quantity: {CurrentQuantity}");
+            Debug.Log($"CollisionDestructionItem: Initialized with ItemID '{ItemID}', Current Quantity: {CurrentQuantity}");
         }
 
         /// <summary>

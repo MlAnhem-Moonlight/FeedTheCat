@@ -266,7 +266,7 @@ namespace FeedTheCat.Items
                 dragGhost = ghostRect;
             }
 
-            LogFilter.LogItem($"ItemBase.OnBeginDrag: Started dragging {ItemData.ItemName} (id={ItemID})");
+            Debug.Log($"ItemBase.OnBeginDrag: Started dragging {ItemData.ItemName} (id={ItemID})");
         }
 
         /// <summary>
@@ -301,7 +301,7 @@ namespace FeedTheCat.Items
             if (targetGridCell == null)
             {
                 DestroyDragGhost();
-                LogFilter.LogItemWarning($"ItemBase.OnEndDrag: No valid GridCell target found. (ItemID={ItemID})");
+                Debug.LogWarning($"ItemBase.OnEndDrag: No valid GridCell target found. (ItemID={ItemID})");
                 return;
             }
 
@@ -310,7 +310,7 @@ namespace FeedTheCat.Items
             if (!ValidateTarget(targetCell))
             {
                 DestroyDragGhost();
-                LogFilter.LogItemWarning($"ItemBase.OnEndDrag: Target validation failed for {targetCell.gameObject.name} (ItemID={ItemID})");
+                Debug.LogWarning($"ItemBase.OnEndDrag: Target validation failed for {targetCell.gameObject.name} (ItemID={ItemID})");
                 return;
             }
 
@@ -325,7 +325,7 @@ namespace FeedTheCat.Items
             // "put back" - just clean up the ghost that was following the pointer.
             DestroyDragGhost();
 
-            LogFilter.LogItem($"ItemBase.OnEndDrag: Item effect executed on {targetCell.gameObject.name}. New quantity: {CurrentQuantity} (ItemID={ItemID})");
+            Debug.Log($"ItemBase.OnEndDrag: Item effect executed on {targetCell.gameObject.name}. New quantity: {CurrentQuantity} (ItemID={ItemID})");
         }
 
         /// <summary>
@@ -488,7 +488,7 @@ namespace FeedTheCat.Items
             else if (itemData.Icon != null)
             {
                 // Fallback: no dedicated prefab assigned yet, just show the item's icon.
-                LogFilter.LogItemWarning($"ItemBase.SpawnItemVisualOnGrid: No VisualPrefab assigned for '{ItemData.ItemName}' (ItemID={ItemID}), falling back to icon sprite.");
+                Debug.LogWarning($"ItemBase.SpawnItemVisualOnGrid: No VisualPrefab assigned for '{ItemData.ItemName}' (ItemID={ItemID}), falling back to icon sprite.");
 
                 visualGo = new GameObject($"ItemVisual_{ItemID}", typeof(RectTransform), typeof(UnityEngine.UI.Image));
                 var img = visualGo.GetComponent<UnityEngine.UI.Image>();
@@ -497,7 +497,7 @@ namespace FeedTheCat.Items
             }
             else
             {
-                LogFilter.LogItemWarning($"ItemBase.SpawnItemVisualOnGrid: No VisualPrefab or Icon assigned for '{ItemID}', nothing to show on grid.");
+                Debug.LogWarning($"ItemBase.SpawnItemVisualOnGrid: No VisualPrefab or Icon assigned for '{ItemID}', nothing to show on grid.");
                 return;
             }
 
@@ -526,7 +526,7 @@ namespace FeedTheCat.Items
                 lifetime = visualGo.AddComponent<ItemVisualEffect>();
             lifetime.Initialize(itemData.EffectDuration);
 
-            LogFilter.LogItem($"ItemBase.SpawnItemVisualOnGrid: Spawned visual for '{ItemData.ItemName}' on {targetCell.gameObject.name} (ItemID={ItemID}, duration={itemData.EffectDuration} turns)");
+            Debug.Log($"ItemBase.SpawnItemVisualOnGrid: Spawned visual for '{ItemData.ItemName}' on {targetCell.gameObject.name} (ItemID={ItemID}, duration={itemData.EffectDuration} turns)");
         }
 
         #endregion

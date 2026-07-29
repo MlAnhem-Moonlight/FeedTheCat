@@ -175,7 +175,7 @@ namespace FeedTheCat.Items
 
             OnQuantityChanged?.Invoke(itemID, clampedQuantity, previousQuantity);
 
-            LogFilter.LogItem($"ItemInventory: Set {itemID} quantity to {clampedQuantity} (was {previousQuantity})");
+            Debug.Log($"ItemInventory: Set {itemID} quantity to {clampedQuantity} (was {previousQuantity})");
         }
 
         /// <summary>
@@ -228,7 +228,7 @@ namespace FeedTheCat.Items
 
             SetQuantity(itemID, 0);
 
-            LogFilter.LogItem($"ItemInventory: Reset {itemID} to 0");
+            Debug.Log($"ItemInventory: Reset {itemID} to 0");
         }
 
         #endregion
@@ -255,7 +255,7 @@ namespace FeedTheCat.Items
             PlayerPrefs.SetString(SAVED_ITEMS_KEY, savedItemsValue);
 
             PlayerPrefs.Save();
-            LogFilter.LogItem($"ItemInventory: Saved to PlayerPrefs (saved {inventory.Count} items)");
+            Debug.Log($"ItemInventory: Saved to PlayerPrefs (saved {inventory.Count} items)");
         }
 
         /// <summary>
@@ -286,7 +286,7 @@ namespace FeedTheCat.Items
                     if (quantity > 0)
                     {
                         inventory[itemID.Trim()] = quantity;
-                        LogFilter.LogItem($"ItemInventory: Loaded {itemID.Trim()} with quantity {quantity} from PlayerPrefs");
+                        Debug.Log($"ItemInventory: Loaded {itemID.Trim()} with quantity {quantity} from PlayerPrefs");
                     }
                 }
             }
@@ -297,12 +297,12 @@ namespace FeedTheCat.Items
             foreach (var kvp in inventory)
             {
                 OnQuantityChanged?.Invoke(kvp.Key, kvp.Value, 0);
-                LogFilter.LogItem($"ItemInventory: Triggered UI update for {kvp.Key} (qty={kvp.Value})");
+                Debug.Log($"ItemInventory: Triggered UI update for {kvp.Key} (qty={kvp.Value})");
             }
 
             OnInventoryLoaded?.Invoke();
 
-            LogFilter.LogItem($"ItemInventory: Loaded {inventory.Count} items from PlayerPrefs");
+            Debug.Log($"ItemInventory: Loaded {inventory.Count} items from PlayerPrefs");
         }
 
         /// <summary>
@@ -335,7 +335,7 @@ namespace FeedTheCat.Items
             if (quantity > 0)
             {
                 inventory[itemID] = quantity;
-                LogFilter.LogItem($"ItemInventory: Loaded {itemID} with quantity {quantity} from PlayerPrefs");
+                Debug.Log($"ItemInventory: Loaded {itemID} with quantity {quantity} from PlayerPrefs");
             }
         }
 
@@ -371,7 +371,7 @@ namespace FeedTheCat.Items
             PlayerPrefs.DeleteKey(SAVED_ITEMS_KEY);
             PlayerPrefs.Save();
 
-            LogFilter.LogItem("ItemInventory: All inventory cleared");
+            Debug.Log("ItemInventory: All inventory cleared");
         }
 
         #endregion
@@ -383,7 +383,7 @@ namespace FeedTheCat.Items
         {
             if (inventory.Count == 0)
             {
-                LogFilter.LogItem("ItemInventory: Empty");
+                Debug.Log("ItemInventory: Empty");
                 return;
             }
 
@@ -392,7 +392,7 @@ namespace FeedTheCat.Items
             {
                 log += $"  {kvp.Key}: {kvp.Value}\n";
             }
-            LogFilter.LogItem(log);
+            Debug.Log(log);
         }
 
         #endregion

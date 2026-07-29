@@ -27,7 +27,7 @@ public class LevelManager : MonoBehaviour
     [Header("Debug")]
     [Tooltip("Automatically call ApplyLevel on Start (playmode) for testing)")]
     public bool applyOnStart = false;
-
+    [ContextMenu("Apply Level Now")]
     public void ApplyLevel()
     {
         // Prevent concurrent execution of ApplyLevelCoroutine

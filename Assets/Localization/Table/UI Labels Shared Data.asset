@@ -43,6 +43,10 @@ MonoBehaviour:
     m_Key: uiMainMenuTitle
     m_Metadata:
       m_Items: []
+  - m_Id: 5490550950346752
+    m_Key: UITut
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
